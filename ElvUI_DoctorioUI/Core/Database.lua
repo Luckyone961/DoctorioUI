@@ -67,7 +67,7 @@ function DoctorioUI:Setup_ElvUI()
 	E.db["actionbar"]["bar1"]["macroFontOutline"] = "OUTLINE"
 	E.db["actionbar"]["bar1"]["paging"]["DEATHKNIGHT"] = "[mod:ctrl] 10;"
 	E.db["actionbar"]["bar1"]["paging"]["DEMONHUNTER"] = "[mod:ctrl] 10;"
-	E.db["actionbar"]["bar1"]["paging"]["DRUID"] = "[bonusbar:1,nostealth] 9; [bonusbar:1,stealth] 9; [bonusbar:3] 5; [bonusbar:4] 6; [mod:ctrl] 10;"
+	E.db["actionbar"]["bar1"]["paging"]["DRUID"] = "[mod:ctrl] 10; [bonusbar:1,nostealth] 9; [bonusbar:1,stealth] 9; [bonusbar:3] 5; [bonusbar:4] 6;"
 	E.db["actionbar"]["bar1"]["paging"]["EVOKER"] = "[bonusbar:1] 15; [mod:ctrl] 10;"
 	E.db["actionbar"]["bar1"]["paging"]["HUNTER"] = "[mod:ctrl] 10;"
 	E.db["actionbar"]["bar1"]["paging"]["MAGE"] = "[mod:ctrl] 10;"
