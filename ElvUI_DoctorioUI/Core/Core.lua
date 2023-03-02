@@ -122,10 +122,13 @@ function DoctorioUI:Setup_GlobalDB()
 	E.global["datatexts"]["customPanels"]["Top Panel (Right)"]["name"] = "Top Panel (Right)"
 	E.global["datatexts"]["customPanels"]["Top Panel (Right)"]["numPoints"] = 4
 	E.global["datatexts"]["customPanels"]["Top Panel (Right)"]["width"] = 201
-	E.global["datatexts"]["settings"]["LDB_BugSack"]["icon"] = true
-	E.global["datatexts"]["settings"]["LDB_BugSack"]["useValueColor"] = true
 	E.global["general"]["fadeMapWhenMoving"] = false
 	E.global["general"]["WorldMapCoordinates"]["position"] = "BOTTOMRIGHT"
+
+	if E:IsAddOnEnabled('BugSack') then
+		E.global["datatexts"]["settings"]["LDB_BugSack"]["icon"] = true
+		E.global["datatexts"]["settings"]["LDB_BugSack"]["useValueColor"] = true
+	end
 end
 
 -- ElvUI Layout setup

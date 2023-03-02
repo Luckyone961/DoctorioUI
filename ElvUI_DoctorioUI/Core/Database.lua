@@ -33,6 +33,28 @@ function DoctorioUI:Setup_ElvUI()
 	E.db["unitframe"]["units"]["target"]["customTexts"]["Target Name"] = E.db["unitframe"]["units"]["target"]["customTexts"]["Target Name"] or {}
 	E.db["unitframe"]["units"]["targettarget"]["customTexts"]["TargetofTarget Name"] = E.db["unitframe"]["units"]["targettarget"]["customTexts"]["TargetofTarget Name"] or {}
 	----------------------------------------------------------------------
+	----------------------- Custom DataText Data -------------------------
+	----------------------------------------------------------------------
+	E.db["datatexts"]["panels"]["Top Panel (Left)"]["battleground"] = false
+	E.db["datatexts"]["panels"]["Top Panel (Left)"]["enable"] = true
+	E.db["datatexts"]["panels"]["Top Panel (Left)"][1] = "Durability"
+	E.db["datatexts"]["panels"]["Top Panel (Left)"][2] = "System"
+	E.db["datatexts"]["panels"]["Top Panel (Right)"]["battleground"] = false
+	E.db["datatexts"]["panels"]["Top Panel (Right)"]["enable"] = true
+	E.db["datatexts"]["panels"]["Top Panel (Right)"][1] = "Volume"
+	E.db["datatexts"]["panels"]["Top Panel (Right)"][4] = "Time"
+	E.db["movers"]["DTPanelTop Panel (Left)Mover"] = "TOPLEFT,ElvUIParent,TOPLEFT,0,0"
+	E.db["movers"]["DTPanelTop Panel (Right)Mover"] = "TOPRIGHT,ElvUIParent,TOPRIGHT,-1,0"
+	if E:IsAddOnEnabled('BugSack') then
+		E.db["datatexts"]["panels"]["Top Panel (Right)"][2] = "LDB_BugSack"
+	end
+	if E:IsAddOnEnabled('WIM') then
+		E.db["datatexts"]["panels"]["Top Panel (Left)"][3] = "LDB_WIM"
+	end
+	if E:IsAddOnEnabled('WeakAuras') then
+		E.db["datatexts"]["panels"]["Top Panel (Right)"][3] = "LDB_WeakAuras"
+	end
+	----------------------------------------------------------------------
 	----------------------- Copy/Paste Export Here -----------------------
 	----------------------------------------------------------------------
 	E.db["actionbar"]["bar1"]["buttonSize"] = 30
@@ -246,17 +268,6 @@ function DoctorioUI:Setup_ElvUI()
 	E.db["datatexts"]["panels"]["LeftChatDataPanel"]["enable"] = false
 	E.db["datatexts"]["panels"]["LeftChatDataPanel"][3] = "QuickJoin"
 	E.db["datatexts"]["panels"]["RightChatDataPanel"]["enable"] = false
-	E.db["datatexts"]["panels"]["Top Panel (Left)"]["battleground"] = false
-	E.db["datatexts"]["panels"]["Top Panel (Left)"]["enable"] = true
-	E.db["datatexts"]["panels"]["Top Panel (Left)"][1] = "Durability"
-	E.db["datatexts"]["panels"]["Top Panel (Left)"][2] = "System"
-	E.db["datatexts"]["panels"]["Top Panel (Left)"][3] = "LDB_WIM"
-	E.db["datatexts"]["panels"]["Top Panel (Right)"]["battleground"] = false
-	E.db["datatexts"]["panels"]["Top Panel (Right)"]["enable"] = true
-	E.db["datatexts"]["panels"]["Top Panel (Right)"][1] = "Volume"
-	E.db["datatexts"]["panels"]["Top Panel (Right)"][2] = "LDB_BugSack"
-	E.db["datatexts"]["panels"]["Top Panel (Right)"][3] = "LDB_WeakAuras"
-	E.db["datatexts"]["panels"]["Top Panel (Right)"][4] = "Time"
 	E.db["general"]["afkChat"] = false
 	E.db["general"]["altPowerBar"]["font"] = "Expressway"
 	E.db["general"]["autoRepair"] = "GUILD"
@@ -311,8 +322,6 @@ function DoctorioUI:Setup_ElvUI()
 	E.db["movers"]["BossHeaderMover"] = "TOPLEFT,UIParent,TOPLEFT,389,-284"
 	E.db["movers"]["BuffsMover"] = "TOPRIGHT,ElvUIParent,TOPRIGHT,-206,-23"
 	E.db["movers"]["DebuffsMover"] = "TOPRIGHT,UIParent,TOPRIGHT,-237,-197"
-	E.db["movers"]["DTPanelTop Panel (Left)Mover"] = "TOPLEFT,ElvUIParent,TOPLEFT,0,0"
-	E.db["movers"]["DTPanelTop Panel (Right)Mover"] = "TOPRIGHT,ElvUIParent,TOPRIGHT,-1,0"
 	E.db["movers"]["DurabilityFrameMover"] = "TOPLEFT,ElvUIParent,TOPLEFT,141,-4"
 	E.db["movers"]["ElvAB_1"] = "BOTTOM,ElvUIParent,BOTTOM,0,2"
 	E.db["movers"]["ElvAB_10"] = "BOTTOM,UIParent,BOTTOM,216,476"
