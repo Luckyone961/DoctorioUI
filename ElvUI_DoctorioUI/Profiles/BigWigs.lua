@@ -502,18 +502,21 @@ function DoctorioUI:Setup_BigWigs()
 	}
 
 	-- Boss DB
+	BigWigs3DB['namespaces']['BigWigs_Bosses_Eranog'] = BigWigs3DB['namespaces']['BigWigs_Bosses_Eranog'] or {}
 	BigWigs3DB['namespaces']['BigWigs_Bosses_Eranog']['profiles'] = BigWigs3DB['namespaces']['BigWigs_Bosses_Eranog']['profiles'] or {}
 	BigWigs3DB['namespaces']['BigWigs_Bosses_Eranog']['profiles'][name] = {
 		[396022] = 3064054,
 		[370307] = 2801911,
 	}
 
+	BigWigs3DB['namespaces']['BigWigs_Bosses_Terros'] = BigWigs3DB['namespaces']['BigWigs_Bosses_Terros'] or {}
 	BigWigs3DB['namespaces']['BigWigs_Bosses_Terros']['profiles'] = BigWigs3DB['namespaces']['BigWigs_Bosses_Terros']['profiles'] or {}
 	BigWigs3DB['namespaces']['BigWigs_Bosses_Terros']['profiles'][name] = {
 		[381315] = 2801910,
 		[380487] = 2801911,
 	}
 
+	BigWigs3DB['namespaces']['BigWigs_Bosses_Sennarth, The Cold Breath'] = BigWigs3DB['namespaces']['BigWigs_Bosses_Sennarth, The Cold Breath'] or {}
 	BigWigs3DB['namespaces']['BigWigs_Bosses_Sennarth, The Cold Breath']['profiles'] = BigWigs3DB['namespaces']['BigWigs_Bosses_Sennarth, The Cold Breath']['profiles'] or {}
 	BigWigs3DB['namespaces']['BigWigs_Bosses_Sennarth, The Cold Breath']['profiles'][name] = {
 		['ascend'] = 3064054,
@@ -521,6 +524,7 @@ function DoctorioUI:Setup_BigWigs()
 		[372238] = 0,
 	}
 
+	BigWigs3DB['namespaces']['BigWigs_Bosses_Kurog Grimtotem'] = BigWigs3DB['namespaces']['BigWigs_Bosses_Kurog Grimtotem'] or {}
 	BigWigs3DB['namespaces']['BigWigs_Bosses_Kurog Grimtotem']['profiles'] = BigWigs3DB['namespaces']['BigWigs_Bosses_Kurog Grimtotem']['profiles'] or {}
 	BigWigs3DB['namespaces']['BigWigs_Bosses_Kurog Grimtotem']['profiles'][name] = {
 		[374624] = 2801911,
@@ -536,6 +540,7 @@ function DoctorioUI:Setup_BigWigs()
 		[391268] = 0,
 	}
 
+	BigWigs3DB['namespaces']['BigWigs_Bosses_Dathea, Ascended'] = BigWigs3DB['namespaces']['BigWigs_Bosses_Dathea, Ascended'] or {}
 	BigWigs3DB['namespaces']['BigWigs_Bosses_Dathea, Ascended']['profiles'] = BigWigs3DB['namespaces']['BigWigs_Bosses_Dathea, Ascended']['profiles'] or {}
 	BigWigs3DB['namespaces']['BigWigs_Bosses_Dathea, Ascended']['profiles'][name] = {
 		[375580] = 3065335,
@@ -544,6 +549,7 @@ function DoctorioUI:Setup_BigWigs()
 		[391686] = 3129591,
 	}
 
+	BigWigs3DB['namespaces']['BigWigs_Bosses_Broodkeeper Diurna'] = BigWigs3DB['namespaces']['BigWigs_Bosses_Broodkeeper Diurna'] or {}
 	BigWigs3DB['namespaces']['BigWigs_Bosses_Broodkeeper Diurna']['profiles'] = BigWigs3DB['namespaces']['BigWigs_Bosses_Broodkeeper Diurna']['profiles'] or {}
 	BigWigs3DB['namespaces']['BigWigs_Bosses_Broodkeeper Diurna']['profiles'][name] = {
 		[396266] = 3068135,
@@ -552,6 +558,7 @@ function DoctorioUI:Setup_BigWigs()
 		[396264] = 3129847,
 	}
 
+	BigWigs3DB['namespaces']['BigWigs_Bosses_Raszageth the Storm-Eater'] = BigWigs3DB['namespaces']['BigWigs_Bosses_Raszageth the Storm-Eater'] or {}
 	BigWigs3DB['namespaces']['BigWigs_Bosses_Raszageth the Storm-Eater']['profiles'] = BigWigs3DB['namespaces']['BigWigs_Bosses_Raszageth the Storm-Eater']['profiles'] or {}
 	BigWigs3DB['namespaces']['BigWigs_Bosses_Raszageth the Storm-Eater']['profiles'][name] = {
 		[377612] = 2801911,
