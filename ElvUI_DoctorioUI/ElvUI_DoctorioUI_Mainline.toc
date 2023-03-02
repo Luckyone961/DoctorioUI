@@ -1,0 +1,13 @@
+## Interface: 100005
+## Author: Luckyone
+## Version: 0.01
+## Title: |cff1784d1ElvUI|r |cffC41E3ADoctorioUI|r
+## Notes: Doctorio's Interface
+## RequiredDeps: ElvUI
+## DefaultState: enabled
+
+Init.lua
+
+Locales\load_locales.xml
+Core\load_core.xml
+Profiles\load_profiles.xml
