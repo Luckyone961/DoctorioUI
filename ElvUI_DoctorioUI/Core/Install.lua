@@ -73,6 +73,11 @@ DoctorioUI.InstallerData = {
 			PluginInstallFrame.Option1:SetText(L["Import ArkInventory"])
 		end,
 		[8] = function()
+			PluginInstallFrame.SubTitle:SetText(L["WeakAuras"])
+			PluginInstallFrame.Desc1:SetText(L["Class WeakAuras for all classes and specs can be found in:"])
+			PluginInstallFrame.Desc2:SetText(L["/doctorioui config -> WeakAuras tab"])
+		end,
+		[9] = function()
 			PluginInstallFrame.SubTitle:SetText(L["Installation Complete"])
 			PluginInstallFrame.Desc1:SetText(L["Text 1"])
 			PluginInstallFrame.Desc2:SetText(L["Text 2"])
@@ -90,7 +95,8 @@ DoctorioUI.InstallerData = {
 		[5] = L["OmniCD"],
 		[6] = L["BigWigs"],
 		[7] = L["ArkInventory"],
-		[8] = L["Installation Complete"],
+		[8] = L["WeakAuras"],
+		[9] = L["Installation Complete"],
 	},
 	-- Color of the title texts on the ride side (when not selected)
 	StepTitlesColor = {1, 1, 1},
