@@ -39,7 +39,7 @@ function DoctorioUI:Config()
 	DoctorioUI.Options.args.profiles.args.spacer = ACH:Spacer(2, 'full')
 	DoctorioUI.Options.args.profiles.args.elvuiGroup = ACH:Group(L["ElvUI"], nil, 3)
 	DoctorioUI.Options.args.profiles.args.elvuiGroup.inline = true
-	DoctorioUI.Options.args.profiles.args.elvuiGroup.args.profile = ACH:Execute(L["ElvUI Profile"], nil, 1, function() DoctorioUI:Setup_Layout() E:StaticPopup_Show('DoctorioUI_RL') end)
+	DoctorioUI.Options.args.profiles.args.elvuiGroup.args.profile = ACH:Execute(L["ElvUI Profile"], nil, 1, function() DoctorioUI:Setup_GlobalDB() DoctorioUI:Setup_PrivateDB() DoctorioUI:Setup_Layout() E:StaticPopup_Show('DoctorioUI_RL') end)
 	DoctorioUI.Options.args.profiles.args.elvuiGroup.args.auraFilters = ACH:Execute(L["ElvUI Aura Filters"], nil, 2, function() DoctorioUI:Setup_AuraFilters() E:StaticPopup_Show('DoctorioUI_RL') end)
 	DoctorioUI.Options.args.profiles.args.addonGroup = ACH:Group(L["AddOns"], nil, 4)
 	DoctorioUI.Options.args.profiles.args.addonGroup.inline = true
