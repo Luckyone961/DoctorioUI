@@ -3,7 +3,7 @@ if not L then return end
 
 -- Installer Frame
 L["/doctorioui config -> WeakAuras tab"] = true
-L["Class WeakAuras for all classes and specs can be found in:"] = "WeakAuren für alle Klassen und Specs findest du in:"
+L["Class WeakAuras for all classes and specs can be found in:"] = "WeakAuren für alle Klassen und Specs findest du unter:"
 L["ElvUI"] = true
 L["Feel free to join our community Discord for support and social chats."] = "Du kannst unserer Discord-Community beitreten, um Unterstützung zu erhalten und mit anderen zu chatten."
 L["Finished"] = "Fertig"
