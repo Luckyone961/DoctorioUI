@@ -48,6 +48,7 @@ function DoctorioUI:Config()
 	DoctorioUI.Options.args.profiles.args.addonGroup.args.omnicd = ACH:Execute(L["OmniCD"], nil, 3, function() DoctorioUI:Setup_OmniCD() E:StaticPopup_Show('DoctorioUI_RL') end, nil, true)
 	DoctorioUI.Options.args.profiles.args.addonGroup.args.bigwigs = ACH:Execute(L["BigWigs"], nil, 4, function() DoctorioUI:Setup_BigWigs() E:StaticPopup_Show('DoctorioUI_RL') end, nil, true)
 	DoctorioUI.Options.args.profiles.args.addonGroup.args.ark = ACH:Execute(L["ArkInventory"], nil, 5, function() DoctorioUI:Setup_ArkInventory() E:StaticPopup_Show('DoctorioUI_RL') end, nil, true)
+	DoctorioUI.Options.args.profiles.args.addonGroup.args.mrt = ACH:Execute(L["Method Raid Tools"], nil, 6, function() DoctorioUI:Setup_MRT() E:StaticPopup_Show('DoctorioUI_RL') end, nil, true)
 
 	-- WeakAuras
 	DoctorioUI.Options.args.weakauras = ACH:Group(L["WeakAuras"], nil, 5)

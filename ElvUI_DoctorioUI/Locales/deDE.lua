@@ -3,36 +3,33 @@ if not L then return end
 
 -- Installer Frame
 L["/doctorioui config -> WeakAuras tab"] = true
-L["ArkInventory"] = true
-L["BigWigs"] = true
-L["Class WeakAuras for all classes and specs can be found in:"] = true
-L["Details"] = true
+L["Class WeakAuras for all classes and specs can be found in:"] = "WeakAuren für alle Klassen und Specs findest du in:"
 L["ElvUI"] = true
-L["Feel free to join our community Discord for support and social chats."] = true
+L["Feel free to join our community Discord for support and social chats."] = "Du kannst unserer Discord-Community beitreten, um Unterstützung zu erhalten und mit anderen zu chatten."
 L["Finished"] = "Fertig"
 L["Import ArkInventory"] = "ArkInventory importieren"
 L["Import BigWigs"] = "BigWigs importieren"
 L["Import Details"] = "Details importieren"
 L["Import ElvUI"] = "ElvUI importieren"
+L["Import MRT"] = "MRT importieren"
 L["Import OmniCD"] = "OmniCD importieren"
 L["Import Plater"] = "Plater importieren"
 L["Installation Complete"] = "Installation erfolgreich"
 L["Installation"] = true
-L["OmniCD"] = true
-L["Plater"] = true
-L["Please click the button below to apply Doctorios profile for ArkInventory."] = true
-L["Please click the button below to apply Doctorios profile for BigWigs."] = true
-L["Please click the button below to apply Doctorios profile for Details."] = true
-L["Please click the button below to apply Doctorios profile for ElvUI."] = true
-L["Please click the button below to apply Doctorios profile for OmniCD."] = true
-L["Please click the button below to get the Wago URL for Doctorios Plater profile."] = true
-L["Please read the steps carefully before clicking any buttons."] = true
-L["Recommended step. Should not be skipped."] = true
+L["Please click the button below to apply Doctorios profile for ArkInventory."] = "Bitte klicke auf den Button unten, um das Profil von Doctorio für ArkInventory anzuwenden."
+L["Please click the button below to apply Doctorios profile for BigWigs."] = "Bitte klicke auf den Button unten, um das Profil von Doctorio für BigWigs anzuwenden."
+L["Please click the button below to apply Doctorios profile for Details."] = "Bitte klicke auf den Button unten, um das Profil von Doctorio für Details anzuwenden."
+L["Please click the button below to apply Doctorios profile for ElvUI."] = "Bitte klicke auf den Button unten, um das Profil von Doctorio für ElvUI anzuwenden."
+L["Please click the button below to apply Doctorios profile for Method Raid Tools."] = "Bitte klicke auf den Button unten, um das Profil von Doctorio für Method Raid Tools anzuwenden."
+L["Please click the button below to apply Doctorios profile for OmniCD."] = "Bitte klicke auf den Button unten, um das Profil von Doctorio für OmniCD anzuwenden."
+L["Please click the button below to get the Wago URL for Doctorios Plater profile."] = "Bitte klicke auf den Button unten, um die Wago URL für Doctorios Plater Profil zu erhalten."
+L["Please read the steps carefully before clicking any buttons."] = "Bitte lesen die Schritte sorgfältig durch, bevor du auf einen Button klickst."
+L["Recommended step. Should not be skipped."] = "Empfohlener Schritt. Sollte nicht übersprungen werden."
 L["Skip and close the installer"] = "Installer überspringen"
-L["The DoctorioUI installer will guide you through some steps and apply the profiles of your choice."] = true
+L["The DoctorioUI installer will guide you through some steps and apply the profiles of your choice."] = "Das Installationsprogramm von DoctorioUI führt dich durch einige Schritte und wendet die von dir ausgewählten Profile an."
 L["Welcome"] = "Willkommen"
-L["You have completed the installation process, please click 'Finished' to reload the UI."] = true
-L["Your existing profiles will not change. The installer will create a fresh profile."] = true
+L["You have completed the installation process, please click 'Finished' to reload the UI."] = "Du hast den Installationsvorgang abgeschlossen. Klicken auf 'Fertig', um die Benutzeroberfläche neu zu laden."
+L["Your existing profiles will not change. The installer will create a fresh profile."] = "Deine bestehenden Profil werden nicht geändert. Das Installationsprogramm wird ein neues Profil erstellen."
 
 -- PopUps
 L["Reload required - continue?"] = "Neuladen erforderlich - fortfahren?"
@@ -79,6 +76,7 @@ L["Install"] = "Installieren"
 L["Links"] = true
 L["Mage"] = "Magier"
 L["Marksman"] = "Treffsicherheit"
+L["Method Raid Tools"] = true
 L["Mistweaver"] = "Nebelwirker"
 L["Monk"] = "Mönch"
 L["OmniCD"] = true
@@ -107,8 +105,9 @@ L["Windwalker"] = "Windläufer"
 L["Workshop"] = true
 
 -- Chat Prints
-L['ArkInventory profile has been set.'] = "Das ArkInventory Profile wurde aktiviert."
-L['OmniCD profile has been set.'] = "Das OmniCD Profile wurde aktiviert."
-L["BigWigs profile has been set."] = "Das BigWigs Profile wurde aktiviert."
-L["Details profile has been set."] = "Das Details Profile wurde aktiviert."
+L['ArkInventory profile has been set.'] = "Das ArkInventory Profil wurde aktiviert."
+L['OmniCD profile has been set.'] = "Das OmniCD Profil wurde aktiviert."
+L["BigWigs profile has been set."] = "Das BigWigs Profil wurde aktiviert."
+L["Details profile has been set."] = "Das Details Profil wurde aktiviert."
 L["Layout has been set."] = "Das Layout wurde aktiviert."
+L["Method Raid Tools profile has been set."] = "Das Method Raid Tools Profil wurde aktiviert."

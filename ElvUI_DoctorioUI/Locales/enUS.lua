@@ -3,10 +3,7 @@ if not L then return end
 
 -- Installer Frame
 L["/doctorioui config -> WeakAuras tab"] = true
-L["ArkInventory"] = true
-L["BigWigs"] = true
 L["Class WeakAuras for all classes and specs can be found in:"] = true
-L["Details"] = true
 L["ElvUI"] = true
 L["Feel free to join our community Discord for support and social chats."] = true
 L["Finished"] = true
@@ -18,12 +15,11 @@ L["Import OmniCD"] = true
 L["Import Plater"] = true
 L["Installation Complete"] = true
 L["Installation"] = true
-L["OmniCD"] = true
-L["Plater"] = true
 L["Please click the button below to apply Doctorios profile for ArkInventory."] = true
 L["Please click the button below to apply Doctorios profile for BigWigs."] = true
 L["Please click the button below to apply Doctorios profile for Details."] = true
 L["Please click the button below to apply Doctorios profile for ElvUI."] = true
+L["Please click the button below to apply Doctorios profile for Method Raid Tools."] = true
 L["Please click the button below to apply Doctorios profile for OmniCD."] = true
 L["Please click the button below to get the Wago URL for Doctorios Plater profile."] = true
 L["Please read the steps carefully before clicking any buttons."] = true
@@ -79,6 +75,7 @@ L["Install"] = true
 L["Links"] = true
 L["Mage"] = true
 L["Marksman"] = true
+L["Method Raid Tools"] = true
 L["Mistweaver"] = true
 L["Monk"] = true
 L["OmniCD"] = true
@@ -112,3 +109,4 @@ L['OmniCD profile has been set.'] = true
 L["BigWigs profile has been set."] = true
 L["Details profile has been set."] = true
 L["Layout has been set."] = true
+L["Method Raid Tools profile has been set."] = true

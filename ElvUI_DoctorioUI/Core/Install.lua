@@ -74,11 +74,19 @@ DoctorioUI.InstallerData = {
 			PluginInstallFrame.Option1:SetText(L["Import ArkInventory"])
 		end,
 		[8] = function()
+			PluginInstallFrame.SubTitle:SetText(L["Method Raid Tools"])
+			PluginInstallFrame.Desc1:SetText(L["Please click the button below to apply Doctorios profile for Method Raid Tools."])
+			PluginInstallFrame.Desc2:SetText(format('|cff4beb2c%s', L["Recommended step. Should not be skipped."]))
+			PluginInstallFrame.Option1:Show()
+			PluginInstallFrame.Option1:SetScript('OnClick', function() DoctorioUI:Setup_MRT() end)
+			PluginInstallFrame.Option1:SetText(L["Import MRT"])
+		end,
+		[9] = function()
 			PluginInstallFrame.SubTitle:SetText(L["WeakAuras"])
 			PluginInstallFrame.Desc1:SetText(L["Class WeakAuras for all classes and specs can be found in:"])
 			PluginInstallFrame.Desc2:SetText(L["/doctorioui config -> WeakAuras tab"])
 		end,
-		[9] = function()
+		[10] = function()
 			PluginInstallFrame.SubTitle:SetText(L["Installation Complete"])
 			PluginInstallFrame.Desc1:SetText(L["You have completed the installation process, please click 'Finished' to reload the UI."])
 			PluginInstallFrame.Desc2:SetText(L["Feel free to join our community Discord for support and social chats."])
@@ -99,8 +107,9 @@ DoctorioUI.InstallerData = {
 		[5] = L["OmniCD"],
 		[6] = L["BigWigs"],
 		[7] = L["ArkInventory"],
-		[8] = L["WeakAuras"],
-		[9] = L["Installation Complete"],
+		[8] = L["Method Raid Tools"],
+		[9] = L["WeakAuras"],
+		[10] = L["Installation Complete"],
 	},
 	-- Color of the title texts on the ride side (when not selected)
 	StepTitlesColor = {1, 1, 1},
