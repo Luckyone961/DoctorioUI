@@ -2,10 +2,13 @@ local L = ElvUI[1].Libs.ACL:NewLocale('ElvUI', 'enUS')
 if not L then return end
 
 -- Installer Frame
+L["/doctorioui config -> WeakAuras tab"] = true
 L["ArkInventory"] = true
 L["BigWigs"] = true
+L["Class WeakAuras for all classes and specs can be found in:"] = true
 L["Details"] = true
 L["ElvUI"] = true
+L["Feel free to join our community Discord for support and social chats."] = true
 L["Finished"] = true
 L["Import ArkInventory"] = true
 L["Import BigWigs"] = true
@@ -17,8 +20,19 @@ L["Installation Complete"] = true
 L["Installation"] = true
 L["OmniCD"] = true
 L["Plater"] = true
+L["Please click the button below to apply Doctorios profile for ArkInventory."] = true
+L["Please click the button below to apply Doctorios profile for BigWigs."] = true
+L["Please click the button below to apply Doctorios profile for Details."] = true
+L["Please click the button below to apply Doctorios profile for ElvUI."] = true
+L["Please click the button below to apply Doctorios profile for OmniCD."] = true
+L["Please click the button below to get the Wago URL for Doctorios Plater profile."] = true
+L["Please read the steps carefully before clicking any buttons."] = true
+L["Recommended step. Should not be skipped."] = true
 L["Skip and close the installer"] = true
+L["The DoctorioUI installer will guide you through some steps and apply the profiles of your choice."] = true
 L["Welcome"] = true
+L["You have completed the installation process, please click 'Finished' to reload the UI."] = true
+L["Your existing profiles will not change. The installer will create a fresh profile."] = true
 
 -- PopUps
 L["Reload required - continue?"] = true
