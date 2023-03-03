@@ -3,7 +3,7 @@ local DT = E:GetModule('DataTexts')
 
 -- Variables & Cache
 local format, print = format, print
-local ReloadUI = ReloadUI
+local C_UI_Reload = C_UI.Reload
 local SetCVar = SetCVar
 
 -- Chat print
@@ -16,7 +16,7 @@ E.PopupDialogs.DoctorioUI_RL = {
 	text = L["Reload required - continue?"],
 	button1 = ACCEPT,
 	button2 = CANCEL,
-	OnAccept = ReloadUI,
+	OnAccept = C_UI_Reload,
 	whileDead = 1,
 	hideOnEscape = false,
 }

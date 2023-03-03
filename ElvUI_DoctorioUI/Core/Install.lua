@@ -2,12 +2,12 @@ local DoctorioUI, E, L, V, P, G = unpack(select(2, ...))
 
 -- Variables & Cache
 local format = format
-local ReloadUI = ReloadUI
+local C_UI_Reload = C_UI.Reload
 
 -- Set install version to current DoctorioUI version
 local function InstallComplete()
 	E.global.DoctorioUI.install_version = DoctorioUI.Version
-	ReloadUI()
+	C_UI_Reload()
 end
 
 -- Installer table
