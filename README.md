@@ -1,4 +1,4 @@
-[![Discord](https://img.shields.io/discord/614097338964901898?label=Discord)](https://discord.gg/pjGTs3HpKX) [![YouTube](https://img.shields.io/badge/YouTube-Subscribe-red)](https://www.youtube.com/@DoctorioGaming)  
+[![Discord](https://img.shields.io/discord/614097338964901898?label=Discord)](https://discord.gg/pjGTs3HpKX) [![YouTube](https://img.shields.io/youtube/channel/subscribers/UCWy9ojqO0BgDBK__hFISKzA?style=social)](https://www.youtube.com/@DoctorioGaming)  
 
 #### **Profiles**  
 • [ArkInventory](https://www.curseforge.com/wow/addons/ark-inventory)  
