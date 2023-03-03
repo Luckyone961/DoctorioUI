@@ -23,14 +23,14 @@ L["Please click the button below to apply Doctorios profile for ElvUI."] = "Bitt
 L["Please click the button below to apply Doctorios profile for Method Raid Tools."] = "Bitte klicke auf den Button unten, um das Profil von Doctorio für Method Raid Tools anzuwenden."
 L["Please click the button below to apply Doctorios profile for OmniCD."] = "Bitte klicke auf den Button unten, um das Profil von Doctorio für OmniCD anzuwenden."
 L["Please click the button below to get the Wago URL for Doctorios Plater profile."] = "Bitte klicke auf den Button unten, um die Wago URL für Doctorios Plater Profil zu erhalten."
-L["Please read the steps carefully before clicking any buttons."] = "Bitte lesen die Schritte sorgfältig durch, bevor du auf einen Button klickst."
+L["Please read the steps carefully before clicking any buttons."] = "Bitte lese die Schritte sorgfältig durch, bevor du auf einen Button klickst."
 L["Recommended step. Should not be skipped."] = "Empfohlener Schritt. Sollte nicht übersprungen werden."
 L["Skip and close the installer"] = "Installer überspringen"
 L["The DoctorioUI installer will guide you through some steps and apply the profiles of your choice."] = "Das Installationsprogramm von DoctorioUI führt dich durch einige Schritte und wendet die von dir ausgewählten Profile an."
 L["This cannot be imported like the other AddOns and will override your existing profile."] = "MRT kann nicht wie andere AddOns importiert werden und wird dein aktuelles Profil überschreiben."
 L["Welcome"] = "Willkommen"
-L["You have completed the installation process, please click 'Finished' to reload the UI."] = "Du hast den Installationsvorgang abgeschlossen. Klicken auf 'Fertig', um die Benutzeroberfläche neu zu laden."
-L["Your existing profiles will not change. The installer will create a fresh profile."] = "Deine bestehenden Profil werden nicht geändert. Das Installationsprogramm wird ein neues Profil erstellen."
+L["You have completed the installation process, please click 'Finished' to reload the UI."] = "Du hast den Installationsvorgang abgeschlossen. Klicke auf 'Fertig', um die Benutzeroberfläche neu zu laden."
+L["Your existing profiles will not change. The installer will create a fresh profile."] = "Deine bestehenden Profile werden nicht geändert. Das Installationsprogramm wird ein neues Profil erstellen."
 
 -- PopUps
 L["Reload required - continue?"] = "Neuladen erforderlich - fortfahren?"
