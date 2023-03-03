@@ -27,6 +27,7 @@ L["Please read the steps carefully before clicking any buttons."] = "Bitte lesen
 L["Recommended step. Should not be skipped."] = "Empfohlener Schritt. Sollte nicht übersprungen werden."
 L["Skip and close the installer"] = "Installer überspringen"
 L["The DoctorioUI installer will guide you through some steps and apply the profiles of your choice."] = "Das Installationsprogramm von DoctorioUI führt dich durch einige Schritte und wendet die von dir ausgewählten Profile an."
+L["This cannot be imported like the other AddOns and will override your existing profile."] = "MRT kann nicht wie andere AddOns importiert werden und wird dein aktuelles Profil überschreiben."
 L["Welcome"] = "Willkommen"
 L["You have completed the installation process, please click 'Finished' to reload the UI."] = "Du hast den Installationsvorgang abgeschlossen. Klicken auf 'Fertig', um die Benutzeroberfläche neu zu laden."
 L["Your existing profiles will not change. The installer will create a fresh profile."] = "Deine bestehenden Profil werden nicht geändert. Das Installationsprogramm wird ein neues Profil erstellen."

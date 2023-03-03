@@ -26,6 +26,7 @@ L["Please read the steps carefully before clicking any buttons."] = true
 L["Recommended step. Should not be skipped."] = true
 L["Skip and close the installer"] = true
 L["The DoctorioUI installer will guide you through some steps and apply the profiles of your choice."] = true
+L["This cannot be imported like the other AddOns and will override your existing profile."] = true
 L["Welcome"] = true
 L["You have completed the installation process, please click 'Finished' to reload the UI."] = true
 L["Your existing profiles will not change. The installer will create a fresh profile."] = true
