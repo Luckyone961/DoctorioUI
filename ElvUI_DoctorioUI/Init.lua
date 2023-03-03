@@ -23,7 +23,7 @@ _G[addon] = Engine
 -- Constants
 DoctorioUI.Config = {}
 DoctorioUI.Logo = 'Interface\\AddOns\\ElvUI_DoctorioUI\\Media\\Textures\\Logo.tga'
-DoctorioUI.Name = '|cffC41E3ADoctorioUI|r'
+DoctorioUI.Name = '|cffFF7C0ADoctorioUI|r'
 DoctorioUI.RequiredVersion = 13.27
 DoctorioUI.Version = GetAddOnMetadata(addon, 'Version')
 

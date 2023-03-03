@@ -12,7 +12,7 @@ end
 
 -- Installer table
 DoctorioUI.InstallerData = {
-	Title = format('|cffC41E3A%s %s|r', DoctorioUI.Name, L["Installation"]),
+	Title = format('|cffFF7C0A%s %s|r', DoctorioUI.Name, L["Installation"]),
 	Name = DoctorioUI.Name,
 	tutorialImage = DoctorioUI.Logo,
 	Pages = {
