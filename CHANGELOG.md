@@ -1,3 +1,10 @@
+### Version 1.01 [In Development]
+Added FUNDING  
+Added missing translations  
+Updated deDE (Badbrain)  
+Updated deDE (SlayerEGT)  
+Updated README  
+___
 ### Version 1.00 [03-03-2023]
 Added ArkInventory profile  
 Added BigWigs profile  
