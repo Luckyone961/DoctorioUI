@@ -50,6 +50,7 @@ function DoctorioUI:Setup_AuraFilters()
 	E.global["unitframe"]["aurawatch"]["DRUID"][33763]["style"] = "texturedIcon"
 	E.global["unitframe"]["aurawatch"]["DRUID"][48438]["point"] = "TOP"
 	E.global["unitframe"]["aurawatch"]["DRUID"][48438]["style"] = "texturedIcon"
+	E.global["unitframe"]["aurawatch"]["DRUID"][48438]["xOffset"] = -26
 	E.global["unitframe"]["aurawatch"]["DRUID"][102342]["anyUnit"] = false
 	E.global["unitframe"]["aurawatch"]["DRUID"][102342]["color"]["b"] = 1
 	E.global["unitframe"]["aurawatch"]["DRUID"][102342]["color"]["g"] = 1
@@ -78,6 +79,7 @@ function DoctorioUI:Setup_AuraFilters()
 	E.global["unitframe"]["aurawatch"]["DRUID"][155777]["point"] = "BOTTOMRIGHT"
 	E.global["unitframe"]["aurawatch"]["DRUID"][155777]["style"] = "texturedIcon"
 	E.global["unitframe"]["aurawatch"]["DRUID"][155777]["xOffset"] = -20
+	E.global["unitframe"]["aurawatch"]["DRUID"][157982]["enabled"] = false
 	E.global["unitframe"]["aurawatch"]["DRUID"][157982]["style"] = "texturedIcon"
 	E.global["unitframe"]["aurawatch"]["DRUID"][188550]["point"] = "CENTER"
 	E.global["unitframe"]["aurawatch"]["DRUID"][188550]["style"] = "texturedIcon"
@@ -85,6 +87,7 @@ function DoctorioUI:Setup_AuraFilters()
 	E.global["unitframe"]["aurawatch"]["DRUID"][200389]["style"] = "texturedIcon"
 	E.global["unitframe"]["aurawatch"]["DRUID"][203554]["point"] = "CENTER"
 	E.global["unitframe"]["aurawatch"]["DRUID"][203554]["style"] = "texturedIcon"
+	E.global["unitframe"]["aurawatch"]["DRUID"][203554]["xOffset"] = -52
 	E.global["unitframe"]["aurawatch"]["DRUID"][207386]["enabled"] = false
 	E.global["unitframe"]["aurawatch"]["DRUID"][207386]["style"] = "texturedIcon"
 	E.global["unitframe"]["aurawatch"]["DRUID"][391891]["point"] = "TOPRIGHT"
