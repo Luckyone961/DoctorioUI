@@ -1,3 +1,6 @@
+### Version 1.02 [In Development]
+Added bug report to links tab  
+___
 ### Version 1.01 [06-03-2023]
 Added FUNDING  
 Added missing translations  

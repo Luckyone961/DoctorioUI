@@ -47,6 +47,7 @@ L["Beastmaster"] = true
 L["BigWigs"] = true
 L["Blood"] = true
 L["Brewmaster"] = true
+L["Bug Report"] = true
 L["Death Knight"] = true
 L["Demon Hunter"] = true
 L["Demonology"] = true
