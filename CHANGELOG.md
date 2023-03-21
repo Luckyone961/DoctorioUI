@@ -1,6 +1,8 @@
 ### Version 1.02 [In Development]
 Added bug report to links tab  
 Fixes for upcoming Blizzard backend changes  
+Updated for ElvUI 13.28+  
+Updated TOC for patch 10.0.7  
 ___
 ### Version 1.01 [06-03-2023]
 Added FUNDING  
