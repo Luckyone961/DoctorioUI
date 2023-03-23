@@ -1,4 +1,4 @@
-### Version 1.02 [In Development]
+### Version 1.02 [23-03-2023]
 Added bug report to links tab  
 Fixes for upcoming Blizzard backend changes  
 Updated for ElvUI 13.29+  
