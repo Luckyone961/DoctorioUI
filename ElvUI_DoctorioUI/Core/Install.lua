@@ -1,4 +1,4 @@
-local DoctorioUI, E, L, V, P, G = unpack(select(2, ...))
+local DoctorioUI, E, L, V, P, G = unpack((select(2, ...)))
 
 -- Variables & Cache
 local format = format

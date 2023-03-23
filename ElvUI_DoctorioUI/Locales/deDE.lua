@@ -48,6 +48,7 @@ L["Beastmaster"] = "Tierherrschaft"
 L["BigWigs"] = true
 L["Blood"] = "Blut"
 L["Brewmaster"] = "Braumeister"
+L["Bug Report"] = "Fehler melden"
 L["Death Knight"] = "Todesritter"
 L["Demon Hunter"] = "Dämonenjäger"
 L["Demonology"] = "Dämonologie"
