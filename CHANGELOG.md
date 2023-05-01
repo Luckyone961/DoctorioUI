@@ -1,5 +1,7 @@
 ### Version 1.03 [In Development]
 Added support for patch 10.1  
+Updated for ElvUI 13.30+  
+Updated TOC for patch 10.1  
 ___
 ### Version 1.02 [23-03-2023]
 Added bug report to links tab  
