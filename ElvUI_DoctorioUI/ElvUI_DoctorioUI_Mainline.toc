@@ -1,10 +1,13 @@
-## Interface: 100007
+## Interface: 100100
 ## Author: Luckyone
-## Version: 1.02
+## Version: 1.03
 ## Title: |cff1784d1ElvUI|r |cffFF7C0ADoctorioUI|r
 ## Notes: Doctorio's Interface
 ## RequiredDeps: ElvUI
 ## DefaultState: enabled
+
+## AddonCompartmentFunc: DoctorioUI_OnAddonCompartmentClick
+## IconTexture: Interface\AddOns\ElvUI_DoctorioUI\Media\Textures\Compartment.tga
 
 Init.lua
 
