@@ -6,6 +6,9 @@
 ## RequiredDeps: ElvUI
 ## DefaultState: enabled
 
+## AddonCompartmentFunc: DoctorioUI_OnAddonCompartmentClick
+## IconTexture: Interface\AddOns\ElvUI_DoctorioUI\Media\Textures\Compartment.tga
+
 Init.lua
 
 Locales\load_locales.xml
