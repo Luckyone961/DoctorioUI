@@ -1,3 +1,9 @@
+### Version 1.04 [20-05-2023]
+Updated ArkInventory profile  
+Updated BigWigs profile (including Aberrus bosses)  
+Updated ElvUI profile  
+Updated OmniCD profile  
+___
 ### Version 1.03 [02-05-2023]
 Added support for patch 10.1  
 Updated for ElvUI 13.30+  
