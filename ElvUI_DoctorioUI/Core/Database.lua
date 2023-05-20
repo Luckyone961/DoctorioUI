@@ -287,15 +287,10 @@ function DoctorioUI:Setup_ElvUI()
 	E.db["general"]["minimap"]["icons"]["difficulty"]["scale"] = 0.8
 	E.db["general"]["minimap"]["icons"]["difficulty"]["xOffset"] = 11
 	E.db["general"]["minimap"]["icons"]["difficulty"]["yOffset"] = -5
-	E.db["general"]["minimap"]["icons"]["lfgEye"]["position"] = "BOTTOMLEFT"
-	E.db["general"]["minimap"]["icons"]["lfgEye"]["scale"] = 1.25
-	E.db["general"]["minimap"]["icons"]["lfgEye"]["xOffset"] = -50
-	E.db["general"]["minimap"]["icons"]["lfgEye"]["yOffset"] = 0
 	E.db["general"]["minimap"]["icons"]["mail"]["scale"] = 2
 	E.db["general"]["minimap"]["icons"]["mail"]["texture"] = "Mail1"
 	E.db["general"]["minimap"]["icons"]["mail"]["xOffset"] = -2
 	E.db["general"]["minimap"]["icons"]["mail"]["yOffset"] = 2
-	E.db["general"]["minimap"]["icons"]["queueStatus"]["enable"] = false
 	E.db["general"]["minimap"]["size"] = 200
 	E.db["general"]["objectiveFrameAutoHide"] = false
 	E.db["general"]["objectiveFrameHeight"] = 400
@@ -368,6 +363,7 @@ function DoctorioUI:Setup_ElvUI()
 	E.db["movers"]["ObjectiveFrameMover"] = "TOPRIGHT,ElvUIParent,TOPRIGHT,-163,-325"
 	E.db["movers"]["PetAB"] = "BOTTOMRIGHT,ElvUIParent,BOTTOMRIGHT,-1,376"
 	E.db["movers"]["PowerBarContainerMover"] = "TOP,ElvUIParent,TOP,0,-76"
+	E.db["movers"]["QueueStatusMover"] = "TOPRIGHT,UIParent,TOPRIGHT,-168,-192"
 	E.db["movers"]["ReputationBarMover"] = "TOPRIGHT,ElvUIParent,TOPRIGHT,-2,-243"
 	E.db["movers"]["RightChatMover"] = "BOTTOMRIGHT,ElvUIParent,BOTTOMRIGHT,-1,2"
 	E.db["movers"]["ShiftAB"] = "BOTTOM,UIParent,BOTTOM,-238,316"
