@@ -501,7 +501,7 @@ function DoctorioUI:Setup_BigWigs()
 		['posy'] = 616.5560653676948,
 	}
 
-	-- Boss DB
+	-- Boss DB Vault of the Incarnates
 	BigWigs3DB['namespaces']['BigWigs_Bosses_Eranog'] = BigWigs3DB['namespaces']['BigWigs_Bosses_Eranog'] or {}
 	BigWigs3DB['namespaces']['BigWigs_Bosses_Eranog']['profiles'] = BigWigs3DB['namespaces']['BigWigs_Bosses_Eranog']['profiles'] or {}
 	BigWigs3DB['namespaces']['BigWigs_Bosses_Eranog']['profiles'][name] = {
@@ -564,6 +564,118 @@ function DoctorioUI:Setup_BigWigs()
 		[377612] = 2801911,
 		[381615] = 2801911,
 		['custom_off_219878'] = true,
+	}
+
+	-- Boss DB Abberus
+	BigWigs3DB['namespaces']['BigWigs_Bosses_Kazzara, the Hellforged'] = BigWigs3DB['namespaces']['BigWigs_Bosses_Kazzara, the Hellforged'] or {}
+	BigWigs3DB['namespaces']['BigWigs_Bosses_Kazzara, the Hellforged']['profiles'] = BigWigs3DB['namespaces']['BigWigs_Bosses_Kazzara, the Hellforged']['profiles'] or {}
+	BigWigs3DB['namespaces']['BigWigs_Bosses_Kazzara, the Hellforged']['profiles'][name] = {
+		[407069] = 3850487,
+		[406530] = 2801911,
+		[402421] = 2801911,
+		[400430] = 2801911,
+		[401319] = 2801911,
+		[404743] = 2802935,
+		[407196] = 3850487,
+		[403326] = 2801911,
+	}
+
+	BigWigs3DB['namespaces']['BigWigs_Bosses_The Forgotten Experiments'] = BigWigs3DB['namespaces']['BigWigs_Bosses_The Forgotten Experiments'] or {}
+	BigWigs3DB['namespaces']['BigWigs_Bosses_The Forgotten Experiments']['profiles'] = BigWigs3DB['namespaces']['BigWigs_Bosses_The Forgotten Experiments']['profiles'] or {}
+	BigWigs3DB['namespaces']['BigWigs_Bosses_The Forgotten Experiments']['profiles'][name] = {
+		["custom_on_407327"] = false,
+		[407327] = 3850487,
+		[406227] = 2801911,
+		[405392] = 4178167,
+		[405492] = 2801910,
+	}
+
+	BigWigs3DB['namespaces']['BigWigs_Bosses_The Amalgamation Chamber'] = BigWigs3DB['namespaces']['BigWigs_Bosses_The Amalgamation Chamber'] or {}
+	BigWigs3DB['namespaces']['BigWigs_Bosses_The Amalgamation Chamber']['profiles'] = BigWigs3DB['namespaces']['BigWigs_Bosses_The Amalgamation Chamber']['profiles'] or {}
+	BigWigs3DB['namespaces']['BigWigs_Bosses_The Amalgamation Chamber']['profiles'][name] = {
+		[405437] = 2801911,
+		[404732] = 2801911,
+		[404896] = 2801911,
+		[405036] = 3850487,
+		[409385] = 2801911,
+		[405914] = 2802935,
+		[403101] = 2801911,
+		[408193] = 2801911,
+		[406783] = 2801911,
+		[403699] = 2802934,
+		[403459] = 2801911,
+		[405642] = 3850487,
+		[407640] = 2801911,
+		[403203] = 2802934,
+	}
+
+	BigWigs3DB['namespaces']['BigWigs_Bosses_Assault of the Zaqali'] = BigWigs3DB['namespaces']['BigWigs_Bosses_Assault of the Zaqali'] or {}
+	BigWigs3DB['namespaces']['BigWigs_Bosses_Assault of the Zaqali']['profiles'] = BigWigs3DB['namespaces']['BigWigs_Bosses_Assault of the Zaqali']['profiles'] or {}
+	BigWigs3DB['namespaces']['BigWigs_Bosses_Assault of the Zaqali']['profiles'][name] = {
+		[401258] = 2801910,
+	}
+
+
+	BigWigs3DB['namespaces']['BigWigs_Bosses_Rashok, the Elder'] = BigWigs3DB['namespaces']['BigWigs_Bosses_Rashok, the Elder'] or {}
+	BigWigs3DB['namespaces']['BigWigs_Bosses_Rashok, the Elder']['profiles'] = BigWigs3DB['namespaces']['BigWigs_Bosses_Rashok, the Elder']['profiles'] or {}
+	BigWigs3DB['namespaces']['BigWigs_Bosses_Rashok, the Elder']['profiles'][name] = {
+		[405316] = 2801910,
+		[410070] = 2801910,
+		[407641] = 3133687,
+	}
+
+	BigWigs3DB['namespaces']['BigWigs_Bosses_The Vigilant Steward, Zskarn'] = BigWigs3DB['namespaces']['BigWigs_Bosses_The Vigilant Steward, Zskarn'] or {}
+	BigWigs3DB['namespaces']['BigWigs_Bosses_The Vigilant Steward, Zskarn']['profiles'] = BigWigs3DB['namespaces']['BigWigs_Bosses_The Vigilant Steward, Zskarn']['profiles'] or {}
+	BigWigs3DB['namespaces']['BigWigs_Bosses_The Vigilant Steward, Zskarn']['profiles'][name] = {
+		[409942] = 2801911,
+		[406725] = 2801911,
+		[404010] = 3850487,
+		[405736] = 2867447,
+		[405592] = 2801911,
+		[405812] = 2801911,
+		[403978] = 2801911,
+		[404942] = 2802934,
+		[406678] = 2801911,
+	}
+
+	BigWigs3DB['namespaces']['BigWigs_Bosses_Magmorax'] = BigWigs3DB['namespaces']['BigWigs_Bosses_Magmorax'] or {}
+	BigWigs3DB['namespaces']['BigWigs_Bosses_Magmorax']['profiles'] = BigWigs3DB['namespaces']['BigWigs_Bosses_Magmorax']['profiles'] or {}
+	BigWigs3DB['namespaces']['BigWigs_Bosses_Magmorax']['profiles'][name] = {
+		[408839] = 2801911,
+		[404846] = 2802935,
+		[403740] = 2801911,
+		[402994] = 3850487,
+		[409093] = 2801911,
+		[408358] = 2801910,
+		[411182] = 3850487,
+		[403671] = 2801911,
+		[407879] = 2801911,
+	}
+
+	BigWigs3DB['namespaces']['BigWigs_Bosses_Echo of Neltharion'] = BigWigs3DB['namespaces']['BigWigs_Bosses_Echo of Neltharion'] or {}
+	BigWigs3DB['namespaces']['BigWigs_Bosses_Echo of Neltharion']['profiles'] = BigWigs3DB['namespaces']['BigWigs_Bosses_Echo of Neltharion']['profiles'] or {}
+	BigWigs3DB['namespaces']['BigWigs_Bosses_Echo of Neltharion']['profiles'][name] = {
+		[402115] = 2801911,
+		[401010] = 3850487,
+		[401998] = 2806007,
+		[402902] = 2801911,
+		[410953] = 6996215,
+		[407221] = 6996215,
+		[405433] = 3129591,
+	}
+
+	BigWigs3DB['namespaces']['BigWigs_Bosses_Scalecommander Sarkareth'] = BigWigs3DB['namespaces']['BigWigs_Bosses_Scalecommander Sarkareth'] or {}
+	BigWigs3DB['namespaces']['BigWigs_Bosses_Scalecommander Sarkareth']['profiles'] = BigWigs3DB['namespaces']['BigWigs_Bosses_Scalecommander Sarkareth']['profiles'] or {}
+	BigWigs3DB['namespaces']['BigWigs_Bosses_Scalecommander Sarkareth']['profiles'][name] = {
+		[401215] = 0,
+		[408457] = 2801910,
+		[401340] = 2801910,
+		[411241] = 3129591,
+		[401330] = 3133687,
+		[408429] = 3129591,
+		[411238] = 2801910,
+		[404027] = 3129591,
+		[401810] = 2801911,
 	}
 
 	-- Disable LibDualSpec to set the profile
