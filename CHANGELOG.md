@@ -1,3 +1,6 @@
+### Version 1.05 [21-05-2023]
+Updated BigWigs profile (Aberrus bar colors)  
+___
 ### Version 1.04 [20-05-2023]
 Updated ArkInventory profile  
 Updated BigWigs profile (including Aberrus bosses)  
