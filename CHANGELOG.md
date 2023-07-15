@@ -1,3 +1,11 @@
+### Version 1.06 [15-07-2023]
+Added Augmentation Evoker WA link  
+Updated Blacklist  
+Updated Whitelist  
+Updated Evoker list  
+Updated TOC for patch 10.1.5  
+Updated for ElvUI 13.38+  
+___
 ### Version 1.05 [21-05-2023]
 Updated BigWigs profile (Aberrus bar colors)  
 ___

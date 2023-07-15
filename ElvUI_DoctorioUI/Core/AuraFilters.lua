@@ -5,15 +5,11 @@ local pairs = pairs
 
 -- Aura Filters DB
 function DoctorioUI:Setup_AuraFilters()
-	----------------------------------------------------------------------
-	----------------------- Aura Filters Creation ------------------------
-	----------------------------------------------------------------------
+	-- Aura Filters Creation
 	E.global["unitframe"]["aurafilters"] = E.global["unitframe"]["aurafilters"] or {}
 	E.global["unitframe"]["aurafilters"]["Blacklist"] = E.global["unitframe"]["aurafilters"]["Blacklist"] or {}
 	E.global["unitframe"]["aurafilters"]["Whitelist"] = E.global["unitframe"]["aurafilters"]["Whitelist"] or {}
-	----------------------------------------------------------------------
-	----------------------- Class Filters Creation -----------------------
-	----------------------------------------------------------------------
+	-- Class Filters Creation
 	E.global["unitframe"]["aurawatch"] = E.global["unitframe"]["aurawatch"] or {}
 	E.global["unitframe"]["aurawatch"]["DRUID"] = E.global["unitframe"]["aurawatch"]["DRUID"] or {}
 	E.global["unitframe"]["aurawatch"]["EVOKER"] = E.global["unitframe"]["aurawatch"]["EVOKER"] or {}
@@ -22,17 +18,15 @@ function DoctorioUI:Setup_AuraFilters()
 	E.global["unitframe"]["aurawatch"]["PRIEST"] = E.global["unitframe"]["aurawatch"]["PRIEST"] or {}
 	E.global["unitframe"]["aurawatch"]["ROGUE"] = E.global["unitframe"]["aurawatch"]["ROGUE"] or {}
 	E.global["unitframe"]["aurawatch"]["SHAMAN"] = E.global["unitframe"]["aurawatch"]["SHAMAN"] or {}
-	----------------------------------------------------------------------
-	----------------------- Do Not Touch This Part -----------------------
-	----------------------------------------------------------------------
+
 	-- Blacklist IDs
-	for _, idB in pairs({ 45181, 114216, 328605, 371070, 372514, 372517, 373681, 374609, 374864, 375458, 377612, 377780, 382912, 384050, 387441, 387847, 390435, 390569, 392193, 396023, 396085, 396106, 396109, 396113, 396201, 396212, 396222, 396233 }) do
+	for _, idB in pairs({ 114216, 114216, 157131, 157131, 25771, 264689, 264689, 328605, 328605, 371070, 371070, 372514, 372514, 372517, 372517, 372648, 372648, 373681, 373681, 374466, 374466, 374609, 374609, 374864, 374864, 375458, 375458, 377612, 377612, 377780, 377780, 382912, 382912, 384050, 384050, 387441, 387441, 387847, 387847, 390435, 390435, 390569, 390569, 392193, 392193, 393879, 393879, 396023, 396023, 396085, 396085, 396106, 396106, 396109, 396109, 396113, 396113, 396201, 396201, 396212, 396212, 396222, 396222, 396233, 396233, 401383, 401383, 401525, 401525, 401718, 401718, 401809, 401809, 402052, 402052, 402617, 402617, 403655, 403655, 403747, 403747, 403978, 403978, 405394, 405394, 407302, 407302, 407329, 407329, 407475, 407475, 407576, 407576, 407917, 407917, 408204, 408204, 410247, 410247, 410642, 410642, 413070, 413070, 45181, 45181 }) do
 		E.global.unitframe.aurafilters.Blacklist.spells[idB] = {}
 		E.global.unitframe.aurafilters.Blacklist.spells[idB] = { enable = true, priority = 0 }
 	end
 
 	-- Whitelist IDs
-	for _, idW in pairs({ 2825, 31821, 32182, 62618, 80353, 90355, 97462, 196718, 325174, 390386 }) do
+	for _, idW in pairs({ 196718, 2825, 31821, 32182, 325174, 390386, 62618, 80353, 90355, 97462 }) do
 		E.global.unitframe.aurafilters.Whitelist.spells[idW] = {}
 		E.global.unitframe.aurafilters.Whitelist.spells[idW] = { enable = false }
 	end
@@ -93,13 +87,14 @@ function DoctorioUI:Setup_AuraFilters()
 	E.global["unitframe"]["aurawatch"]["DRUID"][391891]["point"] = "TOPRIGHT"
 	E.global["unitframe"]["aurawatch"]["DRUID"][391891]["style"] = "texturedIcon"
 
-	for _, idEvoker in pairs({ 355941, 357170, 363502, 364343, 366155, 367364, 373267, 376788 }) do
+	for _, idEvoker in pairs({ 355941, 357170, 357170, 357170, 360827, 363502, 363502, 364343, 364343, 366155, 367364, 373267, 373267, 376788, 395152, 395296, 406732, 406732, 410089, 410089 }) do
 		E.global["unitframe"]["aurawatch"]["EVOKER"][idEvoker] = E.global["unitframe"]["aurawatch"]["EVOKER"][idEvoker] or {}
 	end
 	E.global["unitframe"]["aurawatch"]["EVOKER"][355941]["style"] = "texturedIcon"
 	E.global["unitframe"]["aurawatch"]["EVOKER"][357170]["point"] = "CENTER"
 	E.global["unitframe"]["aurawatch"]["EVOKER"][357170]["sizeOffset"] = 5
 	E.global["unitframe"]["aurawatch"]["EVOKER"][357170]["style"] = "texturedIcon"
+	E.global["unitframe"]["aurawatch"]["EVOKER"][360827]["style"] = "texturedIcon"
 	E.global["unitframe"]["aurawatch"]["EVOKER"][363502]["enabled"] = false
 	E.global["unitframe"]["aurawatch"]["EVOKER"][363502]["style"] = "texturedIcon"
 	E.global["unitframe"]["aurawatch"]["EVOKER"][364343]["sizeOffset"] = 5
@@ -109,6 +104,12 @@ function DoctorioUI:Setup_AuraFilters()
 	E.global["unitframe"]["aurawatch"]["EVOKER"][373267]["point"] = "BOTTOM"
 	E.global["unitframe"]["aurawatch"]["EVOKER"][373267]["style"] = "texturedIcon"
 	E.global["unitframe"]["aurawatch"]["EVOKER"][376788]["style"] = "texturedIcon"
+	E.global["unitframe"]["aurawatch"]["EVOKER"][395152]["style"] = "texturedIcon"
+	E.global["unitframe"]["aurawatch"]["EVOKER"][395296]["enabled"] = false
+	E.global["unitframe"]["aurawatch"]["EVOKER"][406732]["point"] = "BOTTOM"
+	E.global["unitframe"]["aurawatch"]["EVOKER"][406732]["style"] = "texturedIcon"
+	E.global["unitframe"]["aurawatch"]["EVOKER"][410089]["sizeOffset"] = 5
+	E.global["unitframe"]["aurawatch"]["EVOKER"][410089]["style"] = "texturedIcon"
 
 	for _, idMonk in pairs({ 115175, 116841, 116849, 119611, 124682, 191840, 325209 }) do
 		E.global["unitframe"]["aurawatch"]["MONK"][idMonk] = E.global["unitframe"]["aurawatch"]["MONK"][idMonk] or {}

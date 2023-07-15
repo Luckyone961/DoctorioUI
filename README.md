@@ -4,7 +4,7 @@
 • [ArkInventory](https://www.curseforge.com/wow/addons/ark-inventory)  
 • [BigWigs](https://www.curseforge.com/wow/addons/big-wigs), [LittleWigs](https://www.curseforge.com/wow/addons/little-wigs)  
 • [Details](https://www.curseforge.com/wow/addons/details)  
-• [ElvUI](https://www.tukui.org/welcome.php)  
+• [ElvUI](https://www.tukui.org/)  
 • [Method Raid Tools](https://www.curseforge.com/wow/addons/method-raid-tools)  
 • [OmniCD](https://www.curseforge.com/wow/addons/omnicd)  
 • [Plater](https://www.curseforge.com/wow/addons/plater-nameplates)  
@@ -16,7 +16,7 @@
 
 #### **Required AddOns**  
 • The most recent ElvUI version. You need to stay up-to-date.  
-• **Download link:** [Click here (Redirect to Tukui.org)](https://www.tukui.org/welcome.php)  
+• **Download link:** [Click here (Redirect to Tukui.org)](https://www.tukui.org/)  
 
 #### **Doctorio WeakAuras**  
 • **Profile link:** [Click here (Redirect to Wago.io)](https://wago.io/p/Doctorio)  
