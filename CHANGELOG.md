@@ -1,4 +1,5 @@
 ### Version 1.06 [15-07-2023]
+Added Augmentation Evoker WA link  
 Updated Blacklist  
 Updated Whitelist  
 Updated Evoker list  
