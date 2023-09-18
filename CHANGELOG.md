@@ -1,3 +1,7 @@
+### Version 1.07 [18-09-2023]
+Updated TOC for patch 10.1.7  
+Updated for ElvUI 13.40+  
+___
 ### Version 1.06 [15-07-2023]
 Added Augmentation Evoker WA link  
 Updated Blacklist  
