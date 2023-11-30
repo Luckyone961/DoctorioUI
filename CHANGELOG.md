@@ -1,3 +1,10 @@
+### Version 1.09 [30-11-2023]
+Updated BigWigs profile (including Amirdrassil bosses)  
+Updated ElvUI profile  
+Updated OmniCD profile  
+Updated Workshop link  
+Updated Discord link  
+___
 ### Version 1.08 [17-11-2023]
 Updated TOC for patch 10.2.0  
 Updated for ElvUI 13.52+  

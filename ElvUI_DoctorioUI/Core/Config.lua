@@ -30,8 +30,8 @@ function DoctorioUI:Config()
 	DoctorioUI.Options.args.links = ACH:Group(L["Links"], nil, 3)
 	DoctorioUI.Options.args.links.args.header = ACH:Header(L["Links"], 1)
 	DoctorioUI.Options.args.links.args.spacer = ACH:Spacer(2, 'full')
-	DoctorioUI.Options.args.links.args.discord = ACH:Input(L["Discord:"], nil, 3, nil, 'full', function() return 'https://doctorio.eu/discord' end)
-	DoctorioUI.Options.args.links.args.workshop = ACH:Input(L["Workshop"], nil, 4, nil, 'full', function() return 'https://doctorio.eu/workshop' end)
+	DoctorioUI.Options.args.links.args.discord = ACH:Input(L["Discord:"], nil, 3, nil, 'full', function() return 'https://doctorio.io/discord' end)
+	DoctorioUI.Options.args.links.args.workshop = ACH:Input(L["Workshop"], nil, 4, nil, 'full', function() return 'https://doctorio.io' end)
 	DoctorioUI.Options.args.links.args.ticket = ACH:Input(L["Bug Report"], nil, 5, nil, 'full', function() return 'https://github.com/Luckyone961/DoctorioUI/issues/new/choose' end)
 
 	-- Profiles
