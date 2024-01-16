@@ -1,5 +1,6 @@
 ### Version 1.10 [In Development]
 Updated BigWigs profile  
+Updated ElvUI profile  
 Updated TOC for patch 10.2.5  
 Updated LICENSE  
 ___
