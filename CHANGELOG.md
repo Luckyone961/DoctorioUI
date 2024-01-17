@@ -1,3 +1,9 @@
+### Version 1.10 [17-01-2024]
+Updated BigWigs profile  
+Updated ElvUI profile  
+Updated TOC for patch 10.2.5  
+Updated LICENSE  
+___
 ### Version 1.09 [30-11-2023]
 Updated BigWigs profile (including Amirdrassil bosses)  
 Updated ElvUI profile  
