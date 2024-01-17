@@ -1,4 +1,4 @@
-### Version 1.10 [In Development]
+### Version 1.10 [17-01-2024]
 Updated BigWigs profile  
 Updated ElvUI profile  
 Updated TOC for patch 10.2.5  
