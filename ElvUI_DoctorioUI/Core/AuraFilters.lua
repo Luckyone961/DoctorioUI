@@ -34,11 +34,7 @@ function DoctorioUI:Setup_AuraFilters()
 	-- Whitelist IDs
 	local whitelistIDs = { 196718, 2825, 31821, 32182, 325174, 390386, 62618, 80353, 90355, 97462 }
 
-	-- Add General
-	Add(blacklist, blacklistIDs, { enable = true, priority = 0 })
-	Add(whitelist, whitelistIDs, { enable = false })
-
-	-- Add Classes
+	-- Classes IDs
 	local druidIDs = { 774, 8936, 33763, 48438, 102342, 102351, 102352, 155777, 188550, 200389, 203554, 207386, 391891 }
 	local evokerIDs = { 355941, 357170, 357170, 357170, 360827, 363502, 363502, 364343, 364343, 366155, 367364, 373267, 373267, 376788, 395152, 395296, 406732, 406732, 410089, 410089 }
 	local monkIDs = { 115175, 116841, 116849, 119611, 124682, 191840, 325209 }
@@ -46,12 +42,17 @@ function DoctorioUI:Setup_AuraFilters()
 	local priestIDs = { 17, 139, 6788, 10060, 33206, 41635, 47788, 77489, 193065, 194384, 214206 }
 	local shamanIDs = { 974, 61295, 383648 }
 
-	Add(druid, druidIDs, { color = {} })
-	Add(evoker, evokerIDs)
-	Add(monk, monkIDs)
-	Add(paladin, paladinIDs)
-	Add(priest, priestIDs)
-	Add(shaman, shamanIDs)
+	-- Add General
+	Add(blacklist, blacklistIDs, { enable = true, priority = 0 })
+	Add(whitelist, whitelistIDs, { enable = false })
+
+	-- Add Classes
+	Add(druid, druidIDs, { enabled = true, color = {} })
+	Add(evoker, evokerIDs, { enabled = true })
+	Add(monk, monkIDs, { enabled = true })
+	Add(paladin, paladinIDs, { enabled = true })
+	Add(priest, priestIDs, { enabled = true })
+	Add(shaman, shamanIDs, { enabled = true })
 
 	-- Druid
 	druid[774]["point"] = "BOTTOMRIGHT"
