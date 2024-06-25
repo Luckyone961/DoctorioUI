@@ -1,3 +1,6 @@
+### Version 1.12 [25-06-2024]
+Updated BigWigs profile  
+___
 ### Version 1.11 [08-05-2024]
 Updated TOC for patch 10.2.7  
 ___

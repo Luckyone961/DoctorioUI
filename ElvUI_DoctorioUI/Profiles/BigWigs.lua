@@ -59,44 +59,39 @@ function DoctorioUI:Setup_BigWigs()
 			},
 		},
 	}
-	BigWigs3DB['namespaces']['BigWigs_Plugins_Proximity']['profiles'] = BigWigs3DB['namespaces']['BigWigs_Plugins_Pull']['profiles'] or {}
-	BigWigs3DB['namespaces']['BigWigs_Plugins_Proximity']['profiles'][name] = {
-		['posx'] = 57.94432091105728,
-		['soundName'] = 'Sonar',
-		['font'] = 'Dreamspeak',
-		['fontName'] = 'Expressway',
-		['width'] = 131.6338653564453,
-		['posy'] = 602.9558584203769,
-		['lock'] = true,
-		['height'] = 119.9999618530273,
-		['disabled'] = true,
-	}
 
 	BigWigs3DB['namespaces']['BigWigs_Plugins_Bars']['profiles'] = BigWigs3DB['namespaces']['BigWigs_Plugins_Bars']['profiles'] or {}
 	BigWigs3DB['namespaces']['BigWigs_Plugins_Bars']['profiles'][name] = {
-		['BigWigsEmphasizeAnchor_y'] = 549.5556378888105,
+		['outline'] = 'OUTLINE',
 		['emphasize'] = false,
-		['BigWigsAnchor_width'] = 405,
 		['iconPosition'] = 'RIGHT',
 		['fill'] = true,
-		['BigWigsEmphasizeAnchor_height'] = 20.0000171661377,
 		['growup'] = true,
 		['fontName'] = 'Expressway',
-		['BigWigsAnchor_height'] = 24.9999885559082,
 		['visibleBarLimitEmph'] = 5,
-		['BigWigsAnchor_y'] = 236,
+		['fontSize'] = 14,
 		['emphasizeGrowup'] = true,
 		['spacing'] = 2,
-		['texture'] = 'Details Serenity',
-		['barStyle'] = 'ElvUI',
-		['BigWigsAnchor_x'] = 2,
-		['fontSizeEmph'] = 11,
-		['BigWigsEmphasizeAnchor_x'] = 608.733305687063,
-		['alignText'] = 'CENTER',
-		['outline'] = 'OUTLINE',
-		['BigWigsEmphasizeAnchor_width'] = 219.9999389648438,
-		['emphasizeRestart'] = false,
 		['emphasizeTime'] = 14,
+		['texture'] = 'Details Flat',
+		['barStyle'] = 'ElvUI',
+		['normalWidth'] = 406,
+		['normalHeight'] = 26,
+		['fontSizeEmph'] = 11,
+		['alignText'] = 'CENTER',
+		['expPosition'] = {
+			nil,
+			nil,
+			-6,
+			224,
+		},
+		['emphasizeRestart'] = false,
+		['normalPosition'] = {
+			'LEFT',
+			'LEFT',
+			2,
+			-238,
+		},
 	}
 
 	BigWigs3DB['namespaces']['BigWigs_Plugins_AutoReply']['profiles'] = BigWigs3DB['namespaces']['BigWigs_Plugins_AutoReply']['profiles'] or {}
@@ -132,7 +127,7 @@ function DoctorioUI:Setup_BigWigs()
 				},
 			},
 			-- Season 1
-			["BigWigs_Bosses_Terros"] = {
+			['BigWigs_Bosses_Terros'] = {
 				[376279] = {
 					0, -- [1]
 					0.960784375667572, -- [2]
@@ -154,7 +149,7 @@ function DoctorioUI:Setup_BigWigs()
 					0.9921569228172302, -- [3]
 				},
 			},
-			["BigWigs_Bosses_Sennarth, The Cold Breath"] = {
+			['BigWigs_Bosses_Sennarth, The Cold Breath'] = {
 				[371983] = {
 					1, -- [1]
 					0.8627451658248901, -- [2]
@@ -186,7 +181,7 @@ function DoctorioUI:Setup_BigWigs()
 					1, -- [3]
 				},
 			},
-			["BigWigs_Bosses_Kurog Grimtotem"] = {
+			['BigWigs_Bosses_Kurog Grimtotem'] = {
 				[374623] = {
 					0.4431372880935669, -- [1]
 					0.7372549176216125, -- [2]
@@ -293,7 +288,7 @@ function DoctorioUI:Setup_BigWigs()
 					0.7058823704719543, -- [3]
 				},
 			},
-			["BigWigs_Bosses_The Primal Council"] = {
+			['BigWigs_Bosses_The Primal Council'] = {
 				[397134] = {
 					0.6470588445663452, -- [1]
 					0.415686309337616, -- [2]
@@ -325,7 +320,7 @@ function DoctorioUI:Setup_BigWigs()
 					1, -- [3]
 				},
 			},
-			["BigWigs_Bosses_Eranog"] = {
+			['BigWigs_Bosses_Eranog'] = {
 				[390715] = {
 					0, -- [1]
 					1, -- [2]
@@ -347,7 +342,7 @@ function DoctorioUI:Setup_BigWigs()
 					0, -- [3]
 				},
 			},
-			["BigWigs_Bosses_Broodkeeper Diurna"] = {
+			['BigWigs_Bosses_Broodkeeper Diurna'] = {
 				[375889] = {
 					1, -- [1]
 					0, -- [2]
@@ -384,7 +379,7 @@ function DoctorioUI:Setup_BigWigs()
 					1, -- [3]
 				},
 			},
-			["BigWigs_Bosses_Raszageth the Storm-Eater"] = {
+			['BigWigs_Bosses_Raszageth the Storm-Eater'] = {
 				[386410] = {
 					1, -- [1]
 					0, -- [2]
@@ -452,7 +447,7 @@ function DoctorioUI:Setup_BigWigs()
 				},
 			},
 			-- Season 2
-			["BigWigs_Bosses_The Amalgamation Chamber"] = {
+			['BigWigs_Bosses_The Amalgamation Chamber'] = {
 				[407640] = {
 					0, -- [1]
 					0.3921568989753723, -- [2]
@@ -509,7 +504,7 @@ function DoctorioUI:Setup_BigWigs()
 					0, -- [3]
 				},
 			},
-			["BigWigs_Bosses_The Forgotten Experiments"] = {
+			['BigWigs_Bosses_The Forgotten Experiments'] = {
 				[406227] = {
 					0.6470588445663452, -- [1]
 					0.3803921937942505, -- [2]
@@ -551,7 +546,7 @@ function DoctorioUI:Setup_BigWigs()
 					0.1803921610116959, -- [3]
 				},
 			},
-			["BigWigs_Bosses_Kazzara, the Hellforged"] = {
+			['BigWigs_Bosses_Kazzara, the Hellforged'] = {
 				[404743] = {
 					0.5137255191802979, -- [1]
 					0.545098066329956, -- [2]
@@ -578,7 +573,7 @@ function DoctorioUI:Setup_BigWigs()
 					1, -- [3]
 				},
 			},
-			["BigWigs_Bosses_Echo of Neltharion"] = {
+			['BigWigs_Bosses_Echo of Neltharion'] = {
 				[402115] = {
 					0.9921569228172302, -- [1]
 					1, -- [2]
@@ -635,7 +630,7 @@ function DoctorioUI:Setup_BigWigs()
 					1, -- [3]
 				},
 			},
-			["BigWigs_Bosses_Rashok, the Elder"] = {
+			['BigWigs_Bosses_Rashok, the Elder'] = {
 				[405821] = {
 					1, -- [1]
 					0, -- [2]
@@ -667,7 +662,7 @@ function DoctorioUI:Setup_BigWigs()
 					1, -- [3]
 				},
 			},
-			["BigWigs_Bosses_Scalecommander Sarkareth"] = {
+			['BigWigs_Bosses_Scalecommander Sarkareth'] = {
 				[401680] = {
 					0.3843137621879578, -- [1]
 					0.5960784554481506, -- [2]
@@ -749,7 +744,7 @@ function DoctorioUI:Setup_BigWigs()
 					0, -- [3]
 				},
 			},
-			["BigWigs_Bosses_Assault of the Zaqali"] = {
+			['BigWigs_Bosses_Assault of the Zaqali'] = {
 				[410516] = {
 					1, -- [1]
 					0, -- [2]
@@ -766,7 +761,7 @@ function DoctorioUI:Setup_BigWigs()
 					0, -- [3]
 				},
 			},
-			["BigWigs_Bosses_The Vigilant Steward, Zskarn"] = {
+			['BigWigs_Bosses_The Vigilant Steward, Zskarn'] = {
 				[404010] = {
 					1, -- [1]
 					1, -- [2]
@@ -803,7 +798,7 @@ function DoctorioUI:Setup_BigWigs()
 					0, -- [3]
 				},
 			},
-			["BigWigs_Bosses_Magmorax"] = {
+			['BigWigs_Bosses_Magmorax'] = {
 				[411182] = {
 					1, -- [1]
 					0, -- [2]
@@ -836,7 +831,7 @@ function DoctorioUI:Setup_BigWigs()
 				},
 			},
 			-- Season 3
-			["BigWigs_Bosses_Tindral Sageswift, Seer of the Flame"] = {
+			['BigWigs_Bosses_Tindral Sageswift, Seer of the Flame'] = {
 				[424495] = {
 					0, -- [1]
 					0.5882353186607361, -- [2]
@@ -882,13 +877,13 @@ function DoctorioUI:Setup_BigWigs()
 					1, -- [2]
 					0, -- [3]
 				},
-				["stages"] = {
+				['stages'] = {
 					1, -- [1]
 					1, -- [2]
 					1, -- [3]
 				},
 			},
-			["BigWigs_Bosses_Larodar, Keeper of the Flame"] = {
+			['BigWigs_Bosses_Larodar, Keeper of the Flame'] = {
 				[427252] = {
 					1, -- [1]
 					1, -- [2]
@@ -950,7 +945,7 @@ function DoctorioUI:Setup_BigWigs()
 					1, -- [3]
 				},
 			},
-			["BigWigs_Bosses_Smolderon"] = {
+			['BigWigs_Bosses_Smolderon'] = {
 				[421455] = {
 					1, -- [1]
 					1, -- [2]
@@ -972,7 +967,7 @@ function DoctorioUI:Setup_BigWigs()
 					0, -- [3]
 				},
 			},
-			["BigWigs_Bosses_Volcoross"] = {
+			['BigWigs_Bosses_Volcoross'] = {
 				[421703] = {
 					1, -- [1]
 					0, -- [2]
@@ -1004,7 +999,7 @@ function DoctorioUI:Setup_BigWigs()
 					1, -- [3]
 				},
 			},
-			["BigWigs_Bosses_Council of Dreams"] = {
+			['BigWigs_Bosses_Council of Dreams'] = {
 				[418720] = {
 					1, -- [1]
 					0, -- [2]
@@ -1051,7 +1046,7 @@ function DoctorioUI:Setup_BigWigs()
 					1, -- [3]
 				},
 			},
-			["BigWigs_Bosses_Igira the Cruel"] = {
+			['BigWigs_Bosses_Igira the Cruel'] = {
 				[416048] = {
 					1, -- [1]
 					0, -- [2]
@@ -1078,7 +1073,7 @@ function DoctorioUI:Setup_BigWigs()
 					1, -- [3]
 				},
 			},
-			["BigWigs_Bosses_Gnarlroot"] = {
+			['BigWigs_Bosses_Gnarlroot'] = {
 				[422026] = {
 					1, -- [1]
 					0.5882353186607361, -- [2]
@@ -1105,7 +1100,7 @@ function DoctorioUI:Setup_BigWigs()
 					0, -- [3]
 				},
 			},
-			["BigWigs_Bosses_Nymue, Weaver of the Cycle"] = {
+			['BigWigs_Bosses_Nymue, Weaver of the Cycle'] = {
 				[430563] = {
 					1, -- [1]
 					0.3921568989753723, -- [2]
@@ -1137,7 +1132,7 @@ function DoctorioUI:Setup_BigWigs()
 					0, -- [3]
 				},
 			},
-			["BigWigs_Bosses_Fyrakk the Blazing"] = {
+			['BigWigs_Bosses_Fyrakk the Blazing'] = {
 				[422518] = {
 					1, -- [1]
 					1, -- [2]
@@ -1203,7 +1198,7 @@ function DoctorioUI:Setup_BigWigs()
 					0, -- [2]
 					1, -- [3]
 				},
-				["eternal_firestorm_swirl"] = {
+				['eternal_firestorm_swirl'] = {
 					1, -- [1]
 					0.4980392456054688, -- [2]
 					0.8588235974311829, -- [3]
@@ -1254,9 +1249,9 @@ function DoctorioUI:Setup_BigWigs()
 	}
 
 	-- Disable LibDualSpec to set the profile
-	BigWigs3DB['namespaces']['LibDualSpec-1.0'] = BigWigs3DB['namespaces']['LibDualSpec-1.0'] or {}
-	BigWigs3DB['namespaces']['LibDualSpec-1.0']['char'] = BigWigs3DB['namespaces']['LibDualSpec-1.0']['char'] or {}
-	BigWigs3DB['namespaces']['LibDualSpec-1.0']['char'][E.mynameRealm] = BigWigs3DB['namespaces']['LibDualSpec-1.0']['char'][E.mynameRealm] or {}
+	BigWigs3DB['namespaces']['LibDualSpec-1.0'] = {}
+	BigWigs3DB['namespaces']['LibDualSpec-1.0']['char'] = {}
+	BigWigs3DB['namespaces']['LibDualSpec-1.0']['char'][E.mynameRealm] = {}
 	BigWigs3DB['namespaces']['LibDualSpec-1.0']['char'][E.mynameRealm]['enabled'] = false
 
 	-- Set profile
