@@ -8,20 +8,27 @@ function DoctorioUI:Setup_OmniCD()
 	local name = 'Doctorio ' .. DoctorioUI.Version
 
 	-- Disable LibDualSpec to set the profile
-	OmniCDDB['namespaces']['LibDualSpec-1.0'] = OmniCDDB['namespaces']['LibDualSpec-1.0'] or {}
-	OmniCDDB['namespaces']['LibDualSpec-1.0']['char'] = OmniCDDB['namespaces']['LibDualSpec-1.0']['char'] or {}
-	OmniCDDB['namespaces']['LibDualSpec-1.0']['char'][E.mynameRealm] = OmniCDDB['namespaces']['LibDualSpec-1.0']['char'][E.mynameRealm] or {}
+	OmniCDDB['namespaces']['LibDualSpec-1.0'] = {}
+	OmniCDDB['namespaces']['LibDualSpec-1.0']['char'] = {}
+	OmniCDDB['namespaces']['LibDualSpec-1.0']['char'][E.mynameRealm] = {}
 	OmniCDDB['namespaces']['LibDualSpec-1.0']['char'][E.mynameRealm]['enabled'] = false
 
 	-- Global db
 	OmniCDDB['cooldowns'] = {}
 	OmniCDDB['global']['disableElvMsg'] = true
 
-	-- Profile creation
+	-- Safety check
 	OmniCDDB['profiles'] = OmniCDDB['profiles'] or {}
-	OmniCDDB['profiles'][name] = OmniCDDB['profiles'][name] or {}
-	OmniCDDB['profiles'][name]['General'] = OmniCDDB['profiles'][name]['General'] or {}
-	OmniCDDB['profiles'][name]['Party'] = OmniCDDB['profiles'][name]['Party'] or {}
+
+	-- Profile creation
+	OmniCDDB['profiles'][name] = {}
+	OmniCDDB['profiles'][name]['General'] = {}
+	OmniCDDB['profiles'][name]['Party'] = {}
+
+	-- Global db
+	OmniCDDB['cooldowns'] = {}
+	OmniCDDB['global']['disableElvMsg'] = true
+	OmniCDDB['version'] = 4
 
 	-- General db
 	OmniCDDB['profiles'][name]['General']['fonts'] = {
@@ -39,8 +46,8 @@ function DoctorioUI:Setup_OmniCD()
 	}
 	OmniCDDB['profiles'][name]['General']['textures'] = {
 		['statusBar'] = {
-			['BG'] = 'Minimalist',
-			['bar'] = 'Minimalist',
+			['BG'] = 'Details Flat',
+			['bar'] = 'Details Flat',
 		},
 	}
 
@@ -52,9 +59,9 @@ function DoctorioUI:Setup_OmniCD()
 		['scenario'] = true,
 	}
 	OmniCDDB['profiles'][name]['Party']['groupSize'] = {
-		["party"] = 5,
-		["scenario"] = 5,
-		["none"] = 5,
+		['party'] = 5,
+		['scenario'] = 5,
+		['none'] = 5,
 	}
 	OmniCDDB['profiles'][name]['Party']['arena'] = {
 		['general'] = {
@@ -65,29 +72,171 @@ function DoctorioUI:Setup_OmniCD()
 	-- Main db
 	OmniCDDB['profiles'][name]['Party']['party'] = {
 		['extraBars'] = {
-			['raidBar0'] = {
-				['scale'] = 0.7,
-				['statusBarWidth'] = 240,
-				['locked'] = true,
-				['paddingY'] = 0,
-				['manualPos'] = {
-					['raidBar0'] = {
-						['y'] = 326.1143742161039,
-						['x'] = 345.885685458743,
-					},
-				},
-				['reverseFill'] = false,
-				['useIconAlpha'] = true,
-				['paddingX'] = 0,
-			},
 			['raidBar1'] = {
+				['sortDirection'] = 'dsc',
+				['reverseFill'] = false,
+				['locked'] = true,
 				['manualPos'] = {
 					['raidBar1'] = {
-						['y'] = 483.269492606436,
-						['x'] = 302.5081858196736,
+						['y'] = 365.1556512031311,
+						['x'] = 334.5776556710371,
 					},
 				},
+				['scale'] = 0.8,
 			},
+		},
+		['manualPos'] = {
+			{
+				['y'] = 384.4249868775114,
+				['x'] = 682.2416491518998,
+			},
+			{
+				['y'] = 384.4249868775114,
+				['x'] = 682.2416491518998,
+			},
+			{
+				['y'] = 384.4249868775114,
+				['x'] = 682.2416491518998,
+			},
+			[5] = {
+				['y'] = 384.4249868775114,
+				['x'] = 682.2416491518998,
+			},
+		},
+		['spells'] = {
+			['186387'] = false,
+			['31661'] = false,
+			['205191'] = true,
+			['51490'] = false,
+			['12975'] = true,
+			['279302'] = true,
+			['115750'] = false,
+			['368970'] = false,
+			['368412'] = false,
+			['8122'] = false,
+			['235219'] = false,
+			['360966'] = true,
+			['207684'] = false,
+			['5246'] = false,
+			['371032'] = false,
+			['157980'] = false,
+			['167105'] = false,
+			['403876'] = true,
+			['200733'] = false,
+			['396286'] = false,
+			['207167'] = false,
+			['51271'] = false,
+			['209258'] = false,
+			['20594'] = true,
+			['108968'] = false,
+			['378279'] = false,
+			['404381'] = false,
+			['288853'] = false,
+			['498'] = true,
+			['53480'] = true,
+			['13750'] = false,
+			['325197'] = true,
+			['267217'] = true,
+			['19236'] = true,
+			['200652'] = true,
+			['228049'] = true,
+			['199448'] = true,
+			['389539'] = true,
+			['179057'] = false,
+			['200183'] = true,
+			['374348'] = true,
+			['48743'] = true,
+			['31230'] = false,
+			['47568'] = true,
+			['378779'] = false,
+			['359816'] = true,
+			['343142'] = true,
+			['207289'] = false,
+			['31935'] = false,
+			['370960'] = true,
+			['322118'] = true,
+			['197721'] = true,
+			['198144'] = false,
+			['132469'] = false,
+			['376079'] = true,
+			['262161'] = false,
+			['258860'] = false,
+			['98008'] = false,
+			['202137'] = false,
+			['55342'] = true,
+			['108416'] = true,
+			['51533'] = false,
+			['46968'] = false,
+			['31821'] = false,
+			['392966'] = true,
+			['157981'] = false,
+			['119381'] = false,
+			['97462'] = false,
+			['198103'] = true,
+			['192058'] = false,
+			['265221'] = true,
+			['385627'] = false,
+			['357214'] = false,
+			['42650'] = true,
+			['15286'] = false,
+			['99'] = false,
+			['109304'] = true,
+			['383121'] = false,
+			['193530'] = true,
+			['386997'] = false,
+			['5484'] = false,
+			['386394'] = false,
+			['114556'] = false,
+			['202138'] = false,
+			['264735'] = true,
+			['227847'] = true,
+			['86949'] = false,
+			['372835'] = true,
+			['184662'] = true,
+			['31850'] = true,
+			['265202'] = false,
+			['108280'] = false,
+			['275699'] = false,
+			['49028'] = false,
+			['51052'] = false,
+			['383269'] = true,
+			['357210'] = true,
+			['116844'] = false,
+			['192249'] = true,
+			['49206'] = true,
+			['110959'] = true,
+			['30283'] = false,
+			['343721'] = false,
+			['196718'] = false,
+		},
+		['icons'] = {
+			['counterScale'] = 1,
+			['scale'] = 1,
+			['swipeAlpha'] = 1,
+			['showTooltip'] = true,
+		},
+		['position'] = {
+			['columns'] = 20,
+			['paddingX'] = 1,
+			['offsetX'] = 1,
+			['offsetY'] = 5,
+			['paddingY'] = 1,
+		},
+		['priority'] = {
+			['racial'] = 10,
+			['disarm'] = 10,
+			['pvptrinket'] = 10,
+			['dispel'] = 10,
+			['counterCC'] = 10,
+			['externalDefensive'] = 18,
+			['raidMovement'] = 10,
+			['interrupt'] = 10,
+			['trinket'] = 10,
+			['defensive'] = 20,
+			['covenant'] = 10,
+			['offensive'] = 1,
+			['raidDefensive'] = 17,
+			['immunity'] = 19,
 		},
 		['general'] = {
 			['showPlayerEx'] = false,
@@ -95,179 +244,14 @@ function DoctorioUI:Setup_OmniCD()
 			['zoneSelected'] = 'party',
 			['showRange'] = true,
 		},
-		['spells'] = {
-			["374227"] = false,
-			["387184"] = true,
-			["357210"] = true,
-			["8143"] = false,
-			["12975"] = true,
-			["279302"] = true,
-			["197721"] = true,
-			["58984"] = true,
-			["115750"] = false,
-			["370960"] = true,
-			["124974"] = true,
-			["212295"] = false,
-			["187650"] = false,
-			["8122"] = false,
-			["235219"] = false,
-			["360966"] = true,
-			["6940"] = true,
-			["48020"] = false,
-			["1122"] = true,
-			["336126"] = false,
-			["215652"] = false,
-			["59752"] = false,
-			["7744"] = false,
-			["34433"] = true,
-			["15286"] = false,
-			["210918"] = false,
-			["345231"] = false,
-			["55233"] = true,
-			["336135"] = false,
-			["209258"] = false,
-			["121471"] = true,
-			["102560"] = true,
-			["20594"] = true,
-			["108968"] = false,
-			["196718"] = false,
-			["108281"] = true,
-			["1719"] = true,
-			["198067"] = true,
-			["498"] = true,
-			["53480"] = false,
-			["13750"] = true,
-			["325197"] = true,
-			["401150"] = true,
-			["51533"] = true,
-			["267217"] = true,
-			["102558"] = true,
-			["47482"] = false,
-			["198111"] = false,
-			["236320"] = false,
-			["152173"] = true,
-			["31230"] = false,
-			["194223"] = true,
-			["204336"] = false,
-			["377509"] = false,
-			["31935"] = false,
-			["375087"] = true,
-			["114051"] = true,
-			["322118"] = true,
-			["50334"] = true,
-			["265187"] = true,
-			["123904"] = true,
-			["201430"] = true,
-			["376079"] = true,
-			["360952"] = true,
-			["198838"] = false,
-			["55342"] = true,
-			["64044"] = false,
-			["359816"] = true,
-			["392966"] = true,
-			["365350"] = true,
-			["97462"] = false,
-			["198103"] = true,
-			["197268"] = false,
-			["204021"] = true,
-			["853"] = false,
-			["30884"] = false,
-			["42650"] = true,
-			["265221"] = true,
-			["6789"] = false,
-			["86659"] = true,
-			["193530"] = true,
-			["378441"] = false,
-			["114556"] = false,
-			["264735"] = true,
-			["227847"] = true,
-			["86949"] = false,
-			["152279"] = true,
-			["2094"] = false,
-			["228260"] = true,
-			["372835"] = true,
-			["370537"] = true,
-			["184662"] = true,
-			["31850"] = true,
-			["12472"] = true,
-			["205191"] = true,
-			["378464"] = false,
-			["108416"] = true,
-			["384352"] = true,
-			["372048"] = false,
-			["107574"] = true,
-			["49028"] = true,
-			["288613"] = true,
-			["114050"] = true,
-			["383269"] = true,
-			["205180"] = true,
-			["343142"] = true,
-			["49206"] = true,
-			["192249"] = true,
-			["5246"] = false,
-			["391528"] = true,
-			["102543"] = true,
-			["110959"] = true,
-			["200183"] = true,
-			["31821"] = false,
-			["204018"] = true,
-		},
-		['icons'] = {
-			['counterScale'] = 1,
-			['scale'] = 1,
-			['showTooltip'] = true,
-			['swipeAlpha'] = 1,
-		},
-		['position'] = {
-			['columns'] = 20,
-			['paddingX'] = 0,
-			['offsetX'] = -1,
-			['offsetY'] = 5,
-			['paddingY'] = 1,
-		},
-		['priority'] = {
-			['other'] = 10,
-			['racial'] = 10,
-			['disarm'] = 10,
-			['pvptrinket'] = 10,
-			['dispel'] = 10,
-			['immunity'] = 19,
-			['externalDefensive'] = 18,
-			['interrupt'] = 10,
-			['trinket'] = 10,
-			['defensive'] = 20,
-			['covenant'] = 10,
-			['offensive'] = 1,
-			['raidDefensive'] = 17,
-			['counterCC'] = 10,
-			['raidMovement'] = 10,
-		},
 		['highlight'] = {
 			['glowBuffTypes'] = {
 				['other'] = true,
 				['racial'] = true,
-				['trinket'] = true,
 				['pvptrinket'] = true,
-				['offensive'] = true,
 				['raidMovement'] = true,
-			},
-		},
-		['manualPos'] = {
-			{
-				['y'] = 384.4249868775114,
-				['x'] = 682.2416491518998,
-			}, -- [1]
-			{
-				['y'] = 384.4249868775114,
-				['x'] = 682.2416491518998,
-			}, -- [2]
-			{
-				['y'] = 384.4249868775114,
-				['x'] = 682.2416491518998,
-			}, -- [3]
-			[5] = {
-				['y'] = 384.4249868775114,
-				['x'] = 682.2416491518998,
+				['trinket'] = true,
+				['offensive'] = true,
 			},
 		},
 	}
@@ -275,5 +259,5 @@ function DoctorioUI:Setup_OmniCD()
 	-- Set profile
 	OmniCDDB['profileKeys'][E.mynameRealm] = name
 
-	DoctorioUI:Print(L['OmniCD profile has been set.'])
+	DoctorioUI:Print(L["OmniCD profile has been set."])
 end
