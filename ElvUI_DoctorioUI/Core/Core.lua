@@ -4,7 +4,7 @@ local DT = E:GetModule('DataTexts')
 -- Variables & Cache
 local format, print = format, print
 local C_UI_Reload = C_UI.Reload
-local SetCVar = SetCVar
+local SetCVar = C_CVar.SetCVar
 
 -- Chat print
 function DoctorioUI:Print(msg)

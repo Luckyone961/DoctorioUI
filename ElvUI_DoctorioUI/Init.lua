@@ -5,7 +5,7 @@ local PI = E:GetModule('PluginInstaller')
 
 -- Variables & Cache
 local _G = _G
-local GetAddOnMetadata = (C_AddOns and C_AddOns.GetAddOnMetadata) or GetAddOnMetadata
+local GetAddOnMetadata = C_AddOns.GetAddOnMetadata
 
 -- Create the plugin
 local addon, Engine = ...
