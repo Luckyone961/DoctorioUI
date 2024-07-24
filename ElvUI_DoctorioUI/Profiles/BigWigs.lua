@@ -1,8 +1,8 @@
 local DoctorioUI, E, L, V, P, G = unpack((select(2, ...)))
 
 -- Variables & Cache
-local IsAddOnLoaded = IsAddOnLoaded
-local LoadAddOn = LoadAddOn
+local IsAddOnLoaded = C_AddOns.IsAddOnLoaded
+local LoadAddOn = C_AddOns.LoadAddOn
 
 -- BigWigs Profile
 function DoctorioUI:Setup_BigWigs()
