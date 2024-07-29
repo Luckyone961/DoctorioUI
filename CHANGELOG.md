@@ -1,3 +1,6 @@
+### Version 1.16 [30-07-2024]
+Updated BigWigs API  
+___
 ### Version 1.15 [24-07-2024]
 Updated APIs for patch 11.0  
 Updated TOC for patch 11.0  

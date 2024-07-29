@@ -1,126 +1,14 @@
 local DoctorioUI, E, L, V, P, G = unpack((select(2, ...)))
 
--- Variables & Cache
-local IsAddOnLoaded = C_AddOns.IsAddOnLoaded
-local LoadAddOn = C_AddOns.LoadAddOn
-
--- BigWigs Profile
-function DoctorioUI:Setup_BigWigs()
-	if not E:IsAddOnEnabled('BigWigs') then return end
-
-	-- Profile name
-	local name = 'Doctorio ' .. DoctorioUI.Version
-
-	-- Required to add profiles to BigWigs3DB
-	if not IsAddOnLoaded('BigWigs_Core') then LoadAddOn('BigWigs_Core') end
-
-	-- Required to add profiles to Plugins DB
-	if not IsAddOnLoaded('BigWigs_Plugins') then LoadAddOn('BigWigs_Plugins') end
-
-	-- Profile creation
-	BigWigs3DB['profiles'] = BigWigs3DB['profiles'] or {}
-	BigWigs3DB['namespaces'] = BigWigs3DB['namespaces'] or {}
-	BigWigs3DB['profiles'][name] = BigWigs3DB['profiles'][name] or {}
-
-	-- Profile misc
-	BigWigs3DB['profiles'][name]['fakeDBMVersion'] = true
-	BigWigs3DB['profiles'][name]['showZoneMessages'] = false
-	BigWigs3DB['profiles'][name]['broadcast'] = true
-	BigWigs3DB['profiles'][name]['ignorerole'] = true
-	BigWigs3DB['profiles'][name]['shake'] = false
-	BigWigs3DB['profiles'][name]['useraidchannel'] = false
-
-	-- Disable minimap icon
-	BigWigsIconDB['hide'] = true
-
-	-- Profile DB
-	BigWigs3DB['namespaces']['BigWigs_Plugins_BossBlock']['profiles'] = BigWigs3DB['namespaces']['BigWigs_Plugins_BossBlock']['profiles'] or {}
-	BigWigs3DB['namespaces']['BigWigs_Plugins_BossBlock']['profiles'][name] = {
-		['blockGuildChallenge'] = false,
-	}
-
-	BigWigs3DB['namespaces']['BigWigs_Plugins_AltPower']['profiles'] = BigWigs3DB['namespaces']['BigWigs_Plugins_AltPower']['profiles'] or {}
-	BigWigs3DB['namespaces']['BigWigs_Plugins_AltPower']['profiles'][name] = {
-		['lock'] = true,
-	}
-
-	BigWigs3DB['namespaces']['BigWigs_Plugins_Victory']['profiles'] = BigWigs3DB['namespaces']['BigWigs_Plugins_Victory']['profiles'] or {}
-	BigWigs3DB['namespaces']['BigWigs_Plugins_Victory']['profiles'][name] = {
-		['soundName'] = 'None',
-		['blizzMsg'] = false,
-	}
-
-	BigWigs3DB['namespaces']['BigWigs_Plugins_Pull']['profiles'] = {
-		['profiles'] = {
-			[name] = {
-				['endPullSound'] = 'None',
-				['engageSound'] = 'BigWigs: Long',
-				['voice'] = 'English: David',
-			},
-		},
-	}
-
-	BigWigs3DB['namespaces']['BigWigs_Plugins_Bars']['profiles'] = BigWigs3DB['namespaces']['BigWigs_Plugins_Bars']['profiles'] or {}
-	BigWigs3DB['namespaces']['BigWigs_Plugins_Bars']['profiles'][name] = {
-		['outline'] = 'OUTLINE',
-		['emphasize'] = false,
-		['iconPosition'] = 'RIGHT',
-		['fill'] = true,
-		['growup'] = true,
-		['fontName'] = 'Expressway',
-		['visibleBarLimitEmph'] = 5,
-		['fontSize'] = 14,
-		['emphasizeGrowup'] = true,
-		['spacing'] = 2,
-		['emphasizeTime'] = 14,
-		['texture'] = 'Details Flat',
-		['barStyle'] = 'ElvUI',
-		['normalWidth'] = 406,
-		['normalHeight'] = 26,
-		['fontSizeEmph'] = 11,
-		['alignText'] = 'CENTER',
-		['expPosition'] = {
-			nil,
-			nil,
-			-6,
-			224,
-		},
-		['emphasizeRestart'] = false,
-		['normalPosition'] = {
-			'LEFT',
-			'LEFT',
-			2,
-			-238,
-		},
-	}
-
-	BigWigs3DB['namespaces']['BigWigs_Plugins_AutoReply']['profiles'] = BigWigs3DB['namespaces']['BigWigs_Plugins_AutoReply']['profiles'] or {}
-	BigWigs3DB['namespaces']['BigWigs_Plugins_AutoReply']['profiles'][name] = {
-		['exitCombatOther'] = 1,
-		['disabled'] = false,
-		['exitCombat'] = 1,
-		['modeOther'] = 2,
-	}
-
-	BigWigs3DB['namespaces']['BigWigs_Plugins_Messages']['profiles'] = BigWigs3DB['namespaces']['BigWigs_Plugins_Messages']['profiles'] or {}
-	BigWigs3DB['namespaces']['BigWigs_Plugins_Messages']['profiles'][name] = {
-		['outline'] = 'NONE',
-		['disabled'] = true,
-		['align'] = 'LEFT',
-		['fontName'] = 'Expressway',
-		['normalPosition'] = {
-			'LEFT', -- [1]
-			'LEFT', -- [2]
-			53.93504333496094, -- [3]
-			-2.928236484527588, -- [4]
-		},
-	}
+-- Temporary
+local function addColors(accepted)
+	if not accepted then return end
 
 	BigWigs3DB['namespaces']['BigWigs_Plugins_Colors']['profiles'] = BigWigs3DB['namespaces']['BigWigs_Plugins_Colors']['profiles'] or {}
-	BigWigs3DB['namespaces']['BigWigs_Plugins_Colors']['profiles'][name] = {
+	BigWigs3DB['namespaces']['BigWigs_Plugins_Colors']['profiles']['Doctorio'] = {
 		['barColor'] = {
 			['BigWigs_Plugins_Colors'] = {
-				[name] = {
+				['Doctorio'] = {
 					0.941176470588235, -- [1]
 					1, -- [2]
 					0.992156862745098, -- [3]
@@ -1227,7 +1115,7 @@ function DoctorioUI:Setup_BigWigs()
 		},
 		['barText'] = {
 			['BigWigs_Plugins_Colors'] = {
-				[name] = {
+				['Doctorio'] = {
 					0.984313725490196, -- [1]
 					0.984313725490196, -- [2]
 				},
@@ -1241,21 +1129,22 @@ function DoctorioUI:Setup_BigWigs()
 		},
 		['barEmphasized'] = {},
 	}
+end
 
-	BigWigs3DB['namespaces']['BigWigs_Plugins_InfoBox']['profiles'] = BigWigs3DB['namespaces']['BigWigs_Plugins_InfoBox']['profiles'] or {}
-	BigWigs3DB['namespaces']['BigWigs_Plugins_InfoBox']['profiles'][name] = {
-		['posx'] = 887.2556328357387,
-		['posy'] = 616.5560653676948,
-	}
+-- BigWigs Profile
+function DoctorioUI:Setup_BigWigs()
+	if not E:IsAddOnEnabled('BigWigs') then return end
 
-	-- Disable LibDualSpec to set the profile
-	BigWigs3DB['namespaces']['LibDualSpec-1.0'] = {}
-	BigWigs3DB['namespaces']['LibDualSpec-1.0']['char'] = {}
-	BigWigs3DB['namespaces']['LibDualSpec-1.0']['char'][E.mynameRealm] = {}
-	BigWigs3DB['namespaces']['LibDualSpec-1.0']['char'][E.mynameRealm]['enabled'] = false
+	-- Profile name
+	local name = 'Doctorio'
 
-	-- Set profile
-	BigWigs.db:SetProfile(name)
+	-- Profile strings
+	local profile = 'BW1:DnvWUTTrq0qSrhckqIScGcksCHZLcuGKGkLMuaDPO0M2wQ2Ycsu1O5exsoMCrwsUy3vsw9sa0PCwFc(q(a0pqa4TcKdl0Nqox0c4VGUlPinq3dl2zgoV5nVzO1NyntaHahbJYeejjlv895qclUYCG)HodDDgRqwwFnnJNGP1HSpZ5yxvdWA7omomJMXfZ9zZ4mk0Be6hF1pBvCB7tNv6OR56NqJJ4aKw6bvCBhSex5a5VeO0Sf9qfX64NXXPrqVcR3u4QlhclTlqS7T74WeqkjPrIp2KNntsjPG9Wlg6S6QSu5eYFc)Wwt7nLXaEawaERUchcsscmc15vD)Qj45zPzbX8SeiUqlowN6qCcCJZ1mUUklWllGZ4t12oiglJ3esemkEPbPgBmzDrz1ZDpT)H)2ftDpR)qNnr8SftzlW8qr8QzcGeOvCVBcOyHiWOEE1v0q2)ymMsIsvnUj5ooT2hZlv6FFR(Pno49AyNLgoOwDU761MpXfUwojghMTyGLLfIVZ1Gt)L)9dfN6hi0Qk01r)NVZCEksh(ZfhKbnhnbXcn7chGmOnh4c96qx7l7WAfOjIuxO069P2RyvlmDDVyK6fwFP1gnm1dQNPEeFN(SgQWo(25ebXNc2y(zKeI8VwxifUA9D84(NCQ7A4A2Pajkw(YCJmwvqv3BRr5eTCpJ5zBMkER0jCjjugFutwZ6pzmiKyUm22GHhxQ1LzCi)iqIjuXbhtXsJKmrUKcJDOZN2Nly4anZBKx()qjjEZMsRIke(T(rvLwdON6jQ274V2uHSVIqPEBRjHPR2N94)xlBe6Vr98y1E7NxT(A89e2JRZ88zujHrja3S)25oippBo4DB94OCHP9AdofVFBloQvKvlFRCD7D3F)B0QuL17uifIEV7)Wvt7pcZHuP6(Vt1q1OXF)q1q2E1OxnlVs9i1tv7H3whX0zpW0dAfy88msaK7KgrjI4Eh8Rjl)Vd'
 
-	DoctorioUI:Print(L["BigWigs profile has been set."])
+	-- Profile import
+	-- API:ImportProfileString(addonName, profileString, optionalCustomProfileName, optionalCallbackFunction)
+	BigWigsAPI:ImportProfileString('DoctorioUI', profile, name, addColors)
+
+	-- No chat print here
+	-- BigWigs will print a message with all important information after the import
 end
