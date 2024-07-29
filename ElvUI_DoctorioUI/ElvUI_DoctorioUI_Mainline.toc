@@ -1,6 +1,6 @@
 ## Interface: 110000, 110002
 ## Author: Luckyone
-## Version: 1.15
+## Version: 1.16
 ## Title: |cff1784d1ElvUI|r |cffFF7C0ADoctorioUI|r
 ## Notes: Doctorio's Interface
 ## RequiredDeps: ElvUI
