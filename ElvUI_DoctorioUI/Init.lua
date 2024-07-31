@@ -5,6 +5,7 @@ local PI = E:GetModule('PluginInstaller')
 
 -- Variables & Cache
 local _G = _G
+local tonumber = tonumber
 local GetAddOnMetadata = C_AddOns.GetAddOnMetadata
 
 -- Create the plugin
@@ -24,7 +25,7 @@ _G[addon] = Engine
 DoctorioUI.Config = {}
 DoctorioUI.Logo = 'Interface\\AddOns\\ElvUI_DoctorioUI\\Media\\Textures\\Logo.tga'
 DoctorioUI.Name = '|cffFF7C0ADoctorioUI|r'
-DoctorioUI.RequiredVersion = 13.72
+DoctorioUI.RequiredElvUI = tonumber(GetAddOnMetadata(Name, 'X-Required-ElvUI'))
 DoctorioUI.Version = GetAddOnMetadata(addon, 'Version')
 
 -- Private db defaults
