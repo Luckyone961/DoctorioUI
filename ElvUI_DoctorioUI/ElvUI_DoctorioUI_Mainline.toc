@@ -1,10 +1,15 @@
-## Interface: 110000, 110002
-## Author: Luckyone
-## Version: 1.16
 ## Title: |cff1784d1ElvUI|r |cffFF7C0ADoctorioUI|r
 ## Notes: Doctorio's Interface
-## RequiredDeps: ElvUI
+## Dependencies: ElvUI
+
 ## DefaultState: enabled
+## Author: Luckyone
+## Version: 1.16
+
+## Interface: 110000, 110002
+
+## X-Curse-Project-ID: 833428
+## X-Wago-ID: 96doqPNO
 
 ## AddonCompartmentFunc: DoctorioUI_OnAddonCompartmentClick
 ## IconTexture: Interface\AddOns\ElvUI_DoctorioUI\Media\Textures\Compartment.tga
