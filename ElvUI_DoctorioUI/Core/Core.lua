@@ -71,7 +71,7 @@ E.PopupDialogs.DoctorioUI_EDITBOX = {
 
 -- Version check
 function DoctorioUI:VersionCheck()
-	if E.version < DoctorioUI.RequiredVersion then
+	if E.version < DoctorioUI.RequiredElvUI then
 		E:StaticPopup_Show('DoctorioUI_VC')
 		DoctorioUI:Print(format('|cffbf0008%s|r', L["Your ElvUI is outdated - please update and reload."]))
 	end
