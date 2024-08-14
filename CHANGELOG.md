@@ -1,4 +1,5 @@
 ### Version 1.18 [In Development]
+ElvUI 13.74+ compatibility  
 Updated TOC for patch 11.0.2  
 ___
 ### Version 1.17 [07-08-2024]
