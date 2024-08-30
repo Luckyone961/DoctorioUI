@@ -7,20 +7,17 @@ local pairs = pairs
 -- Aura Filters DB
 function DoctorioUI:Setup_AuraFilters()
 
-	-- General setupInfo
 	local global = E.global
 	local unitframe = global.unitframe or {}
 	local aurafilters = unitframe.aurafilters or {}
 	local aurawatch = unitframe.aurawatch or {}
 
-	-- Function to add IDs to a list
 	local function Add(list, ids, value)
 		for _, id in ipairs(ids) do
 			list[id] = list[id] or value
 		end
 	end
 
-	-- Classes setup
 	local classes = {
 		DRUID = aurawatch.DRUID or {},
 		EVOKER = aurawatch.EVOKER or {},
