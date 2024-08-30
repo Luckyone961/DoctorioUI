@@ -1,5 +1,6 @@
 ### Version 1.19 [In Development]
 ElvUI 13.76+ compatibility  
+Removed duplicate name in party frames  
 Updated ElvUI aura filters  
 Updated ElvUI blacklist  
 Updated ElvUI whitelist  
