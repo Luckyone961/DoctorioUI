@@ -1,32 +1,34 @@
 local DoctorioUI, E, L, V, P, G = unpack((select(2, ...)))
 
 -- Variables & Cache
+local ipairs = ipairs
 local pairs = pairs
 
 -- Aura Filters DB
 function DoctorioUI:Setup_AuraFilters()
 
+	-- General setupInfo
+	local global = E.global
+	local unitframe = global.unitframe or {}
+	local aurafilters = unitframe.aurafilters or {}
+	local aurawatch = unitframe.aurawatch or {}
+
 	-- Function to add IDs to a list
 	local function Add(list, ids, value)
-		for _, id in pairs(ids) do
+		for _, id in ipairs(ids) do
 			list[id] = list[id] or value
 		end
 	end
 
-	-- General setup
-	local unitframe = E.global["unitframe"] or {}
-	local aurafilters = unitframe["aurafilters"] or {}
-	local aurawatch = unitframe["aurawatch"] or {}
-
 	-- Classes setup
 	local classes = {
-		DRUID = aurawatch["DRUID"] or {},
-		EVOKER = aurawatch["EVOKER"] or {},
-		MONK = aurawatch["MONK"] or {},
-		PALADIN = aurawatch["PALADIN"] or {},
-		PRIEST = aurawatch["PRIEST"] or {},
-		SHAMAN = aurawatch["SHAMAN"] or {},
-		ROGUE = aurawatch["ROGUE"] or {}
+		DRUID = aurawatch.DRUID or {},
+		EVOKER = aurawatch.EVOKER or {},
+		MONK = aurawatch.MONK or {},
+		PALADIN = aurawatch.PALADIN or {},
+		PRIEST = aurawatch.PRIEST or {},
+		SHAMAN = aurawatch.SHAMAN or {},
+		ROGUE = aurawatch.ROGUE or {}
 	}
 
 	local ids = {
@@ -56,11 +58,11 @@ function DoctorioUI:Setup_AuraFilters()
 
 	for class, classIDs in pairs(ids) do
 		if class == 'blacklist' then
-			Add(aurafilters["Blacklist"] or {}, classIDs, { enable = true, priority = 0 })
+			Add(aurafilters.Blacklist or {}, classIDs, {enable = true, priority = 0})
 		elseif class == 'whitelist' then
-			Add(aurafilters["Whitelist"] or {}, classIDs, { enable = false })
+			Add(aurafilters.Whitelist or {}, classIDs, {enable = false})
 		else
-			Add(classes[class], classIDs, { enable = true, color = {} })
+			Add(classes[class], classIDs, {enable = true, color = {}})
 		end
 	end
 
