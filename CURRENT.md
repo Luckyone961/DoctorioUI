@@ -1,6 +1,7 @@
-### Version 1.18 [26-08-2024]
-ElvUI 13.75+ compatibility  
-Updated ArkInventory profile  
-Updated BigWigs profile  
-Updated Details profile  
-Updated TOC for patch 11.0.2  
+### Version 1.19 [31-08-2024]
+Added new chat command shortcuts /doc install and /doc config  
+ElvUI 13.76+ compatibility  
+Removed duplicate name in party frames  
+Updated ElvUI aura filters  
+Updated ElvUI blacklist  
+Updated ElvUI whitelist  
