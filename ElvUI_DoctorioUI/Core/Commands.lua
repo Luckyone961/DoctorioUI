@@ -14,4 +14,6 @@ end
 -- Register all commands
 function DoctorioUI:LoadCommands()
 	self:RegisterChatCommand('doctorioui', 'Toggles')
+	self:RegisterChatCommand('doctorio', 'Toggles')
+	self:RegisterChatCommand('doc', 'Toggles')
 end

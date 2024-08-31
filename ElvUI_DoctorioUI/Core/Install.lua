@@ -30,7 +30,7 @@ DoctorioUI.InstallerData = {
 			PluginInstallFrame.Desc1:SetText(L["Please click the button below to apply Doctorios profile for ElvUI."])
 			PluginInstallFrame.Desc2:SetText(format('|cff4beb2c%s', L["Recommended step. Should not be skipped."]))
 			PluginInstallFrame.Option1:Show()
-			PluginInstallFrame.Option1:SetScript('OnClick', function() DoctorioUI:Setup_Layout() end)
+			PluginInstallFrame.Option1:SetScript('OnClick', function() DoctorioUI:Setup_Layout() DoctorioUI:Setup_AuraFilters() end)
 			PluginInstallFrame.Option1:SetText(L["Import ElvUI"])
 		end,
 		[3] = function()
