@@ -1,3 +1,8 @@
+### Version 1.20 [In Development]
+Added Baganator profile  
+Removed ArkInventory profile  
+Updated README  
+___
 ### Version 1.19 [31-08-2024]
 Added new chat command shortcuts /doc install and /doc config  
 ElvUI 13.76+ compatibility  

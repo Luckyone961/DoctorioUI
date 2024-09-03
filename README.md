@@ -1,13 +1,15 @@
 [![Discord](https://img.shields.io/discord/614097338964901898?label=Discord)](https://discord.gg/pjGTs3HpKX) [![YouTube](https://img.shields.io/youtube/channel/subscribers/UCWy9ojqO0BgDBK__hFISKzA?style=social)](https://www.youtube.com/@DoctorioGaming) [![Donate](https://img.shields.io/badge/Donate-Doctorio-blue)](https://www.tipeeestream.com/doctorio/donation) [![Donate](https://img.shields.io/badge/Donate-Luckyone-yellow)](https://streamlabs.com/luckyone1996/tip)
 
 #### **Profiles**  
-• [ArkInventory](https://www.curseforge.com/wow/addons/ark-inventory)  
+• [Baganator](https://www.curseforge.com/wow/addons/baganator)  
+• [Baganator ElvUI Skin](https://www.curseforge.com/wow/addons/baganator-elvui-skin)  
 • [BigWigs](https://www.curseforge.com/wow/addons/big-wigs), [LittleWigs](https://www.curseforge.com/wow/addons/little-wigs)  
 • [Details](https://www.curseforge.com/wow/addons/details)  
 • [ElvUI](https://www.tukui.org/)  
 • [Method Raid Tools](https://www.curseforge.com/wow/addons/method-raid-tools)  
 • [OmniCD](https://www.curseforge.com/wow/addons/omnicd)  
 • [Plater](https://www.curseforge.com/wow/addons/plater-nameplates)  
+• [Syndicator](https://www.curseforge.com/wow/addons/syndicator)
 • [WeakAuras](https://www.curseforge.com/wow/addons/weakauras-2)  
 
 #### **Chat commands**  
