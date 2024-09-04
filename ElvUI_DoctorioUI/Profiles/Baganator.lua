@@ -227,7 +227,7 @@ function DoctorioUI:Setup_Baganator()
 		["sort_ignore_slots_at_end"] = false,
 		["sort_ignore_slots_count_2"] = {},
 		["sort_ignore_bank_slots_count"] = {},
-		["debug_keywords"] = true,
+		["debug_keywords"] = false,
 		["guild_view_dialog_position"] = {
 			"BOTTOM",
 			"Baganator_GuildViewFrame",
@@ -235,7 +235,7 @@ function DoctorioUI:Setup_Baganator()
 			0,
 			0,
 		},
-		["debug_categories"] = true,
+		["debug_categories"] = false,
 		["bank_only_view_position"] = {
 			"LEFT",
 			391.0002136230469,
