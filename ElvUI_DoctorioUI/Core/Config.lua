@@ -57,7 +57,7 @@ function DoctorioUI:Config()
 	DoctorioUI.Options.args.weakauras.args.spacer = ACH:Spacer(2, 'full')
 	DoctorioUI.Options.args.weakauras.args.general = ACH:Group(L["General"], nil, 3)
 	DoctorioUI.Options.args.weakauras.args.general.inline = true
-	DoctorioUI.Options.args.weakauras.args.general.args.raidFrameVisibility = ACH:Execute(L["RaidFrame Visibility"], nil, 1, function() E:StaticPopup_Show('DoctorioUI_EDITBOX', nil, nil, 'https://wago.io/ElvUI-Mythic-Visibility') end)
+	DoctorioUI.Options.args.weakauras.args.general.args.raidFrameVisibility = ACH:Execute(L["RaidFrame Visibility"], nil, 1, function() DoctorioUI:WeakAurasImport('raidFrameVisibility') end)
 	DoctorioUI.Options.args.weakauras.args.hunter = ACH:Group(L["Hunter"], nil, 4)
 	DoctorioUI.Options.args.weakauras.args.hunter.inline = true
 	DoctorioUI.Options.args.weakauras.args.hunter.args.hunter1 = ACH:Execute(format('|cffAAD372%s|r', L["Beastmaster"]), nil, 3, function() E:StaticPopup_Show('DoctorioUI_EDITBOX', nil, nil, 'https://wago.io/DoctorioHunterBeastmaster') end)

@@ -13,6 +13,7 @@ L["Import Details"] = true
 L["Import ElvUI"] = true
 L["Import OmniCD"] = true
 L["Import Plater"] = true
+L["Import required WeakAura"] = true
 L["Installation Complete"] = true
 L["Installation"] = true
 L["Please click the button below to apply Doctorios profile for Baganator."] = true
@@ -25,6 +26,7 @@ L["Please click the button below to get the Wago URL for Doctorios Plater profil
 L["Please read the steps carefully before clicking any buttons."] = true
 L["Recommended step. Should not be skipped."] = true
 L["Skip and close the installer"] = true
+L["The button below will import a required WeakAura to correctly handle visibility for ElvUI Raidframes in Mythic difficulty."] = true
 L["The DoctorioUI installer will guide you through some steps and apply the profiles of your choice."] = true
 L["This cannot be imported like the other AddOns and will override your existing profile."] = true
 L["Welcome"] = true
