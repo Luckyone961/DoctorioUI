@@ -486,7 +486,7 @@ function DoctorioUI:Setup_Baganator()
 			},
 			["Leather"] = {
 				["name"] = "Leather",
-				["search"] = "#leather || #leatherworking",
+				["search"] = "!gear & (#leather | #leatherworking)",
 			},
 			["Consumable"] = {
 				["name"] = "Consumable",
