@@ -86,6 +86,10 @@ DoctorioUI.InstallerData = {
 			PluginInstallFrame.SubTitle:SetText(L["WeakAuras"])
 			PluginInstallFrame.Desc1:SetText(L["Class WeakAuras for all classes and specs can be found in:"])
 			PluginInstallFrame.Desc2:SetText(L["/doctorioui config -> WeakAuras tab"])
+			PluginInstallFrame.Desc3:SetText(L["The button below will import a required WeakAura to correctly handle visibility for ElvUI Raidframes in Mythic difficulty."])
+			PluginInstallFrame.Option1:Show()
+			PluginInstallFrame.Option1:SetScript('OnClick', function() DoctorioUI:WeakAurasImport('raidFrameVisibility') end)
+			PluginInstallFrame.Option1:SetText(L["Import required WeakAura"])
 		end,
 		[10] = function()
 			PluginInstallFrame.SubTitle:SetText(L["Installation Complete"])

@@ -8,6 +8,14 @@ function DoctorioUI:Toggles(msg)
 	elseif msg == 'config' then
 		E:ToggleOptions()
 		E.Libs.AceConfigDialog:SelectGroup('ElvUI', 'DoctorioUI')
+	elseif msg == 'alt' then
+		DoctorioUI:Setup_PrivateDB()
+		DoctorioUI:Print(L["Alt setup imported successfully."])
+		E:StaticPopup_Show('DoctorioUI_RL')
+	elseif msg == 'twink' then
+		DoctorioUI:Setup_PrivateDB()
+		DoctorioUI:Print(L["Alt setup imported successfully."])
+		E:StaticPopup_Show('DoctorioUI_RL')
 	end
 end
 
