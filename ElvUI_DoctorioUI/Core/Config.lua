@@ -48,7 +48,7 @@ function DoctorioUI:Config()
 	DoctorioUI.Options.args.profiles.args.addonGroup.args.plater = ACH:Execute(L["Plater"], nil, 2, function() E:StaticPopup_Show('DoctorioUI_EDITBOX', nil, nil, 'https://wago.io/DoctorioPlater') end)
 	DoctorioUI.Options.args.profiles.args.addonGroup.args.omnicd = ACH:Execute(L["OmniCD"], nil, 3, function() DoctorioUI:Setup_OmniCD() E:StaticPopup_Show('DoctorioUI_RL') end, nil, true)
 	DoctorioUI.Options.args.profiles.args.addonGroup.args.bigwigs = ACH:Execute(L["BigWigs"], nil, 4, function() DoctorioUI:Setup_BigWigs() E:StaticPopup_Show('DoctorioUI_RL') end, nil, true)
-	DoctorioUI.Options.args.profiles.args.addonGroup.args.ark = ACH:Execute(L["ArkInventory"], nil, 5, function() DoctorioUI:Setup_ArkInventory() E:StaticPopup_Show('DoctorioUI_RL') end, nil, true)
+	DoctorioUI.Options.args.profiles.args.addonGroup.args.baganator = ACH:Execute(L["Baganator"], nil, 5, function() DoctorioUI:Setup_Baganator() E:StaticPopup_Show('DoctorioUI_RL') end, nil, true)
 	DoctorioUI.Options.args.profiles.args.addonGroup.args.mrt = ACH:Execute(L["Method Raid Tools"], nil, 6, function() DoctorioUI:Setup_MRT() E:StaticPopup_Show('DoctorioUI_RL') end, nil, true)
 
 	-- WeakAuras

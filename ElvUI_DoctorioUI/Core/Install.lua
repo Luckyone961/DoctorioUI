@@ -66,12 +66,12 @@ DoctorioUI.InstallerData = {
 			PluginInstallFrame.Option1:SetText(L["Import BigWigs"])
 		end,
 		[7] = function()
-			PluginInstallFrame.SubTitle:SetText(L["ArkInventory"])
-			PluginInstallFrame.Desc1:SetText(L["Please click the button below to apply Doctorios profile for ArkInventory."])
+			PluginInstallFrame.SubTitle:SetText(L["Baganator"])
+			PluginInstallFrame.Desc1:SetText(L["Please click the button below to apply Doctorios profile for Baganator."])
 			PluginInstallFrame.Desc2:SetText(format('|cff4beb2c%s', L["Recommended step. Should not be skipped."]))
 			PluginInstallFrame.Option1:Show()
-			PluginInstallFrame.Option1:SetScript('OnClick', function() DoctorioUI:Setup_ArkInventory() end)
-			PluginInstallFrame.Option1:SetText(L["Import ArkInventory"])
+			PluginInstallFrame.Option1:SetScript('OnClick', function() DoctorioUI:Setup_Baganator() end)
+			PluginInstallFrame.Option1:SetText(L["Import Baganator"])
 		end,
 		[8] = function()
 			PluginInstallFrame.SubTitle:SetText(L["Method Raid Tools"])
@@ -107,7 +107,7 @@ DoctorioUI.InstallerData = {
 		[4] = L["Plater"],
 		[5] = L["OmniCD"],
 		[6] = L["BigWigs"],
-		[7] = L["ArkInventory"],
+		[7] = L["Baganator"],
 		[8] = L["Method Raid Tools"],
 		[9] = L["WeakAuras"],
 		[10] = L["Installation Complete"],
