@@ -25,6 +25,7 @@ function DoctorioUI:Config()
 	DoctorioUI.Options.args.setup.args.header = ACH:Header(L["Install"], 1)
 	DoctorioUI.Options.args.setup.args.spacer = ACH:Spacer(2, 'full')
 	DoctorioUI.Options.args.setup.args.installer = ACH:Execute(L["Install"], nil, 3, function() PI:Queue(DoctorioUI.InstallerData) E:ToggleOptions() end)
+	DoctorioUI.Options.args.setup.args.alts = ACH:Execute(L["Setup for alts"], L["Make sure to click this button once on each of your alts to ensure the unused ElvUI modules are properly disabled."], 4, function() DoctorioUI:Setup_PrivateDB() DoctorioUI:Print(L["Alt setup imported successfully."]) E:StaticPopup_Show('DoctorioUI_RL') end)
 
 	-- Links
 	DoctorioUI.Options.args.links = ACH:Group(L["Links"], nil, 3)
