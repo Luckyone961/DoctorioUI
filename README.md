@@ -13,8 +13,9 @@
 • [WeakAuras](https://www.curseforge.com/wow/addons/weakauras-2)  
 
 #### **Chat commands**  
-• **/doctorioui install** [Re-Run the installer process]  
-• **/doctorioui config** [Opens the ingame options]  
+• **/doctorioui install** or **/doc install** [Re-Run the installer process]  
+• **/doctorioui config** or **/doc config** [Opens the ingame options]  
+• **/doctorioui alt** or **/doc alt** [Run this once per character]  
 
 #### **Required AddOns**  
 • The most recent ElvUI version. You need to stay up-to-date.  
