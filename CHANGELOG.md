@@ -1,4 +1,5 @@
 ### Version 1.24 [In Development]
+Updated Baganator profile  
 Updated README  
 ___
 ### Version 1.23 [04-09-2024]
