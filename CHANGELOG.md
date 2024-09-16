@@ -1,3 +1,6 @@
+### Version 1.25 [In Development]
+Updated ElvUI profile (Top Buffs & Debuffs)  
+___
 ### Version 1.24 [13-09-2024]
 Updated Baganator profile  
 Updated ElvUI blacklist  
