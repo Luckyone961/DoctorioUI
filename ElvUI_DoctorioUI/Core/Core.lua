@@ -87,12 +87,15 @@ function DoctorioUI:Setup_PrivateDB()
 	----------------------- Copy/Paste Export Here -----------------------
 	----------------------------------------------------------------------
 	E.private["bags"]["enable"] = false
+	E.private["general"]["chatBubbleFont"] = "Expressway"
 	E.private["general"]["minimap"]["hideTracking"] = true
 	E.private["general"]["nameplateFont"] = "Expressway"
 	E.private["general"]["nameplateLargeFont"] = "Expressway"
 	E.private["general"]["raidUtility"] = false
 	E.private["general"]["totemTracker"] = false
 	E.private["nameplates"]["enable"] = false
+	E.private["skins"]["blizzard"]["bgmap"] = false
+	E.private["skins"]["blizzard"]["losscontrol"] = false
 	E.private["skins"]["parchmentRemoverEnable"] = true
 end
 
