@@ -89,9 +89,22 @@ DoctorioUI.InstallerData = {
 			PluginInstallFrame.Desc3:SetText(L["The button below will import a required WeakAura to correctly handle visibility for ElvUI Raidframes in Mythic difficulty."])
 			PluginInstallFrame.Option1:Show()
 			PluginInstallFrame.Option1:SetScript('OnClick', function() DoctorioUI:WeakAurasImport('raidFrameVisibility') end)
-			PluginInstallFrame.Option1:SetText(L["Import required WeakAura"])
+			PluginInstallFrame.Option1:SetText(L["Important WA"].. " 1")
+			PluginInstallFrame.Option2:Show()
+			PluginInstallFrame.Option2:SetScript('OnClick', function() DoctorioUI:WeakAurasImport('handleFriendlyNameplates') end)
+			PluginInstallFrame.Option2:SetText(L["Important WA"].. " 2")
 		end,
 		[10] = function()
+			PluginInstallFrame.SubTitle:SetText(L["Console Variables"])
+			PluginInstallFrame.Desc1:SetText(L["This step will configure some of Blizzards console variables."])
+			PluginInstallFrame.Desc2:SetText(format('|cff4beb2c%s', L["Recommended step. Should not be skipped."]))
+			PluginInstallFrame.Desc3:SetText(L["This will only modify CVars that are already covered by the supported AddOns."])
+
+			PluginInstallFrame.Option1:Show()
+			PluginInstallFrame.Option1:SetScript('OnClick', function() DoctorioUI:Setup_CVars() end)
+			PluginInstallFrame.Option1:SetText(L["Setup CVars"])
+		end,
+		[11] = function()
 			PluginInstallFrame.SubTitle:SetText(L["Installation Complete"])
 			PluginInstallFrame.Desc1:SetText(L["You have completed the installation process, please click 'Finished' to reload the UI."])
 			PluginInstallFrame.Desc2:SetText(L["Feel free to join our community Discord for support and social chats."])
@@ -114,7 +127,8 @@ DoctorioUI.InstallerData = {
 		[7] = L["Baganator"],
 		[8] = L["Method Raid Tools"],
 		[9] = L["WeakAuras"],
-		[10] = L["Installation Complete"],
+		[10] = L["Console Variables"],
+		[11] = L["Installation Complete"],
 	},
 	-- Color of the title texts on the ride side (when not selected)
 	StepTitlesColor = {1, 1, 1},

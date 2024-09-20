@@ -3,6 +3,7 @@
 	<Script file='Config.lua'/>
 	<Script file='Commands.lua'/>
 	<Script file='Compartment.lua'/>
+	<Script file='Console.lua'/>
 	<Script file='Core.lua'/>
 	<Script file='Database.lua'/>
 	<Script file='Install.lua'/>
