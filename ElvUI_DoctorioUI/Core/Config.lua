@@ -26,6 +26,7 @@ function DoctorioUI:Config()
 	DoctorioUI.Options.args.setup.args.spacer = ACH:Spacer(2, 'full')
 	DoctorioUI.Options.args.setup.args.installer = ACH:Execute(L["Install"], nil, 3, function() PI:Queue(DoctorioUI.InstallerData) E:ToggleOptions() end)
 	DoctorioUI.Options.args.setup.args.alts = ACH:Execute(L["Setup for alts"], L["Make sure to click this button once on each of your alts to ensure the unused ElvUI modules are properly disabled."], 4, function() DoctorioUI:Setup_PrivateDB() DoctorioUI:Print(L["Alt setup imported successfully."]) E:StaticPopup_Show('DoctorioUI_RL') end)
+	DoctorioUI.Options.args.setup.args.cvars = ACH:Execute(L["Setup CVars"], L["This step will configure some of Blizzards console variables."], 5, function() DoctorioUI:Setup_CVars() end)
 
 	-- Links
 	DoctorioUI.Options.args.links = ACH:Group(L["Links"], nil, 3)
@@ -58,7 +59,8 @@ function DoctorioUI:Config()
 	DoctorioUI.Options.args.weakauras.args.spacer = ACH:Spacer(2, 'full')
 	DoctorioUI.Options.args.weakauras.args.general = ACH:Group(L["General"], nil, 3)
 	DoctorioUI.Options.args.weakauras.args.general.inline = true
-	DoctorioUI.Options.args.weakauras.args.general.args.raidFrameVisibility = ACH:Execute(L["RaidFrame Visibility"], nil, 1, function() DoctorioUI:WeakAurasImport('raidFrameVisibility') end)
+	DoctorioUI.Options.args.weakauras.args.general.args.raidFrameVisibility = ACH:Execute(L["Important WA"] .." 1", L["RaidFrame Visibility"], 1, function() DoctorioUI:WeakAurasImport('raidFrameVisibility') end)
+	DoctorioUI.Options.args.weakauras.args.general.args.handleFriendlyNameplates = ACH:Execute(L["Important WA"] .." 2", L["Friendly Nameplates"], 2, function() DoctorioUI:WeakAurasImport('handleFriendlyNameplates') end)
 	DoctorioUI.Options.args.weakauras.args.hunter = ACH:Group(L["Hunter"], nil, 4)
 	DoctorioUI.Options.args.weakauras.args.hunter.inline = true
 	DoctorioUI.Options.args.weakauras.args.hunter.args.hunter1 = ACH:Execute(format('|cffAAD372%s|r', L["Beastmaster"]), nil, 3, function() E:StaticPopup_Show('DoctorioUI_EDITBOX', nil, nil, 'https://wago.io/DoctorioHunterBeastmaster') end)
