@@ -1,6 +1,8 @@
 ### Version 1.28 [In Development]
 Updated Baganator profile  
 Updated BigWigs profile  
+Updated ElvUI blacklist  
+Updated ElvUI whitelist (Added custom Doctorio whitelist)  
 Updated OmniCD profile  
 ___
 ### Version 1.27 [27-09-2024]

@@ -59,6 +59,71 @@ function DoctorioUI:Setup_AuraFilters()
 		end
 	end
 
+	----------------------------------------------------------------------
+	----------------------- Custom Whitelist Data ------------------------
+	----------------------------------------------------------------------
+	E.global["unitframe"] = E.global["unitframe"]or {}
+	E.global["unitframe"]["aurafilters"] = E.global["unitframe"]["aurafilters"] or {}
+	E.global["unitframe"]["aurafilters"]["Whitelist Doctorio"] = E.global["unitframe"]["aurafilters"]["Whitelist Doctorio"] or {}
+	E.global["unitframe"]["aurafilters"]["Whitelist Doctorio"]["spells"] = E.global["unitframe"]["aurafilters"]["Whitelist Doctorio"]["spells"] or {}
+	E.global["unitframe"]["aurafilters"]["Whitelist Doctorio"]["type"] = "whitelist"
+
+	-- Custom Whitelist
+	E.global["unitframe"]["aurafilters"]["Whitelist Doctorio"] = {
+		["spells"] = {
+			[1022] = {
+				["enable"] = true,
+				["priority"] = 0,
+				["stackThreshold"] = 0,
+			},
+			[1044] = {
+				["enable"] = true,
+				["priority"] = 0,
+				["stackThreshold"] = 0,
+			},
+			[6940] = {
+				["enable"] = true,
+				["priority"] = 0,
+				["stackThreshold"] = 0,
+			},
+			[20608] = {
+				["enable"] = true,
+				["priority"] = 0,
+				["stackThreshold"] = 0,
+			},
+			[33206] = {
+				["enable"] = true,
+				["priority"] = 0,
+				["stackThreshold"] = 0,
+			},
+			[47788] = {
+				["enable"] = true,
+				["priority"] = 0,
+				["stackThreshold"] = 0,
+			},
+			[102342] = {
+				["enable"] = true,
+				["priority"] = 0,
+				["stackThreshold"] = 0,
+			},
+			[116849] = {
+				["enable"] = true,
+				["priority"] = 0,
+				["stackThreshold"] = 0,
+			},
+			[204018] = {
+				["enable"] = true,
+				["priority"] = 0,
+				["stackThreshold"] = 0,
+			},
+			[357170] = {
+				["enable"] = true,
+				["priority"] = 0,
+				["stackThreshold"] = 0,
+			},
+		},
+	}
+
 	-- Druid
 	classes["DRUID"][102342]["enabled"] = false
 	classes["DRUID"][102342]["anyUnit"] = false
