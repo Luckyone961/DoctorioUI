@@ -1,5 +1,6 @@
 ### Version 1.28 [In Development]
 Updated BigWigs profile  
+Updated OmniCD profile  
 ___
 ### Version 1.27 [27-09-2024]
 Updated BigWigs profiles (Full season 1 colors)  
