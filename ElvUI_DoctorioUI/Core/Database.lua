@@ -456,7 +456,6 @@ function DoctorioUI:Setup_ElvUI()
 	E.db["tooltip"]["healthBar"]["font"] = "Expressway"
 	E.db["tooltip"]["healthBar"]["fontOutline"] = "NONE"
 	E.db["tooltip"]["healthBar"]["statusPosition"] = "DISABLED"
-	E.db["tooltip"]["itemCount"]["bags"] = false
 	E.db["tooltip"]["modifierCount"] = false
 	E.db["tooltip"]["playerTitles"] = false
 	E.db["tooltip"]["showMount"] = false
