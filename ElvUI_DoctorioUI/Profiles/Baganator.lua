@@ -20,18 +20,18 @@ function DoctorioUI:Setup_Baganator()
 			["default_battlepet"] = true,
 			["default_food"] = true,
 			["default_gem"] = true,
-			["default_junk"] = true,
-			["default_key"] = true,
+			["default_hearthstone"] = true,
+			["default_miscellaneous"] = true,
 			["default_consumable"] = true,
 			["default_tradegoods"] = true,
-			["default_recipe"] = true,
-			["default_container"] = true,
-			["default_auto_equipment_sets"] = true,
-			["default_profession"] = true,
-			["default_potion"] = true,
 			["default_reagent"] = true,
-			["default_miscellaneous"] = true,
-			["default_hearthstone"] = true,
+			["default_potion"] = true,
+			["default_profession"] = true,
+			["default_auto_equipment_sets"] = true,
+			["default_container"] = true,
+			["default_recipe"] = true,
+			["default_key"] = true,
+			["default_junk"] = true,
 		},
 		["debug_categories_search"] = false,
 		["bank_view_width"] = 24,
@@ -42,18 +42,18 @@ function DoctorioUI:Setup_Baganator()
 			["void_storage"] = false,
 			["guild_bank"] = false,
 			["merchant"] = false,
-			["forge_of_bonds"] = false,
+			["trade_partner"] = false,
 			["character_panel"] = false,
 			["scrapping_machine"] = true,
 			["tradeskill"] = false,
 			["mail"] = true,
 			["sockets"] = false,
-			["trade_partner"] = false,
+			["forge_of_bonds"] = false,
 			["bank"] = false,
 		},
 		["icon_corners_auto_insert_applied"] = {
-			["battle_pet_level"] = true,
 			["keystone_level"] = true,
+			["battle_pet_level"] = true,
 		},
 		["show_recents_tabs_main_view"] = false,
 		["upgrade_plugin_ignored"] = {
@@ -61,58 +61,59 @@ function DoctorioUI:Setup_Baganator()
 		["category_hidden"] = {
 			["Bags"] = false,
 			["Old"] = false,
-			["Toys"] = false,
+			["fish"] = false,
 			["World of Warcraft"] = false,
 			["default_other"] = false,
 			["Profession"] = false,
 			["Junk"] = true,
 			["Enchanting"] = false,
+			["Reagents"] = false,
 			["Elemental"] = false,
-			["Food"] = false,
-			["5"] = true,
+			["2"] = false,
+			["Fishing"] = false,
 			["Gems"] = false,
 			["Open"] = false,
-			["Pot"] = false,
+			["New Category"] = false,
 			["Chest"] = false,
-			["BoE"] = false,
-			["2"] = false,
+			["Herb"] = false,
+			["default_auto_equipment_sets"] = false,
 			["Shirts"] = false,
 			["cloth"] = false,
-			["New Category"] = false,
-			["Quest"] = false,
+			["5"] = true,
+			["Food"] = false,
 			["Weapon"] = false,
 			["Enchant"] = false,
 			["Misc"] = false,
-			["Fishing"] = false,
+			["Toys"] = false,
 			["Perma"] = false,
-			["fish"] = false,
-			["Cooking"] = false,
-			["Mats"] = false,
-			["WoE"] = false,
-			["Recipe"] = false,
 			["Craft"] = false,
-			["Key"] = false,
-			["Trinkets"] = false,
-			["Armor"] = false,
-			["WuE"] = false,
-			["enchanting"] = false,
-			["Container"] = false,
-			["TWW"] = false,
-			["Fish"] = false,
-			["Pets"] = false,
-			["default_special_empty"] = false,
+			["Tradeable"] = false,
+			["WoE"] = false,
+			["Cooking"] = false,
 			["Finishing Reagents"] = false,
-			["Cons"] = false,
 			["Gear"] = false,
+			["Key"] = false,
+			["WuE"] = false,
+			["Armor"] = false,
 			["PvP"] = false,
+			["Container"] = false,
+			["enchanting"] = false,
+			["TWW"] = false,
+			["Pets"] = false,
+			["Fish"] = false,
+			["default_special_empty"] = false,
+			["Trinkets"] = false,
+			["Cons"] = false,
+			["Recipe"] = false,
+			["Mats"] = false,
 			["Leather"] = false,
 			["Consumable"] = false,
-			["Tradeable"] = false,
+			["Quest"] = false,
 			["Ores"] = false,
 			["Cloth"] = false,
-			["default_auto_equipment_sets"] = false,
-			["Herb"] = false,
-			["Reagents"] = false,
+			["Pot"] = false,
+			["19"] = false,
+			["BoE"] = false,
 		},
 		["junk_plugin_ignored"] = {
 		},
@@ -178,10 +179,10 @@ function DoctorioUI:Setup_Baganator()
 		["icon_grey_junk"] = true,
 		["main_view_position"] = {
 			"RIGHT",
-			-198.99609375,
-			132.750732421875,
+			-262.978271484375,
+			160.0069580078125,
 		},
-		["bank_only_view_show_bag_slots"] = true,
+		["bank_only_view_show_bag_slots"] = false,
 		["icon_bottom_left_corner_array"] = {
 			"equipment_set",
 		},
@@ -202,191 +203,10 @@ function DoctorioUI:Setup_Baganator()
 			0,
 		},
 		["category_horizontal_spacing_2"] = 0.3,
-		["category_default_import"] = 1,
+		["category_default_import"] = 2,
 		["add_to_category_buttons"] = true,
+		["guild_current_tab"] = 6,
 		["category_migration"] = 4,
-		["guild_bank_sort_method"] = "unset",
-		["warband_bank_view_width"] = 24,
-		["category_section_toggled"] = {
-			["World of Warcraft"] = false,
-			["Prep"] = false,
-			["Profession"] = false,
-			["Gear"] = false,
-			["New Section"] = false,
-		},
-		["add_to_category_buttons_2"] = "drag",
-		["view_type"] = "unset",
-		["icon_text_quality_colors"] = true,
-		["icon_text_font_size"] = 14,
-		["upgrade_plugin"] = "none",
-		["view_alpha"] = 1,
-		["bag_view_width"] = 16,
-		["recent_timeout"] = 15,
-		["bag_empty_space_at_top"] = false,
-		["category_horizontal_spacing"] = 0.5,
-		["recent_characters_main_view"] = {},
-		["lock_frames"] = false,
-		["auto_sort_on_open"] = false,
-		["category_modifications"] = {
-			["default_hearthstone"] = {
-				["addedItems"] = {
-					["i:65274"] = true,
-					["i:210494"] = true,
-					["i:188152"] = true,
-					["i:109076"] = true,
-				},
-			},
-			["default_other"] = {
-				["priority"] = -1,
-			},
-			["29"] = {
-				["priority"] = 0,
-			},
-			["1"] = {
-				["priority"] = 1,
-			},
-			["3"] = {
-				["priority"] = 0,
-			},
-			["2"] = {
-				["priority"] = 3,
-			},
-			["5"] = {
-				["priority"] = 3,
-			},
-			["4"] = {
-				["priority"] = 1,
-			},
-			["7"] = {
-				["priority"] = 0,
-			},
-			["6"] = {
-				["priority"] = 0,
-			},
-			["9"] = {
-				["priority"] = 0,
-			},
-			["8"] = {
-				["priority"] = 0,
-			},
-			["27"] = {
-				["priority"] = 0,
-			},
-			["default_auto_equipment_sets"] = {
-				["priority"] = 0,
-			},
-			["13"] = {
-				["priority"] = -1,
-			},
-			["21"] = {
-				["priority"] = 0,
-			},
-			["11"] = {
-				["priority"] = 0,
-			},
-			["23"] = {
-				["priority"] = 0,
-			},
-			["default_armor"] = {
-				["group"] = "type",
-			},
-			["34"] = {
-				["priority"] = 0,
-			},
-			["28"] = {
-				["priority"] = -1,
-			},
-			["10"] = {
-				["priority"] = 0,
-			},
-			["33"] = {
-				["priority"] = 1,
-			},
-			["12"] = {
-				["priority"] = 1,
-			},
-			["default_reagent"] = {
-				["group"] = "type",
-				["priority"] = -1,
-			},
-			["25"] = {
-				["priority"] = -1,
-			},
-			["19"] = {
-				["priority"] = -1,
-			},
-			["15"] = {
-				["priority"] = 0,
-			},
-			["18"] = {
-				["priority"] = 0,
-			},
-			["17"] = {
-				["priority"] = 0,
-			},
-			["31"] = {
-				["priority"] = 0,
-			},
-			["14"] = {
-				["priority"] = 0,
-			},
-			["24"] = {
-				["priority"] = 3,
-			},
-			["16"] = {
-				["addedItems"] = {
-					["i:65274"] = true,
-					["i:6948"] = true,
-					["i:188152"] = true,
-					["i:132514"] = true,
-					["i:109076"] = true,
-				},
-				["priority"] = 1,
-			},
-			["26"] = {
-				["priority"] = -1,
-			},
-			["20"] = {
-				["priority"] = 0,
-			},
-			["30"] = {
-				["priority"] = 0,
-			},
-			["22"] = {
-				["priority"] = 0,
-			},
-			["32"] = {
-				["priority"] = 0,
-			},
-		},
-		["bag_icon_size"] = 36,
-		["show_buttons_on_alt"] = true,
-		["debug_keywords"] = false,
-		["guild_view_dialog_position"] = {
-			"BOTTOM",
-			"Baganator_GuildViewFrame",
-			"TOP",
-			0,
-			0,
-		},
-		["setting_anchors"] = false,
-		["bank_only_view_position"] = {
-			"LEFT",
-			463.0001525878906,
-			180.0007934570313,
-		},
-		["debug_categories"] = false,
-		["show_sort_button_2"] = false,
-		["sort_ignore_bank_slots_count"] = {},
-		["sort_ignore_slots_count_2"] = {},
-		["sort_ignore_slots_at_end"] = false,
-		["icon_equipment_set_border"] = true,
-		["guild_view_position"] = {
-			"LEFT",
-			216.0001068115234,
-			166.0003051757813,
-		},
-		["sort_start_at_bottom"] = false,
 		["custom_categories"] = {
 			["29"] = {
 				["name"] = "Key",
@@ -460,17 +280,17 @@ function DoctorioUI:Setup_Baganator()
 				["name"] = "Consumable",
 				["search"] = "#consumable",
 			},
-			["10"] = {
-				["name"] = "Gems",
-				["search"] = "#gem",
+			["32"] = {
+				["name"] = "Quest",
+				["search"] = "#quest",
 			},
 			["13"] = {
 				["name"] = "Weapon",
 				["search"] = "#weapon",
 			},
-			["30"] = {
-				["name"] = "Ores",
-				["search"] = "#metal stone || #parts || #blacksmithing || #engineering || #jewelcrafting",
+			["12"] = {
+				["name"] = "Shirts",
+				["search"] = "#tabard || #shirt",
 			},
 			["11"] = {
 				["name"] = "Pot",
@@ -512,20 +332,217 @@ function DoctorioUI:Setup_Baganator()
 				["name"] = "WuE",
 				["search"] = "#wue",
 			},
-			["12"] = {
-				["name"] = "Shirts",
-				["search"] = "#tabard || #shirt",
+			["30"] = {
+				["name"] = "Ores",
+				["search"] = "#metal stone || #parts || #blacksmithing || #engineering || #jewelcrafting",
 			},
 			["22"] = {
 				["name"] = "Herb",
 				["search"] = "#herb || #alchemy || #inscription",
 			},
-			["32"] = {
-				["name"] = "Quest",
-				["search"] = "#quest",
+			["10"] = {
+				["name"] = "Gems",
+				["search"] = "#gem",
 			},
 		},
+		["guild_bank_sort_method"] = "unset",
+		["warband_bank_view_width"] = 24,
+		["sort_ignore_slots_at_end"] = false,
+		["add_to_category_buttons_2"] = "drag",
+		["view_type"] = "unset",
 		["category_group_empty_slots"] = true,
+		["currencies_tracked"] = {},
+		["sort_start_at_bottom"] = false,
+		["icon_text_font_size"] = 14,
+		["icon_equipment_set_border"] = true,
+		["guild_view_position"] = {
+			"LEFT",
+			179.0000915527344,
+			191.0003051757813,
+		},
+		["view_alpha"] = 1,
+		["bag_view_width"] = 16,
+		["recent_timeout"] = 15,
+		["sort_ignore_slots_count_2"] = {},
+		["sort_ignore_bank_slots_count"] = {},
+		["recent_characters_main_view"] = {},
+		["upgrade_plugin"] = "none",
+		["auto_sort_on_open"] = false,
+		["debug_categories"] = false,
+		["bag_icon_size"] = 36,
+		["setting_anchors"] = false,
+		["debug_keywords"] = false,
+		["guild_view_dialog_position"] = {
+			"BOTTOM",
+			"Baganator_GuildViewFrame",
+			"TOP",
+			0,
+			0,
+		},
+		["show_buttons_on_alt"] = true,
+		["bank_only_view_position"] = {
+			"LEFT",
+			852.0017700195312,
+			169.00146484375,
+		},
+		["category_modifications"] = {
+			["default_hearthstone"] = {
+				["addedItems"] = {
+					["i:65274"] = true,
+					["i:210494"] = true,
+					["i:188152"] = true,
+					["i:109076"] = true,
+				},
+			},
+			["default_other"] = {
+				["priority"] = -1,
+			},
+			["29"] = {
+				["priority"] = 0,
+			},
+			["1"] = {
+				["priority"] = 1,
+			},
+			["3"] = {
+				["priority"] = 0,
+			},
+			["2"] = {
+				["priority"] = 3,
+			},
+			["5"] = {
+				["showGroupPrefix"] = true,
+				["priority"] = 3,
+			},
+			["4"] = {
+				["priority"] = 1,
+			},
+			["7"] = {
+				["priority"] = 0,
+			},
+			["6"] = {
+				["priority"] = 0,
+			},
+			["9"] = {
+				["priority"] = 0,
+			},
+			["8"] = {
+				["priority"] = 0,
+			},
+			["27"] = {
+				["priority"] = 0,
+			},
+			["default_auto_equipment_sets"] = {
+				["priority"] = 0,
+			},
+			["13"] = {
+				["priority"] = -1,
+			},
+			["21"] = {
+				["priority"] = 0,
+			},
+			["11"] = {
+				["priority"] = 0,
+			},
+			["23"] = {
+				["priority"] = 0,
+			},
+			["default_armor"] = {
+				["group"] = "type",
+			},
+			["34"] = {
+				["priority"] = 0,
+			},
+			["28"] = {
+				["priority"] = -1,
+			},
+			["10"] = {
+				["priority"] = 0,
+			},
+			["33"] = {
+				["priority"] = 1,
+			},
+			["12"] = {
+				["priority"] = 1,
+			},
+			["default_reagent"] = {
+				["group"] = "type",
+				["priority"] = -1,
+			},
+			["25"] = {
+				["priority"] = -1,
+			},
+			["19"] = {
+				["showGroupPrefix"] = true,
+				["priority"] = -1,
+			},
+			["15"] = {
+				["priority"] = 0,
+			},
+			["18"] = {
+				["priority"] = 0,
+			},
+			["17"] = {
+				["priority"] = 0,
+			},
+			["31"] = {
+				["priority"] = 0,
+			},
+			["14"] = {
+				["priority"] = 0,
+			},
+			["24"] = {
+				["priority"] = 3,
+			},
+			["16"] = {
+				["addedItems"] = {
+					["i:65274"] = true,
+					["i:6948"] = true,
+					["i:188152"] = true,
+					["i:132514"] = true,
+					["i:109076"] = true,
+					["i:65360"] = true,
+				},
+				["priority"] = 1,
+			},
+			["26"] = {
+				["priority"] = -1,
+			},
+			["20"] = {
+				["priority"] = 0,
+			},
+			["30"] = {
+				["priority"] = 0,
+			},
+			["22"] = {
+				["priority"] = 0,
+			},
+			["32"] = {
+				["priority"] = 0,
+			},
+		},
+		["show_sort_button_2"] = false,
+		["category_horizontal_spacing"] = 0.5,
+		["bag_empty_space_at_top"] = false,
+		["currency_panel_position"] = {
+			"RIGHT",
+			"Baganator_CategoryViewBackpackViewFrame",
+			"LEFT",
+			0,
+			0,
+		},
+		["lock_frames"] = false,
+		["currencies_tracked_imported"] = {
+		},
+		["icon_text_quality_colors"] = true,
+		["currency_headers_collapsed"] = {
+		},
+		["category_section_toggled"] = {
+			["World of Warcraft"] = false,
+			["Prep"] = false,
+			["Profession"] = false,
+			["Gear"] = false,
+			["New Section"] = false,
+		},
 	}
 
 	DoctorioUI:Print(L["Baganator profile has been set."])

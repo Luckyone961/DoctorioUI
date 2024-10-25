@@ -1,4 +1,5 @@
 ### Version 1.28 [In Development]
+Updated Baganator profile  
 Updated BigWigs profile  
 Updated OmniCD profile  
 ___
