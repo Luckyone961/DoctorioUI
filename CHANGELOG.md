@@ -1,3 +1,6 @@
+### Version 1.29 [25-10-2024]
+Hotfix for installer error line 459 Database  
+___
 ### Version 1.28 [25-10-2024]
 Updated Baganator profile  
 Updated BigWigs profile (Requires BigWigs alpha version or next release)  
