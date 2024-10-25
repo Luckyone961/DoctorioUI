@@ -109,20 +109,20 @@ local function addColors(accepted)
 					1,
 					1,
 				},
-				[439784] = {
-					0.9411765336990356,
-					0.917647123336792,
-					0.8392157554626465,
+				["stages"] = {
+					0.5882353186607361,
+					0.5882353186607361,
+					0.5882353186607361,
 				},
 				[439811] = {
 					1,
 					0,
 					0,
 				},
-				["stages"] = {
-					0.5882353186607361,
-					0.5882353186607361,
-					0.5882353186607361,
+				[439784] = {
+					0.9411765336990356,
+					0.917647123336792,
+					0.8392157554626465,
 				},
 			},
 			["BigWigs_Bosses_Broodtwister Ovi'nax"] = {
@@ -148,17 +148,7 @@ local function addColors(accepted)
 				},
 			},
 			["BigWigs_Bosses_Nexus-Princess Ky'veza"] = {
-				[439576] = {
-					0,
-					1,
-					0,
-				},
 				[438245] = {
-					1,
-					0,
-					1,
-				},
-				[437620] = {
 					1,
 					0,
 					1,
@@ -166,6 +156,21 @@ local function addColors(accepted)
 				[439409] = {
 					0,
 					0.3921568989753723,
+					1,
+				},
+				[439576] = {
+					0,
+					1,
+					0,
+				},
+				[437620] = {
+					1,
+					1,
+					0,
+				},
+				[436867] = {
+					1,
+					0,
 					1,
 				},
 			},
@@ -180,19 +185,19 @@ local function addColors(accepted)
 					0.686274528503418,
 					0,
 				},
-				[438656] = {
+				[441626] = {
 					1,
 					0,
-					0,
+					0.0470588281750679,
 				},
 				[450045] = {
 					0.7843137979507446,
 					1,
 					0.5882353186607361,
 				},
-				[441791] = {
+				[438656] = {
 					1,
-					1,
+					0,
 					0,
 				},
 				[439838] = {
@@ -200,20 +205,20 @@ local function addColors(accepted)
 					0.917647123336792,
 					0.8392157554626465,
 				},
+				[441791] = {
+					1,
+					1,
+					0,
+				},
+				[441782] = {
+					1,
+					0.5882353186607361,
+					0.8705883026123047,
+				},
 				[442994] = {
 					1,
 					0.3921568989753723,
 					0.294117659330368,
-				},
-				[438677] = {
-					0.9843137860298157,
-					0,
-					1,
-				},
-				[438355] = {
-					0.4901961088180542,
-					0.686274528503418,
-					1,
 				},
 				[450129] = {
 					0,
@@ -225,23 +230,28 @@ local function addColors(accepted)
 					0.294117659330368,
 					0,
 				},
-				[441782] = {
+				[438677] = {
+					0.9843137860298157,
+					0,
 					1,
-					0.5882353186607361,
-					0.8705883026123047,
 				},
 				[438801] = {
 					0,
 					1,
 					0.03921568766236305,
 				},
-				[441626] = {
+				[438355] = {
+					0.4901961088180542,
+					0.686274528503418,
 					1,
-					0,
-					0.0470588281750679,
 				},
 			},
 			["BigWigs_Bosses_Queen Ansurek"] = {
+				[451600] = {
+					0,
+					0.294117659330368,
+					1,
+				},
 				[439814] = {
 					1,
 					0,
@@ -251,6 +261,11 @@ local function addColors(accepted)
 					1,
 					0.5882353186607361,
 					0,
+				},
+				[448147] = {
+					0.5882353186607361,
+					0.5882353186607361,
+					0.5882353186607361,
 				},
 				[443325] = {
 					0,
@@ -282,10 +297,15 @@ local function addColors(accepted)
 					0.917647123336792,
 					0.8392157554626465,
 				},
+				[441865] = {
+					1,
+					0,
+					0,
+				},
 				[447411] = {
 					1,
 					0,
-					1,
+					0,
 				},
 				[444829] = {
 					0,
@@ -305,11 +325,11 @@ function DoctorioUI:Setup_BigWigs()
 	local name = 'Doctorio'
 
 	-- Profile strings
-	local profile = 'BW1:LvvZUTTXt8qWy0e4GwlLy36G6IGa0I()qDJLRBrnAqGPT8hQo2c6JM4CIROgjUiRi3)7UuYQxkG6LEwpcUVb6qVwaDRa9aREe8dqcGEc6oCfjDs5Hf7o7S)Mz(nFqR)q0hesAyqjNxSfVOxyuGQD4GGQHsQslwU2i(ITvk148QXlz93fN3dKssxOoOu0GUYFBLPqpU)HHbQ60FgUqegPy0aW5SZpRC2vNr6bxv(sUq)4bKHxJYFEyqONViSh4pkscupTfDD88jk)rDw8M4LN0veoOjFar0w6FLhJiLEHSqH7meJMCoi8isWTgHr7g4CA5dBCvVCKN0Mk5mYqfThS0OoK2aURQ9wBwAccW5gVDAJJpz)F88Mno9KZkNyDmy(FJBre7Jwt(tJs3w54N9Mpt)TXBSp(zV9pXV)XEM(2YA4is9ZAxX2YYwOf1aUuP1)T)c(97zBSt0hVSUprZ4vS06JICiEVwhVrbTRu1(jBUZ7US9eTkz8(NgFhXchEoKA6J0Kve3DEFQK2IboeXP0Eu1FnltJNh2hChbxYFbTTY)GvgNWBn0KsTANC0Xn43)9Elgwlpniu0JWogOD9v7mfZvPvjXFPqYjEAFAjNougZDIr3e8BVE8Q(87NB9iMIYzuqGPGTCqGCDWuI74mL8rUUUAidQvM1V5jT6AIkhLMXCf4AKaMEaOiuM8rhYiQ4pkEz(kziudKkIq5Nh2yaUX00elgtF8IixJwR9lFwJY1gRzfte(vXpCdEHSgIuoVJoyIVt86O1Q1pK6btlh0LrL(7(O96nCw2dqRD34hs4RSOBjRL6lsAjspwj(PXp1Y6AdJLl9bXpaSMNbNPeCTXO7NS)BlkSl2YQyxlEHaDBIUcxL3r(1tqA98oDKG6clEr8KU3JkGJyHdAmKd140lb2m8I9IuH19imWLVcEE)WqgAZYT7cUxHsmuYNZlGhqeoua))iiWBy1B)KnlTdFTKl05Od0MWdJG6i7h)Gf3OFsv0En8PEVoqti2tWCOXbFPvI3w3uczncp8QWWEwZt8ojxJynIgu3P4JomFWqogx8d36gH8lT43)MrYjb4yoW3inZBofc6Q8VRHEqyVX8iEbe83jKECZQ8vZaqe6LeJ7fq75YxpvosM7tKQQ6ROEmqwywk6Mzh26Vfe5nbxtvR((yKKuStYaoHI2GiNasMnzGjniRpGY1PW1(p(TjvS0m8ISPL(8p5MHcgfhejqwoW(63TCXDmEoPzE7ekpntnpnYwmcn(XxN7ROhAq6aqsui2G)SuBA4cS6573jFD7s2ttXeF)gZsJ3CUltbtnW1Og3iVn2qjPABkrsDV55UNrfCQRj9NxuO1uwW0jK0SOBKpf6OEVsQZI61sxt5oBr7TPbTFlEKGZGDXH1FNvYQtlwKrqjC5BSR1vaqGrIDYAjb0Ex7mvk1AiW0MEx7ezB54nKKQVDRqbjOlyup5NcBnvpSmF8Ye9mS0tVcNUWU1T)WrnprxrcbQ4YVcNT8b37EX)6)c'
+	local profile = 'BW1:LvvZUTTrq4qqlue0GwlzeNgK6I0c0cue00A56wuJcuyAlhlxBzb9ttSpXvuRixKLKB3DPKvVeaDQN1JGFe0HETa6wb6Hf6rWpaPa(jO7SuKujMhi4m7SFZmFFZU06VyRhIfcKpUzSGijXrIVAooKfKzEsVdQ1OtTwkBlRBII5HiA(soNw7OoQsyRflX4GyAmxmShlHZO49AA)Dp)hTmVD6rtsDufE992T85yCuQhBZBhVXOmh29gJP04r7zBwB7EXCuKpEpJ1Ugxv54(P2geRE7YAOnwkjr(I)CDECIKsIWonoVrTjdIJKTj)b(RxaTxxgdZ9qcS7KbO(yjje30E7Nx9gyXZIJI9c4XH4adxCKERnqH4RRDfJRZYi0ydCGp1MoEbizWS(ebJIgdivAgSRZtZ(8ohx)GF98UDoTEJAZ85XJ6YgH49fbtseyINMXDV2JIecpG9CZZiuSx0crj(rQsxhwutSYr6eRtMSOz)2fs8vsyBgn4eB9d7Ha6VqtJn5XETLiUC)isOlBtJFDLCiHJ9aP0SOQ0maKZhmqGLVY6wiQ9fmDeTq6GCzRNHxhDtEkEG0ITb46G4yA)4rrnsc7H5cDcaCUBcQ258MZGnKMIlSmgTzipDpyDdyOzy9wGC4YkVk2Thryyxtn5eZ7J5P9PLLL91GZJXe)a5xAcaOHLSppJ4l6Sl(57DdyTQkNrEPkQPsoelqYeUMKlwoD(bSYNFcwyOPezCBpefVSQHg4io(3tWrEJBUME8Cxw57qkFr3MSkVBx3zmd3IrUctVPOvH0ANgPrnHLpv3CIYxxeKl7twvUbL(qO815z5EHo4SvhJUZyGQuQGwKfCKVm4(PkFMuuRVp2DrgIfZBZZCb17wlYaknaGe(PDlEVtvB2JZcbOVdqczt9qcXJQBSLZOz1rNaI3R1nSWovitfx1ogRSbOPWwEjPVmyNjWNxghhALxuPs7kJFVkDdRCE5DgMRhnuplRPPh((vPrOTN2dLodk(Tf6pDqEVwF4ojQ)j53rv8AhiKoqTgG0GBgB5lDDYX)Y)9gZt(h22tYqxV6B)m45j26L)BZJnGwn91eiHMP7FInGguTAjSQZl3MvXtxisOlYVvFZjSSRTvpt9mR)TYmni53F8PQpwTZuCgMb3oKii9Oyhe)usir(ptnxebh8B1Q(loUZu8vS0ZCFJHIZsKY72CuGzReMRdCNO7e9gmIZHRZwppKwybCZqGdGHlhKZeoE(HyjIqfp9i9LCav0woMIBvJoSBDUivUlnp9VrPfXUZsTmzO)J75NLAnGUQhP2Cz9Rnv2odiuQ7I8Ia6QTyB8ETmqWFO6ZduL3AE2ppaFpITr(oplHkjmkbZH)ESDbKNfpuFBvUmKoOS50bzhy(HkC7k(wv6znx3Ef)7DMMLYSUuzRSP3BTpAs366tg4iPATlvLuL(Gh8a1ByLZrptfhOfXNOkJwKVc0z3h6bnd0AymXdpVwKpLic27P7ho()p'
 
 	-- Profile import
-	-- API:ImportProfileString(addonName, profileString, optionalCustomProfileName, optionalCallbackFunction)
-	BigWigsAPI:ImportProfileString('DoctorioUI', profile, name, addColors)
+	-- API.RegisterProfile(addonName, profileString, optionalCustomProfileName, optionalCallbackFunction)
+	BigWigsAPI.RegisterProfile('DoctorioUI', profile, name, addColors)
 
 	-- No chat print here
 	-- BigWigs will print a message with all important information after the import
