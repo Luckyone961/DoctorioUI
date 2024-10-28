@@ -1,3 +1,6 @@
+### Version 1.30 [In Development]
+Another hotfix attempt for ElvUI custom whitelist  
+___
 ### Version 1.29 [25-10-2024]
 Hotfix for installer error line 459 Database  
 ___
