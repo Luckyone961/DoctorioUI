@@ -119,7 +119,7 @@ function DoctorioUI:Setup_AuraFilters()
 				["stackThreshold"] = 0,
 			},
 		},
-		["type"] = "whitelist",
+		["type"] = "Whitelist",
 	}
 
 	-- Druid
