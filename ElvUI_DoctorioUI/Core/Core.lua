@@ -151,11 +151,11 @@ function DoctorioUI:Setup_Layout()
 	-- E.private & Media
 	DoctorioUI:Setup_PrivateDB()
 
-	-- E.db & Movers
-	DoctorioUI:Setup_ElvUI()
-
 	-- Aura filters
 	DoctorioUI:Setup_AuraFilters()
+
+	-- E.db & Movers
+	DoctorioUI:Setup_ElvUI()
 
 	-- Push the update
 	E:StaggeredUpdateAll()
