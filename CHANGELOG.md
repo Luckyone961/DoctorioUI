@@ -1,5 +1,5 @@
-### Version 1.30 [In Development]
-Another hotfix attempt for ElvUI custom whitelist  
+### Version 1.30 [02-11-2024]
+Fixed ElvUI whitelist for externals (Doctorio Whitelist)  
 ___
 ### Version 1.29 [25-10-2024]
 Hotfix for installer error line 459 Database  
