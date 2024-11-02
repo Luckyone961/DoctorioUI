@@ -64,9 +64,6 @@ function DoctorioUI:Setup_AuraFilters()
 	----------------------------------------------------------------------
 	E.global["unitframe"] = E.global["unitframe"]or {}
 	E.global["unitframe"]["aurafilters"] = E.global["unitframe"]["aurafilters"] or {}
-	E.global["unitframe"]["aurafilters"]["Whitelist Doctorio"] = E.global["unitframe"]["aurafilters"]["Whitelist Doctorio"] or {}
-	E.global["unitframe"]["aurafilters"]["Whitelist Doctorio"]["spells"] = E.global["unitframe"]["aurafilters"]["Whitelist Doctorio"]["spells"] or {}
-	E.global["unitframe"]["aurafilters"]["Whitelist Doctorio"]["type"] = "whitelist"
 
 	-- Custom Whitelist
 	E.global["unitframe"]["aurafilters"]["Whitelist Doctorio"] = {
@@ -122,6 +119,7 @@ function DoctorioUI:Setup_AuraFilters()
 				["stackThreshold"] = 0,
 			},
 		},
+		["type"] = "Whitelist",
 	}
 
 	-- Druid
