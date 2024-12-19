@@ -1,2 +1,2 @@
-### Version 1.30 [02-11-2024]
-Fixed ElvUI whitelist for externals (Doctorio Whitelist)  
+### Version 1.31 [19-12-2024]
+Updated TOC for patch 11.0.7  
