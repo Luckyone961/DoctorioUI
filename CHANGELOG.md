@@ -1,3 +1,6 @@
+### Version 1.32 [In Development]
+Updated LICENSE  
+___
 ### Version 1.31 [19-12-2024]
 Updated TOC for patch 11.0.7  
 ___
