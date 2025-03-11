@@ -279,7 +279,6 @@ function DoctorioUI:Setup_ElvUI()
 	E.db["chat"]["tabSelectorColor"]["g"] = 0.48627454042435
 	E.db["chat"]["tabSelectorColor"]["r"] = 1
 	E.db["chat"]["timeStampFormat"] = "%H:%M "
-	E.db["convertPages"] = true
 	E.db["cooldown"]["targetAura"] = false
 	E.db["databars"]["azerite"]["enable"] = false
 	E.db["databars"]["experience"]["enable"] = false
