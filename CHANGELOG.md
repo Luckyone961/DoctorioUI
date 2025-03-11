@@ -1,5 +1,6 @@
 ### Version 1.33 [In Development]
 Updated ElvUI blacklist  
+Updated ElvUI profile (Threat style & Health color threshold)  
 ___
 ### Version 1.32 [26-02-2025]
 Updated LICENSE  
