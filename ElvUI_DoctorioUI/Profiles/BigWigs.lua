@@ -7,309 +7,234 @@ local function addColors(accepted)
 	BigWigs3DB['namespaces']['BigWigs_Plugins_Colors']['profiles'] = BigWigs3DB['namespaces']['BigWigs_Plugins_Colors']['profiles'] or {}
 	BigWigs3DB['namespaces']['BigWigs_Plugins_Colors']['profiles']['Doctorio'] = {
 		["barColor"] = {
-			["BigWigs_Bosses_Ulgrax the Devourer"] = {
-				[435138] = {
+			["BigWigs_Bosses_Vexie and the Geargrinders"] = {
+				[459943] = {
 					0,
 					1,
 					0,
 				},
-				[434803] = {
+				[459678] = {
 					1,
 					0,
 					1,
 				},
-				[443842] = {
-					1,
-					1,
-					0,
-				},
-				[435136] = {
-					1,
-					0,
-					0,
-				},
-				[441452] = {
-					0,
-					1,
-					1,
-				},
-				[434778] = {
-					1,
-					0,
-					1,
-				},
-				[438012] = {
-					1,
-					0,
-					0,
-				},
-				[436200] = {
-					1,
-					0,
-					1,
-				},
-			},
-			["BigWigs_Bosses_The Bloodbound Horror"] = {
-				[444363] = {
-					1,
-					0,
-					1,
-				},
-				[443203] = {
-					1,
-					0,
-					0,
-				},
-				[452237] = {
-					0,
-					0.294117659330368,
-					1,
-				},
-				[444497] = {
-					0,
-					1,
-					0,
-				},
-				[445936] = {
-					0,
-					1,
-					1,
-				},
-			},
-			["BigWigs_Bosses_Sikran, Captain of the Sureki"] = {
-				[433517] = {
-					1,
-					0,
-					1,
-				},
-				[442428] = {
-					1,
-					0,
-					0,
-				},
-				[456420] = {
-					1,
-					0.686274528503418,
-					0,
-				},
-			},
-			["BigWigs_Bosses_Rasha'nan"] = {
-				[454989] = {
-					1,
-					0,
-					1,
-				},
-				[439789] = {
-					0,
-					1,
-					0,
-				},
-				[455373] = {
-					0,
-					1,
-					1,
-				},
-				["stages"] = {
-					0.5882353186607361,
-					0.5882353186607361,
-					0.5882353186607361,
-				},
-				[439811] = {
-					1,
-					0,
-					0,
-				},
-				[439784] = {
+				[460116] = {
 					0.9411765336990356,
-					0.917647123336792,
-					0.8392157554626465,
+					1,
+					0.9921569228172302,
 				},
-			},
-			["BigWigs_Bosses_Broodtwister Ovi'nax"] = {
-				[442432] = {
-					1,
-					0,
-					0,
-				},
-				[442526] = {
-					1,
-					0,
-					1,
-				},
-				[443274] = {
-					1,
-					0,
-					0,
-				},
-				[446349] = {
-					0,
-					0.686274528503418,
-					1,
-				},
-			},
-			["BigWigs_Bosses_Nexus-Princess Ky'veza"] = {
-				[438245] = {
-					1,
-					0,
-					1,
-				},
-				[439409] = {
-					0,
-					0.3921568989753723,
-					1,
-				},
-				[439576] = {
-					0,
-					1,
-					0,
-				},
-				[437620] = {
-					1,
-					1,
-					0,
-				},
-				[436867] = {
-					1,
-					0,
-					1,
-				},
-			},
-			["BigWigs_Bosses_The Silken Court"] = {
-				[460600] = {
+				[468216] = {
 					1,
 					0,
 					0,
 				},
-				[440504] = {
-					1,
-					0.686274528503418,
-					0,
-				},
-				[441626] = {
-					1,
-					0,
-					0.0470588281750679,
-				},
-				[450045] = {
-					0.7843137979507446,
-					1,
-					0.5882353186607361,
-				},
-				[438656] = {
-					1,
-					0,
-					0,
-				},
-				[439838] = {
-					0.9411765336990356,
-					0.917647123336792,
-					0.8392157554626465,
-				},
-				[441791] = {
-					1,
-					1,
-					0,
-				},
-				[441782] = {
-					1,
-					0.5882353186607361,
-					0.8705883026123047,
-				},
-				[442994] = {
+			},
+			["BigWigs_Bosses_Cauldron of Carnage"] = {
+				[473650] = {
 					1,
 					0.3921568989753723,
-					0.294117659330368,
-				},
-				[450129] = {
 					0,
-					0.2196078598499298,
+				},
+				[1213690] = {
 					1,
-				},
-				[443068] = {
-					0.5882353186607361,
-					0.294117659330368,
+					0,
 					0,
 				},
-				[438677] = {
-					0.9843137860298157,
-					0,
+				[472233] = {
 					1,
-				},
-				[438801] = {
 					0,
-					1,
-					0.03921568766236305,
-				},
-				[438355] = {
-					0.4901961088180542,
-					0.686274528503418,
 					1,
 				},
 			},
-			["BigWigs_Bosses_Queen Ansurek"] = {
-				[451600] = {
-					0,
-					0.294117659330368,
-					1,
-				},
-				[439814] = {
-					1,
-					0,
-					1,
-				},
-				[451278] = {
-					1,
-					0.5882353186607361,
-					0,
-				},
-				[448147] = {
-					0.5882353186607361,
-					0.5882353186607361,
-					0.5882353186607361,
-				},
-				[443325] = {
-					0,
-					1,
-					0.686274528503418,
-				},
-				[440899] = {
-					0,
-					1,
-					0,
-				},
-				[443888] = {
-					0,
-					0,
-					1,
-				},
-				[437592] = {
+			["BigWigs_Bosses_Rik Reverb"] = {
+				[466979] = {
 					1,
 					0,
 					0,
 				},
-				[438976] = {
+				[472306] = {
+					0,
+					1,
+					0,
+				},
+				[473260] = {
+					0,
+					1,
+					1,
+				},
+				[467606] = {
+					1,
+					0.6705882549285889,
+					0.5333333611488342,
+				},
+				[466866] = {
+					0,
+					1,
+					1,
+				},
+				[473748] = {
+					1,
+					0,
+					1,
+				},
+			},
+			["BigWigs_Bosses_Stix Bunkjunker"] = {
+				[464149] = {
 					1,
 					0,
 					0,
 				},
-				[439299] = {
-					0.9411765336990356,
-					0.917647123336792,
-					0.8392157554626465,
+				[464399] = {
+					1,
+					0,
+					1,
 				},
-				[441865] = {
+				[467117] = {
+					0.3058823645114899,
+					1,
+					0.9686275124549866,
+				},
+			},
+			["BigWigs_Bosses_Sprocketmonger Lockenstock"] = {
+				[1218319] = {
 					1,
 					0,
 					0,
 				},
-				[447411] = {
+				[465232] = {
 					1,
 					0,
 					0,
 				},
-				[444829] = {
+				[1216802] = {
+					1,
+					0.2705882489681244,
+					0.4823529720306397,
+				},
+				[1214878] = {
+					1,
+					0.3921568989753723,
+					0,
+				},
+				[1217231] = {
+					1,
 					0,
 					1,
+				},
+				[473276] = {
+					0,
+					0.3607843220233917,
+					1,
+				},
+				[1216509] = {
+					1,
+					1,
+					0,
+				},
+			},
+			["BigWigs_Bosses_The One-Armed Bandit"] = {
+				[469993] = {
+					1,
+					0,
+					0,
+				},
+				[461060] = {
+					0,
+					1,
+					0,
+				},
+				[471927] = {
+					1,
+					0.3921568989753723,
+					0,
+				},
+			},
+			["BigWigs_Bosses_Mug'Zee, Heads of Security"] = {
+				[466518] = {
+					1,
+					0.8941177129745483,
+					0.3490196168422699,
+				},
+				[472631] = {
+					0.3921568989753723,
+					0,
+					1,
+				},
+				[466476] = {
+					0.1960784494876862,
+					0.5921568870544434,
+					1,
+				},
+				[466545] = {
+					1,
+					1,
+					0,
+				},
+				[467380] = {
+					1,
+					0,
+					0,
+				},
+				[466539] = {
+					1,
+					0,
+					1,
+				},
+				[466509] = {
+					1,
+					1,
+					0,
+				},
+				[1215953] = {
+					1,
+					0,
+					0,
+				},
+			},
+			["BigWigs_Bosses_Chrome King Gallywix"] = {
+				[1214755] = {
+					1,
+					0,
+					1,
+				},
+				[465952] = {
+					1,
+					1,
+					0,
+				},
+				[1217292] = {
+					1,
+					0.3921568989753723,
+					0.3333333432674408,
+				},
+				[1214369] = {
+					1,
+					0,
+					0,
+				},
+				[466340] = {
+					1,
+					0,
+					0,
+				},
+				[467182] = {
+					0,
+					1,
+					1,
+				},
+				[466751] = {
+					1,
+					0.3921568989753723,
+					0,
+				},
+				[466341] = {
+					1,
+					0,
+					0,
+				},
+				[469327] = {
+					1,
+					0,
 					0,
 				},
 			},
@@ -325,7 +250,7 @@ function DoctorioUI:Setup_BigWigs()
 	local name = 'Doctorio'
 
 	-- Profile strings
-	local profile = 'BW1:LvvZUTTrq4qqlue0GwlzeNgK6I0c0cue00A56wuJcuyAlhlxBzb9ttSpXvuRixKLKB3DPKvVeaDQN1JGFe0HETa6wb6Hf6rWpaPa(jO7SuKujMhi4m7SFZmFFZU06VyRhIfcKpUzSGijXrIVAooKfKzEsVdQ1OtTwkBlRBII5HiA(soNw7OoQsyRflX4GyAmxmShlHZO49AA)Dp)hTmVD6rtsDufE992T85yCuQhBZBhVXOmh29gJP04r7zBwB7EXCuKpEpJ1Ugxv54(P2geRE7YAOnwkjr(I)CDECIKsIWonoVrTjdIJKTj)b(RxaTxxgdZ9qcS7KbO(yjje30E7Nx9gyXZIJI9c4XH4adxCKERnqH4RRDfJRZYi0ydCGp1MoEbizWS(ebJIgdivAgSRZtZ(8ohx)GF98UDoTEJAZ85XJ6YgH49fbtseyINMXDV2JIecpG9CZZiuSx0crj(rQsxhwutSYr6eRtMSOz)2fs8vsyBgn4eB9d7Ha6VqtJn5XETLiUC)isOlBtJFDLCiHJ9aP0SOQ0maKZhmqGLVY6wiQ9fmDeTq6GCzRNHxhDtEkEG0ITb46G4yA)4rrnsc7H5cDcaCUBcQ258MZGnKMIlSmgTzipDpyDdyOzy9wGC4YkVk2Thryyxtn5eZ7J5P9PLLL91GZJXe)a5xAcaOHLSppJ4l6Sl(57DdyTQkNrEPkQPsoelqYeUMKlwoD(bSYNFcwyOPezCBpefVSQHg4io(3tWrEJBUME8Cxw57qkFr3MSkVBx3zmd3IrUctVPOvH0ANgPrnHLpv3CIYxxeKl7twvUbL(qO815z5EHo4SvhJUZyGQuQGwKfCKVm4(PkFMuuRVp2DrgIfZBZZCb17wlYaknaGe(PDlEVtvB2JZcbOVdqczt9qcXJQBSLZOz1rNaI3R1nSWovitfx1ogRSbOPWwEjPVmyNjWNxghhALxuPs7kJFVkDdRCE5DgMRhnuplRPPh((vPrOTN2dLodk(Tf6pDqEVwF4ojQ)j53rv8AhiKoqTgG0GBgB5lDDYX)Y)9gZt(h22tYqxV6B)m45j26L)BZJnGwn91eiHMP7FInGguTAjSQZl3MvXtxisOlYVvFZjSSRTvpt9mR)TYmni53F8PQpwTZuCgMb3oKii9Oyhe)usir(ptnxebh8B1Q(loUZu8vS0ZCFJHIZsKY72CuGzReMRdCNO7e9gmIZHRZwppKwybCZqGdGHlhKZeoE(HyjIqfp9i9LCav0woMIBvJoSBDUivUlnp9VrPfXUZsTmzO)J75NLAnGUQhP2Cz9Rnv2odiuQ7I8Ia6QTyB8ETmqWFO6ZduL3AE2ppaFpITr(oplHkjmkbZH)ESDbKNfpuFBvUmKoOS50bzhy(HkC7k(wv6znx3Ef)7DMMLYSUuzRSP3BTpAs366tg4iPATlvLuL(Gh8a1ByLZrptfhOfXNOkJwKVc0z3h6bnd0AymXdpVwKpLic27P7ho()p'
+	local profile = 'BW1:LvvZVTrru8UARpuqcIDuDjQuubPIesLQg3gqeHekBIZxKpSSDOFCAhV(5Dh1z3DyMztI5ciFIZ5pHCMt(axrY3qIdJ8FcrCUi5)cyE7NwT7Hv777FV3V3mR1FYxjeKsIp0jwsv04i5xodc5bfIhoy72N0VDxTTL1nrXIqcR0KZrT3TVUgynpphBhZIfYZhWteCgSzh7N(KV1k9TZawsMIw4RNB31xaquMg703oEJjfkShmgyS4l20o126dIfKiFyZuPnsv1sadZKtZyRf5yOhOu0iF5VVIiorXOrGZjNEs7jJIJu9O)c8vZX27moheEej4ozeziOOHqh71FsRBqJhhhf7fiIdHG0zXUMqpHecx3(sUWuLliJtthQt30XlGOcMoKk5mYymt1MIrDAw1N1F)d2(hp9S(hDWjTN6lIV4m(feXqzWKejq9mtC3R9yeP0dNEULveb7R6syu)iDTRdRWeVEKPWMIPQA2NoxbxQWWs5GdTnp8gy2rDl1q8MOY9mWyhQa8qESNIiu6AlqdVGouf0Ni8b1J4RGA2hO(bQtvbGq(OuF2sYnb2LyI1nZN9muvFtJFemszXxfvTDCmBy8frNKeoWePlVjcW3VUT6FANPyaNoAKeuVYAwbOZMU3GIM5UjiSkULMXXZAvyohGtXQKNQV)wlkCoNlef0qLxV06guyzkVysUea2bKevIWmXRmNTmHsLltgQ596YV4So86fdPDfWpNarEJ7CBZk7gP4Zjwmeez0MLLvoTv1Y9hZHUC6La7Mk3XIN7j6th08rMouw)6kNC5FsPdIyVTIOH7GnHbv287USPuQaT7MJ1L7aDTmkTQqqKVk4ozCFbr3EOp4oVyGV0wy9L9Q3fuEUBy6YCdhgF3gvVFwlB(AfUSvIkEBIu1XGqQhZ0H5RWfOPFa17nMoxANrRzuT(5Ps94epZbeR0vScHjOWRJJdFND1dIo3SdbblTp(sRRY8OSDw6qrX5K7(UyTNhHb2xnGKrRYFAU5thI3Bmh)tIgEy5TyvVEg6sFeXbedws3ee5QoC)F4)(10NYpSTNuKDJ13(z4Z9TnM)R0hBmBTnxKqKMfLHhAJzdBodD2Y5fRZB4zaIcB6Y79BoHxCXU(X6hB9pnMAss5nmFQ(J1p)kOiNbloNkPdyGdrCenKQ(7RsVQcVgOB3d2B)(xbxYZMtFD6H2IcPhUOml4Ewc31bV10DIjG0ZY7ScFLsx6csC5mWbZHRaj1ebmBhqrOm5d31Cniok6PgZGUTzNF2bczgpxBw2)RYaXgtZKsRW)U2a)IsBsOR(E6M543iQTDgrzm35LGa7QhWx9DAzCa)H6ppqx)bZk(9cQ7E8vlJ84eMIYzuqG)Fz9QuEC85G7IsAiBrP5vJko88nne2n8TAmWAMP9Q(78uZuQq61ABTn7w3(JMC2bMZhqKsF7xRRPRz)hFG(341lZEbloYqI3xxNmV0c2z3b7bZeO75Xupyw7iFgvgS5d3kC8)d'
 
 	-- Profile import
 	-- API.RegisterProfile(addonName, profileString, optionalCustomProfileName, optionalCallbackFunction)

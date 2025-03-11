@@ -275,9 +275,9 @@ function DoctorioUI:Setup_ElvUI()
 	E.db["chat"]["separateSizes"] = true
 	E.db["chat"]["tabFont"] = "Expressway"
 	E.db["chat"]["tabSelector"] = "NONE"
-	E.db["chat"]["tabSelectorColor"]["b"] = 0.49803924560547
-	E.db["chat"]["tabSelectorColor"]["g"] = 0.57647061347961
-	E.db["chat"]["tabSelectorColor"]["r"] = 0.20000001788139
+	E.db["chat"]["tabSelectorColor"]["b"] = 0.039215687662363
+	E.db["chat"]["tabSelectorColor"]["g"] = 0.48627454042435
+	E.db["chat"]["tabSelectorColor"]["r"] = 1
 	E.db["chat"]["timeStampFormat"] = "%H:%M "
 	E.db["cooldown"]["targetAura"] = false
 	E.db["databars"]["azerite"]["enable"] = false
@@ -342,9 +342,9 @@ function DoctorioUI:Setup_ElvUI()
 	E.db["general"]["totems"]["growthDirection"] = "HORIZONTAL"
 	E.db["general"]["totems"]["size"] = 50
 	E.db["general"]["totems"]["spacing"] = 8
-	E.db["general"]["valuecolor"]["b"] = 0.49803924560547
-	E.db["general"]["valuecolor"]["g"] = 0.57647061347961
-	E.db["general"]["valuecolor"]["r"] = 0.20000001788139
+	E.db["general"]["valuecolor"]["b"] = 0.039215687662363
+	E.db["general"]["valuecolor"]["g"] = 0.48627454042435
+	E.db["general"]["valuecolor"]["r"] = 1
 	E.db["layoutSetting"] = "healer"
 	E.db["movers"]["AlertFrameMover"] = "TOPRIGHT,UIParent,TOPRIGHT,-478,-349"
 	E.db["movers"]["AltPowerBarMover"] = "TOP,ElvUIParent,TOP,0,-60"
@@ -505,7 +505,8 @@ function DoctorioUI:Setup_ElvUI()
 	E.db["unitframe"]["colors"]["healthBreak"]["good"]["g"] = 0.15686275064945
 	E.db["unitframe"]["colors"]["healthBreak"]["good"]["r"] = 0.15686275064945
 	E.db["unitframe"]["colors"]["healthBreak"]["low"] = 0.45
-	E.db["unitframe"]["colors"]["healthBreak"]["onlyLow"] = true
+	E.db["unitframe"]["colors"]["healthBreak"]["threshold"]["good"] = false
+	E.db["unitframe"]["colors"]["healthBreak"]["threshold"]["neutral"] = false
 	E.db["unitframe"]["colors"]["tapped"]["b"] = 0.61176472902298
 	E.db["unitframe"]["colors"]["tapped"]["g"] = 0.5686274766922
 	E.db["unitframe"]["colors"]["tapped"]["r"] = 0.54901963472366
@@ -572,6 +573,7 @@ function DoctorioUI:Setup_ElvUI()
 	E.db["unitframe"]["units"]["arena"]["spacing"] = 14
 	E.db["unitframe"]["units"]["arena"]["width"] = 200
 	E.db["unitframe"]["units"]["assist"]["enable"] = false
+	E.db["unitframe"]["units"]["assist"]["threatStyle"] = "NONE"
 	E.db["unitframe"]["units"]["boss"]["buffs"]["countFont"] = "Expressway"
 	E.db["unitframe"]["units"]["boss"]["buffs"]["sizeOverride"] = 27
 	E.db["unitframe"]["units"]["boss"]["buffs"]["yOffset"] = 0
@@ -711,9 +713,8 @@ function DoctorioUI:Setup_ElvUI()
 	E.db["unitframe"]["units"]["focus"]["raidicon"]["attachTo"] = "CENTER"
 	E.db["unitframe"]["units"]["focus"]["raidicon"]["size"] = 30
 	E.db["unitframe"]["units"]["focus"]["raidicon"]["yOffset"] = 0
-	E.db["unitframe"]["units"]["focus"]["threatStyle"] = "BORDERS"
+	E.db["unitframe"]["units"]["focus"]["threatStyle"] = "NONE"
 	E.db["unitframe"]["units"]["focus"]["width"] = 250
-	E.db["unitframe"]["units"]["focustarget"]["threatStyle"] = "BORDERS"
 	E.db["unitframe"]["units"]["party"]["buffIndicator"]["countFont"] = "Expressway"
 	E.db["unitframe"]["units"]["party"]["buffIndicator"]["size"] = 20
 	E.db["unitframe"]["units"]["party"]["buffs"]["anchorPoint"] = "TOP"
@@ -828,9 +829,8 @@ function DoctorioUI:Setup_ElvUI()
 	E.db["unitframe"]["units"]["pet"]["raidicon"]["attachTo"] = "LEFT"
 	E.db["unitframe"]["units"]["pet"]["raidicon"]["xOffset"] = 2
 	E.db["unitframe"]["units"]["pet"]["raidicon"]["yOffset"] = 0
-	E.db["unitframe"]["units"]["pet"]["threatStyle"] = "BORDERS"
+	E.db["unitframe"]["units"]["pet"]["threatStyle"] = "NONE"
 	E.db["unitframe"]["units"]["pet"]["width"] = 200
-	E.db["unitframe"]["units"]["pettarget"]["threatStyle"] = "BORDERS"
 	E.db["unitframe"]["units"]["player"]["aurabar"]["enable"] = false
 	E.db["unitframe"]["units"]["player"]["buffs"]["attachTo"] = "FRAME"
 	E.db["unitframe"]["units"]["player"]["castbar"]["customTextFont"]["enable"] = true
@@ -884,7 +884,7 @@ function DoctorioUI:Setup_ElvUI()
 	E.db["unitframe"]["units"]["player"]["resurrectIcon"]["attachTo"] = "LEFT"
 	E.db["unitframe"]["units"]["player"]["resurrectIcon"]["size"] = 25
 	E.db["unitframe"]["units"]["player"]["resurrectIcon"]["xOffset"] = 85
-	E.db["unitframe"]["units"]["player"]["threatStyle"] = "BORDERS"
+	E.db["unitframe"]["units"]["player"]["threatStyle"] = "NONE"
 	E.db["unitframe"]["units"]["player"]["width"] = 371
 	E.db["unitframe"]["units"]["raid1"]["buffIndicator"]["size"] = 18
 	E.db["unitframe"]["units"]["raid1"]["buffs"]["anchorPoint"] = "TOPLEFT"
@@ -1093,7 +1093,7 @@ function DoctorioUI:Setup_ElvUI()
 	E.db["unitframe"]["units"]["raid3"]["threatStyle"] = "BORDERS"
 	E.db["unitframe"]["units"]["raid3"]["verticalSpacing"] = 0
 	E.db["unitframe"]["units"]["raid3"]["width"] = 71
-	E.db["unitframe"]["units"]["raidpet"]["threatStyle"] = "BORDERS"
+	E.db["unitframe"]["units"]["raidpet"]["threatStyle"] = "NONE"
 	E.db["unitframe"]["units"]["tank"]["enable"] = false
 	E.db["unitframe"]["units"]["tank"]["threatStyle"] = "BORDERS"
 	E.db["unitframe"]["units"]["target"]["aurabar"]["enable"] = false
@@ -1182,7 +1182,7 @@ function DoctorioUI:Setup_ElvUI()
 	E.db["unitframe"]["units"]["target"]["raidicon"]["yOffset"] = 0
 	E.db["unitframe"]["units"]["target"]["raidRoleIcons"]["enable"] = false
 	E.db["unitframe"]["units"]["target"]["resurrectIcon"]["size"] = 25
-	E.db["unitframe"]["units"]["target"]["threatStyle"] = "BORDERS"
+	E.db["unitframe"]["units"]["target"]["threatStyle"] = "NONE"
 	E.db["unitframe"]["units"]["target"]["width"] = 371
 	E.db["unitframe"]["units"]["targettarget"]["customTexts"]["TargetofTarget Name"]["attachTextTo"] = "Health"
 	E.db["unitframe"]["units"]["targettarget"]["customTexts"]["TargetofTarget Name"]["enable"] = true
@@ -1202,7 +1202,5 @@ function DoctorioUI:Setup_ElvUI()
 	E.db["unitframe"]["units"]["targettarget"]["raidicon"]["attachTo"] = "LEFT"
 	E.db["unitframe"]["units"]["targettarget"]["raidicon"]["xOffset"] = 2
 	E.db["unitframe"]["units"]["targettarget"]["raidicon"]["yOffset"] = 0
-	E.db["unitframe"]["units"]["targettarget"]["threatStyle"] = "BORDERS"
 	E.db["unitframe"]["units"]["targettarget"]["width"] = 163
-	E.db["unitframe"]["units"]["targettargettarget"]["threatStyle"] = "BORDERS"
 end
