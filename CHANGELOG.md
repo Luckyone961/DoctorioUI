@@ -1,4 +1,5 @@
 ### Version 1.33 [In Development]
+Fixed installer step for Details profile  
 Updated ElvUI blacklist  
 Updated ElvUI profile (Threat style & Health color threshold)  
 ___
