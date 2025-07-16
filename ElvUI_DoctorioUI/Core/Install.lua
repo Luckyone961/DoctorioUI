@@ -109,7 +109,7 @@ DoctorioUI.InstallerData = {
 			PluginInstallFrame.Desc1:SetText(L["You have completed the installation process, please click 'Finished' to reload the UI."])
 			PluginInstallFrame.Desc2:SetText(L["Feel free to join our community Discord for support and social chats."])
 			PluginInstallFrame.Option1:Show()
-			PluginInstallFrame.Option1:SetScript('OnClick', function() E:StaticPopup_Show('DoctorioUI_EDITBOX', nil, nil, 'https://doctorio.eu/discord') end)
+			PluginInstallFrame.Option1:SetScript('OnClick', function() E:StaticPopup_Show('DoctorioUI_EDITBOX', nil, nil, 'https://doctorio.io/discord') end)
 			PluginInstallFrame.Option1:SetText('Discord')
 			PluginInstallFrame.Option2:Show()
 			PluginInstallFrame.Option2:SetScript('OnClick', InstallComplete)

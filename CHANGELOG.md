@@ -1,3 +1,7 @@
+### Version 1.34 [16-07-2025]
+Fixed Discord URL in the installer frame  
+Updated TOC for patch 11.1.7  
+___
 ### Version 1.33 [11-03-2025]
 Fixed installer step for Details profile  
 Updated BigWigs profile (Full season 2 colors)  
