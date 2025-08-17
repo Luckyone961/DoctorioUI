@@ -128,6 +128,7 @@ function DoctorioUI:Setup_ElvUI()
 	E.db["actionbar"]["bar2"]["macroFont"] = "Expressway"
 	E.db["actionbar"]["bar2"]["macroFontOutline"] = "OUTLINE"
 	E.db["actionbar"]["bar2"]["paging"]["MAGE"] = ""
+	E.db["actionbar"]["bar2"]["paging"]["PALADIN"] = ""
 	E.db["actionbar"]["bar2"]["visibility"] = "[petbattle] hide; show"
 	E.db["actionbar"]["bar3"]["buttons"] = 12
 	E.db["actionbar"]["bar3"]["buttonSize"] = 30
@@ -275,9 +276,9 @@ function DoctorioUI:Setup_ElvUI()
 	E.db["chat"]["separateSizes"] = true
 	E.db["chat"]["tabFont"] = "Expressway"
 	E.db["chat"]["tabSelector"] = "NONE"
-	E.db["chat"]["tabSelectorColor"]["b"] = 0.039215687662363
-	E.db["chat"]["tabSelectorColor"]["g"] = 0.48627454042435
-	E.db["chat"]["tabSelectorColor"]["r"] = 1
+	E.db["chat"]["tabSelectorColor"]["b"] = 0.99
+	E.db["chat"]["tabSelectorColor"]["g"] = 0.99
+	E.db["chat"]["tabSelectorColor"]["r"] = 0.99
 	E.db["chat"]["timeStampFormat"] = "%H:%M "
 	E.db["cooldown"]["targetAura"] = false
 	E.db["databars"]["azerite"]["enable"] = false
@@ -342,9 +343,9 @@ function DoctorioUI:Setup_ElvUI()
 	E.db["general"]["totems"]["growthDirection"] = "HORIZONTAL"
 	E.db["general"]["totems"]["size"] = 50
 	E.db["general"]["totems"]["spacing"] = 8
-	E.db["general"]["valuecolor"]["b"] = 0.039215687662363
-	E.db["general"]["valuecolor"]["g"] = 0.48627454042435
-	E.db["general"]["valuecolor"]["r"] = 1
+	E.db["general"]["valuecolor"]["b"] = 0.99
+	E.db["general"]["valuecolor"]["g"] = 0.99
+	E.db["general"]["valuecolor"]["r"] = 0.99
 	E.db["layoutSetting"] = "healer"
 	E.db["movers"]["AlertFrameMover"] = "TOPRIGHT,UIParent,TOPRIGHT,-478,-349"
 	E.db["movers"]["AltPowerBarMover"] = "TOP,ElvUIParent,TOP,0,-60"
@@ -375,7 +376,7 @@ function DoctorioUI:Setup_ElvUI()
 	E.db["movers"]["ElvUF_AssistMover"] = "TOPLEFT,UIParent,TOPLEFT,423,-407"
 	E.db["movers"]["ElvUF_FocusCastbarMover"] = "TOPLEFT,ElvUIParent,TOPLEFT,365,-220"
 	E.db["movers"]["ElvUF_FocusMover"] = "TOPLEFT,ElvUIParent,TOPLEFT,365,-220"
-	E.db["movers"]["ElvUF_PartyMover"] = "BOTTOM,ElvUIParent,BOTTOM,310,2"
+	E.db["movers"]["ElvUF_PartyMover"] = "BOTTOM,ElvUIParent,BOTTOM,311,2"
 	E.db["movers"]["ElvUF_PetCastbarMover"] = "BOTTOMRIGHT,ElvUIParent,BOTTOMRIGHT,-1,466"
 	E.db["movers"]["ElvUF_PetMover"] = "BOTTOMRIGHT,ElvUIParent,BOTTOMRIGHT,-1,457"
 	E.db["movers"]["ElvUF_PlayerCastbarMover"] = "BOTTOM,UIParent,BOTTOM,0,265"
@@ -575,7 +576,8 @@ function DoctorioUI:Setup_ElvUI()
 	E.db["unitframe"]["units"]["assist"]["enable"] = false
 	E.db["unitframe"]["units"]["assist"]["threatStyle"] = "NONE"
 	E.db["unitframe"]["units"]["boss"]["buffs"]["countFont"] = "Expressway"
-	E.db["unitframe"]["units"]["boss"]["buffs"]["sizeOverride"] = 27
+	E.db["unitframe"]["units"]["boss"]["buffs"]["sizeOverride"] = 30
+	E.db["unitframe"]["units"]["boss"]["buffs"]["sortMethod"] = "INDEX"
 	E.db["unitframe"]["units"]["boss"]["buffs"]["yOffset"] = 0
 	E.db["unitframe"]["units"]["boss"]["castbar"]["customTextFont"]["enable"] = true
 	E.db["unitframe"]["units"]["boss"]["castbar"]["customTextFont"]["font"] = "Expressway"
@@ -613,11 +615,14 @@ function DoctorioUI:Setup_ElvUI()
 	E.db["unitframe"]["units"]["boss"]["customTexts"]["Healthpoints"]["text_format"] = "[health:current:shortvalue] || [health:percent]"
 	E.db["unitframe"]["units"]["boss"]["customTexts"]["Healthpoints"]["xOffset"] = 0
 	E.db["unitframe"]["units"]["boss"]["customTexts"]["Healthpoints"]["yOffset"] = 0
+	E.db["unitframe"]["units"]["boss"]["debuffs"]["anchorPoint"] = "RIGHT"
 	E.db["unitframe"]["units"]["boss"]["debuffs"]["countFont"] = "Expressway"
-	E.db["unitframe"]["units"]["boss"]["debuffs"]["enable"] = false
 	E.db["unitframe"]["units"]["boss"]["debuffs"]["maxDuration"] = 300
-	E.db["unitframe"]["units"]["boss"]["debuffs"]["sizeOverride"] = 27
-	E.db["unitframe"]["units"]["boss"]["debuffs"]["yOffset"] = -16
+	E.db["unitframe"]["units"]["boss"]["debuffs"]["perrow"] = 4
+	E.db["unitframe"]["units"]["boss"]["debuffs"]["priority"] = "Whitelist Doctorio Boss"
+	E.db["unitframe"]["units"]["boss"]["debuffs"]["sizeOverride"] = 30
+	E.db["unitframe"]["units"]["boss"]["debuffs"]["sortMethod"] = "NAME"
+	E.db["unitframe"]["units"]["boss"]["debuffs"]["yOffset"] = 0
 	E.db["unitframe"]["units"]["boss"]["health"]["text_format"] = ""
 	E.db["unitframe"]["units"]["boss"]["height"] = 40
 	E.db["unitframe"]["units"]["boss"]["infoPanel"]["height"] = 17
@@ -695,8 +700,9 @@ function DoctorioUI:Setup_ElvUI()
 	E.db["unitframe"]["units"]["focus"]["debuffs"]["growthX"] = "RIGHT"
 	E.db["unitframe"]["units"]["focus"]["debuffs"]["maxDuration"] = 0
 	E.db["unitframe"]["units"]["focus"]["debuffs"]["perrow"] = 4
-	E.db["unitframe"]["units"]["focus"]["debuffs"]["priority"] = "Blacklist,Personal,nonPersonal"
+	E.db["unitframe"]["units"]["focus"]["debuffs"]["priority"] = "Whitelist Doctorio Boss"
 	E.db["unitframe"]["units"]["focus"]["debuffs"]["sizeOverride"] = 25
+	E.db["unitframe"]["units"]["focus"]["debuffs"]["sortMethod"] = "NAME"
 	E.db["unitframe"]["units"]["focus"]["disableMouseoverGlow"] = true
 	E.db["unitframe"]["units"]["focus"]["disableTargetGlow"] = true
 	E.db["unitframe"]["units"]["focus"]["healPrediction"]["absorbStyle"] = "NORMAL"
@@ -771,10 +777,11 @@ function DoctorioUI:Setup_ElvUI()
 	E.db["unitframe"]["units"]["party"]["name"]["text_format"] = ""
 	E.db["unitframe"]["units"]["party"]["petsGroup"]["disableFocusGlow"] = false
 	E.db["unitframe"]["units"]["party"]["petsGroup"]["disableTargetGlow"] = false
-	E.db["unitframe"]["units"]["party"]["power"]["enable"] = false
+	E.db["unitframe"]["units"]["party"]["power"]["onlyHealer"] = true
 	E.db["unitframe"]["units"]["party"]["power"]["position"] = "BOTTOMRIGHT"
 	E.db["unitframe"]["units"]["party"]["power"]["text_format"] = ""
 	E.db["unitframe"]["units"]["party"]["power"]["yOffset"] = 2
+	E.db["unitframe"]["units"]["party"]["privateAuras"]["enable"] = false
 	E.db["unitframe"]["units"]["party"]["privateAuras"]["icon"]["size"] = 18
 	E.db["unitframe"]["units"]["party"]["raidicon"]["attachTo"] = "RIGHT"
 	E.db["unitframe"]["units"]["party"]["raidicon"]["size"] = 20
@@ -886,6 +893,7 @@ function DoctorioUI:Setup_ElvUI()
 	E.db["unitframe"]["units"]["player"]["resurrectIcon"]["xOffset"] = 85
 	E.db["unitframe"]["units"]["player"]["threatStyle"] = "NONE"
 	E.db["unitframe"]["units"]["player"]["width"] = 371
+	E.db["unitframe"]["units"]["raid1"]["buffIndicator"]["countFont"] = "Expressway"
 	E.db["unitframe"]["units"]["raid1"]["buffIndicator"]["size"] = 18
 	E.db["unitframe"]["units"]["raid1"]["buffs"]["anchorPoint"] = "TOPLEFT"
 	E.db["unitframe"]["units"]["raid1"]["buffs"]["countFont"] = "Emblem"
@@ -937,6 +945,7 @@ function DoctorioUI:Setup_ElvUI()
 	E.db["unitframe"]["units"]["raid1"]["numGroups"] = 4
 	E.db["unitframe"]["units"]["raid1"]["orientation"] = "LEFT"
 	E.db["unitframe"]["units"]["raid1"]["power"]["enable"] = false
+	E.db["unitframe"]["units"]["raid1"]["privateAuras"]["enable"] = false
 	E.db["unitframe"]["units"]["raid1"]["raidicon"]["attachTo"] = "RIGHT"
 	E.db["unitframe"]["units"]["raid1"]["raidicon"]["size"] = 20
 	E.db["unitframe"]["units"]["raid1"]["raidicon"]["xOffset"] = -15
@@ -957,6 +966,7 @@ function DoctorioUI:Setup_ElvUI()
 	E.db["unitframe"]["units"]["raid1"]["threatStyle"] = "BORDERS"
 	E.db["unitframe"]["units"]["raid1"]["verticalSpacing"] = 0
 	E.db["unitframe"]["units"]["raid1"]["width"] = 143
+	E.db["unitframe"]["units"]["raid2"]["buffIndicator"]["countFont"] = "Expressway"
 	E.db["unitframe"]["units"]["raid2"]["buffIndicator"]["size"] = 16
 	E.db["unitframe"]["units"]["raid2"]["buffs"]["anchorPoint"] = "TOPLEFT"
 	E.db["unitframe"]["units"]["raid2"]["buffs"]["countFont"] = "Expressway"
@@ -1006,6 +1016,7 @@ function DoctorioUI:Setup_ElvUI()
 	E.db["unitframe"]["units"]["raid2"]["name"]["text_format"] = ""
 	E.db["unitframe"]["units"]["raid2"]["numGroups"] = 6
 	E.db["unitframe"]["units"]["raid2"]["orientation"] = "LEFT"
+	E.db["unitframe"]["units"]["raid2"]["privateAuras"]["enable"] = false
 	E.db["unitframe"]["units"]["raid2"]["raidicon"]["attachTo"] = "RIGHT"
 	E.db["unitframe"]["units"]["raid2"]["raidicon"]["size"] = 20
 	E.db["unitframe"]["units"]["raid2"]["raidicon"]["xOffset"] = -15
@@ -1026,6 +1037,7 @@ function DoctorioUI:Setup_ElvUI()
 	E.db["unitframe"]["units"]["raid2"]["threatStyle"] = "BORDERS"
 	E.db["unitframe"]["units"]["raid2"]["verticalSpacing"] = 0
 	E.db["unitframe"]["units"]["raid2"]["width"] = 95
+	E.db["unitframe"]["units"]["raid3"]["buffIndicator"]["countFont"] = "Expressway"
 	E.db["unitframe"]["units"]["raid3"]["buffIndicator"]["size"] = 16
 	E.db["unitframe"]["units"]["raid3"]["buffs"]["anchorPoint"] = "TOPLEFT"
 	E.db["unitframe"]["units"]["raid3"]["buffs"]["countFont"] = "Expressway"
@@ -1074,6 +1086,7 @@ function DoctorioUI:Setup_ElvUI()
 	E.db["unitframe"]["units"]["raid3"]["name"]["position"] = "TOP"
 	E.db["unitframe"]["units"]["raid3"]["name"]["text_format"] = ""
 	E.db["unitframe"]["units"]["raid3"]["orientation"] = "LEFT"
+	E.db["unitframe"]["units"]["raid3"]["privateAuras"]["enable"] = false
 	E.db["unitframe"]["units"]["raid3"]["raidicon"]["attachTo"] = "RIGHT"
 	E.db["unitframe"]["units"]["raid3"]["raidicon"]["size"] = 20
 	E.db["unitframe"]["units"]["raid3"]["raidicon"]["xOffset"] = -15

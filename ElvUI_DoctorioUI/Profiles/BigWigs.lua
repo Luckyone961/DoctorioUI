@@ -7,235 +7,295 @@ local function addColors(accepted)
 	BigWigs3DB['namespaces']['BigWigs_Plugins_Colors']['profiles'] = BigWigs3DB['namespaces']['BigWigs_Plugins_Colors']['profiles'] or {}
 	BigWigs3DB['namespaces']['BigWigs_Plugins_Colors']['profiles']['Doctorio'] = {
 		["barColor"] = {
-			["BigWigs_Bosses_Vexie and the Geargrinders"] = {
-				[459943] = {
-					0,
-					1,
-					0,
-				},
-				[459678] = {
+			["BigWigs_Bosses_Plexus Sentinel"] = {
+				[1219607] = {
 					1,
 					0,
 					1,
 				},
-				[460116] = {
-					0.9411765336990356,
+				[1219263] = {
 					1,
-					0.9921569228172302,
+					0,
+					0,
 				},
-				[468216] = {
+				[1219450] = {
+					0,
+					0.294117659330368,
+					1,
+				},
+			},
+			["BigWigs_Bosses_Loom'ithar"] = {
+				[1246921] = {
+					1,
+					0,
+					1,
+				},
+				[1227226] = {
+					1,
+					0.5882353186607361,
+					0,
+				},
+				[1237272] = {
+					0,
+					1,
+					0,
+				},
+				[1226395] = {
+					1,
+					0.5882353186607361,
+					0,
+				},
+				[1227782] = {
+					1,
+					0,
+					0,
+				},
+				[1226311] = {
+					0,
+					0.294117659330368,
+					1,
+				},
+			},
+			["BigWigs_Bosses_Soulbinder Naazindhri"] = {
+				[1225616] = {
+					0,
+					0,
+					1,
+				},
+				[1227276] = {
+					0,
+					1,
+					1,
+				},
+				[1225582] = {
+					0,
+					1,
+					0,
+				},
+				[1223859] = {
 					1,
 					0,
 					0,
 				},
 			},
-			["BigWigs_Bosses_Cauldron of Carnage"] = {
-				[473650] = {
+			["BigWigs_Bosses_Forgeweaver Araz"] = {
+				[1233415] = {
+					0.6235294342041016,
 					1,
+					0.9254902601242065,
+				},
+				[1231720] = {
+					1,
+					0.5882353186607361,
+					0.294117659330368,
+				},
+				[1228214] = {
+					0,
+					1,
+					0,
+				},
+				[1228216] = {
+					1,
+					0,
+					1,
+				},
+				[1228188] = {
+					0,
+					1,
+					1,
+				},
+				[1243901] = {
+					0,
+					1,
+					0,
+				},
+			},
+			["BigWigs_Bosses_The Soul Hunters"] = {
+				[1227809] = {
+					0,
+					1,
+					0,
+				},
+				[1240891] = {
+					1,
+					1,
+					0,
+				},
+				[1242259] = {
+					1,
+					0,
+					0,
+				},
+				[1227355] = {
+					0,
 					0.3921568989753723,
+					1,
+				},
+			},
+			["BigWigs_Bosses_Fractillus"] = {
+				[1233416] = {
+					0,
+					1,
 					0,
 				},
-				[1213690] = {
+				[1232760] = {
+					1,
+					0,
+					1,
+				},
+				[1227373] = {
 					1,
 					0,
 					0,
 				},
-				[472233] = {
+				[1231871] = {
+					0.5882353186607361,
+					0.5882353186607361,
+					0.5882353186607361,
+				},
+			},
+			["BigWigs_Bosses_Nexus-King Salhadaar"] = {
+				[1228163] = {
 					1,
+					0.4470588564872742,
+					0.6941176652908325,
+				},
+				[1227549] = {
+					1,
+					0.5882353186607361,
+					0,
+				},
+				[1228075] = {
+					0,
+					0,
+					1,
+				},
+				[1224776] = {
+					1,
+					0,
+					1,
+				},
+				[1226442] = {
+					0.5882353186607361,
+					0,
+					1,
+				},
+				[1232399] = {
+					0.529411792755127,
+					1,
+					0.9098039865493774,
+				},
+				[1230302] = {
+					1,
+					0,
+					1,
+				},
+				["stages"] = {
+					1,
+					0,
+					0,
+				},
+				[1228115] = {
+					0,
+					0.5882353186607361,
+					1,
+				},
+				[1226648] = {
+					1,
+					0.5882353186607361,
+					0,
+				},
+				[1228265] = {
+					1,
+					0,
+					0,
+				},
+				[1224827] = {
+					0,
 					0,
 					1,
 				},
 			},
-			["BigWigs_Bosses_Rik Reverb"] = {
-				[466979] = {
-					1,
-					0,
-					0,
-				},
-				[472306] = {
-					0,
-					1,
-					0,
-				},
-				[473260] = {
-					0,
-					1,
-					1,
-				},
-				[467606] = {
-					1,
-					0.6705882549285889,
-					0.5333333611488342,
-				},
-				[466866] = {
-					0,
-					1,
-					1,
-				},
-				[473748] = {
+			["BigWigs_Bosses_Dimensius, the All-Devouring"] = {
+				[1234263] = {
 					1,
 					0,
 					1,
 				},
-			},
-			["BigWigs_Bosses_Stix Bunkjunker"] = {
-				[464149] = {
+				[1234044] = {
 					1,
-					0,
+					0.5882353186607361,
 					0,
 				},
-				[464399] = {
-					1,
-					0,
-					1,
-				},
-				[467117] = {
-					0.3058823645114899,
-					1,
-					0.9686275124549866,
-				},
-			},
-			["BigWigs_Bosses_Sprocketmonger Lockenstock"] = {
-				[1218319] = {
-					1,
-					0,
-					0,
-				},
-				[465232] = {
-					1,
-					0,
-					0,
-				},
-				[1216802] = {
-					1,
-					0.2705882489681244,
-					0.4823529720306397,
-				},
-				[1214878] = {
-					1,
-					0.3921568989753723,
-					0,
-				},
-				[1217231] = {
-					1,
-					0,
-					1,
-				},
-				[473276] = {
-					0,
-					0.3607843220233917,
-					1,
-				},
-				[1216509] = {
-					1,
-					1,
-					0,
-				},
-			},
-			["BigWigs_Bosses_The One-Armed Bandit"] = {
-				[469993] = {
-					1,
-					0,
-					0,
-				},
-				[461060] = {
-					0,
-					1,
-					0,
-				},
-				[471927] = {
-					1,
-					0.3921568989753723,
-					0,
-				},
-			},
-			["BigWigs_Bosses_Mug'Zee, Heads of Security"] = {
-				[466518] = {
-					1,
-					0.8941177129745483,
-					0.3490196168422699,
-				},
-				[472631] = {
-					0.3921568989753723,
-					0,
-					1,
-				},
-				[466476] = {
-					0.1960784494876862,
-					0.5921568870544434,
-					1,
-				},
-				[466545] = {
-					1,
-					1,
-					0,
-				},
-				[467380] = {
-					1,
-					0,
-					0,
-				},
-				[466539] = {
-					1,
-					0,
-					1,
-				},
-				[466509] = {
-					1,
-					1,
-					0,
-				},
-				[1215953] = {
-					1,
-					0,
-					0,
-				},
-			},
-			["BigWigs_Bosses_Chrome King Gallywix"] = {
-				[1214755] = {
-					1,
-					0,
-					1,
-				},
-				[465952] = {
-					1,
-					1,
-					0,
-				},
-				[1217292] = {
-					1,
-					0.3921568989753723,
-					0.3333333432674408,
-				},
-				[1214369] = {
-					1,
-					0,
-					0,
-				},
-				[466340] = {
-					1,
-					0,
-					0,
-				},
-				[467182] = {
+				[1243690] = {
 					0,
 					1,
 					1,
 				},
-				[466751] = {
+				[1245292] = {
+					0,
 					1,
-					0.3921568989753723,
 					0,
 				},
-				[466341] = {
+				[1230087] = {
+					1,
+					0.5882353186607361,
+					0,
+				},
+				[1229038] = {
 					1,
 					0,
 					0,
 				},
-				[469327] = {
+				[1237694] = {
+					0,
+					1,
+					1,
+				},
+				[1237695] = {
+					0,
+					1,
+					1,
+				},
+				[1233539] = {
 					1,
 					0,
 					0,
+				},
+				[1243577] = {
+					0,
+					1,
+					0,
+				},
+				[1232973] = {
+					1,
+					0,
+					0,
+				},
+				[1230979] = {
+					0,
+					0.294117659330368,
+					1,
+				},
+				[1238765] = {
+					1,
+					0,
+					1,
+				},
+				[1231716] = {
+					1,
+					0.5882353186607361,
+					1,
+				},
+				[1239262] = {
+					0,
+					1,
+					0,
+				},
+				[1237325] = {
+					0,
+					0.294117659330368,
+					1,
 				},
 			},
 		}
@@ -250,7 +310,7 @@ function DoctorioUI:Setup_BigWigs()
 	local name = 'Doctorio'
 
 	-- Profile strings
-	local profile = 'BW1:LvvZVTrru8UARpuqcIDuDjQuubPIesLQg3gqeHekBIZxKpSSDOFCAhV(5Dh1z3DyMztI5ciFIZ5pHCMt(axrY3qIdJ8FcrCUi5)cyE7NwT7Hv777FV3V3mR1FYxjeKsIp0jwsv04i5xodc5bfIhoy72N0VDxTTL1nrXIqcR0KZrT3TVUgynpphBhZIfYZhWteCgSzh7N(KV1k9TZawsMIw4RNB31xaquMg703oEJjfkShmgyS4l20o126dIfKiFyZuPnsv1sadZKtZyRf5yOhOu0iF5VVIiorXOrGZjNEs7jJIJu9O)c8vZX27moheEej4ozeziOOHqh71FsRBqJhhhf7fiIdHG0zXUMqpHecx3(sUWuLliJtthQt30XlGOcMoKk5mYymt1MIrDAw1N1F)d2(hp9S(hDWjTN6lIV4m(feXqzWKejq9mtC3R9yeP0dNEULveb7R6syu)iDTRdRWeVEKPWMIPQA2NoxbxQWWs5GdTnp8gy2rDl1q8MOY9mWyhQa8qESNIiu6AlqdVGouf0Ni8b1J4RGA2hO(bQtvbGq(OuF2sYnb2LyI1nZN9muvFtJFemszXxfvTDCmBy8frNKeoWePlVjcW3VUT6FANPyaNoAKeuVYAwbOZMU3GIM5UjiSkULMXXZAvyohGtXQKNQV)wlkCoNlef0qLxV06guyzkVysUea2bKevIWmXRmNTmHsLltgQ596YV4So86fdPDfWpNarEJ7CBZk7gP4Zjwmeez0MLLvoTv1Y9hZHUC6La7Mk3XIN7j6th08rMouw)6kNC5FsPdIyVTIOH7GnHbv287USPuQaT7MJ1L7aDTmkTQqqKVk4ozCFbr3EOp4oVyGV0wy9L9Q3fuEUBy6YCdhgF3gvVFwlB(AfUSvIkEBIu1XGqQhZ0H5RWfOPFa17nMoxANrRzuT(5Ps94epZbeR0vScHjOWRJJdFND1dIo3SdbblTp(sRRY8OSDw6qrX5K7(UyTNhHb2xnGKrRYFAU5thI3Bmh)tIgEy5TyvVEg6sFeXbedws3ee5QoC)F4)(10NYpSTNuKDJ13(z4Z9TnM)R0hBmBTnxKqKMfLHhAJzdBodD2Y5fRZB4zaIcB6Y79BoHxCXU(X6hB9pnMAss5nmFQ(J1p)kOiNbloNkPdyGdrCenKQ(7RsVQcVgOB3d2B)(xbxYZMtFD6H2IcPhUOml4Ewc31bV10DIjG0ZY7ScFLsx6csC5mWbZHRaj1ebmBhqrOm5d31Cniok6PgZGUTzNF2bczgpxBw2)RYaXgtZKsRW)U2a)IsBsOR(E6M543iQTDgrzm35LGa7QhWx9DAzCa)H6ppqx)bZk(9cQ7E8vlJ84eMIYzuqG)Fz9QuEC85G7IsAiBrP5vJko88nne2n8TAmWAMP9Q(78uZuQq61ABTn7w3(JMC2bMZhqKsF7xRRPRz)hFG(341lZEbloYqI3xxNmV0c2z3b7bZeO75Xupyw7iFgvgS5d3kC8)d'
+	local profile = 'BW1:Tz1sRnYXt8DOToSjq(7hS2XS7g28)qGaBwILJtiMabp2YVIFi0JSE9PP1OsZ0SJMPt3TKTYLaccKZ6JGpNt6qUgq3cKdd6JGjNta)jiD19mJ0AN5WGQx)QQ(vv3JC(n(IDbPKgavtKmfljw(jtGU8WCXJBTBLZAuPwkXX524erxAuHj3tQSFJ0sGZ0mm2njkri73I3tWJGTRs(8x9voM3UTI6zvugF9fKAbcaITAiM3U(dO5kiTgarrjxTnXyBJwjcACaSTrAlJQYcOTv2Gy57YQH6GsXIdK)YIIKEQiwm4E25NvzyNKyvD2pcF6uS9AY5GWNkbVHDOTbfRluLSXRkFlA80K4e)qrsxi0Wf7Rd9mAx4MkxZf6SCfDGboux6QU(Huv442mjpIoarQ0ymQZTzFsJdpA3V78Mno5OZQmoqKCvt(vurBz4WEsG5RzCVB8JOsPpYEEfzel23uJgXcItlDt3z1eFPyDI1jtnRz3IVgc1bA43JjaFC(0GkcavAj(YOjeY5Am(QpW)6kQq7(DOHxZARcTaSjFruZHaliuDUkeeYnn(SJKRdSgvhRN1Nd0JSgAc4eOJYHVcQA3KKO2jxfFwVUT0r6XxvbxREyEl348QJXaoVthjOEJJrOoN6R7V7H1rX91qbHMQWnr0geMnVJDCCitYBwK)wFwZKv53IPFoEymkNLZV5rfbBhTtrJOOfEI(zsUkZUeFP5QslD5u4HfJ5sWfow)ZsxM)3IQ0BwA6a5pVBN1vyoiMIOyFvp9Fab()Bw9Mzb5X)W8zrvrI)oXSU71tGtPyIDvywYAmGd14SRHi(tMpiZibJ0ZgHrp62j6nA5s3Lttz74IS1B(65oVtpvYUuPQQghMFKoMSfUCGAeY8FRgljXYjVtdP3zx5DtlehOcFSDllFnOs7aWBAEPmBeLbOo29fWp0dI9huDb9neBXF2)9oF(bLP5XzXcd6R3A27nltmZM9ajvHmA(2JLespWivSYo3O(ISr9qu1LjjDZSM3j1VIXbV5w)VWzK1Erpn3zW8JLp5(KDDFAeqg1IApoi)(P6F6s9FR(wNEXTpU4YZzV2eDPbw2HuDLyobjYuD8HF7)8tMNIFqidZrxB9V)i85PeT5F38qq0QOV)Ik1BUTpMGOHNv1mDz3xVbFzFDHOWwU4ZnRoKN)9K0xM(sN)C5XAqkUy7zP)V0dgb5ygExFMK1kcCPItyDzQ)yK5gs8wNA1o6GdBmcUMB5PpZCAoprPS7kqbxb6X9CXlR9gQdWCdXElYxSWLAGexncDrm8e4KTNaMShOOSi5l2xF7lsf1vdIGAvI638iH0o5lnX(zsBrS1yRKjd)16TcYtTgqV01sxnR(1IPe3oSOiVPffb2vpNVY9AzKGF)0pomDPNpj)RAOU14Rue5P9IumEede4N12ygKNM0h8URymyxuwDuN8tqF5YcYYbol3YzIU9M9NcgRzPCPltjPKOhTWhmS5r6d4qSkDHltlLwI8RVx6pZxQa98Pyh9q8PPlrNwyb7ShJ9GMbQ1pH5dtQeheXKHB)ID6o4F)d'
 
 	-- Profile import
 	-- API.RegisterProfile(addonName, profileString, optionalCustomProfileName, optionalCallbackFunction)
