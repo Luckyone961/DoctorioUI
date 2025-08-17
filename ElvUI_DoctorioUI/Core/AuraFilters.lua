@@ -30,17 +30,15 @@ function DoctorioUI:Setup_AuraFilters()
 
 	local ids = {
 		blacklist = {
-			25771, 264689, 114216, 117519, 137731, 139485, 139840, 142861, 144351, 157131, 199368, 202019, 323146, 326809, 328605, 371070, 372514,
-			372517, 372648, 373681, 374466, 374609, 374864, 375458, 377612, 377780, 378277, 382912, 384050, 387441, 387847, 390569, 391568,
-			392193, 393879, 396023, 396085, 396106, 396109, 396113, 396201, 396212, 396222, 396233, 401383, 401525, 401718, 401809, 402052,
-			402617, 403655, 403747, 403978, 404369, 405394, 407302, 407329, 407475, 407576, 407917, 408204, 410247, 410355, 410642, 413070,
-			414356, 417543, 420714, 420812, 420858, 421298, 421368, 421407, 422026, 422750, 423195, 424143, 424269, 424734, 425128, 425180,
-			425417, 425479, 425564, 426897, 427602, 427928, 428852, 429025, 429204, 429231, 429252, 429983, 433627, 433759, 435136, 436255,
-			436580, 436676, 438656, 438773, 439792, 440193, 440389, 440393, 441626, 441788, 441795, 442604, 443612, 447170, 447532, 447571,
-			448005, 449042, 450661, 451086, 451764, 45181, 451965, 452245, 452299, 453286, 455849, 455850, 456447, 458505, 459273, 459986,
-			460360, 460364, 460600, 461910, 462661, 463428, 463461, 463464, 463767, 464442, 465136, 71909, 87024, 89798, 211319, 341291,
-			439825, 451803, 459978, 460133, 461390, 464638, 464643, 465232, 468119, 468147, 470981, 471603, 472222, 472225, 472710, 472764,
-			472893, 474159, 1213690, 1214749, 1215760, 1216911, 1216934, 1217357, 1217358, 1218120, 1218343
+			25771, 45181, 71909, 87024, 114216, 117519, 137731, 139485, 139840, 142861, 144351, 157131, 199368, 202019, 264689, 323146, 326809,
+			328605, 371070, 372514, 372517, 372648, 373681, 374466, 374609, 374864, 375458, 377612, 377780, 378277, 382912, 384050, 387441, 387847,
+			390569, 391568, 392193, 393879, 396023, 396085, 396106, 396109, 396113, 396201, 396212, 396222, 396233, 401383, 401525, 401718, 401809,
+			402052, 402617, 403655, 403747, 403978, 404369, 405394, 407302, 407329, 407475, 407576, 407917, 408204, 410247, 410355, 410642, 413070,
+			414356, 417543, 420714, 420812, 420858, 421298, 421368, 421407, 422026, 422750, 423195, 424143, 424269, 424734, 425128, 425180, 425417,
+			425479, 425564, 426897, 427602, 427928, 428852, 429025, 429204, 429231, 429252, 429983, 433627, 433759, 435136, 436255, 436580, 436676,
+			438656, 438773, 439792, 440193, 440389, 440393, 441626, 441788, 441795, 442437, 442604, 443612, 447170, 447532, 447571, 448005, 449042,
+			450661, 451086, 451764, 451965, 452245, 452299, 453286, 455849, 455850, 456447, 458505, 459273, 459986, 460360, 460364, 460600, 461910,
+			462661, 463428, 463461, 463464, 463767, 464442, 465136
 		},
 		whitelist = { 2825, 31821, 32182, 62618, 80353, 90355, 97462, 116841, 196718, 325174, 357170, 390386, 443526 },
 		DRUID = { 774, 8936, 33763, 48438, 102342, 102351, 102352, 155777, 157982, 188550, 200389, 203554, 207386, 391891 },
@@ -64,10 +62,10 @@ function DoctorioUI:Setup_AuraFilters()
 	----------------------------------------------------------------------
 	----------------------- Custom Whitelist Data ------------------------
 	----------------------------------------------------------------------
-	E.global["unitframe"] = E.global["unitframe"]or {}
+	E.global["unitframe"] = E.global["unitframe"] or {}
 	E.global["unitframe"]["aurafilters"] = E.global["unitframe"]["aurafilters"] or {}
 
-	-- Custom Whitelist
+	-- Custom Whitelists
 	E.global["unitframe"]["aurafilters"]["Whitelist Doctorio"] = {
 		["spells"] = {
 			[1022] = {
@@ -116,6 +114,347 @@ function DoctorioUI:Setup_AuraFilters()
 				["stackThreshold"] = 0,
 			},
 			[357170] = {
+				["enable"] = true,
+				["priority"] = 0,
+				["stackThreshold"] = 0,
+			},
+		},
+		["type"] = "Whitelist",
+	}
+
+	E.global["unitframe"]["aurafilters"]["Whitelist Doctorio Boss"] = {
+		["spells"] = {
+			[589] = {
+				["enable"] = true,
+				["priority"] = 0,
+				["stackThreshold"] = 0,
+			},
+			[703] = {
+				["enable"] = true,
+				["priority"] = 0,
+				["stackThreshold"] = 0,
+			},
+			[980] = {
+				["enable"] = true,
+				["priority"] = 0,
+				["stackThreshold"] = 0,
+			},
+			[1079] = {
+				["enable"] = true,
+				["priority"] = 0,
+				["stackThreshold"] = 0,
+			},
+			[1943] = {
+				["enable"] = true,
+				["priority"] = 0,
+				["stackThreshold"] = 0,
+			},
+			[14914] = {
+				["enable"] = true,
+				["priority"] = 0,
+				["stackThreshold"] = 0,
+			},
+			[34914] = {
+				["enable"] = true,
+				["priority"] = 0,
+				["stackThreshold"] = 0,
+			},
+			[48181] = {
+				["enable"] = true,
+				["priority"] = 0,
+				["stackThreshold"] = 0,
+			},
+			[51714] = {
+				["enable"] = true,
+				["priority"] = 0,
+				["stackThreshold"] = 0,
+			},
+			[55078] = {
+				["enable"] = true,
+				["priority"] = 0,
+				["stackThreshold"] = 0,
+			},
+			[80240] = {
+				["enable"] = true,
+				["priority"] = 0,
+				["stackThreshold"] = 0,
+			},
+			[123725] = {
+				["enable"] = true,
+				["priority"] = 0,
+				["stackThreshold"] = 0,
+			},
+			[146739] = {
+				["enable"] = true,
+				["priority"] = 0,
+				["stackThreshold"] = 0,
+			},
+			[155625] = {
+				["enable"] = true,
+				["priority"] = 0,
+				["stackThreshold"] = 0,
+			},
+			[155722] = {
+				["enable"] = true,
+				["priority"] = 0,
+				["stackThreshold"] = 0,
+			},
+			[157736] = {
+				["enable"] = true,
+				["priority"] = 0,
+				["stackThreshold"] = 0,
+			},
+			[164812] = {
+				["enable"] = true,
+				["priority"] = 0,
+				["stackThreshold"] = 0,
+			},
+			[164815] = {
+				["enable"] = true,
+				["priority"] = 0,
+				["stackThreshold"] = 0,
+			},
+			[188389] = {
+				["enable"] = true,
+				["priority"] = 0,
+				["stackThreshold"] = 0,
+			},
+			[191587] = {
+				["enable"] = true,
+				["priority"] = 0,
+				["stackThreshold"] = 0,
+			},
+			[194310] = {
+				["enable"] = true,
+				["priority"] = 0,
+				["stackThreshold"] = 0,
+			},
+			[196937] = {
+				["enable"] = true,
+				["priority"] = 0,
+				["stackThreshold"] = 0,
+			},
+			[197209] = {
+				["enable"] = true,
+				["priority"] = 0,
+				["stackThreshold"] = 0,
+			},
+			[202347] = {
+				["enable"] = true,
+				["priority"] = 0,
+				["stackThreshold"] = 0,
+			},
+			[204598] = {
+				["enable"] = true,
+				["priority"] = 0,
+				["stackThreshold"] = 0,
+			},
+			[207771] = {
+				["enable"] = true,
+				["priority"] = 0,
+				["stackThreshold"] = 0,
+			},
+			[210824] = {
+				["enable"] = true,
+				["priority"] = 0,
+				["stackThreshold"] = 0,
+			},
+			[214621] = {
+				["enable"] = true,
+				["priority"] = 0,
+				["stackThreshold"] = 0,
+			},
+			[217200] = {
+				["enable"] = true,
+				["priority"] = 0,
+				["stackThreshold"] = 0,
+			},
+			[228287] = {
+				["enable"] = true,
+				["priority"] = 0,
+				["stackThreshold"] = 0,
+			},
+			[228358] = {
+				["enable"] = true,
+				["priority"] = 0,
+				["stackThreshold"] = 0,
+			},
+			[257284] = {
+				["enable"] = true,
+				["priority"] = 0,
+				["stackThreshold"] = 0,
+			},
+			[259491] = {
+				["enable"] = true,
+				["priority"] = 0,
+				["stackThreshold"] = 0,
+			},
+			[262115] = {
+				["enable"] = true,
+				["priority"] = 0,
+				["stackThreshold"] = 0,
+			},
+			[271788] = {
+				["enable"] = true,
+				["priority"] = 0,
+				["stackThreshold"] = 0,
+			},
+			[316099] = {
+				["enable"] = true,
+				["priority"] = 0,
+				["stackThreshold"] = 0,
+			},
+			[316220] = {
+				["enable"] = true,
+				["priority"] = 0,
+				["stackThreshold"] = 0,
+			},
+			[320338] = {
+				["enable"] = true,
+				["priority"] = 0,
+				["stackThreshold"] = 0,
+			},
+			[325153] = {
+				["enable"] = true,
+				["priority"] = 0,
+				["stackThreshold"] = 0,
+			},
+			[334168] = {
+				["enable"] = true,
+				["priority"] = 0,
+				["stackThreshold"] = 0,
+			},
+			[335467] = {
+				["enable"] = true,
+				["priority"] = 0,
+				["stackThreshold"] = 0,
+			},
+			[343294] = {
+				["enable"] = true,
+				["priority"] = 0,
+				["stackThreshold"] = 0,
+			},
+			[343527] = {
+				["enable"] = true,
+				["priority"] = 0,
+				["stackThreshold"] = 0,
+			},
+			[343721] = {
+				["enable"] = true,
+				["priority"] = 0,
+				["stackThreshold"] = 0,
+			},
+			[357209] = {
+				["enable"] = true,
+				["priority"] = 0,
+				["stackThreshold"] = 0,
+			},
+			[361500] = {
+				["enable"] = true,
+				["priority"] = 0,
+				["stackThreshold"] = 0,
+			},
+			[370452] = {
+				["enable"] = true,
+				["priority"] = 0,
+				["stackThreshold"] = 0,
+			},
+			[383346] = {
+				["enable"] = true,
+				["priority"] = 0,
+				["stackThreshold"] = 0,
+			},
+			[387174] = {
+				["enable"] = true,
+				["priority"] = 0,
+				["stackThreshold"] = 0,
+			},
+			[388539] = {
+				["enable"] = true,
+				["priority"] = 0,
+				["stackThreshold"] = 0,
+			},
+			[391191] = {
+				["enable"] = true,
+				["priority"] = 0,
+				["stackThreshold"] = 0,
+			},
+			[391889] = {
+				["enable"] = true,
+				["priority"] = 0,
+				["stackThreshold"] = 0,
+			},
+			[421976] = {
+				["enable"] = true,
+				["priority"] = 0,
+				["stackThreshold"] = 0,
+			},
+			[431380] = {
+				["enable"] = true,
+				["priority"] = 0,
+				["stackThreshold"] = 0,
+			},
+			[434473] = {
+				["enable"] = true,
+				["priority"] = 0,
+				["stackThreshold"] = 0,
+			},
+			[434765] = {
+				["enable"] = true,
+				["priority"] = 0,
+				["stackThreshold"] = 0,
+			},
+			[439531] = {
+				["enable"] = true,
+				["priority"] = 0,
+				["stackThreshold"] = 0,
+			},
+			[441172] = {
+				["enable"] = true,
+				["priority"] = 0,
+				["stackThreshold"] = 0,
+			},
+			[441224] = {
+				["enable"] = true,
+				["priority"] = 0,
+				["stackThreshold"] = 0,
+			},
+			[443740] = {
+				["enable"] = true,
+				["priority"] = 0,
+				["stackThreshold"] = 0,
+			},
+			[444017] = {
+				["enable"] = true,
+				["priority"] = 0,
+				["stackThreshold"] = 0,
+			},
+			[444735] = {
+				["enable"] = true,
+				["priority"] = 0,
+				["stackThreshold"] = 0,
+			},
+			[445474] = {
+				["enable"] = true,
+				["priority"] = 0,
+				["stackThreshold"] = 0,
+			},
+			[453268] = {
+				["enable"] = true,
+				["priority"] = 0,
+				["stackThreshold"] = 0,
+			},
+			[457129] = {
+				["enable"] = true,
+				["priority"] = 0,
+				["stackThreshold"] = 0,
+			},
+			[460553] = {
+				["enable"] = true,
+				["priority"] = 0,
+				["stackThreshold"] = 0,
+			},
+			[1233351] = {
 				["enable"] = true,
 				["priority"] = 0,
 				["stackThreshold"] = 0,
