@@ -1,5 +1,9 @@
 ### Version 1.35 [In Development]
 Updated TOC for patch 11.2  
+Updated BigWigs profile (Full season 3 colors)  
+Updated ElvUI blacklist
+Updated ElvUI profile (Healer-only mana bars, boss frame filters)  
+Updated Details profile  
 ___
 ### Version 1.34 [16-07-2025]
 Fixed Discord URL in the installer frame  
