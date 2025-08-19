@@ -1,11 +1,13 @@
 local DoctorioUI, E, L, V, P, G = unpack((select(2, ...)))
 
--- Temporary
+-- TWW Season 3 (Manaforge Omega) [Colors, Sounds, Abilities]
 local function addColors(accepted)
 	if not accepted then return end
 
-	BigWigs3DB['namespaces']['BigWigs_Plugins_Colors']['profiles'] = BigWigs3DB['namespaces']['BigWigs_Plugins_Colors']['profiles'] or {}
-	BigWigs3DB['namespaces']['BigWigs_Plugins_Colors']['profiles']['Doctorio'] = {
+	-- Bar colors (Boss specific)
+	BigWigs3DB["namespaces"]["BigWigs_Plugins_Colors"] = BigWigs3DB["namespaces"]["BigWigs_Plugins_Colors"] or {}
+	BigWigs3DB["namespaces"]["BigWigs_Plugins_Colors"]["profiles"] = BigWigs3DB["namespaces"]["BigWigs_Plugins_Colors"]["profiles"] or {}
+	BigWigs3DB["namespaces"]["BigWigs_Plugins_Colors"]["profiles"]["Doctorio"] = {
 		["barColor"] = {
 			["BigWigs_Bosses_Plexus Sentinel"] = {
 				[1219607] = {
@@ -300,6 +302,116 @@ local function addColors(accepted)
 			},
 		}
 	}
+
+	-- Sounds (Boss specific)
+	BigWigs3DB["namespaces"]["BigWigs_Plugins_Sounds"] = BigWigs3DB["namespaces"]["BigWigs_Plugins_Sounds"] or {}
+	BigWigs3DB["namespaces"]["BigWigs_Plugins_Sounds"]["profiles"] = BigWigs3DB["namespaces"]["BigWigs_Plugins_Sounds"]["profiles"] or {}
+	BigWigs3DB["namespaces"]["BigWigs_Plugins_Sounds"]["profiles"]["Doctorio"] = {
+		["Long"] = {
+			["BigWigs_Bosses_Forgeweaver Araz"] = {
+				[1233415] = "Bam",
+			},
+		},
+		["Alarm"] = {
+			["BigWigs_Bosses_Dimensius, the All-Devouring"] = {
+				[1238765] = "BigWigs: Destruction (Kil'jaeden)",
+			},
+		},
+		["Alert"] = {
+			["BigWigs_Bosses_Dimensius, the All-Devouring"] = {
+				[1232973] = "BigWigs: Long",
+				[1234263] = "BigWigs: Raid Warning",
+			},
+		},
+	}
+
+	-- Abilities (Boss specific)
+	BigWigs3DB["namespaces"]["BigWigs_Bosses_Plexus Sentinel"] = BigWigs3DB["namespaces"]["BigWigs_Bosses_Plexus Sentinel"] or {}
+	BigWigs3DB["namespaces"]["BigWigs_Bosses_Plexus Sentinel"]["profiles"] = BigWigs3DB["namespaces"]["BigWigs_Bosses_Plexus Sentinel"]["profiles"] or {}
+	BigWigs3DB["namespaces"]["BigWigs_Bosses_Plexus Sentinel"]["profiles"]["Doctorio"] = {
+		[1219263] = 2801911,
+		["stages"] = 0,
+	}
+
+	BigWigs3DB["namespaces"]["BigWigs_Bosses_Loom'ithar"] = BigWigs3DB["namespaces"]["BigWigs_Bosses_Loom'ithar"] or {}
+	BigWigs3DB["namespaces"]["BigWigs_Bosses_Loom'ithar"]["profiles"] = BigWigs3DB["namespaces"]["BigWigs_Bosses_Loom'ithar"]["profiles"] or {}
+	BigWigs3DB["namespaces"]["BigWigs_Bosses_Loom'ithar"]["profiles"]["Doctorio"] = {
+		[1228059] = 0,
+		["stages"] = 0,
+	}
+
+	BigWigs3DB["namespaces"]["BigWigs_Bosses_Soulbinder Naazindhri"] = BigWigs3DB["namespaces"]["BigWigs_Bosses_Soulbinder Naazindhri"] or {}
+	BigWigs3DB["namespaces"]["BigWigs_Bosses_Soulbinder Naazindhri"]["profiles"] = BigWigs3DB["namespaces"]["BigWigs_Bosses_Soulbinder Naazindhri"]["profiles"] or {}
+	BigWigs3DB["namespaces"]["BigWigs_Bosses_Soulbinder Naazindhri"]["profiles"]["Doctorio"] = {
+		[1223859] = 2801911,
+	}
+
+	BigWigs3DB["namespaces"]["BigWigs_Bosses_Forgeweaver Araz"] = BigWigs3DB["namespaces"]["BigWigs_Bosses_Forgeweaver Araz"] or {}
+	BigWigs3DB["namespaces"]["BigWigs_Bosses_Forgeweaver Araz"]["profiles"] = BigWigs3DB["namespaces"]["BigWigs_Bosses_Forgeweaver Araz"]["profiles"] or {}
+	BigWigs3DB["namespaces"]["BigWigs_Bosses_Forgeweaver Araz"]["profiles"]["Doctorio"] = {
+		[1234328] = 3064039,
+		[1240705] = 3064039,
+		[1232412] = 3064039,
+		["berserk"] = 0,
+		[1227631] = 0,
+		["stages"] = 0,
+		[1232590] = 3064039,
+		[-32596] = 3064039,
+		[1240437] = 3064039,
+		[1238266] = 3065063,
+	}
+
+	BigWigs3DB["namespaces"]["BigWigs_Bosses_Fractillus"] = BigWigs3DB["namespaces"]["BigWigs_Bosses_Fractillus"] or {}
+	BigWigs3DB["namespaces"]["BigWigs_Bosses_Fractillus"]["profiles"] = BigWigs3DB["namespaces"]["BigWigs_Bosses_Fractillus"]["profiles"] or {}
+	BigWigs3DB["namespaces"]["BigWigs_Bosses_Fractillus"]["profiles"]["Doctorio"] = {
+		[1232130] = 3064036,
+	}
+
+	BigWigs3DB["namespaces"]["BigWigs_Bosses_Nexus-King Salhadaar"] = BigWigs3DB["namespaces"]["BigWigs_Bosses_Nexus-King Salhadaar"] or {}
+	BigWigs3DB["namespaces"]["BigWigs_Bosses_Nexus-King Salhadaar"]["profiles"] = BigWigs3DB["namespaces"]["BigWigs_Bosses_Nexus-King Salhadaar"]["profiles"] or {}
+	BigWigs3DB["namespaces"]["BigWigs_Bosses_Nexus-King Salhadaar"]["profiles"]["Doctorio"] = {
+		[1226648] = 6996197,
+		[1227549] = 4112613,
+		[1225645] = 3064036,
+		[1232399] = 3064037,
+		[1226442] = 6996197,
+		[1226413] = 3065077,
+		[1225634] = 3064036,
+		[1228075] = 3064037,
+		[1224787] = 2801908,
+		[1224827] = 7258341,
+		["stages"] = 3064037,
+		[1225444] = 3064036,
+		[1228265] = 3064037,
+		[1230302] = 3064037,
+		[1226362] = 3064036,
+		[1227470] = 3064036,
+	}
+
+	BigWigs3DB["namespaces"]["BigWigs_Bosses_Dimensius, the All-Devouring"] = BigWigs3DB["namespaces"]["BigWigs_Bosses_Dimensius, the All-Devouring"] or {}
+	BigWigs3DB["namespaces"]["BigWigs_Bosses_Dimensius, the All-Devouring"]["profiles"] = BigWigs3DB["namespaces"]["BigWigs_Bosses_Dimensius, the All-Devouring"]["profiles"] or {}
+	BigWigs3DB["namespaces"]["BigWigs_Bosses_Dimensius, the All-Devouring"]["profiles"]["Doctorio"] = {
+		[1238765] = 3064053,
+		[1237695] = 3064037,
+		[1235114] = 3064036,
+		[1234044] = 3064037,
+		[1231716] = 2801893,
+		[1237325] = 3064053,
+		[1243690] = 3064037,
+		[1230087] = 3064037,
+		[1243577] = 3064053,
+		[1230979] = 3064037,
+		[1237097] = 3064036,
+		[1234263] = 3064053,
+		[1230674] = 3064036,
+		[1232973] = 2801911,
+		[1245292] = 3129589,
+		[1246930] = 3064036,
+		[1237694] = 3064037,
+		[1239262] = 3064037,
+	}
+
+	DoctorioUI:Print('Added Doctorios BigWigs setup for Manaforge Omega to the profile. This includes colors, sounds, and abilities.')
 end
 
 -- BigWigs Profile
