@@ -1,3 +1,6 @@
+### Version 1.36 [19-08-2025]
+Updated BigWigs profile (Manaforge Omega)  
+___
 ### Version 1.35 [17-08-2025]
 Updated TOC for patch 11.2  
 Updated BigWigs profile (Full season 3 colors)  
