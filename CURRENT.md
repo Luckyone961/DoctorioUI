@@ -1,2 +1,3 @@
-### Version 1.36 [19-08-2025]
-Updated BigWigs profile (Manaforge Omega)  
+### Version 1.37 [26-09-2025]
+Re-run of the ElvUI profile install is highly recommended  
+Updated filters for ElvUI 14.00+  

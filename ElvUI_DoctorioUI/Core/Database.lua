@@ -619,7 +619,7 @@ function DoctorioUI:Setup_ElvUI()
 	E.db["unitframe"]["units"]["boss"]["debuffs"]["countFont"] = "Expressway"
 	E.db["unitframe"]["units"]["boss"]["debuffs"]["maxDuration"] = 300
 	E.db["unitframe"]["units"]["boss"]["debuffs"]["perrow"] = 4
-	E.db["unitframe"]["units"]["boss"]["debuffs"]["priority"] = "Whitelist Doctorio Boss"
+	E.db["unitframe"]["units"]["boss"]["debuffs"]["priority"] = "blockNonPersonal,ClassDebuffs"
 	E.db["unitframe"]["units"]["boss"]["debuffs"]["sizeOverride"] = 30
 	E.db["unitframe"]["units"]["boss"]["debuffs"]["sortMethod"] = "NAME"
 	E.db["unitframe"]["units"]["boss"]["debuffs"]["yOffset"] = 0
@@ -642,7 +642,7 @@ function DoctorioUI:Setup_ElvUI()
 	E.db["unitframe"]["units"]["focus"]["buffs"]["growthX"] = "LEFT"
 	E.db["unitframe"]["units"]["focus"]["buffs"]["maxDuration"] = 0
 	E.db["unitframe"]["units"]["focus"]["buffs"]["perrow"] = 4
-	E.db["unitframe"]["units"]["focus"]["buffs"]["priority"] = "Blacklist,Personal,PlayerBuffs,Whitelist,blockNoDuration,nonPersonal"
+	E.db["unitframe"]["units"]["focus"]["buffs"]["priority"] = "Whitelist Doctorio"
 	E.db["unitframe"]["units"]["focus"]["buffs"]["sizeOverride"] = 25
 	E.db["unitframe"]["units"]["focus"]["castbar"]["customTextFont"]["enable"] = true
 	E.db["unitframe"]["units"]["focus"]["castbar"]["customTextFont"]["font"] = "Expressway"
@@ -700,7 +700,7 @@ function DoctorioUI:Setup_ElvUI()
 	E.db["unitframe"]["units"]["focus"]["debuffs"]["growthX"] = "RIGHT"
 	E.db["unitframe"]["units"]["focus"]["debuffs"]["maxDuration"] = 0
 	E.db["unitframe"]["units"]["focus"]["debuffs"]["perrow"] = 4
-	E.db["unitframe"]["units"]["focus"]["debuffs"]["priority"] = "Whitelist Doctorio Boss"
+	E.db["unitframe"]["units"]["focus"]["debuffs"]["priority"] = "RaidDebuffs,blockNonPersonal,ClassDebuffs"
 	E.db["unitframe"]["units"]["focus"]["debuffs"]["sizeOverride"] = 25
 	E.db["unitframe"]["units"]["focus"]["debuffs"]["sortMethod"] = "NAME"
 	E.db["unitframe"]["units"]["focus"]["disableMouseoverGlow"] = true
@@ -761,7 +761,7 @@ function DoctorioUI:Setup_ElvUI()
 	E.db["unitframe"]["units"]["party"]["debuffs"]["countYOffset"] = 1
 	E.db["unitframe"]["units"]["party"]["debuffs"]["maxDuration"] = 0
 	E.db["unitframe"]["units"]["party"]["debuffs"]["perrow"] = 3
-	E.db["unitframe"]["units"]["party"]["debuffs"]["priority"] = "Blacklist,Personal,nonPersonal"
+	E.db["unitframe"]["units"]["party"]["debuffs"]["priority"] = "Blacklist,Personal,NonPersonal"
 	E.db["unitframe"]["units"]["party"]["debuffs"]["sizeOverride"] = 25
 	E.db["unitframe"]["units"]["party"]["debuffs"]["sortMethod"] = "NAME"
 	E.db["unitframe"]["units"]["party"]["debuffs"]["xOffset"] = 2
@@ -930,7 +930,7 @@ function DoctorioUI:Setup_ElvUI()
 	E.db["unitframe"]["units"]["raid1"]["debuffs"]["countYOffset"] = 1
 	E.db["unitframe"]["units"]["raid1"]["debuffs"]["enable"] = true
 	E.db["unitframe"]["units"]["raid1"]["debuffs"]["maxDuration"] = 0
-	E.db["unitframe"]["units"]["raid1"]["debuffs"]["priority"] = "Blacklist,Personal,nonPersonal"
+	E.db["unitframe"]["units"]["raid1"]["debuffs"]["priority"] = "Blacklist,Personal,NonPersonal"
 	E.db["unitframe"]["units"]["raid1"]["debuffs"]["sizeOverride"] = 25
 	E.db["unitframe"]["units"]["raid1"]["debuffs"]["sortMethod"] = "NAME"
 	E.db["unitframe"]["units"]["raid1"]["debuffs"]["xOffset"] = 2
@@ -1002,7 +1002,7 @@ function DoctorioUI:Setup_ElvUI()
 	E.db["unitframe"]["units"]["raid2"]["debuffs"]["countYOffset"] = 1
 	E.db["unitframe"]["units"]["raid2"]["debuffs"]["enable"] = true
 	E.db["unitframe"]["units"]["raid2"]["debuffs"]["maxDuration"] = 0
-	E.db["unitframe"]["units"]["raid2"]["debuffs"]["priority"] = "Blacklist,Personal,nonPersonal"
+	E.db["unitframe"]["units"]["raid2"]["debuffs"]["priority"] = "Blacklist,Personal,NonPersonal"
 	E.db["unitframe"]["units"]["raid2"]["debuffs"]["sizeOverride"] = 22
 	E.db["unitframe"]["units"]["raid2"]["debuffs"]["sortMethod"] = "NAME"
 	E.db["unitframe"]["units"]["raid2"]["debuffs"]["xOffset"] = 2
@@ -1073,7 +1073,7 @@ function DoctorioUI:Setup_ElvUI()
 	E.db["unitframe"]["units"]["raid3"]["debuffs"]["countYOffset"] = 1
 	E.db["unitframe"]["units"]["raid3"]["debuffs"]["enable"] = true
 	E.db["unitframe"]["units"]["raid3"]["debuffs"]["maxDuration"] = 0
-	E.db["unitframe"]["units"]["raid3"]["debuffs"]["priority"] = "Blacklist,Personal,nonPersonal"
+	E.db["unitframe"]["units"]["raid3"]["debuffs"]["priority"] = "Blacklist,Personal,NonPersonal"
 	E.db["unitframe"]["units"]["raid3"]["debuffs"]["sizeOverride"] = 20
 	E.db["unitframe"]["units"]["raid3"]["debuffs"]["sortMethod"] = "NAME"
 	E.db["unitframe"]["units"]["raid3"]["debuffs"]["xOffset"] = 2
@@ -1110,6 +1110,7 @@ function DoctorioUI:Setup_ElvUI()
 	E.db["unitframe"]["units"]["tank"]["enable"] = false
 	E.db["unitframe"]["units"]["tank"]["threatStyle"] = "BORDERS"
 	E.db["unitframe"]["units"]["target"]["aurabar"]["enable"] = false
+	E.db["unitframe"]["units"]["target"]["auras"]["enable"] = false
 	E.db["unitframe"]["units"]["target"]["buffs"]["countFont"] = "Expressway"
 	E.db["unitframe"]["units"]["target"]["buffs"]["perrow"] = 4
 	E.db["unitframe"]["units"]["target"]["buffs"]["sizeOverride"] = 25
