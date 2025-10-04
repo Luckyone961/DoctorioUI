@@ -1,3 +1,6 @@
+### Version 1.38 [In Development]
+Added ruRU localization (Credits: ZamestoTV)  
+___
 ### Version 1.37 [26-09-2025]
 Re-run of the ElvUI profile install is highly recommended  
 Updated filters for ElvUI 14.00+  

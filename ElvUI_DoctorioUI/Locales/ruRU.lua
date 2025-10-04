@@ -1,6 +1,7 @@
 local L = ElvUI[1].Libs.ACL:NewLocale('ElvUI', 'ruRU')
 if not L then return end
 -- Translator: ZamestoTV
+
 -- Installer Frame
 L["/doctorioui config -> WeakAuras tab"] = "/doctorioui config -> Вкладка WeakAuras"
 L["Class WeakAuras for all classes and specs can be found in:"] = "WeakAuras для всех классов и специализаций можно найти в:"
