@@ -3,8 +3,6 @@ if not L then return end
 -- Translator: ZamestoTV
 
 -- Installer Frame
-L["/doctorioui config -> WeakAuras tab"] = "/doctorioui config -> Вкладка WeakAuras"
-L["Class WeakAuras for all classes and specs can be found in:"] = "WeakAuras для всех классов и специализаций можно найти в:"
 L["Console Variables"] = "Консольные переменные"
 L["ElvUI"] = "ElvUI"
 L["This will only modify CVars that are already covered by the supported AddOns."] = "Это изменит только те консольные переменные, которые уже поддерживаются аддонами."
@@ -30,7 +28,6 @@ L["Please read the steps carefully before clicking any buttons."] = "Внима�
 L["Recommended step. Should not be skipped."] = "Рекомендуемый шаг. Не следует пропускать."
 L["Setup CVars"] = "Настройка консольных переменных"
 L["Skip and close the installer"] = "Пропустить и закрыть установщик"
-L["The button below will import a required WeakAura to correctly handle visibility for ElvUI Raidframes in Mythic difficulty."] = "Кнопка ниже импортирует необходимый WeakAura для правильного управления видимостью рейдовых фреймов ElvUI на мифической сложности."
 L["The DoctorioUI installer will guide you through some steps and apply the profiles of your choice."] = "Установщик DoctorioUI проведет вас через несколько шагов и применит выбранные вами профили."
 L["This cannot be imported like the other AddOns and will override your existing profile."] = "Это нельзя импортировать, как другие аддоны, и это перезапишет ваш существующий профиль."
 L["This step will configure some of Blizzards console variables."] = "Этот шаг настроит некоторые консольные переменные Blizzard."
@@ -111,7 +108,6 @@ L["Unholy"] = "Нечестивость"
 L["Vengeance"] = "Месть"
 L["Warlock"] = "Чернокнижник"
 L["Warrior"] = "Воин"
-L["WeakAuras"] = "WeakAuras"
 L["Windwalker"] = "Танцующий с ветром"
 L["Workshop"] = "Мастерская"
 

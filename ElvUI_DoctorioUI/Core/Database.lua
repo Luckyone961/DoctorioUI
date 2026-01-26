@@ -55,9 +55,6 @@ function DoctorioUI:Setup_ElvUI()
 	if E:IsAddOnEnabled('WIM') then
 		E.db["datatexts"]["panels"]["Top Panel (Left)"][3] = "LDB_WIM"
 	end
-	if E:IsAddOnEnabled('WeakAuras') then
-		E.db["datatexts"]["panels"]["Top Panel (Right)"][3] = "LDB_WeakAuras"
-	end
 	----------------------------------------------------------------------
 	----------------------- Copy/Paste Export Here -----------------------
 	----------------------------------------------------------------------
@@ -301,7 +298,6 @@ function DoctorioUI:Setup_ElvUI()
 	E.db["datatexts"]["panels"]["Top Panel (Right)"]["enable"] = true
 	E.db["datatexts"]["panels"]["Top Panel (Right)"][1] = "Volume"
 	E.db["datatexts"]["panels"]["Top Panel (Right)"][2] = "LDB_BugSack"
-	E.db["datatexts"]["panels"]["Top Panel (Right)"][3] = "LDB_WeakAuras"
 	E.db["datatexts"]["panels"]["Top Panel (Right)"][4] = "Time"
 	E.db["general"]["addonCompartment"]["fontSize"] = 20
 	E.db["general"]["addonCompartment"]["hide"] = true

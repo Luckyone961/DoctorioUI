@@ -2,8 +2,6 @@ local L = ElvUI[1].Libs.ACL:NewLocale('ElvUI', 'deDE')
 if not L then return end
 
 -- Installer Frame
-L["/doctorioui config -> WeakAuras tab"] = true
-L["Class WeakAuras for all classes and specs can be found in:"] = "WeakAuren für alle Klassen und Specs findest du unter:"
 L["Console Variables"] = "Konsolenvariablen"
 L["ElvUI"] = true
 L["This will only modify CVars that are already covered by the supported AddOns."] = "Dies wird nur die CVars ändern, die bereits von den unterstützten AddOns abgedeckt sind."
@@ -30,7 +28,6 @@ L["Please read the steps carefully before clicking any buttons."] = "Bitte lese 
 L["Recommended step. Should not be skipped."] = "Empfohlener Schritt. Sollte nicht übersprungen werden."
 L["Setup CVars"] = "CVars einrichten"
 L["Skip and close the installer"] = "Installer überspringen"
-L["The button below will import a required WeakAura to correctly handle visibility for ElvUI Raidframes in Mythic difficulty."] = "Der Button unten wird eine erforderliche WeakAura importieren, um die Sichtbarkeit der ElvUI-Raidframes im mythischen Schwierigkeitsgrad korrekt zu handhaben."
 L["The DoctorioUI installer will guide you through some steps and apply the profiles of your choice."] = "Das Installationsprogramm von DoctorioUI führt dich durch einige Schritte und wendet die von dir ausgewählten Profile an."
 L["This cannot be imported like the other AddOns and will override your existing profile."] = "MRT kann nicht wie andere AddOns importiert werden und wird dein aktuelles Profil überschreiben."
 L["This step will configure some of Blizzards console variables."] = "Dieser Schritt wird einige der Konsolenvariablen von Blizzard konfigurieren."
@@ -111,7 +108,6 @@ L["Unholy"] = "Unheilig"
 L["Vengeance"] = "Rachsucht"
 L["Warlock"] = "Hexenmeister"
 L["Warrior"] = "Krieger"
-L["WeakAuras"] = true
 L["Windwalker"] = "Windläufer"
 L["Workshop"] = true
 

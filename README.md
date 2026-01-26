@@ -10,7 +10,6 @@
 • [OmniCD](https://www.curseforge.com/wow/addons/omnicd)  
 • [Plater](https://www.curseforge.com/wow/addons/plater-nameplates)  
 • [Syndicator](https://www.curseforge.com/wow/addons/syndicator)
-• [WeakAuras](https://www.curseforge.com/wow/addons/weakauras-2)  
 
 #### **Chat commands**  
 • **/doctorioui install** or **/doc install** [Re-Run the installer process]  
@@ -20,9 +19,6 @@
 #### **Required AddOns**  
 • The most recent ElvUI version. You need to stay up-to-date.  
 • **Download link:** [Click here (Redirect to Tukui.org)](https://www.tukui.org/)  
-
-#### **Doctorio WeakAuras**  
-• **Profile link:** [Click here (Redirect to Wago.io)](https://wago.io/p/Doctorio)  
 
 #### **Doctorio on Twitch and YouTube**  
 • **Twitch link:** [Click here (Redirect to Twitch.tv)](https://www.twitch.tv/Doctorio)  

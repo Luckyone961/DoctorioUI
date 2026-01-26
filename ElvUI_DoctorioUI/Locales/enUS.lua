@@ -2,8 +2,6 @@ local L = ElvUI[1].Libs.ACL:NewLocale('ElvUI', 'enUS')
 if not L then return end
 
 -- Installer Frame
-L["/doctorioui config -> WeakAuras tab"] = true
-L["Class WeakAuras for all classes and specs can be found in:"] = true
 L["Console Variables"] = true
 L["ElvUI"] = true
 L["This will only modify CVars that are already covered by the supported AddOns."] = true
@@ -29,7 +27,6 @@ L["Please read the steps carefully before clicking any buttons."] = true
 L["Recommended step. Should not be skipped."] = true
 L["Setup CVars"] = true
 L["Skip and close the installer"] = true
-L["The button below will import a required WeakAura to correctly handle visibility for ElvUI Raidframes in Mythic difficulty."] = true
 L["The DoctorioUI installer will guide you through some steps and apply the profiles of your choice."] = true
 L["This cannot be imported like the other AddOns and will override your existing profile."] = true
 L["This step will configure some of Blizzards console variables."] = true
@@ -110,7 +107,6 @@ L["Unholy"] = true
 L["Vengeance"] = true
 L["Warlock"] = true
 L["Warrior"] = true
-L["WeakAuras"] = true
 L["Windwalker"] = true
 L["Workshop"] = true
 
