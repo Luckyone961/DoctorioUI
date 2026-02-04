@@ -2,12 +2,10 @@
 
 #### **Profiles**  
 • [Baganator](https://www.curseforge.com/wow/addons/baganator)  
-• [Baganator ElvUI Skin](https://www.curseforge.com/wow/addons/baganator-elvui-skin)  
 • [BigWigs](https://www.curseforge.com/wow/addons/big-wigs), [LittleWigs](https://www.curseforge.com/wow/addons/little-wigs)  
 • [Details](https://www.curseforge.com/wow/addons/details)  
 • [ElvUI](https://www.tukui.org/)  
 • [Method Raid Tools](https://www.curseforge.com/wow/addons/method-raid-tools)  
-• [OmniCD](https://www.curseforge.com/wow/addons/omnicd)  
 • [Plater](https://www.curseforge.com/wow/addons/plater-nameplates)  
 • [Syndicator](https://www.curseforge.com/wow/addons/syndicator)
 

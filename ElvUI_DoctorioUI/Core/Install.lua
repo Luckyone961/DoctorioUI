@@ -50,14 +50,6 @@ DoctorioUI.InstallerData = {
 			PluginInstallFrame.Option1:SetText(L["Import Plater"])
 		end,
 		[5] = function()
-			PluginInstallFrame.SubTitle:SetText(L["OmniCD"])
-			PluginInstallFrame.Desc1:SetText(L["Please click the button below to apply Doctorios profile for OmniCD."])
-			PluginInstallFrame.Desc2:SetText(format('|cff4beb2c%s', L["Recommended step. Should not be skipped."]))
-			PluginInstallFrame.Option1:Show()
-			PluginInstallFrame.Option1:SetScript('OnClick', function() DoctorioUI:Setup_OmniCD() end)
-			PluginInstallFrame.Option1:SetText(L["Import OmniCD"])
-		end,
-		[6] = function()
 			PluginInstallFrame.SubTitle:SetText(L["BigWigs"])
 			PluginInstallFrame.Desc1:SetText(L["Please click the button below to apply Doctorios profile for BigWigs."])
 			PluginInstallFrame.Desc2:SetText(format('|cff4beb2c%s', L["Recommended step. Should not be skipped."]))
@@ -65,7 +57,7 @@ DoctorioUI.InstallerData = {
 			PluginInstallFrame.Option1:SetScript('OnClick', function() DoctorioUI:Setup_BigWigs() end)
 			PluginInstallFrame.Option1:SetText(L["Import BigWigs"])
 		end,
-		[7] = function()
+		[6] = function()
 			PluginInstallFrame.SubTitle:SetText(L["Baganator"])
 			PluginInstallFrame.Desc1:SetText(L["Please click the button below to apply Doctorios profile for Baganator."])
 			PluginInstallFrame.Desc2:SetText(format('|cff4beb2c%s', L["Recommended step. Should not be skipped."]))
@@ -73,7 +65,7 @@ DoctorioUI.InstallerData = {
 			PluginInstallFrame.Option1:SetScript('OnClick', function() DoctorioUI:Setup_Baganator() end)
 			PluginInstallFrame.Option1:SetText(L["Import Baganator"])
 		end,
-		[8] = function()
+		[7] = function()
 			PluginInstallFrame.SubTitle:SetText(L["Method Raid Tools"])
 			PluginInstallFrame.Desc1:SetText(L["Please click the button below to apply Doctorios profile for Method Raid Tools."])
 			PluginInstallFrame.Desc2:SetText(format('|cffC80000%s', L["This cannot be imported like the other AddOns and will override your existing profile."]))
@@ -82,7 +74,7 @@ DoctorioUI.InstallerData = {
 			PluginInstallFrame.Option1:SetScript('OnClick', function() DoctorioUI:Setup_MRT() end)
 			PluginInstallFrame.Option1:SetText(L["Import MRT"])
 		end,
-		[9] = function()
+		[8] = function()
 			PluginInstallFrame.SubTitle:SetText(L["Console Variables"])
 			PluginInstallFrame.Desc1:SetText(L["This step will configure some of Blizzards console variables."])
 			PluginInstallFrame.Desc2:SetText(format('|cff4beb2c%s', L["Recommended step. Should not be skipped."]))
@@ -92,7 +84,7 @@ DoctorioUI.InstallerData = {
 			PluginInstallFrame.Option1:SetScript('OnClick', function() DoctorioUI:Setup_CVars() end)
 			PluginInstallFrame.Option1:SetText(L["Setup CVars"])
 		end,
-		[10] = function()
+		[9] = function()
 			PluginInstallFrame.SubTitle:SetText(L["Installation Complete"])
 			PluginInstallFrame.Desc1:SetText(L["You have completed the installation process, please click 'Finished' to reload the UI."])
 			PluginInstallFrame.Desc2:SetText(L["Feel free to join our community Discord for support and social chats."])
@@ -110,12 +102,11 @@ DoctorioUI.InstallerData = {
 		[2] = L["ElvUI"],
 		[3] = L["Details"],
 		[4] = L["Plater"],
-		[5] = L["OmniCD"],
-		[6] = L["BigWigs"],
-		[7] = L["Baganator"],
-		[8] = L["Method Raid Tools"],
-		[9] = L["Console Variables"],
-		[10] = L["Installation Complete"],
+		[5] = L["BigWigs"],
+		[6] = L["Baganator"],
+		[7] = L["Method Raid Tools"],
+		[8] = L["Console Variables"],
+		[9] = L["Installation Complete"],
 	},
 	-- Color of the title texts on the ride side (when not selected)
 	StepTitlesColor = {1, 1, 1},
