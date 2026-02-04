@@ -6,8 +6,8 @@
 ## Author: Luckyone
 ## Version: 1.37
 
-## Interface: 120000
-## X-Required-ElvUI: 15.00
+## Interface: 120000, 120001
+## X-Required-ElvUI: 15.02
 
 ## X-Curse-Project-ID: 833428
 ## X-Wago-ID: 96doqPNO

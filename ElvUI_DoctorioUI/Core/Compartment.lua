@@ -1,4 +1,4 @@
-local DoctorioUI, E, L, V, P, G = unpack((select(2, ...)))
+local _, E = unpack((select(2, ...)))
 
 -- OnClick
 function DoctorioUI_OnAddonCompartmentClick()

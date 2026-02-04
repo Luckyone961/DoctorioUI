@@ -1,6 +1,6 @@
-local DoctorioUI, E, L, V, P, G = unpack((select(2, ...)))
+local DoctorioUI = unpack((select(2, ...)))
 
-local SetCVar = SetCVar
+local SetCVar = C_CVar.SetCVar
 
 -- General CVars
 function DoctorioUI:Setup_CVars()
