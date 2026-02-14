@@ -1,14 +1,9 @@
 local DoctorioUI, E = unpack((select(2, ...)))
-local _, _, _, _, G = unpack(ElvUI)
-
--- Lua functions
-local unpack = unpack
 
 -- API cache
 local GetInstanceInfo = GetInstanceInfo
 
 -- ElvUI reference
-local E = unpack(ElvUI)
 local UF = E:GetModule('UnitFrames')
 
 -- Update raid visibility based on instance type and difficulty

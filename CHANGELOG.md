@@ -6,6 +6,7 @@ Removed OmniCD profile
 Removed WeakAuras imports  
 Reworked ElvUI import for Midnight  
 Updated Console Variables for Midnight  
+Updated installer steps  
 ___
 ### Version 1.37 [26-09-2025]
 Re-run of the ElvUI profile install is highly recommended  
