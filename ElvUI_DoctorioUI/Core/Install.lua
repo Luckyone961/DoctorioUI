@@ -52,12 +52,12 @@ DoctorioUI.InstallerData = {
 			PluginInstallFrame.Option1:SetText(L["Import Details"])
 		end,
 		[5] = function()
-			PluginInstallFrame.SubTitle:SetText(L["Plater"])
+			PluginInstallFrame.SubTitle:SetText(L["Nameplates"])
 			PluginInstallFrame.Desc1:SetText(L["Please click the button below to get the Wago URL for Doctorios Plater profile."])
 			PluginInstallFrame.Desc2:SetText(format('|cff4beb2c%s', L["Recommended step. Should not be skipped."]))
 			PluginInstallFrame.Option1:Show()
 			PluginInstallFrame.Option1:SetScript('OnClick', function() E:StaticPopup_Show('DoctorioUI_EDITBOX', nil, nil, 'https://wago.io/DoctorioPlater') end)
-			PluginInstallFrame.Option1:SetText(L["Import Plater"])
+			PluginInstallFrame.Option1:SetText(L["Plater"])
 		end,
 		[6] = function()
 			PluginInstallFrame.SubTitle:SetText(L["BigWigs"])
@@ -93,7 +93,7 @@ DoctorioUI.InstallerData = {
 		[2] = L["ElvUI"],
 		[3] = L["Console Variables"],
 		[4] = L["Details"],
-		[5] = L["Plater"],
+		[5] = L["Nameplates"],
 		[6] = L["BigWigs"],
 		[7] = L["Baganator"],
 		[8] = L["Installation Complete"],

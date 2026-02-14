@@ -5,8 +5,6 @@
 • [BigWigs](https://www.curseforge.com/wow/addons/big-wigs), [LittleWigs](https://www.curseforge.com/wow/addons/little-wigs)  
 • [Details](https://www.curseforge.com/wow/addons/details)  
 • [ElvUI](https://www.tukui.org/)  
-• [Method Raid Tools](https://www.curseforge.com/wow/addons/method-raid-tools)  
-• [Plater](https://www.curseforge.com/wow/addons/plater-nameplates)  
 • [Syndicator](https://www.curseforge.com/wow/addons/syndicator)
 
 #### **Chat commands**  
@@ -21,3 +19,6 @@
 #### **Doctorio on Twitch and YouTube**  
 • **Twitch link:** [Click here (Redirect to Twitch.tv)](https://www.twitch.tv/Doctorio)  
 • **YouTube link:** [Click here (Redirect to YouTube.com)](https://www.youtube.com/DoctorioGaming)  
+
+#### **Custom Media**  
+• The statusbar texture "Better Blizzard" from [BetterCooldownManager](https://www.curseforge.com/wow/addons/bettercooldownmanager) is included in DoctorioUI  

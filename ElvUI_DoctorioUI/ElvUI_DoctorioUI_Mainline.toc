@@ -16,6 +16,7 @@
 ## IconTexture: Interface\AddOns\ElvUI_DoctorioUI\Media\Textures\Compartment.tga
 
 Init.lua
+Media\Media.lua
 
 Locales\load_locales.xml
 Core\load_core.xml
