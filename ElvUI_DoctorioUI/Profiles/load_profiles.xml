@@ -1,6 +1,3 @@
 <Ui xmlns="http://www.blizzard.com/wow/ui/">
-	<Script file='Baganator.lua'/>
-	<Script file='BigWigs.lua'/>
 	<Script file='Details.lua'/>
-	<Script file='MRT.lua'/>
 </Ui>

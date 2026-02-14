@@ -42,14 +42,13 @@ function DoctorioUI:Config()
 	DoctorioUI.Options.args.profiles.args.spacer = ACH:Spacer(2, 'full')
 	DoctorioUI.Options.args.profiles.args.elvuiGroup = ACH:Group(L["ElvUI"], nil, 3)
 	DoctorioUI.Options.args.profiles.args.elvuiGroup.inline = true
-	DoctorioUI.Options.args.profiles.args.elvuiGroup.args.profile = ACH:Execute(L["ElvUI Profile"], nil, 1, function() DoctorioUI:Setup_GlobalDB() DoctorioUI:Setup_PrivateDB() DoctorioUI:Setup_Layout() E:StaticPopup_Show('DoctorioUI_RL') end)
+	DoctorioUI.Options.args.profiles.args.elvuiGroup.args.profile = ACH:Execute(L["ElvUI Profile"], nil, 1, function() DoctorioUI:Setup_Layout() E:StaticPopup_Show('DoctorioUI_RL') end)
 	DoctorioUI.Options.args.profiles.args.addonGroup = ACH:Group(L["AddOns"], nil, 4)
 	DoctorioUI.Options.args.profiles.args.addonGroup.inline = true
-	DoctorioUI.Options.args.profiles.args.addonGroup.args.details = ACH:Execute(L["Details"], nil, 1, function() DoctorioUI:Setup_Details() E:StaticPopup_Show('DoctorioUI_RL') end)
-	DoctorioUI.Options.args.profiles.args.addonGroup.args.plater = ACH:Execute(L["Plater"], nil, 2, function() E:StaticPopup_Show('DoctorioUI_EDITBOX', nil, nil, 'https://wago.io/DoctorioPlater') end)
-	DoctorioUI.Options.args.profiles.args.addonGroup.args.bigwigs = ACH:Execute(L["BigWigs"], nil, 4, function() DoctorioUI:Setup_BigWigs() E:StaticPopup_Show('DoctorioUI_RL') end, nil, true)
-	DoctorioUI.Options.args.profiles.args.addonGroup.args.baganator = ACH:Execute(L["Baganator"], nil, 5, function() DoctorioUI:Setup_Baganator() E:StaticPopup_Show('DoctorioUI_RL') end, nil, true)
-	DoctorioUI.Options.args.profiles.args.addonGroup.args.mrt = ACH:Execute(L["Method Raid Tools"], nil, 6, function() DoctorioUI:Setup_MRT() E:StaticPopup_Show('DoctorioUI_RL') end, nil, true)
+	DoctorioUI.Options.args.profiles.args.addonGroup.args.baganator = ACH:Execute(L["Baganator"], nil, 1, function() E:StaticPopup_Show('DoctorioUI_EDITBOX', nil, nil, 'https://wago.io/Baganator') end)
+	DoctorioUI.Options.args.profiles.args.addonGroup.args.bigwigs = ACH:Execute(L["BigWigs"], nil, 2, function() E:StaticPopup_Show('DoctorioUI_EDITBOX', nil, nil, 'https://wago.io/DoctorioBigWigs') end)
+	DoctorioUI.Options.args.profiles.args.addonGroup.args.details = ACH:Execute(L["Details"], nil, 3, function() DoctorioUI:Setup_Details() E:StaticPopup_Show('DoctorioUI_RL') end)
+	DoctorioUI.Options.args.profiles.args.addonGroup.args.plater = ACH:Execute(L["Plater"], nil, 4, function() E:StaticPopup_Show('DoctorioUI_EDITBOX', nil, nil, 'https://wago.io/DoctorioPlater') end)
 
 	E.Options.args.DoctorioUI = DoctorioUI.Options
 end

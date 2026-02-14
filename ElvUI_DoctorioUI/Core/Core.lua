@@ -87,16 +87,22 @@ function DoctorioUI:Setup_PrivateDB()
 	----------------------- Copy/Paste Export Here -----------------------
 	----------------------------------------------------------------------
 	E.private["bags"]["enable"] = false
+	E.private["general"]["chatBubbles"] = "disabled"
 	E.private["general"]["chatBubbleFont"] = "Expressway"
+	E.private["general"]["chatBubbleFontOutline"] = "OUTLINE"
+	E.private["general"]["glossTex"] = "Better Blizzard"
 	E.private["general"]["minimap"]["hideTracking"] = true
 	E.private["general"]["nameplateFont"] = "Expressway"
+	E.private["general"]["nameplateFontOutline"] = "OUTLINE"
 	E.private["general"]["nameplateLargeFont"] = "Expressway"
+	E.private["general"]["nameplateLargeFontOutline"] = "OUTLINE"
+	E.private["general"]["normTex"] = "Better Blizzard"
 	E.private["general"]["raidUtility"] = false
 	E.private["general"]["totemTracker"] = false
 	E.private["nameplates"]["enable"] = false
-	E.private["skins"]["blizzard"]["bgmap"] = false
 	E.private["skins"]["blizzard"]["losscontrol"] = false
 	E.private["skins"]["parchmentRemoverEnable"] = true
+	E.private["theme"] = "default"
 end
 
 -- E.global & Custom DataText
@@ -123,8 +129,9 @@ function DoctorioUI:Setup_GlobalDB()
 	E.global["datatexts"]["customPanels"]["Top Panel (Right)"]["fonts"]["font"] = "Expressway"
 	E.global["datatexts"]["customPanels"]["Top Panel (Right)"]["height"] = 20
 	E.global["datatexts"]["customPanels"]["Top Panel (Right)"]["name"] = "Top Panel (Right)"
-	E.global["datatexts"]["customPanels"]["Top Panel (Right)"]["numPoints"] = 4
-	E.global["datatexts"]["customPanels"]["Top Panel (Right)"]["width"] = 201
+	E.global["datatexts"]["customPanels"]["Top Panel (Right)"]["numPoints"] = 3
+	E.global["datatexts"]["customPanels"]["Top Panel (Right)"]["textJustify"] = "RIGHT"
+	E.global["datatexts"]["customPanels"]["Top Panel (Right)"]["width"] = 202
 	E.global["general"]["fadeMapWhenMoving"] = false
 	E.global["general"]["WorldMapCoordinates"]["position"] = "BOTTOMRIGHT"
 
@@ -151,9 +158,6 @@ function DoctorioUI:Setup_Layout()
 	-- E.private & Media
 	DoctorioUI:Setup_PrivateDB()
 
-	-- Aura filters
-	DoctorioUI:Setup_AuraFilters()
-
 	-- E.db & Movers
 	DoctorioUI:Setup_ElvUI()
 
@@ -173,6 +177,7 @@ function DoctorioUI:PLAYER_ENTERING_WORLD(_, initLogin, isReload)
 		DoctorioUI:VersionCheck()
 	end
 	DoctorioUI:LoadCommands()
+	DoctorioUI:MythicVisibility()
 end
 
 -- This is called in DoctorioUI:Initialize()

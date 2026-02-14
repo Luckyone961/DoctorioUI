@@ -3,6 +3,9 @@ local L = E.Libs.ACL:GetLocale('ElvUI', E.global.general.locale)
 local EP = LibStub('LibElvUIPlugin-1.0')
 local PI = E:GetModule('PluginInstaller')
 
+-- Force class color name only on login [ELvUI]
+-- Custom label option for Volume DT
+
 -- Variables & Cache
 local _G = _G
 local tonumber = tonumber
