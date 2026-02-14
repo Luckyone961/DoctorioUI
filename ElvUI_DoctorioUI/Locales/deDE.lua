@@ -2,6 +2,7 @@ local L = ElvUI[1].Libs.ACL:NewLocale('ElvUI', 'deDE')
 if not L then return end
 
 -- Installer Frame
+L["BetterCooldownManager"] = true -- Don't translate
 L["Console Variables"] = "Konsolenvariablen"
 L["ElvUI"] = true
 L["This will only modify CVars that are already covered by the supported AddOns."] = "Dies wird nur die CVars ändern, die bereits von den unterstützten AddOns abgedeckt sind."
@@ -15,8 +16,8 @@ L["Import MRT"] = "MRT importieren"
 L["Installation Complete"] = "Installation erfolgreich"
 L["Installation"] = true
 L["Nameplates"] = "Namensplaketten"
-L["Please click the button below to apply Doctorios profile for Baganator."] = "Bitte klicke auf den Button unten, um das Profil von Doctorio für Baganator anzuwenden."
-L["Please click the button below to apply Doctorios profile for BigWigs."] = "Bitte klicke auf den Button unten, um das Profil von Doctorio für BigWigs anzuwenden."
+L["Please click the button below to get the Wago URL for Doctorios Baganator profile."] = "Bitte klicke auf den Button unten, um das Profil von Doctorio für Baganator anzuwenden."
+L["Please click the button below to get the Wago URL for Doctorios BigWigs profile."] = "Bitte klicke auf den Button unten, um das Profil von Doctorio für BigWigs anzuwenden."
 L["Please click the button below to apply Doctorios profile for Details."] = "Bitte klicke auf den Button unten, um das Profil von Doctorio für Details anzuwenden."
 L["Please click the button below to apply Doctorios profile for ElvUI."] = "Bitte klicke auf den Button unten, um das Profil von Doctorio für ElvUI anzuwenden."
 L["Please click the button below to apply Doctorios profile for Method Raid Tools."] = "Bitte klicke auf den Button unten, um das Profil von Doctorio für Method Raid Tools anzuwenden."

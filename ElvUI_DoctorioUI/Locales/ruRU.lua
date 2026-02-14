@@ -3,6 +3,7 @@ if not L then return end
 -- Translator: ZamestoTV
 
 -- Installer Frame
+L["BetterCooldownManager"] = true -- Don't translate
 L["Console Variables"] = "Консольные переменные"
 L["ElvUI"] = "ElvUI"
 L["This will only modify CVars that are already covered by the supported AddOns."] = "Это изменит только те консольные переменные, которые уже поддерживаются аддонами."
@@ -15,8 +16,8 @@ L["Import ElvUI"] = "Импорт ElvUI"
 L["Installation Complete"] = "Установка завершена"
 L["Installation"] = "Установка"
 L["Nameplates"] = true
-L["Please click the button below to apply Doctorios profile for Baganator."] = "Нажмите кнопку ниже, чтобы применить профиль Doctorios для Baganator."
-L["Please click the button below to apply Doctorios profile for BigWigs."] = "Нажмите кнопку ниже, чтобы применить профиль Doctorios для BigWigs."
+L["Please click the button below to get the Wago URL for Doctorios Baganator profile."] = "Нажмите кнопку ниже, чтобы применить профиль Doctorios для Baganator."
+L["Please click the button below to get the Wago URL for Doctorios BigWigs profile."] = "Нажмите кнопку ниже, чтобы применить профиль Doctorios для BigWigs."
 L["Please click the button below to apply Doctorios profile for Details."] = "Нажмите кнопку ниже, чтобы применить профиль Doctorios для Details."
 L["Please click the button below to apply Doctorios profile for ElvUI."] = "Нажмите кнопку ниже, чтобы применить профиль Doctorios для ElvUI."
 L["Please click the button below to apply Doctorios profile for Method Raid Tools."] = "Нажмите кнопку ниже, чтобы применить профиль Doctorios для Method Raid Tools."

@@ -2,6 +2,7 @@ local L = ElvUI[1].Libs.ACL:NewLocale('ElvUI', 'enUS')
 if not L then return end
 
 -- Installer Frame
+L["BetterCooldownManager"] = true -- Don't translate
 L["Console Variables"] = true
 L["ElvUI"] = true
 L["This will only modify CVars that are already covered by the supported AddOns."] = true
@@ -14,8 +15,8 @@ L["Import ElvUI"] = true
 L["Installation Complete"] = true
 L["Installation"] = true
 L["Nameplates"] = true
-L["Please click the button below to apply Doctorios profile for Baganator."] = true
-L["Please click the button below to apply Doctorios profile for BigWigs."] = true
+L["Please click the button below to get the Wago URL for Doctorios Baganator profile."] = true
+L["Please click the button below to get the Wago URL for Doctorios BigWigs profile."] = true
 L["Please click the button below to apply Doctorios profile for Details."] = true
 L["Please click the button below to apply Doctorios profile for ElvUI."] = true
 L["Please click the button below to apply Doctorios profile for Method Raid Tools."] = true

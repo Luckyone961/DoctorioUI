@@ -99,7 +99,6 @@ function DoctorioUI:Setup_PrivateDB()
 	E.private["general"]["normTex"] = "Better Blizzard"
 	E.private["general"]["raidUtility"] = false
 	E.private["general"]["totemTracker"] = false
-	E.private["nameplates"]["enable"] = false
 	E.private["skins"]["blizzard"]["losscontrol"] = false
 	E.private["skins"]["parchmentRemoverEnable"] = true
 	E.private["theme"] = "default"
@@ -141,6 +140,11 @@ function DoctorioUI:Setup_GlobalDB()
 	end
 end
 
+-- ElvUI Nameplates
+function DoctorioUI:Setup_ElvUI_Nameplates()
+	E.private.nameplates.enable = true
+end
+
 -- ElvUI Layout setup
 function DoctorioUI:Setup_Layout()
 	-- Disable LibDualSpec to set the profile
@@ -160,6 +164,9 @@ function DoctorioUI:Setup_Layout()
 
 	-- E.db & Movers
 	DoctorioUI:Setup_ElvUI()
+
+	-- ElvUI Nameplates
+	DoctorioUI:Setup_ElvUI_Nameplates()
 
 	-- Push the update
 	E:StaggeredUpdateAll()
