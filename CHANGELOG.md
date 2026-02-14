@@ -1,5 +1,11 @@
 ### Version 1.38 [In Development]
+Added "Better Blizzard" Texture (Credits: Unhalted)  
 Added ruRU localization (Credits: ZamestoTV)  
+Removed Method Raid Tools profile  
+Removed OmniCD profile  
+Removed WeakAuras imports  
+Reworked ElvUI import for Midnight  
+Updated Console Variables for Midnight  
 ___
 ### Version 1.37 [26-09-2025]
 Re-run of the ElvUI profile install is highly recommended  
