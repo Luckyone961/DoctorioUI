@@ -110,6 +110,7 @@ function DoctorioUI:Setup_GlobalDB()
 	----------------------- Do Not Touch This Part -----------------------
 	----------------------------------------------------------------------
 	SetCVar('uiScale', 0.71111111111111)
+	SetCVar('useUiScale', 1)
 	E.global.general.UIScale = 0.71111111111111
 	DT:BuildPanelFrame('Top Panel (Left)')
 	DT:BuildPanelFrame('Top Panel (Right)')

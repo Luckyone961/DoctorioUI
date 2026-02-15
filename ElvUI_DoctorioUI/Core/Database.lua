@@ -7,7 +7,6 @@ function DoctorioUI:Setup_ElvUI()
 	----------------------------------------------------------------------
 	E.db.convertPages = true
 	E.db.movers = E.db.movers or {}
-	E.db.actionbar.bar6.enabled = false -- Should be disabled
 
 	E.db.unitframe.units.party.growthDirection = 'RIGHT_DOWN'
 	E.db.unitframe.units.raid1.growthDirection = 'RIGHT_DOWN'
