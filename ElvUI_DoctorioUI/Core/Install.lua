@@ -1,4 +1,4 @@
-local DoctorioUI, E, L, V, P, G = unpack((select(2, ...)))
+local DoctorioUI, E, L = unpack((select(2, ...)))
 
 -- Variables & Cache
 local format = format
@@ -34,6 +34,23 @@ DoctorioUI.InstallerData = {
 			PluginInstallFrame.Option1:SetText(L["Import ElvUI"])
 		end,
 		[3] = function()
+			PluginInstallFrame.SubTitle:SetText(L["Console Variables"])
+			PluginInstallFrame.Desc1:SetText(L["This step will configure some of Blizzards console variables."])
+			PluginInstallFrame.Desc2:SetText(format('|cff4beb2c%s', L["Recommended step. Should not be skipped."]))
+			PluginInstallFrame.Desc3:SetText(L["This will only modify CVars that are already covered by the supported AddOns."])
+			PluginInstallFrame.Option1:Show()
+			PluginInstallFrame.Option1:SetScript('OnClick', function() DoctorioUI:Setup_CVars() end)
+			PluginInstallFrame.Option1:SetText(L["Setup CVars"])
+		end,
+		[4] = function()
+			PluginInstallFrame.SubTitle:SetText(L["BetterCooldownManager"])
+			PluginInstallFrame.Desc1:SetText(L["Please click the button below to get the Wago URL for Doctorios BetterCooldownManager profile."])
+			PluginInstallFrame.Desc2:SetText(format('|cff4beb2c%s', L["Recommended step. Should not be skipped."]))
+			PluginInstallFrame.Option1:Show()
+			PluginInstallFrame.Option1:SetScript('OnClick', function() E:StaticPopup_Show('DoctorioUI_EDITBOX', nil, nil, 'https://wago.io/DoctorioBCM') end)
+			PluginInstallFrame.Option1:SetText(L["BetterCooldownManager"])
+		end,
+		[5] = function()
 			PluginInstallFrame.SubTitle:SetText(L["Details"])
 			PluginInstallFrame.Desc1:SetText(L["Please click the button below to apply Doctorios profile for Details."])
 			PluginInstallFrame.Desc2:SetText(format('|cff4beb2c%s', L["Recommended step. Should not be skipped."]))
@@ -41,70 +58,35 @@ DoctorioUI.InstallerData = {
 			PluginInstallFrame.Option1:SetScript('OnClick', function() DoctorioUI:Setup_Details() end)
 			PluginInstallFrame.Option1:SetText(L["Import Details"])
 		end,
-		[4] = function()
-			PluginInstallFrame.SubTitle:SetText(L["Plater"])
-			PluginInstallFrame.Desc1:SetText(L["Please click the button below to get the Wago URL for Doctorios Plater profile."])
-			PluginInstallFrame.Desc2:SetText(format('|cff4beb2c%s', L["Recommended step. Should not be skipped."]))
-			PluginInstallFrame.Option1:Show()
-			PluginInstallFrame.Option1:SetScript('OnClick', function() E:StaticPopup_Show('DoctorioUI_EDITBOX', nil, nil, 'https://wago.io/DoctorioPlater') end)
-			PluginInstallFrame.Option1:SetText(L["Import Plater"])
-		end,
-		[5] = function()
-			PluginInstallFrame.SubTitle:SetText(L["OmniCD"])
-			PluginInstallFrame.Desc1:SetText(L["Please click the button below to apply Doctorios profile for OmniCD."])
-			PluginInstallFrame.Desc2:SetText(format('|cff4beb2c%s', L["Recommended step. Should not be skipped."]))
-			PluginInstallFrame.Option1:Show()
-			PluginInstallFrame.Option1:SetScript('OnClick', function() DoctorioUI:Setup_OmniCD() end)
-			PluginInstallFrame.Option1:SetText(L["Import OmniCD"])
-		end,
 		[6] = function()
-			PluginInstallFrame.SubTitle:SetText(L["BigWigs"])
-			PluginInstallFrame.Desc1:SetText(L["Please click the button below to apply Doctorios profile for BigWigs."])
-			PluginInstallFrame.Desc2:SetText(format('|cff4beb2c%s', L["Recommended step. Should not be skipped."]))
-			PluginInstallFrame.Option1:Show()
-			PluginInstallFrame.Option1:SetScript('OnClick', function() DoctorioUI:Setup_BigWigs() end)
-			PluginInstallFrame.Option1:SetText(L["Import BigWigs"])
-		end,
-		[7] = function()
-			PluginInstallFrame.SubTitle:SetText(L["Baganator"])
-			PluginInstallFrame.Desc1:SetText(L["Please click the button below to apply Doctorios profile for Baganator."])
-			PluginInstallFrame.Desc2:SetText(format('|cff4beb2c%s', L["Recommended step. Should not be skipped."]))
-			PluginInstallFrame.Option1:Show()
-			PluginInstallFrame.Option1:SetScript('OnClick', function() DoctorioUI:Setup_Baganator() end)
-			PluginInstallFrame.Option1:SetText(L["Import Baganator"])
-		end,
-		[8] = function()
-			PluginInstallFrame.SubTitle:SetText(L["Method Raid Tools"])
-			PluginInstallFrame.Desc1:SetText(L["Please click the button below to apply Doctorios profile for Method Raid Tools."])
-			PluginInstallFrame.Desc2:SetText(format('|cffC80000%s', L["This cannot be imported like the other AddOns and will override your existing profile."]))
+			PluginInstallFrame.SubTitle:SetText(L["Nameplates"])
+			PluginInstallFrame.Desc1:SetText(L["Please click the button below to choose between ElvUI Nameplates and Plater."])
+			PluginInstallFrame.Desc2:SetText(L["Doctorio uses and recommends using ElvUI Nameplates."])
 			PluginInstallFrame.Desc3:SetText(format('|cff4beb2c%s', L["Recommended step. Should not be skipped."]))
 			PluginInstallFrame.Option1:Show()
-			PluginInstallFrame.Option1:SetScript('OnClick', function() DoctorioUI:Setup_MRT() end)
-			PluginInstallFrame.Option1:SetText(L["Import MRT"])
+			PluginInstallFrame.Option1:SetScript('OnClick', function() DoctorioUI:Setup_ElvUI_Nameplates() end)
+			PluginInstallFrame.Option1:SetText(L["|cff4beb2cElvUI|r"])
+			PluginInstallFrame.Option2:Show()
+			PluginInstallFrame.Option2:SetScript('OnClick', function() E.private.nameplates.enable = false E:StaticPopup_Show('DoctorioUI_EDITBOX', nil, nil, 'https://wago.io/DoctorioPlater') end)
+			PluginInstallFrame.Option2:SetText(L["Plater"])
+		end,
+		[7] = function()
+			PluginInstallFrame.SubTitle:SetText(L["BigWigs"])
+			PluginInstallFrame.Desc1:SetText(L["Please click the button below to get the Wago URL for Doctorios BigWigs profile."])
+			PluginInstallFrame.Desc2:SetText(format('|cff4beb2c%s', L["Recommended step. Should not be skipped."]))
+			PluginInstallFrame.Option1:Show()
+			PluginInstallFrame.Option1:SetScript('OnClick', function() E:StaticPopup_Show('DoctorioUI_EDITBOX', nil, nil, 'https://wago.io/DoctorioBigWigs') end)
+			PluginInstallFrame.Option1:SetText(L["Import BigWigs"])
+		end,
+		[8] = function()
+			PluginInstallFrame.SubTitle:SetText(L["Baganator"])
+			PluginInstallFrame.Desc1:SetText(L["Please click the button below to get the Wago URL for Doctorios Baganator profile."])
+			PluginInstallFrame.Desc2:SetText(format('|cff4beb2c%s', L["Recommended step. Should not be skipped."]))
+			PluginInstallFrame.Option1:Show()
+			PluginInstallFrame.Option1:SetScript('OnClick', function() E:StaticPopup_Show('DoctorioUI_EDITBOX', nil, nil, 'https://wago.io/Baganator') end)
+			PluginInstallFrame.Option1:SetText(L["Import Baganator"])
 		end,
 		[9] = function()
-			PluginInstallFrame.SubTitle:SetText(L["WeakAuras"])
-			PluginInstallFrame.Desc1:SetText(L["Class WeakAuras for all classes and specs can be found in:"])
-			PluginInstallFrame.Desc2:SetText(L["/doctorioui config -> WeakAuras tab"])
-			PluginInstallFrame.Desc3:SetText(L["The button below will import a required WeakAura to correctly handle visibility for ElvUI Raidframes in Mythic difficulty."])
-			PluginInstallFrame.Option1:Show()
-			PluginInstallFrame.Option1:SetScript('OnClick', function() DoctorioUI:WeakAurasImport('raidFrameVisibility') end)
-			PluginInstallFrame.Option1:SetText(L["Important WA"].. " 1")
-			PluginInstallFrame.Option2:Show()
-			PluginInstallFrame.Option2:SetScript('OnClick', function() DoctorioUI:WeakAurasImport('handleFriendlyNameplates') end)
-			PluginInstallFrame.Option2:SetText(L["Important WA"].. " 2")
-		end,
-		[10] = function()
-			PluginInstallFrame.SubTitle:SetText(L["Console Variables"])
-			PluginInstallFrame.Desc1:SetText(L["This step will configure some of Blizzards console variables."])
-			PluginInstallFrame.Desc2:SetText(format('|cff4beb2c%s', L["Recommended step. Should not be skipped."]))
-			PluginInstallFrame.Desc3:SetText(L["This will only modify CVars that are already covered by the supported AddOns."])
-
-			PluginInstallFrame.Option1:Show()
-			PluginInstallFrame.Option1:SetScript('OnClick', function() DoctorioUI:Setup_CVars() end)
-			PluginInstallFrame.Option1:SetText(L["Setup CVars"])
-		end,
-		[11] = function()
 			PluginInstallFrame.SubTitle:SetText(L["Installation Complete"])
 			PluginInstallFrame.Desc1:SetText(L["You have completed the installation process, please click 'Finished' to reload the UI."])
 			PluginInstallFrame.Desc2:SetText(L["Feel free to join our community Discord for support and social chats."])
@@ -120,15 +102,13 @@ DoctorioUI.InstallerData = {
 	StepTitles = {
 		[1] = L["Welcome"],
 		[2] = L["ElvUI"],
-		[3] = L["Details"],
-		[4] = L["Plater"],
-		[5] = L["OmniCD"],
-		[6] = L["BigWigs"],
-		[7] = L["Baganator"],
-		[8] = L["Method Raid Tools"],
-		[9] = L["WeakAuras"],
-		[10] = L["Console Variables"],
-		[11] = L["Installation Complete"],
+		[3] = L["Console Variables"],
+		[4] = L["BetterCooldownManager"],
+		[5] = L["Details"],
+		[6] = L["Nameplates"],
+		[7] = L["BigWigs"],
+		[8] = L["Baganator"],
+		[9] = L["Installation Complete"],
 	},
 	-- Color of the title texts on the ride side (when not selected)
 	StepTitlesColor = {1, 1, 1},

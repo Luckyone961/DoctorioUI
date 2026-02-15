@@ -4,10 +4,10 @@
 
 ## DefaultState: enabled
 ## Author: Luckyone
-## Version: 1.37
+## Version: 2.00
 
-## Interface: 110200
-## X-Required-ElvUI: 14.00
+## Interface: 120001
+## X-Required-ElvUI: 15.05
 
 ## X-Curse-Project-ID: 833428
 ## X-Wago-ID: 96doqPNO
@@ -16,6 +16,7 @@
 ## IconTexture: Interface\AddOns\ElvUI_DoctorioUI\Media\Textures\Compartment.tga
 
 Init.lua
+Media\Media.lua
 
 Locales\load_locales.xml
 Core\load_core.xml

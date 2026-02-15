@@ -2,15 +2,11 @@
 
 #### **Profiles**  
 • [Baganator](https://www.curseforge.com/wow/addons/baganator)  
-• [Baganator ElvUI Skin](https://www.curseforge.com/wow/addons/baganator-elvui-skin)  
+• [BetterCooldownManager](https://www.curseforge.com/wow/addons/bettercooldownmanager)  
 • [BigWigs](https://www.curseforge.com/wow/addons/big-wigs), [LittleWigs](https://www.curseforge.com/wow/addons/little-wigs)  
 • [Details](https://www.curseforge.com/wow/addons/details)  
 • [ElvUI](https://www.tukui.org/)  
-• [Method Raid Tools](https://www.curseforge.com/wow/addons/method-raid-tools)  
-• [OmniCD](https://www.curseforge.com/wow/addons/omnicd)  
-• [Plater](https://www.curseforge.com/wow/addons/plater-nameplates)  
 • [Syndicator](https://www.curseforge.com/wow/addons/syndicator)
-• [WeakAuras](https://www.curseforge.com/wow/addons/weakauras-2)  
 
 #### **Chat commands**  
 • **/doctorioui install** or **/doc install** [Re-Run the installer process]  
@@ -21,9 +17,9 @@
 • The most recent ElvUI version. You need to stay up-to-date.  
 • **Download link:** [Click here (Redirect to Tukui.org)](https://www.tukui.org/)  
 
-#### **Doctorio WeakAuras**  
-• **Profile link:** [Click here (Redirect to Wago.io)](https://wago.io/p/Doctorio)  
-
 #### **Doctorio on Twitch and YouTube**  
 • **Twitch link:** [Click here (Redirect to Twitch.tv)](https://www.twitch.tv/Doctorio)  
 • **YouTube link:** [Click here (Redirect to YouTube.com)](https://www.youtube.com/DoctorioGaming)  
+
+#### **Custom Media**  
+• The statusbar texture "Better Blizzard" from [BetterCooldownManager](https://www.curseforge.com/wow/addons/bettercooldownmanager) is included in DoctorioUI  

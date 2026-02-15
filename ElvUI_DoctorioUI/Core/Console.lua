@@ -1,9 +1,19 @@
-local DoctorioUI, E, L, V, P, G = unpack((select(2, ...)))
+local DoctorioUI = unpack((select(2, ...)))
 
-local SetCVar = SetCVar
+local SetCVar = C_CVar.SetCVar
 
 -- General CVars
 function DoctorioUI:Setup_CVars()
+	-- General
+	SetCVar('AutoPushSpellToActionBar', 0)
+	SetCVar('cameraDistanceMaxZoomFactor', 2.6)
+	SetCVar('countdownForCooldowns', 1)
+	SetCVar('fstack_preferParentKeys', 0)
+	SetCVar('minimapTrackingShowAll', 1)
+	SetCVar('screenshotQuality', 10)
+	SetCVar('showNPETutorials', 0)
+	SetCVar('showTutorials', 0)
+	SetCVar('UberTooltips', 1)
 	-- Action Bars Tab
 	SetCVar('enableMultiActionBars', 1) -- Remove Bar 2 Action Page
 	SetCVar('enableMultiActionBars', 3) -- Remove Bar 3 Action Page
@@ -18,4 +28,7 @@ function DoctorioUI:Setup_CVars()
 	SetCVar('UnitNameHostleNPC', 1)
 	SetCVar('UnitNameInteractiveNPC', 1)
 	SetCVar('UnitNameNPC', 0)
+	-- Name only & Class color in name only
+	SetCVar('nameplateShowOnlyNameForFriendlyPlayerUnits', 1)
+	SetCVar('nameplateUseClassColorForFriendlyPlayerUnitNames', 1)
 end
