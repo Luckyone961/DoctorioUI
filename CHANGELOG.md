@@ -1,5 +1,6 @@
 ### Version 1.38 [In Development]
 Added "Better Blizzard" Texture (Credits: Unhalted)  
+Added ElvUI Nameplates profile  
 Added ruRU localization (Credits: ZamestoTV)  
 Removed Method Raid Tools profile  
 Removed OmniCD profile  
