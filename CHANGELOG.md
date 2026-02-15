@@ -1,4 +1,4 @@
-### Version 1.38 [In Development]
+### Version 2.00 [15-02-2026]
 Added "Better Blizzard" Texture (Credits: Unhalted)  
 Added ElvUI Nameplates profile  
 Added ruRU localization (Credits: ZamestoTV)  
