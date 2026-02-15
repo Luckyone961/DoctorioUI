@@ -1,3 +1,6 @@
+### Version 2.01 [In Development]
+Database fixes for ElvUI Nameplates  
+___
 ### Version 2.00 [15-02-2026]
 Added "Better Blizzard" Texture (Credits: Unhalted)  
 Added ElvUI Nameplates profile  

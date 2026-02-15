@@ -147,6 +147,8 @@ function DoctorioUI:Setup_ElvUI_Nameplates()
 	----------------------- Do Not Touch This Part -----------------------
 	----------------------------------------------------------------------
 	E.private.nameplates.enable = true
+	E.db.nameplates.visibility.classColorFriendlyPlayerNames = true
+	E.db.nameplates.visibility.showOnlyNames = true
 	----------------------------------------------------------------------
 	----------------------- Copy/Paste Export Here -----------------------
 	----------------------------------------------------------------------
@@ -161,7 +163,6 @@ function DoctorioUI:Setup_ElvUI_Nameplates()
 	E.db["nameplates"]["lowHealthThreshold"] = 0
 	E.db["nameplates"]["multiplier"] = 1
 	E.db["nameplates"]["overlapH"] = 1
-	E.db["nameplates"]["persistentFriendlyNP"] = true
 	E.db["nameplates"]["statusbar"] = "Better Blizzard"
 
 	E.db["nameplates"]["visibility"]["enemy"]["guardians"] = true
