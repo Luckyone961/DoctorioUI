@@ -12,10 +12,12 @@ local function UpdateRaidVisibility()
 	local _, instanceType, difficultyID = GetInstanceInfo()
 
 	local defaultVisibility =
+	(E.db.unitframe.units.party.visibility == '[@raid6,exists][@party1,noexists] hide;show') and
 	(E.db.unitframe.units.raid1.visibility == '[@raid6,noexists][@raid21,exists] hide;show') and
 	(E.db.unitframe.units.raid2.visibility == '[@raid21,noexists][@raid31,exists] hide;show')
 
 	local mythicVisibility =
+	(E.db.unitframe.units.party.visibility == 'hide') and
 	(E.db.unitframe.units.raid1.visibility == '[nogroup] hide;show') and
 	(E.db.unitframe.units.raid2.visibility == 'hide')
 
@@ -25,8 +27,9 @@ local function UpdateRaidVisibility()
 	end
 
 	if instanceType == 'raid' then
-		if difficultyID == 16 then
+		if difficultyID == 16 then -- Mythic
 			if not mythicVisibility then
+				E.db.unitframe.units.party.visibility = 'hide'
 				E.db.unitframe.units.raid1.visibility = '[nogroup] hide;show'
 				E.db.unitframe.units.raid2.visibility = 'hide'
 				UF:CreateAndUpdateHeaderGroup('raid1')
@@ -34,6 +37,7 @@ local function UpdateRaidVisibility()
 			end
 		else
 			if not defaultVisibility then
+				E.db.unitframe.units.party.visibility = '[@raid6,exists][@party1,noexists] hide;show'
 				E.db.unitframe.units.raid1.visibility = '[@raid6,noexists][@raid21,exists] hide;show'
 				E.db.unitframe.units.raid2.visibility = '[@raid21,noexists][@raid31,exists] hide;show'
 				UF:CreateAndUpdateHeaderGroup('raid1')
@@ -42,6 +46,7 @@ local function UpdateRaidVisibility()
 		end
 	else
 		if not defaultVisibility then
+			E.db.unitframe.units.party.visibility = '[@raid6,exists][@party1,noexists] hide;show'
 			E.db.unitframe.units.raid1.visibility = '[@raid6,noexists][@raid21,exists] hide;show'
 			E.db.unitframe.units.raid2.visibility = '[@raid21,noexists][@raid31,exists] hide;show'
 			UF:CreateAndUpdateHeaderGroup('raid1')
