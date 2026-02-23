@@ -1,5 +1,8 @@
 local DoctorioUI, E = unpack((select(2, ...)))
 
+-- Lua functions
+local ipairs = ipairs
+
 -- API cache
 local GetInstanceInfo = GetInstanceInfo
 
@@ -11,6 +14,7 @@ local DefaultVisibility = {
 	party = '[@raid6,exists][@party1,noexists] hide;show',
 	raid1 = '[@raid6,noexists][@raid21,exists] hide;show',
 	raid2 = '[@raid21,noexists][@raid31,exists] hide;show',
+	raid3 = '[@raid31,noexists] hide;show',
 }
 
 -- Force Raid1 in Mythic difficulty
@@ -18,6 +22,7 @@ local MythicVisibility = {
 	party = 'hide',
 	raid1 = '[nogroup] hide;show',
 	raid2 = 'hide',
+	raid3 = 'hide',
 }
 
 local function HasVisibility(preset)
@@ -25,6 +30,7 @@ local function HasVisibility(preset)
 	return units.party.visibility == preset.party
 		and units.raid1.visibility == preset.raid1
 		and units.raid2.visibility == preset.raid2
+		and units.raid3.visibility == preset.raid3
 end
 
 local function ApplyVisibility(preset)
@@ -34,15 +40,18 @@ local function ApplyVisibility(preset)
 	units.party.visibility = preset.party
 	units.raid1.visibility = preset.raid1
 	units.raid2.visibility = preset.raid2
+	units.raid3.visibility = preset.raid3
 
-	UF:CreateAndUpdateHeaderGroup('party')
-	UF:CreateAndUpdateHeaderGroup('raid1')
-	UF:CreateAndUpdateHeaderGroup('raid2')
+	-- Only update headers if ElvUI frames are actually enabled
+	for _, frame in ipairs({'party', 'raid1', 'raid2', 'raid3'}) do
+		if units[frame].enable then
+			UF:CreateAndUpdateHeaderGroup(frame)
+		end
+	end
 end
 
 -- Update visibility for group unitframes based on instance type and difficulty
 local function UpdateRaidVisibility()
-	if not Private.isRetail then return end
 
 	-- Make sure maxAllowedGroups is enabled
 	E.db.unitframe.maxAllowedGroups = true
