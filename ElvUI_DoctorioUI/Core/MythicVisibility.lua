@@ -6,6 +6,12 @@ local GetInstanceInfo = GetInstanceInfo
 -- ElvUI reference
 local UF = E:GetModule('UnitFrames')
 
+local function CreateAndUpdateAll()
+	UF:CreateAndUpdateHeaderGroup('party')
+	UF:CreateAndUpdateHeaderGroup('raid1')
+	UF:CreateAndUpdateHeaderGroup('raid2')
+end
+
 -- Update raid visibility based on instance type and difficulty
 local function UpdateRaidVisibility()
 
@@ -32,16 +38,14 @@ local function UpdateRaidVisibility()
 				E.db.unitframe.units.party.visibility = 'hide'
 				E.db.unitframe.units.raid1.visibility = '[nogroup] hide;show'
 				E.db.unitframe.units.raid2.visibility = 'hide'
-				UF:CreateAndUpdateHeaderGroup('raid1')
-				UF:CreateAndUpdateHeaderGroup('raid2')
+				CreateAndUpdateAll()
 			end
 		else
 			if not defaultVisibility then
 				E.db.unitframe.units.party.visibility = '[@raid6,exists][@party1,noexists] hide;show'
 				E.db.unitframe.units.raid1.visibility = '[@raid6,noexists][@raid21,exists] hide;show'
 				E.db.unitframe.units.raid2.visibility = '[@raid21,noexists][@raid31,exists] hide;show'
-				UF:CreateAndUpdateHeaderGroup('raid1')
-				UF:CreateAndUpdateHeaderGroup('raid2')
+				CreateAndUpdateAll()
 			end
 		end
 	else
@@ -49,8 +53,7 @@ local function UpdateRaidVisibility()
 			E.db.unitframe.units.party.visibility = '[@raid6,exists][@party1,noexists] hide;show'
 			E.db.unitframe.units.raid1.visibility = '[@raid6,noexists][@raid21,exists] hide;show'
 			E.db.unitframe.units.raid2.visibility = '[@raid21,noexists][@raid31,exists] hide;show'
-			UF:CreateAndUpdateHeaderGroup('raid1')
-			UF:CreateAndUpdateHeaderGroup('raid2')
+			CreateAndUpdateAll()
 		end
 	end
 end
