@@ -12,6 +12,17 @@ function DoctorioUI:Setup_ElvUI()
 	E.db.unitframe.units.raid1.growthDirection = 'RIGHT_DOWN'
 	E.db.unitframe.units.raid2.growthDirection = 'RIGHT_DOWN'
 	E.db.unitframe.units.raid3.growthDirection = 'RIGHT_DOWN'
+
+	E.db.actionbar.bar1.enabled = true
+	E.db.actionbar.bar2.enabled = true
+	E.db.actionbar.bar3.enabled = true
+	E.db.actionbar.bar4.enabled = true
+	E.db.actionbar.bar5.enabled = true
+	E.db.actionbar.bar6.enabled = true
+	E.db.actionbar.bar7.enabled = true
+	E.db.actionbar.bar8.enabled = true
+	E.db.actionbar.bar9.enabled = true
+	E.db.actionbar.bar10.enabled = true
 	----------------------------------------------------------------------
 	----------------------- Custom Texts Creation ------------------------
 	----------------------------------------------------------------------
@@ -67,7 +78,6 @@ function DoctorioUI:Setup_ElvUI()
 	E.db["actionbar"]["bar1"]["buttonSpacing"] = 1
 	E.db["actionbar"]["bar1"]["countFont"] = "Expressway"
 	E.db["actionbar"]["bar1"]["countFontOutline"] = "OUTLINE"
-	E.db["actionbar"]["bar1"]["enabled"] = true
 	E.db["actionbar"]["bar1"]["hotkeyFont"] = "Expressway"
 	E.db["actionbar"]["bar1"]["hotkeyFontOutline"] = "OUTLINE"
 	E.db["actionbar"]["bar1"]["hotkeyTextXOffset"] = 2
@@ -99,7 +109,6 @@ function DoctorioUI:Setup_ElvUI()
 	E.db["actionbar"]["bar10"]["clickThrough"] = true
 	E.db["actionbar"]["bar10"]["countFont"] = "Expressway"
 	E.db["actionbar"]["bar10"]["countFontOutline"] = "OUTLINE"
-	E.db["actionbar"]["bar10"]["enabled"] = true
 	E.db["actionbar"]["bar10"]["hotkeyFont"] = "Expressway"
 	E.db["actionbar"]["bar10"]["hotkeyFontOutline"] = "OUTLINE"
 	E.db["actionbar"]["bar10"]["hotkeyTextXOffset"] = 2
@@ -160,7 +169,6 @@ function DoctorioUI:Setup_ElvUI()
 	E.db["actionbar"]["bar2"]["buttonSpacing"] = 1
 	E.db["actionbar"]["bar2"]["countFont"] = "Expressway"
 	E.db["actionbar"]["bar2"]["countFontOutline"] = "OUTLINE"
-	E.db["actionbar"]["bar2"]["enabled"] = true
 	E.db["actionbar"]["bar2"]["hotkeyFont"] = "Expressway"
 	E.db["actionbar"]["bar2"]["hotkeyFontOutline"] = "OUTLINE"
 	E.db["actionbar"]["bar2"]["hotkeyTextXOffset"] = 2
@@ -182,7 +190,6 @@ function DoctorioUI:Setup_ElvUI()
 	E.db["actionbar"]["bar3"]["buttonsPerRow"] = 12
 	E.db["actionbar"]["bar3"]["countFont"] = "Expressway"
 	E.db["actionbar"]["bar3"]["countFontOutline"] = "OUTLINE"
-	E.db["actionbar"]["bar3"]["enabled"] = true
 	E.db["actionbar"]["bar3"]["hotkeyFont"] = "Expressway"
 	E.db["actionbar"]["bar3"]["hotkeyFontOutline"] = "OUTLINE"
 	E.db["actionbar"]["bar3"]["hotkeyTextXOffset"] = 2
@@ -204,7 +211,6 @@ function DoctorioUI:Setup_ElvUI()
 	E.db["actionbar"]["bar4"]["buttonsPerRow"] = 12
 	E.db["actionbar"]["bar4"]["countFont"] = "Expressway"
 	E.db["actionbar"]["bar4"]["countFontOutline"] = "OUTLINE"
-	E.db["actionbar"]["bar4"]["enabled"] = true
 	E.db["actionbar"]["bar4"]["hotkeyFont"] = "Expressway"
 	E.db["actionbar"]["bar4"]["hotkeyFontOutline"] = "OUTLINE"
 	E.db["actionbar"]["bar4"]["hotkeyTextXOffset"] = 2
@@ -228,7 +234,6 @@ function DoctorioUI:Setup_ElvUI()
 	E.db["actionbar"]["bar5"]["buttonsPerRow"] = 12
 	E.db["actionbar"]["bar5"]["countFont"] = "Expressway"
 	E.db["actionbar"]["bar5"]["countFontOutline"] = "OUTLINE"
-	E.db["actionbar"]["bar5"]["enabled"] = true
 	E.db["actionbar"]["bar5"]["hotkeyFont"] = "Expressway"
 	E.db["actionbar"]["bar5"]["hotkeyFontOutline"] = "OUTLINE"
 	E.db["actionbar"]["bar5"]["hotkeyTextXOffset"] = 2
@@ -249,7 +254,6 @@ function DoctorioUI:Setup_ElvUI()
 	E.db["actionbar"]["bar6"]["clickThrough"] = true
 	E.db["actionbar"]["bar6"]["countFont"] = "Expressway"
 	E.db["actionbar"]["bar6"]["countFontOutline"] = "OUTLINE"
-	E.db["actionbar"]["bar6"]["enabled"] = true
 	E.db["actionbar"]["bar6"]["hotkeyFont"] = "Expressway"
 	E.db["actionbar"]["bar6"]["hotkeyFontOutline"] = "OUTLINE"
 	E.db["actionbar"]["bar6"]["hotkeyTextXOffset"] = 2
@@ -268,7 +272,6 @@ function DoctorioUI:Setup_ElvUI()
 	E.db["actionbar"]["bar7"]["clickThrough"] = true
 	E.db["actionbar"]["bar7"]["countFont"] = "Expressway"
 	E.db["actionbar"]["bar7"]["countFontOutline"] = "OUTLINE"
-	E.db["actionbar"]["bar7"]["enabled"] = true
 	E.db["actionbar"]["bar7"]["hotkeyFont"] = "Expressway"
 	E.db["actionbar"]["bar7"]["hotkeyFontOutline"] = "OUTLINE"
 	E.db["actionbar"]["bar7"]["hotkeyTextXOffset"] = 2
@@ -287,7 +290,6 @@ function DoctorioUI:Setup_ElvUI()
 	E.db["actionbar"]["bar8"]["clickThrough"] = true
 	E.db["actionbar"]["bar8"]["countFont"] = "Expressway"
 	E.db["actionbar"]["bar8"]["countFontOutline"] = "OUTLINE"
-	E.db["actionbar"]["bar8"]["enabled"] = true
 	E.db["actionbar"]["bar8"]["hotkeyFont"] = "Expressway"
 	E.db["actionbar"]["bar8"]["hotkeyFontOutline"] = "OUTLINE"
 	E.db["actionbar"]["bar8"]["hotkeyTextXOffset"] = 2
@@ -305,7 +307,6 @@ function DoctorioUI:Setup_ElvUI()
 	E.db["actionbar"]["bar9"]["clickThrough"] = true
 	E.db["actionbar"]["bar9"]["countFont"] = "Expressway"
 	E.db["actionbar"]["bar9"]["countFontOutline"] = "OUTLINE"
-	E.db["actionbar"]["bar9"]["enabled"] = true
 	E.db["actionbar"]["bar9"]["hotkeyFont"] = "Expressway"
 	E.db["actionbar"]["bar9"]["hotkeyFontOutline"] = "OUTLINE"
 	E.db["actionbar"]["bar9"]["hotkeyTextXOffset"] = 2
