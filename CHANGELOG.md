@@ -1,4 +1,4 @@
-### Version 2.01 [In Development]
+### Version 2.01 [25-02-2026]
 Database fixes for ElvUI Nameplates  
 Updated ElvUI profile (Actionbar layout, Absorbs, Filters)  
 Fixed an issue about party frames showing in old mythic raids  
