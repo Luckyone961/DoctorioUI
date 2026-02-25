@@ -1,3 +1,6 @@
+### Version 2.02 [25-02-2026]
+Experience bar setup  
+___
 ### Version 2.01 [25-02-2026]
 Database fixes for ElvUI Nameplates  
 Updated ElvUI profile (Actionbar layout, Absorbs, Filters)  

@@ -442,7 +442,14 @@ function DoctorioUI:Setup_ElvUI()
 	E.db["cooldown"]["zonebutton"]["reverse"] = true
 	E.db["cooldown"]["zonebutton"]["threshold"] = 120
 	E.db["databars"]["azerite"]["enable"] = false
-	E.db["databars"]["experience"]["enable"] = false
+	E.db["databars"]["experience"]["font"] = "Expressway"
+	E.db["databars"]["experience"]["fontOutline"] = "OUTLINE"
+	E.db["databars"]["experience"]["height"] = 20
+	E.db["databars"]["experience"]["orientation"] = "HORIZONTAL"
+	E.db["databars"]["experience"]["questCompletedOnly"] = true
+	E.db["databars"]["experience"]["showLevel"] = true
+	E.db["databars"]["experience"]["textFormat"] = "PERCENT"
+	E.db["databars"]["experience"]["width"] = 600
 	E.db["databars"]["honor"]["enable"] = false
 	E.db["databars"]["threat"]["enable"] = false
 	E.db["databars"]["threat"]["height"] = 24
