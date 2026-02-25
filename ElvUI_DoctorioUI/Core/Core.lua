@@ -87,15 +87,13 @@ function DoctorioUI:Setup_PrivateDB()
 	----------------------- Copy/Paste Export Here -----------------------
 	----------------------------------------------------------------------
 	E.private["bags"]["enable"] = false
-	E.private["general"]["chatBubbles"] = "disabled"
 	E.private["general"]["chatBubbleFont"] = "Expressway"
 	E.private["general"]["chatBubbleFontOutline"] = "OUTLINE"
+	E.private["general"]["chatBubbles"] = "disabled"
 	E.private["general"]["glossTex"] = "Better Blizzard"
 	E.private["general"]["minimap"]["hideTracking"] = true
 	E.private["general"]["nameplateFont"] = "Expressway"
-	E.private["general"]["nameplateFontOutline"] = "OUTLINE"
 	E.private["general"]["nameplateLargeFont"] = "Expressway"
-	E.private["general"]["nameplateLargeFontOutline"] = "OUTLINE"
 	E.private["general"]["normTex"] = "Better Blizzard"
 	E.private["general"]["raidUtility"] = false
 	E.private["general"]["totemTracker"] = false
@@ -147,6 +145,8 @@ function DoctorioUI:Setup_ElvUI_Nameplates()
 	----------------------- Do Not Touch This Part -----------------------
 	----------------------------------------------------------------------
 	E.private.nameplates.enable = true
+	E.db.nameplates.visibility.classColorFriendlyPlayerNames = true
+	E.db.nameplates.visibility.showOnlyNames = true
 	----------------------------------------------------------------------
 	----------------------- Copy/Paste Export Here -----------------------
 	----------------------------------------------------------------------
@@ -161,7 +161,6 @@ function DoctorioUI:Setup_ElvUI_Nameplates()
 	E.db["nameplates"]["lowHealthThreshold"] = 0
 	E.db["nameplates"]["multiplier"] = 1
 	E.db["nameplates"]["overlapH"] = 1
-	E.db["nameplates"]["persistentFriendlyNP"] = true
 	E.db["nameplates"]["statusbar"] = "Better Blizzard"
 
 	E.db["nameplates"]["visibility"]["enemy"]["guardians"] = true
