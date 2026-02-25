@@ -41,6 +41,7 @@ L["Reload required - continue?"] = true
 L["Setup CVars"] = true
 L["Setup for alts"] = true
 L["Skip and close the installer"] = true
+L["The button below will import a required WeakAura to correctly handle visibility for ElvUI Raidframes in Mythic difficulty."] = true
 L["The DoctorioUI installer will guide you through some steps and apply the profiles of your choice."] = true
 L["This step will configure some of Blizzards console variables."] = true
 L["This will only modify CVars that are already covered by the supported AddOns."] = true

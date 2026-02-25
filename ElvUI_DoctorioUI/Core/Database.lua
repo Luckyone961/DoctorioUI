@@ -71,6 +71,9 @@ function DoctorioUI:Setup_ElvUI()
 	if E:IsAddOnEnabled('WIM') then
 		E.db["datatexts"]["panels"]["Top Panel (Left)"][3] = "LDB_WIM"
 	end
+	if E:IsAddOnEnabled('WeakAuras') then
+		E.db["datatexts"]["panels"]["Top Panel (Right)"][3] = "LDB_WeakAuras"
+	end
 	----------------------------------------------------------------------
 	----------------------- Copy/Paste Export Here -----------------------
 	----------------------------------------------------------------------
