@@ -1,4 +1,5 @@
 <Ui xmlns="http://www.blizzard.com/wow/ui/">
+	<Script file='AuraFilters.lua'/>
 	<Script file='Config.lua'/>
 	<Script file='Commands.lua'/>
 	<Script file='Compartment.lua'/>
