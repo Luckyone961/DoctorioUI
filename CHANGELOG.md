@@ -1,3 +1,6 @@
+### Version 2.03 [27-02-2026]
+Experience bar default position  
+___
 ### Version 2.02 [25-02-2026]
 Experience bar setup  
 ___
