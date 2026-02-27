@@ -28,6 +28,7 @@ L["Layout has been set."] = "Das Layout wurde aktiviert."
 L["Links"] = true
 L["Make sure to click this button once on each of your alts to ensure the unused ElvUI modules are properly disabled."] = "Klicke auf diesen Button, um sicherzustellen, dass die ungenutzten ElvUI-Module auf jedem deiner Twinks ordnungsgemäß deaktiviert sind."
 L["Nameplates"] = "Namensplaketten"
+L["Not all specs supported yet, please carefully read the Wago description."] = "Es werden noch nicht alle Specs supported, bitte lese die Wago Beschreibung sorgfältig durch."
 L["Plater"] = true
 L["Please click the button below to apply Doctorios profile for Details."] = "Bitte klicke auf den Button unten, um das Profil von Doctorio für Details anzuwenden."
 L["Please click the button below to apply Doctorios profile for ElvUI."] = "Bitte klicke auf den Button unten, um das Profil von Doctorio für ElvUI anzuwenden."
