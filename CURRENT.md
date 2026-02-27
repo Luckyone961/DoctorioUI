@@ -1,11 +1,4 @@
-### Version 2.00 [15-02-2026]
-Added "Better Blizzard" Texture (Credits: Unhalted)  
-Added ElvUI Nameplates profile  
-Added ruRU localization (Credits: ZamestoTV)  
-Removed Method Raid Tools profile  
-Removed OmniCD profile  
-Removed WeakAuras imports  
-Reworked ElvUI import for Midnight  
-Updated Console Variables for Midnight  
-Updated Details profile  
-Updated installer steps  
+### Version 2.03 [27-02-2026]
+Aura filters were added: aura highlights and healer relevant auras are now displayed correctly  
+Castbar color was changed from black to green when it's interruptable  
+Fixed experience bar and it now should be correctly displayed on top of the screen  

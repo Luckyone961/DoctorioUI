@@ -41,6 +41,7 @@ L["Reload required - continue?"] = "Требуется перезагрузка 
 L["Setup CVars"] = "Настройка консольных переменных"
 L["Setup for alts"] = "Настройка для альтов"
 L["Skip and close the installer"] = "Пропустить и закрыть установщик"
+L["The button below will import a required WeakAura to correctly handle visibility for ElvUI Raidframes in Mythic difficulty."] = "Кнопка ниже импортирует необходимый WeakAura для правильного управления видимостью рейдовых фреймов ElvUI на мифической сложности."
 L["The DoctorioUI installer will guide you through some steps and apply the profiles of your choice."] = "Установщик DoctorioUI проведет вас через несколько шагов и применит выбранные вами профили."
 L["This step will configure some of Blizzards console variables."] = "Этот шаг настроит некоторые консольные переменные Blizzard."
 L["This will only modify CVars that are already covered by the supported AddOns."] = "Это изменит только те консольные переменные, которые уже поддерживаются аддонами."
