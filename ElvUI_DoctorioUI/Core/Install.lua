@@ -31,7 +31,10 @@ DoctorioUI.InstallerData = {
 			PluginInstallFrame.Desc2:SetText(format('|cff4beb2c%s', L["Recommended step. Should not be skipped."]))
 			PluginInstallFrame.Option1:Show()
 			PluginInstallFrame.Option1:SetScript('OnClick', function() DoctorioUI:Setup_Layout() end)
-			PluginInstallFrame.Option1:SetText(L["Import ElvUI"])
+			PluginInstallFrame.Option1:SetText('1: ' .. L["Import ElvUI"])
+			PluginInstallFrame.Option2:Show()
+			PluginInstallFrame.Option2:SetScript('OnClick', function() DoctorioUI:Setup_AuraFilters() end)
+			PluginInstallFrame.Option2:SetText('2: ' .. L["ElvUI Aura Filters"])
 		end,
 		[3] = function()
 			PluginInstallFrame.SubTitle:SetText(L["Console Variables"])
