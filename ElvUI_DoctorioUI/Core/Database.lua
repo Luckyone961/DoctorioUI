@@ -584,7 +584,7 @@ function DoctorioUI:Setup_ElvUI()
 	E.db["movers"]["ElvUIBagMover"] = "BOTTOMRIGHT,ElvUIParent,BOTTOMRIGHT,-203,33"
 	E.db["movers"]["ElvUIBankMover"] = "BOTTOMLEFT,LeftChatPanel,BOTTOMLEFT,0,27"
 	E.db["movers"]["EventToastMover"] = "TOP,ElvUIParent,TOP,0,-150"
-	E.db["movers"]["ExperienceBarMover"] = "BOTTOM,ElvUIParent,BOTTOM,0,43"
+	E.db["movers"]["ExperienceBarMover"] = "TOP,ElvUIParent,TOP,0,-1"
 	E.db["movers"]["GMMover"] = "TOPLEFT,ElvUIParent,TOPLEFT,377,-1"
 	E.db["movers"]["HonorBarMover"] = "TOPRIGHT,ElvUIParent,TOPRIGHT,-2,-251"
 	E.db["movers"]["LeftChatMover"] = "BOTTOMLEFT,ElvUIParent,BOTTOMLEFT,1,1"
