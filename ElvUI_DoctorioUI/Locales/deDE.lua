@@ -35,6 +35,7 @@ L["Please click the button below to apply Doctorios profile for ElvUI."] = "Bitt
 L["Please click the button below to choose between ElvUI Nameplates and Plater."] = true
 L["Please click the button below to get the Wago URL for Doctorios Baganator profile."] = "Bitte klicke auf den Button unten, um das Profil von Doctorio für Baganator anzuwenden."
 L["Please click the button below to get the Wago URL for Doctorios BigWigs profile."] = "Bitte klicke auf den Button unten, um das Profil von Doctorio für BigWigs anzuwenden."
+L["PLEASE MAKE SURE TO READ THE WAGO DESCRIPTION OF THE PROFILE."] = "BITTE LIES DIE WAGO-BESCHREIBUNG DES PROFILES SORGFÄLTIG DURCH."
 L["Please read the steps carefully before clicking any buttons."] = "Bitte lese die Schritte sorgfältig durch, bevor du auf einen Button klickst."
 L["Profiles"] = "Profile"
 L["Recommended step. Should not be skipped."] = "Empfohlener Schritt. Sollte nicht übersprungen werden."

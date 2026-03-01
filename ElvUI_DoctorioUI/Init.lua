@@ -41,7 +41,7 @@ function DoctorioUI:Initialize()
 		E.private.install_complete = E.version
 	end
 
-	if E.global.DoctorioUI.install_version == nil then
+	if E.global.DoctorioUI.install_version < DoctorioUI.Version then
 		PI:Queue(DoctorioUI.InstallerData)
 	end
 
