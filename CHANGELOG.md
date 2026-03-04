@@ -1,3 +1,7 @@
+### Version 2.06 [04-03-2026]
+Welche Änderungen kamen mit dem neusten ElvUI update was man aus machen sollte?
+SETUP FOR ALTS etwas ändern
+___
 ### Version 2.05 [02-03-2026]
 Bugfix  
 ___
