@@ -81,6 +81,9 @@ function DoctorioUI:Setup_AuraFilters()
 			974, -- Earth Shield
 			61295, -- Riptide
 			383648, -- Earth Shield (Elemental Orbit)
+			207400, -- Ancestral Vigor
+			382024, -- Earthliving Weapon
+			444490, -- Hydrobubble
 		},
 		-- ToDo
 		-- 1244893, -- Beacon of the Savior (Holy Paladin)
@@ -326,6 +329,9 @@ function DoctorioUI:Setup_AuraFilters()
 		["countAnchor"] = "TOPRIGHT",
 		["style"] = "texturedIcon",
 	}
+	classes['SHAMAN'][444490]['enabled'] = false -- Hydrobubble
+	classes['SHAMAN'][207400]['enabled'] = false -- Ancestral Vigor
+	classes['SHAMAN'][382024]['enabled'] = false -- Earthliving Weapon
 
 	DoctorioUI:Print('Imported: ' .. L["ElvUI Aura Filters"])
 end
