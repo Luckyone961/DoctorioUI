@@ -92,6 +92,14 @@ DoctorioUI.InstallerData = {
 			PluginInstallFrame.Option1:SetText(L["Import Baganator"])
 		end,
 		[9] = function()
+			PluginInstallFrame.SubTitle:SetText(L["Import Private Database"])
+			PluginInstallFrame.Desc1:SetText(L["Congrats, the setup is almost complete\n\nRemember: Each of your alts has to import the private profile using the\n [Import Private Database] button below."])
+			PluginInstallFrame.Desc2:SetText(format('|cffFF7C0A%s', L["This button can also be found on the first page of /doc config"]))
+			PluginInstallFrame.Option1:Show()
+			PluginInstallFrame.Option1:SetScript('OnClick', function() DoctorioUI:Setup_PrivateDB() DoctorioUI:Print(L["Alt setup imported successfully."]) end)
+			PluginInstallFrame.Option1:SetText(L["Import Private Database"])
+		end,
+		[10] = function()
 			PluginInstallFrame.SubTitle:SetText(L["Installation Complete"])
 			PluginInstallFrame.Desc1:SetText(L["You have completed the installation process, please click 'Finished' to reload the UI."])
 			PluginInstallFrame.Desc2:SetText(L["Feel free to join our community Discord for support and social chats."])
@@ -113,7 +121,8 @@ DoctorioUI.InstallerData = {
 		[6] = L["Nameplates"],
 		[7] = L["BigWigs"],
 		[8] = L["Baganator"],
-		[9] = L["Installation Complete"],
+		[9] = L["Import Private Database"],
+		[10] = L["Installation Complete"],
 	},
 	-- Color of the title texts on the ride side (when not selected)
 	StepTitlesColor = {1, 1, 1},
