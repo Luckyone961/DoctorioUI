@@ -6,7 +6,6 @@ local function CustomBossSettings()
 	BigWigs3DB["namespaces"]["BigWigs_Plugins_Colors"]["profiles"] = BigWigs3DB["namespaces"]["BigWigs_Plugins_Colors"]["profiles"] or {}
 	BigWigs3DB["namespaces"]["BigWigs_Plugins_Colors"]["profiles"]["Doctorio"] = {
 		["barColor"] = {
-			-- Dreamrift
 			["BigWigs_Bosses_Chimaerus the Undreamt God"] = {
 				[1245396] = {
 					1,
@@ -34,7 +33,6 @@ local function CustomBossSettings()
 					0,
 				},
 			},
-			-- Voidspire
 			["BigWigs_Bosses_Imperator Averzian"] = {
 				[1249262] = {
 					1,
@@ -257,7 +255,6 @@ local function CustomBossSettings()
 					1,
 				},
 			},
-			-- March
 			["BigWigs_Bosses_Belo'ren, Child of Al'ar"] = {
 				[1242260] = {
 					1,
@@ -348,6 +345,65 @@ local function CustomBossSettings()
 				},
 			},
 		}
+	}
+	-- Abilities
+	BigWigs3DB["namespaces"]["BigWigs_Bosses_Chimaerus the Undreamt God"] = BigWigs3DB["namespaces"]["BigWigs_Bosses_Chimaerus the Undreamt God"] or {}
+	BigWigs3DB["namespaces"]["BigWigs_Bosses_Chimaerus the Undreamt God"]["profiles"] = BigWigs3DB["namespaces"]["BigWigs_Bosses_Chimaerus the Undreamt God"]["profiles"] or {}
+	BigWigs3DB["namespaces"]["BigWigs_Bosses_Chimaerus the Undreamt God"]["profiles"]["Doctorio"] = {
+		[1257085] = 0,
+		[1246621] = 0,
+		[1272726] = 0,
+		[1245406] = 0,
+		[1246653] = 0,
+		["berserk"] = 0,
+		[1245486] = 0,
+	}
+	BigWigs3DB["namespaces"]["BigWigs_Bosses_Imperator Averzian"] = BigWigs3DB["namespaces"]["BigWigs_Bosses_Imperator Averzian"] or {}
+	BigWigs3DB["namespaces"]["BigWigs_Bosses_Imperator Averzian"]["profiles"] = BigWigs3DB["namespaces"]["BigWigs_Bosses_Imperator Averzian"]["profiles"] or {}
+	BigWigs3DB["namespaces"]["BigWigs_Bosses_Imperator Averzian"]["profiles"]["Doctorio"] = {
+		[1260712] = 0,
+		[1262036] = 0,
+	}
+	BigWigs3DB["namespaces"]["BigWigs_Bosses_Vorasius"] = BigWigs3DB["namespaces"]["BigWigs_Bosses_Vorasius"] or {}
+	BigWigs3DB["namespaces"]["BigWigs_Bosses_Vorasius"]["profiles"] = BigWigs3DB["namespaces"]["BigWigs_Bosses_Vorasius"]["profiles"] or {}
+	BigWigs3DB["namespaces"]["BigWigs_Bosses_Vorasius"]["profiles"]["Doctorio"] = {
+		["berserk"] = 0,
+	}
+	BigWigs3DB["namespaces"]["BigWigs_Bosses_Fallen-King Salhadaar"] = BigWigs3DB["namespaces"]["BigWigs_Bosses_Fallen-King Salhadaar"] or {}
+	BigWigs3DB["namespaces"]["BigWigs_Bosses_Fallen-King Salhadaar"]["profiles"] = BigWigs3DB["namespaces"]["BigWigs_Bosses_Fallen-King Salhadaar"]["profiles"] or {}
+	BigWigs3DB["namespaces"]["BigWigs_Bosses_Fallen-King Salhadaar"]["profiles"]["Doctorio"] = {
+		["berserk"] = 0,
+		[1250686] = 0,
+	}
+	BigWigs3DB["namespaces"]["BigWigs_Bosses_Vaelgor & Ezzorak"] = BigWigs3DB["namespaces"]["BigWigs_Bosses_Vaelgor & Ezzorak"] or {}
+	BigWigs3DB["namespaces"]["BigWigs_Bosses_Vaelgor & Ezzorak"]["profiles"] = BigWigs3DB["namespaces"]["BigWigs_Bosses_Vaelgor & Ezzorak"]["profiles"] or {}
+	BigWigs3DB["namespaces"]["BigWigs_Bosses_Vaelgor & Ezzorak"]["profiles"]["Doctorio"] = {
+		[1280458] = 0,
+	}
+	BigWigs3DB["namespaces"]["BigWigs_Bosses_Lightblinded Vanguard"] = BigWigs3DB["namespaces"]["BigWigs_Bosses_Lightblinded Vanguard"] or {}
+	BigWigs3DB["namespaces"]["BigWigs_Bosses_Lightblinded Vanguard"]["profiles"] = BigWigs3DB["namespaces"]["BigWigs_Bosses_Lightblinded Vanguard"]["profiles"] or {}
+	BigWigs3DB["namespaces"]["BigWigs_Bosses_Lightblinded Vanguard"]["profiles"]["Doctorio"] = {
+		[1248644] = 0,
+		[1248449] = 0,
+		[1248451] = 0,
+		[1255738] = 0,
+		[1246162] = 0,
+	}
+	BigWigs3DB["namespaces"]["BigWigs_Bosses_Crown of the Cosmos"] = BigWigs3DB["namespaces"]["BigWigs_Bosses_Crown of the Cosmos"] or {}
+	BigWigs3DB["namespaces"]["BigWigs_Bosses_Crown of the Cosmos"]["profiles"] = BigWigs3DB["namespaces"]["BigWigs_Bosses_Crown of the Cosmos"]["profiles"] or {}
+	BigWigs3DB["namespaces"]["BigWigs_Bosses_Crown of the Cosmos"]["profiles"]["Doctorio"] = {
+		[1243743] = 3064052,
+		[1243753] = 3064052,
+	}
+	BigWigs3DB["namespaces"]["BigWigs_Bosses_Belo'ren, Child of Al'ar"] = BigWigs3DB["namespaces"]["BigWigs_Bosses_Belo'ren, Child of Al'ar"] or {}
+	BigWigs3DB["namespaces"]["BigWigs_Bosses_Belo'ren, Child of Al'ar"]["profiles"] = BigWigs3DB["namespaces"]["BigWigs_Bosses_Belo'ren, Child of Al'ar"]["profiles"] or {}
+	BigWigs3DB["namespaces"]["BigWigs_Bosses_Belo'ren, Child of Al'ar"]["profiles"]["Doctorio"] = {
+		["light_void_dive"] = 3064052,
+	}
+	BigWigs3DB["namespaces"]["BigWigs_Bosses_Midnight Falls"] = BigWigs3DB["namespaces"]["BigWigs_Bosses_Midnight Falls"] or {}
+	BigWigs3DB["namespaces"]["BigWigs_Bosses_Midnight Falls"]["profiles"] = BigWigs3DB["namespaces"]["BigWigs_Bosses_Midnight Falls"]["profiles"] or {}
+	BigWigs3DB["namespaces"]["BigWigs_Bosses_Midnight Falls"]["profiles"]["Doctorio"] = {
+		[1282412] = 3064052,
 	}
 end
 
