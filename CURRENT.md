@@ -1,7 +1,9 @@
-### Version 2.06 [04-03-2026]
-Boss Frames & Arena Frames were updated  
-Clock is once again shown above the minimap in the data panel  
-Extra Action Button was repositioned and resized  
-Focus Frame was repositioned  
-Heal Absorbs are reworked and more intuitive  
-Nameplate auras were adjusted  
+### Version 2.07 [07-04-2026]
+Actionbar profession quality icon updated in size and position  
+BigWigs profile updated for season 1 (Including custom bar colors)  
+Boss and Arenaframe no longer display classification icon  
+Chat editbox position set to above chat (inside)  
+ElvUI nameplates updated (Enabled Blizzard Auras, Enabled classification in instances only)  
+Party- and Raidframe filters updated  
+Player debuffs and private aura anchor+size updates  
+Targetframe buff- and debuff anchor position swapped  

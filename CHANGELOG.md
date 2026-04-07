@@ -1,4 +1,4 @@
-### Version 2.07 [In Development]
+### Version 2.07 [07-04-2026]
 Actionbar profession quality icon updated in size and position  
 BigWigs profile updated for season 1 (Including custom bar colors)  
 Boss and Arenaframe no longer display classification icon  
