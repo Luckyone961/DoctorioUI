@@ -1,5 +1,7 @@
 local E = unpack(ElvUI)
 
+local AddonAPI = Details_iLvlDisplayAPI
+
 local pcall = pcall
 
 local UnitGUID = UnitGUID
@@ -21,7 +23,6 @@ E:AddTag('doctorio:itemlevel', 'UNIT_INVENTORY_CHANGED', function(unit)
 end)
 E:AddTagInfo('doctorio:itemlevel', 'DoctorioUI', 'Displays the units average itemlevel.')
 
-local AddonAPI = Details_iLvlDisplayAPI
 if AddonAPI then
 	AddonAPI:RegisterCallback('elvui', function()
 		pcall(E.oUF.Tags.RefreshMethods, E.oUF.Tags, 'doctorio:itemlevel')
