@@ -149,11 +149,9 @@ function DoctorioUI:Setup_ElvUI_Nameplates()
 	----------------------------------------------------------------------
 	----------------------- Copy/Paste Export Here -----------------------
 	----------------------------------------------------------------------
-	E.db["nameplates"]["widgets"]["below"] = false
-
 	E.db["nameplates"]["clampToScreen"] = true
 	E.db["nameplates"]["classColorNames"] = true
-	E.db["nameplates"]["clickSize"]["height"] = 18
+	E.db["nameplates"]["clickSize"]["height"] = 22
 	E.db["nameplates"]["clickSize"]["width"] = 140
 	E.db["nameplates"]["clickThrough"]["friendly"] = true
 	E.db["nameplates"]["colors"]["castbarDesaturate"] = false
@@ -175,17 +173,6 @@ function DoctorioUI:Setup_ElvUI_Nameplates()
 	E.db["nameplates"]["multiplier"] = 1
 	E.db["nameplates"]["overlapH"] = 1
 	E.db["nameplates"]["statusbar"] = "Better Blizzard"
-
-	E.db["nameplates"]["visibility"]["enemy"]["guardians"] = true
-	E.db["nameplates"]["visibility"]["enemy"]["minions"] = true
-	E.db["nameplates"]["visibility"]["friendly"]["npcs"] = false
-	E.db["nameplates"]["visibility"]["showOnlyNames"] = true
-
-	E.db["nameplates"]["units"]["TARGET"]["arrow"] = "Arrow61"
-	E.db["nameplates"]["units"]["TARGET"]["arrowScale"] = 0.5
-	E.db["nameplates"]["units"]["TARGET"]["arrowSpacing"] = -2
-	E.db["nameplates"]["units"]["TARGET"]["glowStyle"] = "style7"
-
 	E.db["nameplates"]["units"]["ENEMY_NPC"]["auras"]["countFont"] = "Expressway"
 	E.db["nameplates"]["units"]["ENEMY_NPC"]["auras"]["desaturate"] = false
 	E.db["nameplates"]["units"]["ENEMY_NPC"]["auras"]["enable"] = false
@@ -200,10 +187,15 @@ function DoctorioUI:Setup_ElvUI_Nameplates()
 	E.db["nameplates"]["units"]["ENEMY_NPC"]["buffs"]["countXOffset"] = 2
 	E.db["nameplates"]["units"]["ENEMY_NPC"]["buffs"]["countYOffset"] = 0
 	E.db["nameplates"]["units"]["ENEMY_NPC"]["buffs"]["desaturate"] = false
-	E.db["nameplates"]["units"]["ENEMY_NPC"]["buffs"]["isAuraRaidPlayer"] = true
-	E.db["nameplates"]["units"]["ENEMY_NPC"]["buffs"]["size"] = 20
+	E.db["nameplates"]["units"]["ENEMY_NPC"]["buffs"]["isAuraImportant"] = false
+	E.db["nameplates"]["units"]["ENEMY_NPC"]["buffs"]["isAuraImportantPlayer"] = false
+	E.db["nameplates"]["units"]["ENEMY_NPC"]["buffs"]["isAuraPermanent"] = true
+	E.db["nameplates"]["units"]["ENEMY_NPC"]["buffs"]["isAuraPermanentPlayer"] = true
+	E.db["nameplates"]["units"]["ENEMY_NPC"]["buffs"]["isAuraRaidPlayerDispellable"] = false
+	E.db["nameplates"]["units"]["ENEMY_NPC"]["buffs"]["size"] = 22
 	E.db["nameplates"]["units"]["ENEMY_NPC"]["buffs"]["sortMethod"] = "INDEX"
 	E.db["nameplates"]["units"]["ENEMY_NPC"]["buffs"]["sourceText"]["font"] = "Expressway"
+	E.db["nameplates"]["units"]["ENEMY_NPC"]["buffs"]["useBlocklist"] = true
 	E.db["nameplates"]["units"]["ENEMY_NPC"]["buffs"]["xOffset"] = 3
 	E.db["nameplates"]["units"]["ENEMY_NPC"]["buffs"]["yOffset"] = -1
 	E.db["nameplates"]["units"]["ENEMY_NPC"]["castbar"]["displayTarget"] = true
@@ -221,7 +213,7 @@ function DoctorioUI:Setup_ElvUI_Nameplates()
 	E.db["nameplates"]["units"]["ENEMY_NPC"]["castbar"]["textPosition"] = "ONBAR"
 	E.db["nameplates"]["units"]["ENEMY_NPC"]["castbar"]["textXOffset"] = 10
 	E.db["nameplates"]["units"]["ENEMY_NPC"]["castbar"]["width"] = 140
-	E.db["nameplates"]["units"]["ENEMY_NPC"]["castbar"]["yOffset"] = -15
+	E.db["nameplates"]["units"]["ENEMY_NPC"]["castbar"]["yOffset"] = -16
 	E.db["nameplates"]["units"]["ENEMY_NPC"]["debuffs"]["anchorPoint"] = "RIGHT"
 	E.db["nameplates"]["units"]["ENEMY_NPC"]["debuffs"]["countFont"] = "Expressway"
 	E.db["nameplates"]["units"]["ENEMY_NPC"]["debuffs"]["countFontSize"] = 10
@@ -229,15 +221,17 @@ function DoctorioUI:Setup_ElvUI_Nameplates()
 	E.db["nameplates"]["units"]["ENEMY_NPC"]["debuffs"]["countYOffset"] = 0
 	E.db["nameplates"]["units"]["ENEMY_NPC"]["debuffs"]["desaturate"] = false
 	E.db["nameplates"]["units"]["ENEMY_NPC"]["debuffs"]["isAuraCrowdControl"] = true
-	E.db["nameplates"]["units"]["ENEMY_NPC"]["debuffs"]["size"] = 20
+	E.db["nameplates"]["units"]["ENEMY_NPC"]["debuffs"]["size"] = 22
 	E.db["nameplates"]["units"]["ENEMY_NPC"]["debuffs"]["sortMethod"] = "INDEX"
 	E.db["nameplates"]["units"]["ENEMY_NPC"]["debuffs"]["sourceText"]["font"] = "Expressway"
 	E.db["nameplates"]["units"]["ENEMY_NPC"]["debuffs"]["xOffset"] = -3
 	E.db["nameplates"]["units"]["ENEMY_NPC"]["debuffs"]["yOffset"] = -1
-	E.db["nameplates"]["units"]["ENEMY_NPC"]["health"]["height"] = 18
+	E.db["nameplates"]["units"]["ENEMY_NPC"]["health"]["height"] = 20
 	E.db["nameplates"]["units"]["ENEMY_NPC"]["health"]["text"]["enable"] = false
 	E.db["nameplates"]["units"]["ENEMY_NPC"]["health"]["text"]["font"] = "Expressway"
 	E.db["nameplates"]["units"]["ENEMY_NPC"]["health"]["text"]["format"] = ""
+	E.db["nameplates"]["units"]["ENEMY_NPC"]["health"]["useClassificationColor"] = true
+	E.db["nameplates"]["units"]["ENEMY_NPC"]["health"]["useClassificationColorInInstance"] = true
 	E.db["nameplates"]["units"]["ENEMY_NPC"]["health"]["width"] = 140
 	E.db["nameplates"]["units"]["ENEMY_NPC"]["level"]["enable"] = false
 	E.db["nameplates"]["units"]["ENEMY_NPC"]["level"]["font"] = "Expressway"
@@ -252,7 +246,6 @@ function DoctorioUI:Setup_ElvUI_Nameplates()
 	E.db["nameplates"]["units"]["ENEMY_NPC"]["raidTargetIndicator"]["xOffset"] = -20
 	E.db["nameplates"]["units"]["ENEMY_NPC"]["showTitle"] = false
 	E.db["nameplates"]["units"]["ENEMY_NPC"]["title"]["font"] = "Expressway"
-
 	E.db["nameplates"]["units"]["ENEMY_PLAYER"]["auras"]["countFont"] = "Expressway"
 	E.db["nameplates"]["units"]["ENEMY_PLAYER"]["auras"]["desaturate"] = false
 	E.db["nameplates"]["units"]["ENEMY_PLAYER"]["auras"]["enable"] = false
@@ -325,7 +318,6 @@ function DoctorioUI:Setup_ElvUI_Nameplates()
 	E.db["nameplates"]["units"]["ENEMY_PLAYER"]["showTitle"] = false
 	E.db["nameplates"]["units"]["ENEMY_PLAYER"]["title"]["font"] = "Expressway"
 	E.db["nameplates"]["units"]["ENEMY_PLAYER"]["title"]["format"] = "[npctitle]"
-
 	E.db["nameplates"]["units"]["FRIENDLY_NPC"]["auras"]["anchorPoint"] = "RIGHT"
 	E.db["nameplates"]["units"]["FRIENDLY_NPC"]["auras"]["countFont"] = "Expressway"
 	E.db["nameplates"]["units"]["FRIENDLY_NPC"]["auras"]["desaturate"] = false
@@ -406,7 +398,6 @@ function DoctorioUI:Setup_ElvUI_Nameplates()
 	E.db["nameplates"]["units"]["FRIENDLY_NPC"]["raidTargetIndicator"]["xOffset"] = -20
 	E.db["nameplates"]["units"]["FRIENDLY_NPC"]["showTitle"] = false
 	E.db["nameplates"]["units"]["FRIENDLY_NPC"]["title"]["font"] = "Expressway"
-
 	E.db["nameplates"]["units"]["FRIENDLY_PLAYER"]["auras"]["countFont"] = "Expressway"
 	E.db["nameplates"]["units"]["FRIENDLY_PLAYER"]["auras"]["desaturate"] = false
 	E.db["nameplates"]["units"]["FRIENDLY_PLAYER"]["auras"]["enable"] = false
@@ -478,7 +469,6 @@ function DoctorioUI:Setup_ElvUI_Nameplates()
 	E.db["nameplates"]["units"]["FRIENDLY_PLAYER"]["markHealers"] = false
 	E.db["nameplates"]["units"]["FRIENDLY_PLAYER"]["markTanks"] = false
 	E.db["nameplates"]["units"]["FRIENDLY_PLAYER"]["name"]["font"] = "Expressway"
-	E.db["nameplates"]["units"]["FRIENDLY_PLAYER"]["name"]["fontSize"] = 20
 	E.db["nameplates"]["units"]["FRIENDLY_PLAYER"]["name"]["position"] = "CENTER"
 	E.db["nameplates"]["units"]["FRIENDLY_PLAYER"]["name"]["yOffset"] = 0
 	E.db["nameplates"]["units"]["FRIENDLY_PLAYER"]["nameOnly"] = true
@@ -488,6 +478,16 @@ function DoctorioUI:Setup_ElvUI_Nameplates()
 	E.db["nameplates"]["units"]["FRIENDLY_PLAYER"]["showTitle"] = false
 	E.db["nameplates"]["units"]["FRIENDLY_PLAYER"]["title"]["font"] = "Expressway"
 	E.db["nameplates"]["units"]["FRIENDLY_PLAYER"]["title"]["format"] = "[npctitle]"
+	E.db["nameplates"]["units"]["TARGET"]["arrow"] = "Arrow61"
+	E.db["nameplates"]["units"]["TARGET"]["arrowScale"] = 0.5
+	E.db["nameplates"]["units"]["TARGET"]["arrowSpacing"] = -2
+	E.db["nameplates"]["units"]["TARGET"]["glowStyle"] = "style7"
+	E.db["nameplates"]["useBlizzardAuras"] = true
+	E.db["nameplates"]["visibility"]["enemy"]["guardians"] = true
+	E.db["nameplates"]["visibility"]["enemy"]["minions"] = true
+	E.db["nameplates"]["visibility"]["friendly"]["npcs"] = false
+	E.db["nameplates"]["visibility"]["showOnlyNames"] = true
+	E.db["nameplates"]["widgets"]["below"] = false
 end
 
 -- ElvUI Layout setup
