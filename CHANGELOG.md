@@ -1,3 +1,6 @@
+### Version 2.09 [07-04-2026]
+Fixed Private Auras position (Party, Raid1, Raid2, Raid3)  
+___
 ### Version 2.08 [07-04-2026]
 Bugfix  
 ___
