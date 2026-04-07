@@ -149,9 +149,6 @@ function DoctorioUI:Setup_ElvUI_Nameplates()
 	----------------------------------------------------------------------
 	----------------------- Copy/Paste Export Here -----------------------
 	----------------------------------------------------------------------
-	E.db["nameplates"]["useBlizzardAuras"] = true
-	E.db["nameplates"]["widgets"]["below"] = false
-
 	E.db["nameplates"]["clampToScreen"] = true
 	E.db["nameplates"]["classColorNames"] = true
 	E.db["nameplates"]["clickSize"]["height"] = 22
@@ -176,17 +173,6 @@ function DoctorioUI:Setup_ElvUI_Nameplates()
 	E.db["nameplates"]["multiplier"] = 1
 	E.db["nameplates"]["overlapH"] = 1
 	E.db["nameplates"]["statusbar"] = "Better Blizzard"
-
-	E.db["nameplates"]["visibility"]["enemy"]["guardians"] = true
-	E.db["nameplates"]["visibility"]["enemy"]["minions"] = true
-	E.db["nameplates"]["visibility"]["friendly"]["npcs"] = false
-	E.db["nameplates"]["visibility"]["showOnlyNames"] = true
-
-	E.db["nameplates"]["units"]["TARGET"]["arrow"] = "Arrow61"
-	E.db["nameplates"]["units"]["TARGET"]["arrowScale"] = 0.5
-	E.db["nameplates"]["units"]["TARGET"]["arrowSpacing"] = -2
-	E.db["nameplates"]["units"]["TARGET"]["glowStyle"] = "style7"
-
 	E.db["nameplates"]["units"]["ENEMY_NPC"]["auras"]["countFont"] = "Expressway"
 	E.db["nameplates"]["units"]["ENEMY_NPC"]["auras"]["desaturate"] = false
 	E.db["nameplates"]["units"]["ENEMY_NPC"]["auras"]["enable"] = false
@@ -260,7 +246,6 @@ function DoctorioUI:Setup_ElvUI_Nameplates()
 	E.db["nameplates"]["units"]["ENEMY_NPC"]["raidTargetIndicator"]["xOffset"] = -20
 	E.db["nameplates"]["units"]["ENEMY_NPC"]["showTitle"] = false
 	E.db["nameplates"]["units"]["ENEMY_NPC"]["title"]["font"] = "Expressway"
-
 	E.db["nameplates"]["units"]["ENEMY_PLAYER"]["auras"]["countFont"] = "Expressway"
 	E.db["nameplates"]["units"]["ENEMY_PLAYER"]["auras"]["desaturate"] = false
 	E.db["nameplates"]["units"]["ENEMY_PLAYER"]["auras"]["enable"] = false
@@ -333,7 +318,6 @@ function DoctorioUI:Setup_ElvUI_Nameplates()
 	E.db["nameplates"]["units"]["ENEMY_PLAYER"]["showTitle"] = false
 	E.db["nameplates"]["units"]["ENEMY_PLAYER"]["title"]["font"] = "Expressway"
 	E.db["nameplates"]["units"]["ENEMY_PLAYER"]["title"]["format"] = "[npctitle]"
-
 	E.db["nameplates"]["units"]["FRIENDLY_NPC"]["auras"]["anchorPoint"] = "RIGHT"
 	E.db["nameplates"]["units"]["FRIENDLY_NPC"]["auras"]["countFont"] = "Expressway"
 	E.db["nameplates"]["units"]["FRIENDLY_NPC"]["auras"]["desaturate"] = false
@@ -414,7 +398,6 @@ function DoctorioUI:Setup_ElvUI_Nameplates()
 	E.db["nameplates"]["units"]["FRIENDLY_NPC"]["raidTargetIndicator"]["xOffset"] = -20
 	E.db["nameplates"]["units"]["FRIENDLY_NPC"]["showTitle"] = false
 	E.db["nameplates"]["units"]["FRIENDLY_NPC"]["title"]["font"] = "Expressway"
-
 	E.db["nameplates"]["units"]["FRIENDLY_PLAYER"]["auras"]["countFont"] = "Expressway"
 	E.db["nameplates"]["units"]["FRIENDLY_PLAYER"]["auras"]["desaturate"] = false
 	E.db["nameplates"]["units"]["FRIENDLY_PLAYER"]["auras"]["enable"] = false
@@ -495,6 +478,16 @@ function DoctorioUI:Setup_ElvUI_Nameplates()
 	E.db["nameplates"]["units"]["FRIENDLY_PLAYER"]["showTitle"] = false
 	E.db["nameplates"]["units"]["FRIENDLY_PLAYER"]["title"]["font"] = "Expressway"
 	E.db["nameplates"]["units"]["FRIENDLY_PLAYER"]["title"]["format"] = "[npctitle]"
+	E.db["nameplates"]["units"]["TARGET"]["arrow"] = "Arrow61"
+	E.db["nameplates"]["units"]["TARGET"]["arrowScale"] = 0.5
+	E.db["nameplates"]["units"]["TARGET"]["arrowSpacing"] = -2
+	E.db["nameplates"]["units"]["TARGET"]["glowStyle"] = "style7"
+	E.db["nameplates"]["useBlizzardAuras"] = true
+	E.db["nameplates"]["visibility"]["enemy"]["guardians"] = true
+	E.db["nameplates"]["visibility"]["enemy"]["minions"] = true
+	E.db["nameplates"]["visibility"]["friendly"]["npcs"] = false
+	E.db["nameplates"]["visibility"]["showOnlyNames"] = true
+	E.db["nameplates"]["widgets"]["below"] = false
 end
 
 -- ElvUI Layout setup
