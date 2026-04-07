@@ -1,3 +1,6 @@
+### Version 2.08 [07-04-2026]
+Bugfix  
+___
 ### Version 2.07 [07-04-2026]
 Actionbar profession quality icon updated in size and position  
 BigWigs profile updated for season 1 (Including custom bar colors)  
