@@ -8,4 +8,5 @@
 	<Script file='Database.lua'/>
 	<Script file='Install.lua'/>
 	<Script file='MythicVisibility.lua'/>
+	<Script file='Tags.lua'/>
 </Ui>

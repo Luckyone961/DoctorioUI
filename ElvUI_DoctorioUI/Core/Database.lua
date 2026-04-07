@@ -36,6 +36,7 @@ function DoctorioUI:Setup_ElvUI()
 	E.db["unitframe"]["units"]["focus"]["customTexts"]["Target Name"] = {}
 	E.db["unitframe"]["units"]["focus"]["customTexts"]["Target Power"] = {}
 	E.db["unitframe"]["units"]["focustarget"]["customTexts"]["TargetofTarget Name"] = {}
+	E.db["unitframe"]["units"]["party"]["customTexts"]["Itemlevel"] = {}
 	E.db["unitframe"]["units"]["party"]["customTexts"]["Party Name"] = {}
 	E.db["unitframe"]["units"]["party"]["customTexts"]["Status"] = {}
 	E.db["unitframe"]["units"]["pet"]["customTexts"]["Pet Name"] = {}
@@ -1100,6 +1101,15 @@ function DoctorioUI:Setup_ElvUI()
 	E.db["unitframe"]["units"]["party"]["buffs"]["tooltipAnchorY"] = 0
 	E.db["unitframe"]["units"]["party"]["buffs"]["yOffset"] = -25
 	E.db["unitframe"]["units"]["party"]["classbar"]["enable"] = false
+	E.db["unitframe"]["units"]["party"]["customTexts"]["Itemlevel"]["attachTextTo"] = "Frame"
+	E.db["unitframe"]["units"]["party"]["customTexts"]["Itemlevel"]["enable"] = true
+	E.db["unitframe"]["units"]["party"]["customTexts"]["Itemlevel"]["font"] = "Expressway"
+	E.db["unitframe"]["units"]["party"]["customTexts"]["Itemlevel"]["fontOutline"] = "OUTLINE"
+	E.db["unitframe"]["units"]["party"]["customTexts"]["Itemlevel"]["justifyH"] = "LEFT"
+	E.db["unitframe"]["units"]["party"]["customTexts"]["Itemlevel"]["size"] = 14
+	E.db["unitframe"]["units"]["party"]["customTexts"]["Itemlevel"]["text_format"] = "[doctorio:itemlevel]"
+	E.db["unitframe"]["units"]["party"]["customTexts"]["Itemlevel"]["xOffset"] = 0
+	E.db["unitframe"]["units"]["party"]["customTexts"]["Itemlevel"]["yOffset"] = -1
 	E.db["unitframe"]["units"]["party"]["customTexts"]["Party Name"]["attachTextTo"] = "Frame"
 	E.db["unitframe"]["units"]["party"]["customTexts"]["Party Name"]["enable"] = true
 	E.db["unitframe"]["units"]["party"]["customTexts"]["Party Name"]["font"] = "Expressway"
