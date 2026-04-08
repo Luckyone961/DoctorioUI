@@ -68,7 +68,7 @@ DoctorioUI.InstallerData = {
 			PluginInstallFrame.Desc1:SetText(L["Please click the button below to get the Wago URL for Doctorios Platynator profile."])
 			PluginInstallFrame.Desc2:SetText(format('|cff4beb2c%s', L["Recommended step. Should not be skipped."]))
 			PluginInstallFrame.Option1:Show()
-			PluginInstallFrame.Option1:SetScript('OnClick', function() E.private.nameplates.enable = false E:StaticPopup_Show('DoctorioUI_EDITBOX', nil, nil, 'https://wago.io/DoctorioPlater') end)
+			PluginInstallFrame.Option1:SetScript('OnClick', function() E.private.nameplates.enable = false E:StaticPopup_Show('DoctorioUI_EDITBOX', nil, nil, 'https://wago.io/Platynator') end)
 			PluginInstallFrame.Option1:SetText(L["Platynator"])
 		end,
 		[7] = function()
