@@ -1,3 +1,6 @@
+### Version 2.11 [08-04-2026]
+Bugfix
+___
 ### Version 2.10 [08-04-2026]
 Focus buff- and debuff anchor position swapped  
 Removed recommendation for Plater and ElvUI Nameplates  
