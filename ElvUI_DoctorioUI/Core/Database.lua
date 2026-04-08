@@ -934,12 +934,11 @@ function DoctorioUI:Setup_ElvUI()
 	E.db["unitframe"]["units"]["focus"]["auras"]["sourceText"]["font"] = "Expressway"
 	E.db["unitframe"]["units"]["focus"]["auras"]["xOffset"] = 2
 	E.db["unitframe"]["units"]["focus"]["buffIndicator"]["countFont"] = "Expressway"
-	E.db["unitframe"]["units"]["focus"]["buffs"]["anchorPoint"] = "TOPRIGHT"
+	E.db["unitframe"]["units"]["focus"]["buffs"]["anchorPoint"] = "TOPLEFT"
 	E.db["unitframe"]["units"]["focus"]["buffs"]["countFont"] = "Expressway"
 	E.db["unitframe"]["units"]["focus"]["buffs"]["countXOffset"] = 2
 	E.db["unitframe"]["units"]["focus"]["buffs"]["countYOffset"] = 0
 	E.db["unitframe"]["units"]["focus"]["buffs"]["enable"] = true
-	E.db["unitframe"]["units"]["focus"]["buffs"]["growthX"] = "LEFT"
 	E.db["unitframe"]["units"]["focus"]["buffs"]["isAuraBigDefensive"] = false
 	E.db["unitframe"]["units"]["focus"]["buffs"]["isAuraExternalDefensive"] = false
 	E.db["unitframe"]["units"]["focus"]["buffs"]["isAuraExternalDefensivePlayer"] = false
@@ -996,11 +995,9 @@ function DoctorioUI:Setup_ElvUI()
 	E.db["unitframe"]["units"]["focus"]["customTexts"]["Target Power"]["text_format"] = "[powercolor][perpp<%]"
 	E.db["unitframe"]["units"]["focus"]["customTexts"]["Target Power"]["xOffset"] = 0
 	E.db["unitframe"]["units"]["focus"]["customTexts"]["Target Power"]["yOffset"] = -17
-	E.db["unitframe"]["units"]["focus"]["debuffs"]["anchorPoint"] = "TOPLEFT"
 	E.db["unitframe"]["units"]["focus"]["debuffs"]["countFont"] = "Expressway"
 	E.db["unitframe"]["units"]["focus"]["debuffs"]["countXOffset"] = 2
 	E.db["unitframe"]["units"]["focus"]["debuffs"]["countYOffset"] = 0
-	E.db["unitframe"]["units"]["focus"]["debuffs"]["growthX"] = "RIGHT"
 	E.db["unitframe"]["units"]["focus"]["debuffs"]["isAuraBigDefensive"] = false
 	E.db["unitframe"]["units"]["focus"]["debuffs"]["isAuraExternalDefensive"] = false
 	E.db["unitframe"]["units"]["focus"]["debuffs"]["isAuraRaid"] = false

@@ -83,6 +83,7 @@ function DoctorioUI:Setup_PrivateDB()
 	----------------------- Do Not Touch This Part -----------------------
 	----------------------------------------------------------------------
 	E.private.install_complete = E.version
+	E.private.nameplates.enable = false
 	----------------------------------------------------------------------
 	----------------------- Copy/Paste Export Here -----------------------
 	----------------------------------------------------------------------
@@ -511,7 +512,7 @@ function DoctorioUI:Setup_Layout()
 	DoctorioUI:Setup_ElvUI()
 
 	-- ElvUI Nameplates
-	DoctorioUI:Setup_ElvUI_Nameplates()
+	-- DoctorioUI:Setup_ElvUI_Nameplates()
 
 	-- Push the update
 	E:StaggeredUpdateAll()
