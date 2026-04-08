@@ -1,3 +1,9 @@
+### Version 2.10 [08-04-2026]
+Focus buff- and debuff anchor position swapped  
+Removed recommendation for Plater and ElvUI Nameplates  
+Updated config profiles section to include Platynator  
+Updated Nameplates installer to include Platynator  
+___
 ### Version 2.09 [07-04-2026]
 Fixed Private Auras position (Party, Raid1, Raid2, Raid3)  
 ___
