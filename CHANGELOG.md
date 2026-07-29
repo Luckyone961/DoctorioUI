@@ -1,3 +1,7 @@
+### Version 2.12 [In development, not yet released]
+Support for the latest ElvUI release  
+Updated TOC  
+___
 ### Version 2.11 [08-04-2026]
 Bugfix
 ___
