@@ -2,11 +2,10 @@
 
 #### **Profiles**  
 • [Baganator](https://www.curseforge.com/wow/addons/baganator)  
-• [BetterCooldownManager](https://www.curseforge.com/wow/addons/bettercooldownmanager)  
 • [BigWigs](https://www.curseforge.com/wow/addons/big-wigs), [LittleWigs](https://www.curseforge.com/wow/addons/little-wigs)  
 • [Details](https://www.curseforge.com/wow/addons/details)  
 • [ElvUI](https://www.tukui.org/)  
-• [Syndicator](https://www.curseforge.com/wow/addons/syndicator)
+• [Syndicator](https://www.curseforge.com/wow/addons/syndicator)  
 • [WeakAuras](https://www.curseforge.com/wow/addons/weakauras-2)  
 
 #### **Chat commands**  
