@@ -1,4 +1,4 @@
-	local DoctorioUI, E, L = unpack((select(2, ...)))
+local DoctorioUI, E, L = unpack((select(2, ...)))
 
 -- Variables & Cache
 local ipairs = ipairs
