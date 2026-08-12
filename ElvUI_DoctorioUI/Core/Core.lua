@@ -491,6 +491,13 @@ function DoctorioUI:Setup_ElvUI_Nameplates()
 	E.db["nameplates"]["widgets"]["below"] = false
 end
 
+-- Full frontend refresh
+local function Refresh()
+	E:UIMult()
+	E:UIScale()
+	E:UpdateAll()
+end
+
 -- ElvUI Layout setup
 function DoctorioUI:Setup_Layout()
 	-- Disable LibDualSpec to set the profile
@@ -515,7 +522,7 @@ function DoctorioUI:Setup_Layout()
 	-- DoctorioUI:Setup_ElvUI_Nameplates()
 
 	-- Push the update
-	E:StaggeredUpdateAll()
+	Refresh()
 
 	DoctorioUI:Print(L["Layout has been set."])
 end
