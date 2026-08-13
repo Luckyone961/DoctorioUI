@@ -725,9 +725,6 @@ function DoctorioUI:Setup_ElvUI()
 	E.db["unitframe"]["units"]["arena"]["buffs"]["countFont"] = "Expressway"
 	E.db["unitframe"]["units"]["arena"]["buffs"]["countXOffset"] = 2
 	E.db["unitframe"]["units"]["arena"]["buffs"]["countYOffset"] = 0
-	E.db["unitframe"]["units"]["arena"]["buffs"]["isAuraBigDefensive"] = false
-	E.db["unitframe"]["units"]["arena"]["buffs"]["isAuraExternalDefensive"] = false
-	E.db["unitframe"]["units"]["arena"]["buffs"]["isAuraExternalDefensivePlayer"] = false
 	E.db["unitframe"]["units"]["arena"]["buffs"]["maxDuration"] = 0
 	E.db["unitframe"]["units"]["arena"]["buffs"]["priority"] = "Blacklist,Dispellable,RaidBuffsElvUI"
 	E.db["unitframe"]["units"]["arena"]["buffs"]["sizeOverride"] = 25
@@ -784,7 +781,6 @@ function DoctorioUI:Setup_ElvUI()
 	E.db["unitframe"]["units"]["arena"]["debuffs"]["countXOffset"] = 2
 	E.db["unitframe"]["units"]["arena"]["debuffs"]["countYOffset"] = 0
 	E.db["unitframe"]["units"]["arena"]["debuffs"]["desaturate"] = true
-	E.db["unitframe"]["units"]["arena"]["debuffs"]["isAuraCrowdControl"] = false
 	E.db["unitframe"]["units"]["arena"]["debuffs"]["perrow"] = 4
 	E.db["unitframe"]["units"]["arena"]["debuffs"]["sizeOverride"] = 25
 	E.db["unitframe"]["units"]["arena"]["debuffs"]["sortMethod"] = "INDEX"
@@ -833,9 +829,6 @@ function DoctorioUI:Setup_ElvUI()
 	E.db["unitframe"]["units"]["boss"]["buffs"]["countFont"] = "Expressway"
 	E.db["unitframe"]["units"]["boss"]["buffs"]["countXOffset"] = 2
 	E.db["unitframe"]["units"]["boss"]["buffs"]["countYOffset"] = 0
-	E.db["unitframe"]["units"]["boss"]["buffs"]["isAuraImportant"] = false
-	E.db["unitframe"]["units"]["boss"]["buffs"]["isAuraImportantPlayer"] = false
-	E.db["unitframe"]["units"]["boss"]["buffs"]["isAuraRaidPlayerDispellable"] = false
 	E.db["unitframe"]["units"]["boss"]["buffs"]["sizeOverride"] = 25
 	E.db["unitframe"]["units"]["boss"]["buffs"]["sortMethod"] = "INDEX"
 	E.db["unitframe"]["units"]["boss"]["buffs"]["sourceText"]["font"] = "Expressway"
@@ -939,9 +932,6 @@ function DoctorioUI:Setup_ElvUI()
 	E.db["unitframe"]["units"]["focus"]["buffs"]["countXOffset"] = 2
 	E.db["unitframe"]["units"]["focus"]["buffs"]["countYOffset"] = 0
 	E.db["unitframe"]["units"]["focus"]["buffs"]["enable"] = true
-	E.db["unitframe"]["units"]["focus"]["buffs"]["isAuraBigDefensive"] = false
-	E.db["unitframe"]["units"]["focus"]["buffs"]["isAuraExternalDefensive"] = false
-	E.db["unitframe"]["units"]["focus"]["buffs"]["isAuraExternalDefensivePlayer"] = false
 	E.db["unitframe"]["units"]["focus"]["buffs"]["maxDuration"] = 0
 	E.db["unitframe"]["units"]["focus"]["buffs"]["perrow"] = 5
 	E.db["unitframe"]["units"]["focus"]["buffs"]["sizeOverride"] = 25
@@ -998,9 +988,6 @@ function DoctorioUI:Setup_ElvUI()
 	E.db["unitframe"]["units"]["focus"]["debuffs"]["countFont"] = "Expressway"
 	E.db["unitframe"]["units"]["focus"]["debuffs"]["countXOffset"] = 2
 	E.db["unitframe"]["units"]["focus"]["debuffs"]["countYOffset"] = 0
-	E.db["unitframe"]["units"]["focus"]["debuffs"]["isAuraBigDefensive"] = false
-	E.db["unitframe"]["units"]["focus"]["debuffs"]["isAuraExternalDefensive"] = false
-	E.db["unitframe"]["units"]["focus"]["debuffs"]["isAuraRaid"] = false
 	E.db["unitframe"]["units"]["focus"]["debuffs"]["maxDuration"] = 0
 	E.db["unitframe"]["units"]["focus"]["debuffs"]["sizeOverride"] = 25
 	E.db["unitframe"]["units"]["focus"]["debuffs"]["sortMethod"] = "INDEX"
@@ -1045,7 +1032,6 @@ function DoctorioUI:Setup_ElvUI()
 	E.db["unitframe"]["units"]["focustarget"]["customTexts"]["TargetofTarget Name"]["yOffset"] = 0
 	E.db["unitframe"]["units"]["focustarget"]["debuffs"]["attachTo"] = "BUFFS"
 	E.db["unitframe"]["units"]["focustarget"]["debuffs"]["countFont"] = "Expressway"
-	E.db["unitframe"]["units"]["focustarget"]["debuffs"]["isAuraPlayer"] = false
 	E.db["unitframe"]["units"]["focustarget"]["debuffs"]["sourceText"]["font"] = "Expressway"
 	E.db["unitframe"]["units"]["focustarget"]["disableFocusGlow"] = false
 	E.db["unitframe"]["units"]["focustarget"]["fader"]["minAlpha"] = 0.5
@@ -1067,10 +1053,6 @@ function DoctorioUI:Setup_ElvUI()
 	E.db["unitframe"]["units"]["party"]["auras"]["countXOffset"] = 2
 	E.db["unitframe"]["units"]["party"]["auras"]["countYOffset"] = 0
 	E.db["unitframe"]["units"]["party"]["auras"]["growthY"] = "DOWN"
-	E.db["unitframe"]["units"]["party"]["auras"]["isAuraBigDefensive"] = true
-	E.db["unitframe"]["units"]["party"]["auras"]["isAuraBigDefensivePlayer"] = true
-	E.db["unitframe"]["units"]["party"]["auras"]["isAuraExternalDefensive"] = true
-	E.db["unitframe"]["units"]["party"]["auras"]["isAuraExternalDefensivePlayer"] = true
 	E.db["unitframe"]["units"]["party"]["auras"]["perrow"] = 4
 	E.db["unitframe"]["units"]["party"]["auras"]["sizeOverride"] = 24
 	E.db["unitframe"]["units"]["party"]["auras"]["sortMethod"] = "INDEX"
@@ -1087,7 +1069,6 @@ function DoctorioUI:Setup_ElvUI()
 	E.db["unitframe"]["units"]["party"]["buffs"]["countYOffset"] = 0
 	E.db["unitframe"]["units"]["party"]["buffs"]["enable"] = true
 	E.db["unitframe"]["units"]["party"]["buffs"]["growthY"] = "DOWN"
-	E.db["unitframe"]["units"]["party"]["buffs"]["isAuraRaidInCombatPlayer"] = false
 	E.db["unitframe"]["units"]["party"]["buffs"]["maxDuration"] = 0
 	E.db["unitframe"]["units"]["party"]["buffs"]["perrow"] = 3
 	E.db["unitframe"]["units"]["party"]["buffs"]["sizeOverride"] = 24
@@ -1131,8 +1112,6 @@ function DoctorioUI:Setup_ElvUI()
 	E.db["unitframe"]["units"]["party"]["debuffs"]["countXOffset"] = 2
 	E.db["unitframe"]["units"]["party"]["debuffs"]["countYOffset"] = 0
 	E.db["unitframe"]["units"]["party"]["debuffs"]["desaturate"] = false
-	E.db["unitframe"]["units"]["party"]["debuffs"]["isAuraPermanent"] = true
-	E.db["unitframe"]["units"]["party"]["debuffs"]["isAuraPermanentPlayer"] = true
 	E.db["unitframe"]["units"]["party"]["debuffs"]["maxDuration"] = 0
 	E.db["unitframe"]["units"]["party"]["debuffs"]["sizeOverride"] = 24
 	E.db["unitframe"]["units"]["party"]["debuffs"]["sortMethod"] = "INDEX"
@@ -1249,11 +1228,9 @@ function DoctorioUI:Setup_ElvUI()
 	E.db["unitframe"]["units"]["pettarget"]["auras"]["countFont"] = "Expressway"
 	E.db["unitframe"]["units"]["pettarget"]["auras"]["sourceText"]["font"] = "Expressway"
 	E.db["unitframe"]["units"]["pettarget"]["buffs"]["countFont"] = "Expressway"
-	E.db["unitframe"]["units"]["pettarget"]["buffs"]["isAuraRaid"] = false
 	E.db["unitframe"]["units"]["pettarget"]["buffs"]["sourceText"]["font"] = "Expressway"
 	E.db["unitframe"]["units"]["pettarget"]["debuffs"]["attachTo"] = "BUFFS"
 	E.db["unitframe"]["units"]["pettarget"]["debuffs"]["countFont"] = "Expressway"
-	E.db["unitframe"]["units"]["pettarget"]["debuffs"]["isAuraRaid"] = true
 	E.db["unitframe"]["units"]["pettarget"]["debuffs"]["sourceText"]["font"] = "Expressway"
 	E.db["unitframe"]["units"]["pettarget"]["disableFocusGlow"] = false
 	E.db["unitframe"]["units"]["pettarget"]["disableTargetGlow"] = false
@@ -1367,7 +1344,6 @@ function DoctorioUI:Setup_ElvUI()
 	E.db["unitframe"]["units"]["raid1"]["buffs"]["countYOffset"] = 0
 	E.db["unitframe"]["units"]["raid1"]["buffs"]["enable"] = true
 	E.db["unitframe"]["units"]["raid1"]["buffs"]["growthY"] = "DOWN"
-	E.db["unitframe"]["units"]["raid1"]["buffs"]["isAuraRaidInCombatPlayer"] = false
 	E.db["unitframe"]["units"]["raid1"]["buffs"]["maxDuration"] = 0
 	E.db["unitframe"]["units"]["raid1"]["buffs"]["sizeOverride"] = 24
 	E.db["unitframe"]["units"]["raid1"]["buffs"]["sortMethod"] = "INDEX"
@@ -1401,13 +1377,6 @@ function DoctorioUI:Setup_ElvUI()
 	E.db["unitframe"]["units"]["raid1"]["debuffs"]["countYOffset"] = 0
 	E.db["unitframe"]["units"]["raid1"]["debuffs"]["desaturate"] = false
 	E.db["unitframe"]["units"]["raid1"]["debuffs"]["enable"] = true
-	E.db["unitframe"]["units"]["raid1"]["debuffs"]["isAuraImportant"] = true
-	E.db["unitframe"]["units"]["raid1"]["debuffs"]["isAuraImportantPlayer"] = true
-	E.db["unitframe"]["units"]["raid1"]["debuffs"]["isAuraPermanent"] = true
-	E.db["unitframe"]["units"]["raid1"]["debuffs"]["isAuraPermanentPlayer"] = true
-	E.db["unitframe"]["units"]["raid1"]["debuffs"]["isAuraRaid"] = true
-	E.db["unitframe"]["units"]["raid1"]["debuffs"]["isAuraRaidPlayer"] = true
-	E.db["unitframe"]["units"]["raid1"]["debuffs"]["isAuraRaidPlayerDispellable"] = true
 	E.db["unitframe"]["units"]["raid1"]["debuffs"]["maxDuration"] = 0
 	E.db["unitframe"]["units"]["raid1"]["debuffs"]["perrow"] = 5
 	E.db["unitframe"]["units"]["raid1"]["debuffs"]["sizeOverride"] = 24
@@ -1483,7 +1452,6 @@ function DoctorioUI:Setup_ElvUI()
 	E.db["unitframe"]["units"]["raid2"]["buffs"]["countYOffset"] = 0
 	E.db["unitframe"]["units"]["raid2"]["buffs"]["enable"] = true
 	E.db["unitframe"]["units"]["raid2"]["buffs"]["growthY"] = "DOWN"
-	E.db["unitframe"]["units"]["raid2"]["buffs"]["isAuraRaidInCombatPlayer"] = false
 	E.db["unitframe"]["units"]["raid2"]["buffs"]["maxDuration"] = 0
 	E.db["unitframe"]["units"]["raid2"]["buffs"]["sizeOverride"] = 18
 	E.db["unitframe"]["units"]["raid2"]["buffs"]["sortMethod"] = "INDEX"
@@ -1516,13 +1484,6 @@ function DoctorioUI:Setup_ElvUI()
 	E.db["unitframe"]["units"]["raid2"]["debuffs"]["countYOffset"] = 0
 	E.db["unitframe"]["units"]["raid2"]["debuffs"]["desaturate"] = false
 	E.db["unitframe"]["units"]["raid2"]["debuffs"]["enable"] = true
-	E.db["unitframe"]["units"]["raid2"]["debuffs"]["isAuraImportant"] = true
-	E.db["unitframe"]["units"]["raid2"]["debuffs"]["isAuraImportantPlayer"] = true
-	E.db["unitframe"]["units"]["raid2"]["debuffs"]["isAuraPermanent"] = true
-	E.db["unitframe"]["units"]["raid2"]["debuffs"]["isAuraPermanentPlayer"] = true
-	E.db["unitframe"]["units"]["raid2"]["debuffs"]["isAuraRaid"] = true
-	E.db["unitframe"]["units"]["raid2"]["debuffs"]["isAuraRaidPlayer"] = true
-	E.db["unitframe"]["units"]["raid2"]["debuffs"]["isAuraRaidPlayerDispellable"] = true
 	E.db["unitframe"]["units"]["raid2"]["debuffs"]["maxDuration"] = 0
 	E.db["unitframe"]["units"]["raid2"]["debuffs"]["perrow"] = 5
 	E.db["unitframe"]["units"]["raid2"]["debuffs"]["sizeOverride"] = 18
@@ -1584,10 +1545,6 @@ function DoctorioUI:Setup_ElvUI()
 	E.db["unitframe"]["units"]["raid3"]["auras"]["countXOffset"] = 2
 	E.db["unitframe"]["units"]["raid3"]["auras"]["countYOffset"] = 0
 	E.db["unitframe"]["units"]["raid3"]["auras"]["growthY"] = "DOWN"
-	E.db["unitframe"]["units"]["raid3"]["auras"]["isAuraBigDefensive"] = true
-	E.db["unitframe"]["units"]["raid3"]["auras"]["isAuraBigDefensivePlayer"] = true
-	E.db["unitframe"]["units"]["raid3"]["auras"]["isAuraExternalDefensive"] = true
-	E.db["unitframe"]["units"]["raid3"]["auras"]["isAuraExternalDefensivePlayer"] = true
 	E.db["unitframe"]["units"]["raid3"]["auras"]["perrow"] = 4
 	E.db["unitframe"]["units"]["raid3"]["auras"]["sizeOverride"] = 16
 	E.db["unitframe"]["units"]["raid3"]["auras"]["sortMethod"] = "INDEX"
@@ -1604,7 +1561,6 @@ function DoctorioUI:Setup_ElvUI()
 	E.db["unitframe"]["units"]["raid3"]["buffs"]["countYOffset"] = 0
 	E.db["unitframe"]["units"]["raid3"]["buffs"]["enable"] = true
 	E.db["unitframe"]["units"]["raid3"]["buffs"]["growthY"] = "DOWN"
-	E.db["unitframe"]["units"]["raid3"]["buffs"]["isAuraRaidInCombatPlayer"] = false
 	E.db["unitframe"]["units"]["raid3"]["buffs"]["maxDuration"] = 0
 	E.db["unitframe"]["units"]["raid3"]["buffs"]["sizeOverride"] = 16
 	E.db["unitframe"]["units"]["raid3"]["buffs"]["sortMethod"] = "INDEX"
@@ -1638,13 +1594,6 @@ function DoctorioUI:Setup_ElvUI()
 	E.db["unitframe"]["units"]["raid3"]["debuffs"]["countYOffset"] = 0
 	E.db["unitframe"]["units"]["raid3"]["debuffs"]["desaturate"] = false
 	E.db["unitframe"]["units"]["raid3"]["debuffs"]["enable"] = true
-	E.db["unitframe"]["units"]["raid3"]["debuffs"]["isAuraImportant"] = true
-	E.db["unitframe"]["units"]["raid3"]["debuffs"]["isAuraImportantPlayer"] = true
-	E.db["unitframe"]["units"]["raid3"]["debuffs"]["isAuraPermanent"] = true
-	E.db["unitframe"]["units"]["raid3"]["debuffs"]["isAuraPermanentPlayer"] = true
-	E.db["unitframe"]["units"]["raid3"]["debuffs"]["isAuraRaid"] = true
-	E.db["unitframe"]["units"]["raid3"]["debuffs"]["isAuraRaidPlayer"] = true
-	E.db["unitframe"]["units"]["raid3"]["debuffs"]["isAuraRaidPlayerDispellable"] = true
 	E.db["unitframe"]["units"]["raid3"]["debuffs"]["maxDuration"] = 0
 	E.db["unitframe"]["units"]["raid3"]["debuffs"]["perrow"] = 5
 	E.db["unitframe"]["units"]["raid3"]["debuffs"]["sizeOverride"] = 16
