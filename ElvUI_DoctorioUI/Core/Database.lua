@@ -721,7 +721,6 @@ function DoctorioUI:Setup_ElvUI()
 	E.db["unitframe"]["units"]["arena"]["buffs"]["countXOffset"] = 2
 	E.db["unitframe"]["units"]["arena"]["buffs"]["countYOffset"] = 0
 	E.db["unitframe"]["units"]["arena"]["buffs"]["maxDuration"] = 0
-	E.db["unitframe"]["units"]["arena"]["buffs"]["priority"] = "Blacklist,Dispellable,RaidBuffsElvUI"
 	E.db["unitframe"]["units"]["arena"]["buffs"]["sizeOverride"] = 25
 	E.db["unitframe"]["units"]["arena"]["buffs"]["sortMethod"] = "INDEX"
 	E.db["unitframe"]["units"]["arena"]["buffs"]["sourceText"]["font"] = "Expressway"
@@ -913,7 +912,6 @@ function DoctorioUI:Setup_ElvUI()
 	E.db["unitframe"]["units"]["focus"]["auras"]["countFont"] = "Expressway"
 	E.db["unitframe"]["units"]["focus"]["auras"]["filter"] = "HARMFUL"
 	E.db["unitframe"]["units"]["focus"]["auras"]["perrow"] = 4
-	E.db["unitframe"]["units"]["focus"]["auras"]["priority"] = "Blacklist,CCDebuffs"
 	E.db["unitframe"]["units"]["focus"]["auras"]["sizeOverride"] = 48
 	E.db["unitframe"]["units"]["focus"]["auras"]["sourceText"]["font"] = "Expressway"
 	E.db["unitframe"]["units"]["focus"]["auras"]["xOffset"] = 2

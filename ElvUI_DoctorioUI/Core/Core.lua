@@ -256,7 +256,6 @@ function DoctorioUI:Setup_ElvUI_Nameplates()
 	E.db["nameplates"]["units"]["ENEMY_PLAYER"]["buffs"]["countYOffset"] = 0
 	E.db["nameplates"]["units"]["ENEMY_PLAYER"]["buffs"]["desaturate"] = false
 	E.db["nameplates"]["units"]["ENEMY_PLAYER"]["buffs"]["maxDuration"] = 0
-	E.db["nameplates"]["units"]["ENEMY_PLAYER"]["buffs"]["priority"] = "Blacklist,Whitelist,Dispellable,blockNoDuration,RaidBuffsElvUI"
 	E.db["nameplates"]["units"]["ENEMY_PLAYER"]["buffs"]["size"] = 19
 	E.db["nameplates"]["units"]["ENEMY_PLAYER"]["buffs"]["sortMethod"] = "INDEX"
 	E.db["nameplates"]["units"]["ENEMY_PLAYER"]["buffs"]["sourceText"]["font"] = "Expressway"
@@ -312,7 +311,6 @@ function DoctorioUI:Setup_ElvUI_Nameplates()
 	E.db["nameplates"]["units"]["FRIENDLY_NPC"]["auras"]["desaturate"] = false
 	E.db["nameplates"]["units"]["FRIENDLY_NPC"]["auras"]["filter"] = "HARMFUL"
 	E.db["nameplates"]["units"]["FRIENDLY_NPC"]["auras"]["numAuras"] = 3
-	E.db["nameplates"]["units"]["FRIENDLY_NPC"]["auras"]["priority"] = "Blacklist,CCDebuffs"
 	E.db["nameplates"]["units"]["FRIENDLY_NPC"]["auras"]["size"] = 18
 	E.db["nameplates"]["units"]["FRIENDLY_NPC"]["auras"]["sortMethod"] = "INDEX"
 	E.db["nameplates"]["units"]["FRIENDLY_NPC"]["auras"]["sourceText"]["font"] = "Expressway"
@@ -324,7 +322,6 @@ function DoctorioUI:Setup_ElvUI_Nameplates()
 	E.db["nameplates"]["units"]["FRIENDLY_NPC"]["buffs"]["countXOffset"] = 2
 	E.db["nameplates"]["units"]["FRIENDLY_NPC"]["buffs"]["countYOffset"] = 0
 	E.db["nameplates"]["units"]["FRIENDLY_NPC"]["buffs"]["desaturate"] = false
-	E.db["nameplates"]["units"]["FRIENDLY_NPC"]["buffs"]["priority"] = "Blacklist,Whitelist,Dispellable,blockNoDuration,RaidBuffsElvUI"
 	E.db["nameplates"]["units"]["FRIENDLY_NPC"]["buffs"]["size"] = 30
 	E.db["nameplates"]["units"]["FRIENDLY_NPC"]["buffs"]["sortMethod"] = "INDEX"
 	E.db["nameplates"]["units"]["FRIENDLY_NPC"]["buffs"]["sourceText"]["font"] = "Expressway"
@@ -352,7 +349,6 @@ function DoctorioUI:Setup_ElvUI_Nameplates()
 	E.db["nameplates"]["units"]["FRIENDLY_NPC"]["debuffs"]["countXOffset"] = 2
 	E.db["nameplates"]["units"]["FRIENDLY_NPC"]["debuffs"]["countYOffset"] = 0
 	E.db["nameplates"]["units"]["FRIENDLY_NPC"]["debuffs"]["desaturate"] = false
-	E.db["nameplates"]["units"]["FRIENDLY_NPC"]["debuffs"]["priority"] = "Blacklist,blockNoDuration,Personal"
 	E.db["nameplates"]["units"]["FRIENDLY_NPC"]["debuffs"]["size"] = 30
 	E.db["nameplates"]["units"]["FRIENDLY_NPC"]["debuffs"]["sortMethod"] = "INDEX"
 	E.db["nameplates"]["units"]["FRIENDLY_NPC"]["debuffs"]["sourceText"]["font"] = "Expressway"
@@ -391,7 +387,6 @@ function DoctorioUI:Setup_ElvUI_Nameplates()
 	E.db["nameplates"]["units"]["FRIENDLY_PLAYER"]["buffs"]["countXOffset"] = 2
 	E.db["nameplates"]["units"]["FRIENDLY_PLAYER"]["buffs"]["countYOffset"] = 0
 	E.db["nameplates"]["units"]["FRIENDLY_PLAYER"]["buffs"]["desaturate"] = false
-	E.db["nameplates"]["units"]["FRIENDLY_PLAYER"]["buffs"]["priority"] = "Blacklist,Whitelist,Dispellable,blockNoDuration,RaidBuffsElvUI"
 	E.db["nameplates"]["units"]["FRIENDLY_PLAYER"]["buffs"]["size"] = 30
 	E.db["nameplates"]["units"]["FRIENDLY_PLAYER"]["buffs"]["sortMethod"] = "INDEX"
 	E.db["nameplates"]["units"]["FRIENDLY_PLAYER"]["buffs"]["sourceText"]["font"] = "Expressway"
@@ -419,7 +414,6 @@ function DoctorioUI:Setup_ElvUI_Nameplates()
 	E.db["nameplates"]["units"]["FRIENDLY_PLAYER"]["debuffs"]["countXOffset"] = 2
 	E.db["nameplates"]["units"]["FRIENDLY_PLAYER"]["debuffs"]["countYOffset"] = 0
 	E.db["nameplates"]["units"]["FRIENDLY_PLAYER"]["debuffs"]["desaturate"] = false
-	E.db["nameplates"]["units"]["FRIENDLY_PLAYER"]["debuffs"]["priority"] = "Blacklist,blockNoDuration,Personal"
 	E.db["nameplates"]["units"]["FRIENDLY_PLAYER"]["debuffs"]["size"] = 30
 	E.db["nameplates"]["units"]["FRIENDLY_PLAYER"]["debuffs"]["sortMethod"] = "INDEX"
 	E.db["nameplates"]["units"]["FRIENDLY_PLAYER"]["debuffs"]["sourceText"]["font"] = "Expressway"
@@ -450,7 +444,6 @@ function DoctorioUI:Setup_ElvUI_Nameplates()
 	E.db["nameplates"]["units"]["TARGET"]["arrowScale"] = 0.5
 	E.db["nameplates"]["units"]["TARGET"]["arrowSpacing"] = -2
 	E.db["nameplates"]["units"]["TARGET"]["glowStyle"] = "style7"
-	E.db["nameplates"]["useBlizzardAuras"] = true
 	E.db["nameplates"]["visibility"]["enemy"]["guardians"] = true
 	E.db["nameplates"]["visibility"]["enemy"]["minions"] = true
 	E.db["nameplates"]["visibility"]["friendly"]["npcs"] = false
