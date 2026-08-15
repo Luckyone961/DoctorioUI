@@ -1,4 +1,4 @@
-### Version 2.13 [In Development]
+### Version 2.13 [15-08-2026]
 Added SkironCooldownManager  
 Support for the latest ElvUI release  
 ___
