@@ -46,18 +46,16 @@ DoctorioUI.InstallerData = {
 			PluginInstallFrame.Option1:SetScript('OnClick', function() DoctorioUI:Setup_CVars() end)
 			PluginInstallFrame.Option1:SetText(L["Setup CVars"])
 		end,
-		--[[
 		[4] = function()
-			PluginInstallFrame.SubTitle:SetText(L["BetterCooldownManager"])
-			PluginInstallFrame.Desc1:SetText(L["Please click the button below to get the Wago URL for Doctorios BetterCooldownManager profile."])
+			PluginInstallFrame.SubTitle:SetText(L["SkironCooldownManager"])
+			PluginInstallFrame.Desc1:SetText(L["Please click the button below to get the Wago URL for Doctorios SkironCooldownManager profile."])
 			PluginInstallFrame.Desc2:SetText(format('|cffFF7C0A%s', L["PLEASE MAKE SURE TO READ THE WAGO DESCRIPTION OF THE PROFILE."]))
 			PluginInstallFrame.Desc3:SetText(format('|cff4beb2c%s', L["Recommended step. Should not be skipped."]))
 			PluginInstallFrame.Option1:Show()
-			PluginInstallFrame.Option1:SetScript('OnClick', function() E:StaticPopup_Show('DoctorioUI_EDITBOX', nil, nil, 'https://wago.io/DoctorioBCM') end)
-			PluginInstallFrame.Option1:SetText(L["BetterCooldownManager"])
-		end,
-		]]
-		[4] = function()
+			PluginInstallFrame.Option1:SetScript('OnClick', function() E:StaticPopup_Show('DoctorioUI_EDITBOX', nil, nil, 'https://wago.io/DoctorioSCM') end)
+			PluginInstallFrame.Option1:SetText(L["SkironCooldownManager"])
+			end,
+		[5] = function()
 			PluginInstallFrame.SubTitle:SetText(L["Details"])
 			PluginInstallFrame.Desc1:SetText(L["Please click the button below to apply Doctorios profile for Details."])
 			PluginInstallFrame.Desc2:SetText(format('|cff4beb2c%s', L["Recommended step. Should not be skipped."]))
@@ -65,7 +63,7 @@ DoctorioUI.InstallerData = {
 			PluginInstallFrame.Option1:SetScript('OnClick', function() DoctorioUI:Setup_Details() end)
 			PluginInstallFrame.Option1:SetText(L["Import Details"])
 		end,
-		[5] = function()
+		[6] = function()
 			PluginInstallFrame.SubTitle:SetText(L["Nameplates"])
 			PluginInstallFrame.Desc1:SetText(L["Please click the button below to get the Wago URL for Doctorios Platynator profile."])
 			PluginInstallFrame.Desc2:SetText(format('|cff4beb2c%s', L["Recommended step. Should not be skipped."]))
@@ -73,7 +71,7 @@ DoctorioUI.InstallerData = {
 			PluginInstallFrame.Option1:SetScript('OnClick', function() E.private.nameplates.enable = false E:StaticPopup_Show('DoctorioUI_EDITBOX', nil, nil, 'https://wago.io/Platynator') end)
 			PluginInstallFrame.Option1:SetText(L["Platynator"])
 		end,
-		[6] = function()
+		[7] = function()
 			PluginInstallFrame.SubTitle:SetText(L["BigWigs"])
 			PluginInstallFrame.Desc1:SetText(L["Please click the button below to apply Doctorios profile for BigWigs."])
 			PluginInstallFrame.Desc2:SetText(format('|cff4beb2c%s', L["Recommended step. Should not be skipped."]))
@@ -81,7 +79,7 @@ DoctorioUI.InstallerData = {
 			PluginInstallFrame.Option1:SetScript('OnClick', function() DoctorioUI:Setup_BigWigs() end)
 			PluginInstallFrame.Option1:SetText(L["Import BigWigs"])
 		end,
-		[7] = function()
+		[8] = function()
 			PluginInstallFrame.SubTitle:SetText(L["Baganator"])
 			PluginInstallFrame.Desc1:SetText(L["Please click the button below to get the Wago URL for Doctorios Baganator profile."])
 			PluginInstallFrame.Desc2:SetText(format('|cff4beb2c%s', L["Recommended step. Should not be skipped."]))
@@ -89,7 +87,7 @@ DoctorioUI.InstallerData = {
 			PluginInstallFrame.Option1:SetScript('OnClick', function() E:StaticPopup_Show('DoctorioUI_EDITBOX', nil, nil, 'https://wago.io/Baganator') end)
 			PluginInstallFrame.Option1:SetText(L["Import Baganator"])
 		end,
-		[8] = function()
+		[9] = function()
 			PluginInstallFrame.SubTitle:SetText(L["Import Private Database"])
 			PluginInstallFrame.Desc1:SetText(L["Congrats, the setup is almost complete\n\nRemember: Each of your alts has to import the private profile using the\n [Import Private Database] button below."])
 			PluginInstallFrame.Desc2:SetText(format('|cffFF7C0A%s', L["This button can also be found on the first page of /doc config"]))
@@ -97,7 +95,7 @@ DoctorioUI.InstallerData = {
 			PluginInstallFrame.Option1:SetScript('OnClick', function() DoctorioUI:Setup_PrivateDB() DoctorioUI:Print(L["Alt setup imported successfully."]) end)
 			PluginInstallFrame.Option1:SetText(L["Import Private Database"])
 		end,
-		[9] = function()
+		[10] = function()
 			PluginInstallFrame.SubTitle:SetText(L["Installation Complete"])
 			PluginInstallFrame.Desc1:SetText(L["You have completed the installation process, please click 'Finished' to reload the UI."])
 			PluginInstallFrame.Desc2:SetText(L["Feel free to join our community Discord for support and social chats."])
@@ -114,13 +112,13 @@ DoctorioUI.InstallerData = {
 		[1] = L["Welcome"],
 		[2] = L["ElvUI"],
 		[3] = L["Console Variables"],
-		-- [4] = L["BetterCooldownManager"],
-		[4] = L["Details"],
-		[5] = L["Nameplates"],
-		[6] = L["BigWigs"],
-		[7] = L["Baganator"],
-		[8] = L["Import Private Database"],
-		[9] = L["Installation Complete"],
+		[4] = L["SkironCooldownManager"],
+		[5] = L["Details"],
+		[6] = L["Nameplates"],
+		[7] = L["BigWigs"],
+		[8] = L["Baganator"],
+		[9] = L["Import Private Database"],
+		[10] = L["Installation Complete"],
 	},
 	-- Color of the title texts on the ride side (when not selected)
 	StepTitlesColor = {1, 1, 1},
