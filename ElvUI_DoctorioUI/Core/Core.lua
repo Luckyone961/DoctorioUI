@@ -500,7 +500,14 @@ function DoctorioUI:PLAYER_ENTERING_WORLD(_, initLogin, isReload)
 	DoctorioUI:MythicVisibility()
 end
 
+function DoctorioUI:PLAYER_SPECIALIZATION_CHANGED(_, unit)
+	if unit ~= 'player' then return end
+
+	DoctorioUI:MythicVisibility()
+end
+
 -- This is called in DoctorioUI:Initialize()
 function DoctorioUI:RegisterEvents()
 	DoctorioUI:RegisterEvent('PLAYER_ENTERING_WORLD')
+	DoctorioUI:RegisterEvent('PLAYER_SPECIALIZATION_CHANGED')
 end
