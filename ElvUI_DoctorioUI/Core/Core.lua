@@ -48,7 +48,7 @@ E.PopupDialogs.DoctorioUI_EDITBOX = {
 	OnHide = function(self)
 		self.editBox:Width(self.editBox.width or 50)
 		self.editBox.width = nil
-		self.temptxt = nil
+		self.editBox.temptxt = nil
 	end,
 	EditBoxOnEnterPressed = function(self)
 		self:GetParent():Hide()
