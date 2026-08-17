@@ -47,11 +47,10 @@ function DoctorioUI:Config()
 	DoctorioUI.Options.args.profiles.args.addonGroup = ACH:Group(L["AddOns"], nil, 4)
 	DoctorioUI.Options.args.profiles.args.addonGroup.inline = true
 	DoctorioUI.Options.args.profiles.args.addonGroup.args.baganator = ACH:Execute(L["Baganator"], nil, 1, function() E:StaticPopup_Show('DoctorioUI_EDITBOX', nil, nil, 'https://wago.io/Baganator') end)
-	DoctorioUI.Options.args.profiles.args.addonGroup.args.bcdm= ACH:Execute(L["SkironCooldownManager"], nil, 2, function() E:StaticPopup_Show('DoctorioUI_EDITBOX', nil, nil, 'https://wago.io/DoctorioSCM') end)
-	DoctorioUI.Options.args.profiles.args.addonGroup.args.bigwigs = ACH:Execute(L["BigWigs"], nil, 3, function() DoctorioUI:Setup_BigWigs() E:StaticPopup_Show('DoctorioUI_RL') end)
+	DoctorioUI.Options.args.profiles.args.addonGroup.args.scm = ACH:Execute(L["SkironCooldownManager"], nil, 2, function() E:StaticPopup_Show('DoctorioUI_EDITBOX', nil, nil, 'https://wago.io/DoctorioSCM') end)
+	DoctorioUI.Options.args.profiles.args.addonGroup.args.bigwigs = ACH:Execute(L["BigWigs"], nil, 3, function() E:StaticPopup_Show('DoctorioUI_EDITBOX', nil, nil, 'https://wago.io/DoctorioBigWigs') end)
 	DoctorioUI.Options.args.profiles.args.addonGroup.args.details = ACH:Execute(L["Details"], nil, 4, function() DoctorioUI:Setup_Details() E:StaticPopup_Show('DoctorioUI_RL') end)
 	DoctorioUI.Options.args.profiles.args.addonGroup.args.platynator = ACH:Execute(L["Platynator"], nil, 5, function() E:StaticPopup_Show('DoctorioUI_EDITBOX', nil, nil, 'https://wago.io/Platynator') end)
-	-- DoctorioUI.Options.args.profiles.args.addonGroup.args.elvuiNameplates = ACH:Execute(L["ElvUI Nameplates"], nil, 6, function() DoctorioUI:Setup_ElvUI_Nameplates() end)
 
 	E.Options.args.DoctorioUI = DoctorioUI.Options
 end

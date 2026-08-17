@@ -49,8 +49,7 @@ DoctorioUI.InstallerData = {
 		[4] = function()
 			PluginInstallFrame.SubTitle:SetText(L["SkironCooldownManager"])
 			PluginInstallFrame.Desc1:SetText(L["Please click the button below to get the Wago URL for Doctorios SkironCooldownManager profile."])
-			PluginInstallFrame.Desc2:SetText(format('|cffFF7C0A%s', L["PLEASE MAKE SURE TO READ THE WAGO DESCRIPTION OF THE PROFILE."]))
-			PluginInstallFrame.Desc3:SetText(format('|cff4beb2c%s', L["Recommended step. Should not be skipped."]))
+			PluginInstallFrame.Desc2:SetText(format('|cff4beb2c%s', L["Recommended step. Should not be skipped."]))
 			PluginInstallFrame.Option1:Show()
 			PluginInstallFrame.Option1:SetScript('OnClick', function() E:StaticPopup_Show('DoctorioUI_EDITBOX', nil, nil, 'https://wago.io/DoctorioSCM') end)
 			PluginInstallFrame.Option1:SetText(L["SkironCooldownManager"])
@@ -73,10 +72,10 @@ DoctorioUI.InstallerData = {
 		end,
 		[7] = function()
 			PluginInstallFrame.SubTitle:SetText(L["BigWigs"])
-			PluginInstallFrame.Desc1:SetText(L["Please click the button below to apply Doctorios profile for BigWigs."])
+			PluginInstallFrame.Desc1:SetText(L["Please click the button below to get the Wago URL for Doctorios BigWigs profile."])
 			PluginInstallFrame.Desc2:SetText(format('|cff4beb2c%s', L["Recommended step. Should not be skipped."]))
 			PluginInstallFrame.Option1:Show()
-			PluginInstallFrame.Option1:SetScript('OnClick', function() DoctorioUI:Setup_BigWigs() end)
+			PluginInstallFrame.Option1:SetScript('OnClick', function() E:StaticPopup_Show('DoctorioUI_EDITBOX', nil, nil, 'https://wago.io/DoctorioBigWigs') end)
 			PluginInstallFrame.Option1:SetText(L["Import BigWigs"])
 		end,
 		[8] = function()
