@@ -1,4 +1,4 @@
-### Version 2.14 [In development, not yet released]
+### Version 2.14 [19-08-2026]
 Support for the latest ElvUI release  
 Updated BigWigs  
 Updated Details  
