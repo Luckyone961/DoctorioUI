@@ -425,9 +425,9 @@ function DoctorioUI:Setup_ElvUI()
 	E.db["chat"]["separateSizes"] = true
 	E.db["chat"]["tabFont"] = "Expressway"
 	E.db["chat"]["tabSelector"] = "NONE"
-	E.db["chat"]["tabSelectorColor"]["b"] = 0.44705885648727
-	E.db["chat"]["tabSelectorColor"]["g"] = 0.82745105028152
-	E.db["chat"]["tabSelectorColor"]["r"] = 0.66666668653488
+	E.db["chat"]["tabSelectorColor"]["b"] = 0.9215686917305
+	E.db["chat"]["tabSelectorColor"]["g"] = 0.78039222955704
+	E.db["chat"]["tabSelectorColor"]["r"] = 0.24705883860588
 	E.db["chat"]["timeStampFormat"] = "%H:%M "
 	E.db["chat"]["timeStampLocalTime"] = true
 	E.db["cooldown"]["actionbar"]["threshold"] = 120
@@ -538,9 +538,9 @@ function DoctorioUI:Setup_ElvUI()
 	E.db["general"]["totems"]["growthDirection"] = "HORIZONTAL"
 	E.db["general"]["totems"]["size"] = 50
 	E.db["general"]["totems"]["spacing"] = 8
-	E.db["general"]["valuecolor"]["b"] = 0.44705885648727
-	E.db["general"]["valuecolor"]["g"] = 0.82745105028152
-	E.db["general"]["valuecolor"]["r"] = 0.66666668653488
+	E.db["general"]["valuecolor"]["b"] = 0.9215686917305
+	E.db["general"]["valuecolor"]["g"] = 0.78039222955704
+	E.db["general"]["valuecolor"]["r"] = 0.24705883860588
 	E.db["movers"]["AdditionalPowerMover"] = "BOTTOM,ElvUIParent,BOTTOM,0,493"
 	E.db["movers"]["AlertFrameMover"] = "TOPRIGHT,ElvUIParent,TOPRIGHT,-478,-349"
 	E.db["movers"]["ArenaHeaderMover"] = "TOPLEFT,ElvUIParent,TOPLEFT,300,-400"
@@ -1071,6 +1071,7 @@ function DoctorioUI:Setup_ElvUI()
 	E.db["unitframe"]["units"]["party"]["buffs"]["tooltipAnchorType"] = "ANCHOR_TOPRIGHT"
 	E.db["unitframe"]["units"]["party"]["buffs"]["tooltipAnchorX"] = 0
 	E.db["unitframe"]["units"]["party"]["buffs"]["tooltipAnchorY"] = 0
+	E.db["unitframe"]["units"]["party"]["buffs"]["yOffset"] = -13
 	E.db["unitframe"]["units"]["party"]["classbar"]["enable"] = false
 	E.db["unitframe"]["units"]["party"]["customTexts"]["Itemlevel"]["attachTextTo"] = "Frame"
 	E.db["unitframe"]["units"]["party"]["customTexts"]["Itemlevel"]["enable"] = true
@@ -1100,6 +1101,7 @@ function DoctorioUI:Setup_ElvUI()
 	E.db["unitframe"]["units"]["party"]["customTexts"]["Status"]["xOffset"] = 0
 	E.db["unitframe"]["units"]["party"]["customTexts"]["Status"]["yOffset"] = 0
 	E.db["unitframe"]["units"]["party"]["debuffs"]["anchorPoint"] = "BOTTOMLEFT"
+	E.db["unitframe"]["units"]["party"]["debuffs"]["clickThrough"] = true
 	E.db["unitframe"]["units"]["party"]["debuffs"]["countFont"] = "Expressway"
 	E.db["unitframe"]["units"]["party"]["debuffs"]["countFontSize"] = 14
 	E.db["unitframe"]["units"]["party"]["debuffs"]["countXOffset"] = 2
@@ -1334,7 +1336,7 @@ function DoctorioUI:Setup_ElvUI()
 	E.db["unitframe"]["units"]["raid1"]["buffs"]["tooltipAnchorType"] = "ANCHOR_TOPRIGHT"
 	E.db["unitframe"]["units"]["raid1"]["buffs"]["tooltipAnchorX"] = 0
 	E.db["unitframe"]["units"]["raid1"]["buffs"]["tooltipAnchorY"] = 0
-	E.db["unitframe"]["units"]["raid1"]["buffs"]["yOffset"] = -25
+	E.db["unitframe"]["units"]["raid1"]["buffs"]["yOffset"] = -13
 	E.db["unitframe"]["units"]["raid1"]["classbar"]["enable"] = false
 	E.db["unitframe"]["units"]["raid1"]["customTexts"]["Raid Itemlevel"]["attachTextTo"] = "Frame"
 	E.db["unitframe"]["units"]["raid1"]["customTexts"]["Raid Itemlevel"]["enable"] = true
@@ -1440,7 +1442,7 @@ function DoctorioUI:Setup_ElvUI()
 	E.db["unitframe"]["units"]["raid2"]["buffs"]["tooltipAnchorType"] = "ANCHOR_TOPRIGHT"
 	E.db["unitframe"]["units"]["raid2"]["buffs"]["tooltipAnchorX"] = 0
 	E.db["unitframe"]["units"]["raid2"]["buffs"]["tooltipAnchorY"] = 0
-	E.db["unitframe"]["units"]["raid2"]["buffs"]["yOffset"] = -19
+	E.db["unitframe"]["units"]["raid2"]["buffs"]["yOffset"] = -10
 	E.db["unitframe"]["units"]["raid2"]["classbar"]["enable"] = false
 	E.db["unitframe"]["units"]["raid2"]["customTexts"]["Raid Name"]["attachTextTo"] = "Frame"
 	E.db["unitframe"]["units"]["raid2"]["customTexts"]["Raid Name"]["enable"] = true
@@ -1539,7 +1541,7 @@ function DoctorioUI:Setup_ElvUI()
 	E.db["unitframe"]["units"]["raid3"]["buffs"]["tooltipAnchorType"] = "ANCHOR_TOPRIGHT"
 	E.db["unitframe"]["units"]["raid3"]["buffs"]["tooltipAnchorX"] = 0
 	E.db["unitframe"]["units"]["raid3"]["buffs"]["tooltipAnchorY"] = 0
-	E.db["unitframe"]["units"]["raid3"]["buffs"]["yOffset"] = -17
+	E.db["unitframe"]["units"]["raid3"]["buffs"]["yOffset"] = -8
 	E.db["unitframe"]["units"]["raid3"]["classbar"]["enable"] = false
 	E.db["unitframe"]["units"]["raid3"]["customTexts"]["Raid Name"]["attachTextTo"] = "Frame"
 	E.db["unitframe"]["units"]["raid3"]["customTexts"]["Raid Name"]["enable"] = true
