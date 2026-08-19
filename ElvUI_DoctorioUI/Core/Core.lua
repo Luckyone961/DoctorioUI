@@ -48,7 +48,7 @@ E.PopupDialogs.DoctorioUI_EDITBOX = {
 	OnHide = function(self)
 		self.editBox:Width(self.editBox.width or 50)
 		self.editBox.width = nil
-		self.temptxt = nil
+		self.editBox.temptxt = nil
 	end,
 	EditBoxOnEnterPressed = function(self)
 		self:GetParent():Hide()
@@ -500,7 +500,14 @@ function DoctorioUI:PLAYER_ENTERING_WORLD(_, initLogin, isReload)
 	DoctorioUI:MythicVisibility()
 end
 
+function DoctorioUI:PLAYER_SPECIALIZATION_CHANGED(_, unit)
+	if unit ~= 'player' then return end
+
+	DoctorioUI:MythicVisibility()
+end
+
 -- This is called in DoctorioUI:Initialize()
 function DoctorioUI:RegisterEvents()
 	DoctorioUI:RegisterEvent('PLAYER_ENTERING_WORLD')
+	DoctorioUI:RegisterEvent('PLAYER_SPECIALIZATION_CHANGED')
 end

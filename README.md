@@ -5,6 +5,7 @@
 • [BigWigs](https://www.curseforge.com/wow/addons/big-wigs), [LittleWigs](https://www.curseforge.com/wow/addons/little-wigs)  
 • [Details](https://www.curseforge.com/wow/addons/details)  
 • [ElvUI](https://www.tukui.org/)  
+• [SkironCooldownManager](https://www.curseforge.com/wow/addons/skironcooldownmanager)  
 • [Syndicator](https://www.curseforge.com/wow/addons/syndicator)  
 • [WeakAuras](https://www.curseforge.com/wow/addons/weakauras-2)  
 
