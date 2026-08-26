@@ -24,7 +24,7 @@ end)
 E:AddTagInfo('doctorio:itemlevel', 'DoctorioUI', 'Displays the units average itemlevel.')
 
 if AddonAPI then
-	AddonAPI:RegisterCallback('elvui', function()
+	AddonAPI:RegisterCallback('doctorioui', function()
 		pcall(E.oUF.Tags.RefreshMethods, E.oUF.Tags, 'doctorio:itemlevel')
 	end)
 end

@@ -171,6 +171,7 @@ function DoctorioUI:Setup_AuraFilters()
 		['xOffset'] = -24,
 		['countAnchor'] = 'TOPRIGHT',
 		['style'] = 'texturedIcon',
+		['enabled'] = false,
 	}
 	classes['PRIEST'][194384] = {
 		['enabled'] = false,
@@ -215,7 +216,7 @@ function DoctorioUI:Setup_AuraFilters()
 		['style'] = 'texturedIcon',
 	}
 	classes['EVOKER'][364343] = {
-		['enabled'] = false,
+		['enabled'] = true,
 		['countAnchor'] = 'TOPRIGHT',
 		['style'] = 'texturedIcon',
 	}
@@ -252,7 +253,7 @@ function DoctorioUI:Setup_AuraFilters()
 	}
 	classes['EVOKER'][373267] = {
 		['point'] = 'TOPRIGHT',
-		['xOffset'] = -24,
+		['xOffset'] = -48,
 		['countAnchor'] = 'TOPRIGHT',
 		['style'] = 'texturedIcon',
 	}

@@ -425,9 +425,9 @@ function DoctorioUI:Setup_ElvUI()
 	E.db["chat"]["separateSizes"] = true
 	E.db["chat"]["tabFont"] = "Expressway"
 	E.db["chat"]["tabSelector"] = "NONE"
-	E.db["chat"]["tabSelectorColor"]["b"] = 0.9215686917305
-	E.db["chat"]["tabSelectorColor"]["g"] = 0.78039222955704
-	E.db["chat"]["tabSelectorColor"]["r"] = 0.24705883860588
+	E.db["chat"]["tabSelectorColor"]["b"] = 0.49803924560547
+	E.db["chat"]["tabSelectorColor"]["g"] = 0.57647061347961
+	E.db["chat"]["tabSelectorColor"]["r"] = 0.20000001788139
 	E.db["chat"]["timeStampFormat"] = "%H:%M "
 	E.db["chat"]["timeStampLocalTime"] = true
 	E.db["cooldown"]["actionbar"]["threshold"] = 120
@@ -502,7 +502,6 @@ function DoctorioUI:Setup_ElvUI()
 	E.db["general"]["gameMenuScale"] = 0.8
 	E.db["general"]["guildBank"]["itemLevelFont"] = "Expressway"
 	E.db["general"]["guildBank"]["itemLevelFontOutline"] = "OUTLINE"
-	E.db["general"]["itemLevel"]["enchantAbbrev"] = false
 	E.db["general"]["itemLevel"]["itemLevelFont"] = "Expressway"
 	E.db["general"]["itemLevel"]["showOnItem"] = true
 	E.db["general"]["itemLevel"]["textOffsetX"] = -5
@@ -538,9 +537,9 @@ function DoctorioUI:Setup_ElvUI()
 	E.db["general"]["totems"]["growthDirection"] = "HORIZONTAL"
 	E.db["general"]["totems"]["size"] = 50
 	E.db["general"]["totems"]["spacing"] = 8
-	E.db["general"]["valuecolor"]["b"] = 0.9215686917305
-	E.db["general"]["valuecolor"]["g"] = 0.78039222955704
-	E.db["general"]["valuecolor"]["r"] = 0.24705883860588
+	E.db["general"]["valuecolor"]["b"] = 0.49803924560547
+	E.db["general"]["valuecolor"]["g"] = 0.57647061347961
+	E.db["general"]["valuecolor"]["r"] = 0.20000001788139
 	E.db["movers"]["AdditionalPowerMover"] = "BOTTOM,ElvUIParent,BOTTOM,0,493"
 	E.db["movers"]["AlertFrameMover"] = "TOPRIGHT,ElvUIParent,TOPRIGHT,-478,-349"
 	E.db["movers"]["ArenaHeaderMover"] = "TOPLEFT,ElvUIParent,TOPLEFT,300,-400"
@@ -1101,7 +1100,6 @@ function DoctorioUI:Setup_ElvUI()
 	E.db["unitframe"]["units"]["party"]["customTexts"]["Status"]["xOffset"] = 0
 	E.db["unitframe"]["units"]["party"]["customTexts"]["Status"]["yOffset"] = 0
 	E.db["unitframe"]["units"]["party"]["debuffs"]["anchorPoint"] = "BOTTOMLEFT"
-	E.db["unitframe"]["units"]["party"]["debuffs"]["clickThrough"] = true
 	E.db["unitframe"]["units"]["party"]["debuffs"]["countFont"] = "Expressway"
 	E.db["unitframe"]["units"]["party"]["debuffs"]["countFontSize"] = 14
 	E.db["unitframe"]["units"]["party"]["debuffs"]["countXOffset"] = 2
@@ -1562,6 +1560,7 @@ function DoctorioUI:Setup_ElvUI()
 	E.db["unitframe"]["units"]["raid3"]["customTexts"]["Status"]["xOffset"] = 0
 	E.db["unitframe"]["units"]["raid3"]["customTexts"]["Status"]["yOffset"] = 0
 	E.db["unitframe"]["units"]["raid3"]["debuffs"]["anchorPoint"] = "BOTTOMLEFT"
+	E.db["unitframe"]["units"]["raid3"]["debuffs"]["clickThrough"] = true
 	E.db["unitframe"]["units"]["raid3"]["debuffs"]["countFont"] = "Expressway"
 	E.db["unitframe"]["units"]["raid3"]["debuffs"]["countFontSize"] = 10
 	E.db["unitframe"]["units"]["raid3"]["debuffs"]["countXOffset"] = 2
