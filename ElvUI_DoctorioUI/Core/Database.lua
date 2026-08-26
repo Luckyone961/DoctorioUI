@@ -502,7 +502,6 @@ function DoctorioUI:Setup_ElvUI()
 	E.db["general"]["gameMenuScale"] = 0.8
 	E.db["general"]["guildBank"]["itemLevelFont"] = "Expressway"
 	E.db["general"]["guildBank"]["itemLevelFontOutline"] = "OUTLINE"
-	E.db["general"]["itemLevel"]["enchantAbbrev"] = false
 	E.db["general"]["itemLevel"]["itemLevelFont"] = "Expressway"
 	E.db["general"]["itemLevel"]["showOnItem"] = true
 	E.db["general"]["itemLevel"]["textOffsetX"] = -5
