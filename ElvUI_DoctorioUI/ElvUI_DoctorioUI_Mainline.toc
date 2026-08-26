@@ -7,7 +7,7 @@
 ## Version: 2.14
 
 ## Interface: 120100
-## X-Required-ElvUI: 15.23
+## X-Required-ElvUI: 15.25
 
 ## X-Curse-Project-ID: 833428
 ## X-Wago-ID: 96doqPNO
