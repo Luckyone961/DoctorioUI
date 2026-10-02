@@ -1,27 +1,50 @@
-local DoctorioUI, E, L  = unpack((select(2, ...)))
+local _, Private = ...
+local L = Private.L
+
+local strlower = string.lower
+local unpack = unpack
+
+local _G = _G
+local SlashCmdList = _G.SlashCmdList
+
+local E = unpack(ElvUI)
 local PI = E:GetModule('PluginInstaller')
 
--- Chat commands
-function DoctorioUI:Toggles(msg)
-	if msg == 'install' then
-		PI:Queue(DoctorioUI.InstallerData)
-	elseif msg == 'config' then
-		E:ToggleOptions()
-		E.Libs.AceConfigDialog:SelectGroup('ElvUI', 'DoctorioUI')
-	elseif msg == 'alt' then
-		DoctorioUI:Setup_PrivateDB()
-		DoctorioUI:Print(L["Alt setup imported successfully."])
-		E:StaticPopup_Show('DoctorioUI_RL')
-	elseif msg == 'twink' then
-		DoctorioUI:Setup_PrivateDB()
-		DoctorioUI:Print(L["Alt setup imported successfully."])
-		E:StaticPopup_Show('DoctorioUI_RL')
+-- Alt setup, the config button runs this too
+function Private:AltSetup()
+	Private:Setup_PrivateDB()
+	Private:Print(L["Alt setup imported successfully."])
+	E:StaticPopup_Show('DoctorioUI_RL')
+end
+
+-- Open settings helper
+local function OpenSettings()
+	E:ToggleOptions('DoctorioUI')
+	E:Config_UpdateSize(true)
+end
+
+-- Addon Compartment OnClick TOC func
+_G.DoctorioUI_OnAddonCompartmentClick = OpenSettings
+
+-- DoctorioUI chat commands
+local commands = {
+	install = function() PI:Queue(Private.InstallerData) end,
+	config = OpenSettings,
+	alt = Private.AltSetup,
+	twink = Private.AltSetup,
+}
+
+local function Toggles(msg)
+	local command = commands[strlower(msg)]
+	if command then
+		command()
 	end
 end
 
 -- Register all commands
-function DoctorioUI:LoadCommands()
-	self:RegisterChatCommand('doctorioui', 'Toggles')
-	self:RegisterChatCommand('doctorio', 'Toggles')
-	self:RegisterChatCommand('doc', 'Toggles')
+function Private:LoadCommands()
+	_G.SLASH_DOCTORIOUI1 = '/doctorioui'
+	_G.SLASH_DOCTORIOUI2 = '/doctorio'
+	_G.SLASH_DOCTORIOUI3 = '/doc'
+	SlashCmdList.DOCTORIOUI = Toggles
 end

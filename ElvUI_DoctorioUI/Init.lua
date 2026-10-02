@@ -1,58 +1,43 @@
-local E, _, V, P, G = unpack(ElvUI)
-local L = E.Libs.ACL:GetLocale('ElvUI', E.global.general.locale)
-local EP = LibStub('LibElvUIPlugin-1.0')
-local PI = E:GetModule('PluginInstaller')
+local Name, Private = ...
 
--- Variables & Cache
-local _G = _G
+local setmetatable = setmetatable
 local tonumber = tonumber
+local unpack = unpack
+
 local GetAddOnMetadata = C_AddOns.GetAddOnMetadata
+local IsAddOnLoaded = C_AddOns.IsAddOnLoaded
 
--- Create the plugin
-local addon, Engine = ...
-local DoctorioUI = E:NewModule(addon, 'AceConsole-3.0', 'AceHook-3.0', 'AceEvent-3.0', 'AceTimer-3.0')
+local E, _, _, _, G = unpack(ElvUI)
 
--- Setup engine parts
-Engine[1] = DoctorioUI -- DoctorioUI
-Engine[2] = E -- ElvUI Engine
-Engine[3] = L -- ElvUI Locales
-Engine[4] = V -- ElvUI PrivateDB
-Engine[5] = P -- ElvUI ProfileDB
-Engine[6] = G -- ElvUI GlobalDB
-_G[addon] = Engine
+-- ElvUI ships these
+Private.Libs = {
+	ACH = E.Libs.ACH,
+	EP = E.Libs.EP,
+	LSM = E.Libs.LSM,
+}
 
--- Constants
-DoctorioUI.Config = {}
-DoctorioUI.Logo = 'Interface\\AddOns\\ElvUI_DoctorioUI\\Media\\Textures\\Logo.tga'
-DoctorioUI.Name = '|cffFF7C0ADoctorioUI|r'
-DoctorioUI.RequiredElvUI = tonumber(GetAddOnMetadata(addon, 'X-Required-ElvUI'))
-DoctorioUI.Version = GetAddOnMetadata(addon, 'Version')
+-- Locales, the locale files follow the language picked in ElvUI
+local translations = {}
+Private.L = setmetatable({}, {
+	__index = function(_, key) return translations[key] or key end,
+	__newindex = function(_, key, value) if value ~= true then translations[key] = value end end,
+})
 
--- Private db defaults
-V.DoctorioUI = {}
--- Profile db defaults
-P.DoctorioUI = {}
+-- Logo, Name
+Private.Logo = 'Interface\\AddOns\\ElvUI_DoctorioUI\\Media\\Textures\\Logo.tga'
+Private.Name = '|cffFF7C0ADoctorioUI|r'
+
+-- Version
+Private.Version = GetAddOnMetadata(Name, 'Version')
+Private.RequiredElvUI = tonumber(GetAddOnMetadata(Name, 'X-Required-ElvUI'))
+
+-- API checks
+Private.IsAddOnLoaded = IsAddOnLoaded
+
+-- ElvUI module, initialized by ElvUI itself (Core.lua)
+Private.Modules = {
+	Core = E:NewModule(Name, 'AceEvent-3.0'),
+}
+
 -- Global db defaults
-G.DoctorioUI = { install_version = nil }
-
--- This function initializes our plugin
-function DoctorioUI:Initialize()
-	if E.private.install_complete == nil then
-		E.private.install_complete = E.version
-	end
-
-	if not E.global.DoctorioUI.install_version or ((tonumber(E.global.DoctorioUI.install_version)) < tonumber(DoctorioUI.Version)) then
-		PI:Queue(DoctorioUI.InstallerData)
-	end
-
-	EP:RegisterPlugin(addon, DoctorioUI.Config)
-	DoctorioUI:RegisterEvents()
-end
-
--- Callback to ElvUI
-local function CallbackInitialize()
-	DoctorioUI:Initialize()
-end
-
--- ElvUI is ready and our plugin is initialized
-E:RegisterModule(addon, CallbackInitialize)
+G.DoctorioUI = {}

@@ -1,0 +1,35 @@
+## Interface: 120100
+## Version: 2.15
+## Author: Luckyone
+
+## Dependencies: ElvUI
+
+## Notes: Doctorio's Interface
+## Title: |cff1784d1ElvUI|r |cffFF7C0ADoctorioUI|r
+
+## X-Required-ElvUI: 15.25
+## X-Curse-Project-ID: 833428
+## X-Wago-ID: 96doqPNO
+
+## AddonCompartmentFunc: DoctorioUI_OnAddonCompartmentClick
+## IconTexture: Interface\AddOns\ElvUI_DoctorioUI\Media\Textures\Compartment.tga
+
+Init.lua
+
+Locales\enUS.lua
+Locales\deDE.lua
+Locales\ruRU.lua
+
+Media\Media.lua
+
+Core\AuraFilters.lua
+Core\Commands.lua
+Core\Config.lua
+Core\Console.lua
+Core\Core.lua
+Core\Database.lua
+Core\Install.lua
+Core\MythicVisibility.lua
+Core\Tags.lua
+
+Profiles\Details.lua

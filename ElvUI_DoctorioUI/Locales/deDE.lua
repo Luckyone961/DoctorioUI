@@ -1,5 +1,6 @@
-local L = ElvUI[1].Libs.ACL:NewLocale('ElvUI', 'deDE')
-if not L then return end
+local _, Private = ...
+if ElvUI[1].global.general.locale ~= 'deDE' then return end
+local L = Private.L
 
 L["AddOns"] = true
 L["Alt setup imported successfully."] = "Twink-Setup erfolgreich importiert."
@@ -8,9 +9,12 @@ L["BigWigs"] = true
 L["Bug Report"] = "Fehler melden"
 L["Congrats, the setup is almost complete\n\nRemember: Each of your alts has to import the private profile using the\n [Import Private Database] button below."] = "Glückwunsch, das Setup ist nun fast fertiggestellt\n\nVergiss nicht: Jeder deiner Twinks muss den Button [Privates Profil setzen] beim ersten Login benutzen."
 L["Console Variables"] = "Konsolenvariablen"
+L["Custom ElvUI aura filters loaded."] = "Benutzerdefinierte ElvUI Aura-Filter geladen."
+L["CVars have been set."] = "CVars wurden festgelegt."
 L["Details profile has been set."] = "Das Details Profil wurde aktiviert."
 L["Details"] = true
 L["Discord:"] = true
+L["Displays the units average itemlevel."] = "Zeigt die durchschnittliche Gegenstandsstufe der Einheit an."
 L["ElvUI Aura Filters"] = true
 L["ElvUI Profile"] = "ElvUI Profil"
 L["ElvUI"] = true
@@ -24,6 +28,7 @@ L["Import Private Database"] = "Privates Profil setzen"
 L["Install"] = "Installieren"
 L["Installation Complete"] = "Installation erfolgreich"
 L["Installation"] = true
+L["is not installed or enabled."] = "ist nicht installiert oder aktiviert."
 L["Layout has been set."] = "Das Layout wurde aktiviert."
 L["Links"] = true
 L["Make sure to click this button once on each of your alts to ensure the unused ElvUI modules are properly disabled."] = "Klicke auf diesen Button, um sicherzustellen, dass die ungenutzten ElvUI-Module auf jedem deiner Twinks ordnungsgemäß deaktiviert sind."

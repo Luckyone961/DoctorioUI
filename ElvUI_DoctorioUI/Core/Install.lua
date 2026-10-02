@@ -1,20 +1,24 @@
-local DoctorioUI, E, L = unpack((select(2, ...)))
+local _, Private = ...
+local L = Private.L
 
--- Variables & Cache
-local format = format
-local C_UI_Reload = C_UI.Reload
+local format = string.format
+local unpack = unpack
+
+local C_UI = C_UI
+
+local E = unpack(ElvUI)
 
 -- Set install version to current DoctorioUI version
 local function InstallComplete()
-	E.global.DoctorioUI.install_version = DoctorioUI.Version
-	C_UI_Reload()
+	E.global.DoctorioUI.install_version = Private.Version
+	C_UI.Reload()
 end
 
 -- Installer table
-DoctorioUI.InstallerData = {
-	Title = format('|cffFF7C0A%s %s|r', DoctorioUI.Name, L["Installation"]),
-	Name = DoctorioUI.Name,
-	tutorialImage = DoctorioUI.Logo,
+Private.InstallerData = {
+	Title = format('|cffFF7C0A%s %s|r', Private.Name, L["Installation"]),
+	Name = Private.Name,
+	tutorialImage = Private.Logo,
 	Pages = {
 		[1] = function()
 			PluginInstallFrame.SubTitle:SetText(L["Welcome"])
@@ -31,10 +35,10 @@ DoctorioUI.InstallerData = {
 			PluginInstallFrame.Desc1:SetText(L["Please click the button below to apply Doctorios profile for ElvUI."])
 			PluginInstallFrame.Desc2:SetText(format('|cff4beb2c%s', L["Recommended step. Should not be skipped."]))
 			PluginInstallFrame.Option1:Show()
-			PluginInstallFrame.Option1:SetScript('OnClick', function() DoctorioUI:Setup_Layout() end)
+			PluginInstallFrame.Option1:SetScript('OnClick', function() Private:Setup_Layout() end)
 			PluginInstallFrame.Option1:SetText('1: ' .. L["Import ElvUI"])
 			PluginInstallFrame.Option2:Show()
-			PluginInstallFrame.Option2:SetScript('OnClick', function() DoctorioUI:Setup_AuraFilters() end)
+			PluginInstallFrame.Option2:SetScript('OnClick', function() Private:Setup_AuraFilters() end)
 			PluginInstallFrame.Option2:SetText('2: ' .. L["ElvUI Aura Filters"])
 		end,
 		[3] = function()
@@ -43,7 +47,7 @@ DoctorioUI.InstallerData = {
 			PluginInstallFrame.Desc2:SetText(format('|cff4beb2c%s', L["Recommended step. Should not be skipped."]))
 			PluginInstallFrame.Desc3:SetText(L["This will only modify CVars that are already covered by the supported AddOns."])
 			PluginInstallFrame.Option1:Show()
-			PluginInstallFrame.Option1:SetScript('OnClick', function() DoctorioUI:Setup_CVars() end)
+			PluginInstallFrame.Option1:SetScript('OnClick', function() Private:Setup_CVars() end)
 			PluginInstallFrame.Option1:SetText(L["Setup CVars"])
 		end,
 		[4] = function()
@@ -59,7 +63,7 @@ DoctorioUI.InstallerData = {
 			PluginInstallFrame.Desc1:SetText(L["Please click the button below to apply Doctorios profile for Details."])
 			PluginInstallFrame.Desc2:SetText(format('|cff4beb2c%s', L["Recommended step. Should not be skipped."]))
 			PluginInstallFrame.Option1:Show()
-			PluginInstallFrame.Option1:SetScript('OnClick', function() DoctorioUI:Setup_Details() end)
+			PluginInstallFrame.Option1:SetScript('OnClick', function() Private:Setup_Details() end)
 			PluginInstallFrame.Option1:SetText(L["Import Details"])
 		end,
 		[6] = function()
@@ -91,7 +95,7 @@ DoctorioUI.InstallerData = {
 			PluginInstallFrame.Desc1:SetText(L["Congrats, the setup is almost complete\n\nRemember: Each of your alts has to import the private profile using the\n [Import Private Database] button below."])
 			PluginInstallFrame.Desc2:SetText(format('|cffFF7C0A%s', L["This button can also be found on the first page of /doc config"]))
 			PluginInstallFrame.Option1:Show()
-			PluginInstallFrame.Option1:SetScript('OnClick', function() DoctorioUI:Setup_PrivateDB() DoctorioUI:Print(L["Alt setup imported successfully."]) end)
+			PluginInstallFrame.Option1:SetScript('OnClick', function() Private:Setup_PrivateDB() Private:Print(L["Alt setup imported successfully."]) end)
 			PluginInstallFrame.Option1:SetText(L["Import Private Database"])
 		end,
 		[10] = function()
@@ -106,7 +110,6 @@ DoctorioUI.InstallerData = {
 			PluginInstallFrame.Option2:SetText(format('|cff4beb2c%s', L["Finished"]))
 		end,
 	},
-	-- Titles on the right side of the installer
 	StepTitles = {
 		[1] = L["Welcome"],
 		[2] = L["ElvUI"],
@@ -119,11 +122,8 @@ DoctorioUI.InstallerData = {
 		[9] = L["Import Private Database"],
 		[10] = L["Installation Complete"],
 	},
-	-- Color of the title texts on the ride side (when not selected)
-	StepTitlesColor = {1, 1, 1},
-	-- Color of the title texts on the ride side (when selected, current step)
-	StepTitlesColorSelected = {0, 179/255, 1},
-	-- Misc, do not edit
+	StepTitlesColor = { 1, 1, 1 },
+	StepTitlesColorSelected = { 0, 179 / 255, 1 },
 	StepTitleWidth = 200,
 	StepTitleButtonWidth = 180,
 	StepTitleTextJustification = 'CENTER',

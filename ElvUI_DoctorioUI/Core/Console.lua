@@ -1,9 +1,13 @@
-local DoctorioUI = unpack((select(2, ...)))
+local _, Private = ...
+local L = Private.L
 
+local InCombatLockdown = InCombatLockdown
 local SetCVar = C_CVar.SetCVar
 
 -- General CVars
-function DoctorioUI:Setup_CVars()
+function Private:Setup_CVars()
+	if InCombatLockdown() then return end -- Secure CVars
+
 	-- General
 	SetCVar('AutoPushSpellToActionBar', 0)
 	SetCVar('cameraDistanceMaxZoomFactor', 2.6)
@@ -20,9 +24,7 @@ function DoctorioUI:Setup_CVars()
 	SetCVar('enableMultiActionBars', 7) -- Remove Bar 4 Action Page
 	SetCVar('enableMultiActionBars', 15) -- Remove Bar 5 Action Page
 	-- Larger Nameplates off
-	SetCVar('NamePlateHorizontalScale', 1)
-	SetCVar('NamePlateVerticalScale', 1)
-	SetCVar('NamePlateClassificationScale', 1)
+	SetCVar('nameplateSize', 1)
 	-- Hostile, Quest and Interactive NPCs
 	SetCVar('UnitNameFriendlySpecialNPCName', 1)
 	SetCVar('UnitNameHostleNPC', 1)
@@ -31,4 +33,6 @@ function DoctorioUI:Setup_CVars()
 	-- Name only & Class color in name only
 	SetCVar('nameplateShowOnlyNameForFriendlyPlayerUnits', 1)
 	SetCVar('nameplateUseClassColorForFriendlyPlayerUnitNames', 1)
+
+	Private:Print(L["CVars have been set."])
 end

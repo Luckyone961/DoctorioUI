@@ -1,5 +1,5 @@
-local L = ElvUI[1].Libs.ACL:NewLocale('ElvUI', 'enUS')
-if not L then return end
+local _, Private = ...
+local L = Private.L
 
 L["AddOns"] = true
 L["Alt setup imported successfully."] = true
@@ -8,9 +8,12 @@ L["BigWigs"] = true
 L["Bug Report"] = true
 L["Congrats, the setup is almost complete\n\nRemember: Each of your alts has to import the private profile using the\n [Import Private Database] button below."] = true
 L["Console Variables"] = true
+L["Custom ElvUI aura filters loaded."] = true
+L["CVars have been set."] = true
 L["Details profile has been set."] = true
 L["Details"] = true
 L["Discord:"] = true
+L["Displays the units average itemlevel."] = true
 L["ElvUI Aura Filters"] = true
 L["ElvUI Profile"] = true
 L["ElvUI"] = true
@@ -24,6 +27,7 @@ L["Import Private Database"] = true
 L["Install"] = true
 L["Installation Complete"] = true
 L["Installation"] = true
+L["is not installed or enabled."] = true
 L["Layout has been set."] = true
 L["Links"] = true
 L["Make sure to click this button once on each of your alts to ensure the unused ElvUI modules are properly disabled."] = true

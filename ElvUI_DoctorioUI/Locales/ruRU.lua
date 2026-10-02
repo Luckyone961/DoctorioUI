@@ -1,5 +1,6 @@
-local L = ElvUI[1].Libs.ACL:NewLocale('ElvUI', 'ruRU') -- Translator: ZamestoTV
-if not L then return end
+local _, Private = ...
+if ElvUI[1].global.general.locale ~= 'ruRU' then return end
+local L = Private.L -- Translator: ZamestoTV
 
 L["AddOns"] = "Аддоны"
 L["Alt setup imported successfully."] = "Настройка для альтов успешно импортирована."
@@ -8,9 +9,12 @@ L["BigWigs"] = "BigWigs"
 L["Bug Report"] = "Сообщение об ошибке"
 L["Congrats, the setup is almost complete\n\nRemember: Each of your alts has to import the private profile using the\n [Import Private Database] button below."] = true
 L["Console Variables"] = "Консольные переменные"
+L["Custom ElvUI aura filters loaded."] = true
+L["CVars have been set."] = true
 L["Details profile has been set."] = "Профиль Details установлен."
 L["Details"] = "Details"
 L["Discord:"] = "Discord:"
+L["Displays the units average itemlevel."] = true
 L["ElvUI Aura Filters"] = true
 L["ElvUI Profile"] = "Профиль ElvUI"
 L["ElvUI"] = "ElvUI"
@@ -24,6 +28,7 @@ L["Import Private Database"] = true
 L["Install"] = "Установить"
 L["Installation Complete"] = "Установка завершена"
 L["Installation"] = "Установка"
+L["is not installed or enabled."] = true
 L["Layout has been set."] = "Макет установлен."
 L["Links"] = "Ссылки"
 L["Make sure to click this button once on each of your alts to ensure the unused ElvUI modules are properly disabled."] = "Обязательно нажмите эту кнопку на каждом из ваших альтов, чтобы убедиться, что неиспользуемые модули ElvUI правильно отключены."
