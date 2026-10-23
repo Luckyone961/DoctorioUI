@@ -5,7 +5,8 @@
 ## Dependencies: ElvUI
 
 ## Notes: Doctorio's Interface
-## Title: |cff1784d1ElvUI|r |cffFF7C0ADoctorioUI|r
+## Title: |cff1784d1ElvUI|r |cffFF7C0ADoctorioUI|r [AllowLoadGameType standard]
+## Title: |cff1784d1ElvUI|r |cffFF7C0ADoctorioUI|r |cffe6cc80Forever|r [AllowLoadGameType camelot][ExcludeLoadGameType standard, classic]
 
 ## X-Required-ElvUI: 15.25
 ## X-Curse-Project-ID: 833428
@@ -22,7 +23,7 @@ Locales\ruRU.lua
 
 Media\Media.lua
 
-Core\AuraFilters.lua
+Core\AuraFilters.lua [AllowLoadGameType standard]
 Core\Commands.lua
 Core\Config.lua
 Core\Console.lua

@@ -31,6 +31,10 @@ Private.Name = '|cffFF7C0ADoctorioUI|r'
 Private.Version = GetAddOnMetadata(Name, 'Version')
 Private.RequiredElvUI = tonumber(GetAddOnMetadata(Name, 'X-Required-ElvUI'))
 
+-- Game flavors
+Private.isForever = WOW_PROJECT_ID == WOW_PROJECT_CAMELOT
+Private.isRetail = WOW_PROJECT_ID == WOW_PROJECT_MAINLINE
+
 -- API checks
 Private.IsAddOnLoaded = IsAddOnLoaded
 

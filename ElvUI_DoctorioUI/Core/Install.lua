@@ -37,9 +37,11 @@ Private.InstallerData = {
 			PluginInstallFrame.Option1:Show()
 			PluginInstallFrame.Option1:SetScript('OnClick', function() Private:Setup_Layout() end)
 			PluginInstallFrame.Option1:SetText('1: ' .. L["Import ElvUI"])
-			PluginInstallFrame.Option2:Show()
-			PluginInstallFrame.Option2:SetScript('OnClick', function() Private:Setup_AuraFilters() end)
-			PluginInstallFrame.Option2:SetText('2: ' .. L["ElvUI Aura Filters"])
+			if Private.isRetail then
+				PluginInstallFrame.Option2:Show()
+				PluginInstallFrame.Option2:SetScript('OnClick', function() Private:Setup_AuraFilters() end)
+				PluginInstallFrame.Option2:SetText('2: ' .. L["ElvUI Aura Filters"])
+			end
 		end,
 		[3] = function()
 			PluginInstallFrame.SubTitle:SetText(L["Console Variables"])
@@ -55,7 +57,7 @@ Private.InstallerData = {
 			PluginInstallFrame.Desc1:SetText(L["Please click the button below to get the Wago URL for Doctorios SkironCooldownManager profile."])
 			PluginInstallFrame.Desc2:SetText(format('|cff4beb2c%s', L["Recommended step. Should not be skipped."]))
 			PluginInstallFrame.Option1:Show()
-			PluginInstallFrame.Option1:SetScript('OnClick', function() E:StaticPopup_Show('DoctorioUI_EDITBOX', nil, nil, 'https://wago.io/DoctorioSCM') end)
+			PluginInstallFrame.Option1:SetScript('OnClick', function() E:StaticPopup_Show('DoctorioUI_EDITBOX', nil, nil, Private.isForever and 'https://wago.io/DoctorioSCMForever' or 'https://wago.io/DoctorioSCM') end)
 			PluginInstallFrame.Option1:SetText(L["SkironCooldownManager"])
 			end,
 		[5] = function()
@@ -87,7 +89,7 @@ Private.InstallerData = {
 			PluginInstallFrame.Desc1:SetText(L["Please click the button below to get the Wago URL for Doctorios Baganator profile."])
 			PluginInstallFrame.Desc2:SetText(format('|cff4beb2c%s', L["Recommended step. Should not be skipped."]))
 			PluginInstallFrame.Option1:Show()
-			PluginInstallFrame.Option1:SetScript('OnClick', function() E:StaticPopup_Show('DoctorioUI_EDITBOX', nil, nil, 'https://wago.io/Baganator') end)
+			PluginInstallFrame.Option1:SetScript('OnClick', function() E:StaticPopup_Show('DoctorioUI_EDITBOX', nil, nil, Private.isForever and 'https://wago.io/BaganatorForever' or 'https://wago.io/Baganator') end)
 			PluginInstallFrame.Option1:SetText(L["Import Baganator"])
 		end,
 		[9] = function()

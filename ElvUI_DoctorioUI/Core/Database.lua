@@ -587,7 +587,6 @@ local function Setup_ElvUI()
 	E.db["general"]["backdropcolor"]["b"] = 0.10196079313755
 	E.db["general"]["backdropcolor"]["g"] = 0.10196079313755
 	E.db["general"]["backdropcolor"]["r"] = 0.10196079313755
-	E.db["general"]["bonusObjectivePosition"] = "AUTO"
 	E.db["general"]["bottomPanel"] = false
 	E.db["general"]["debuffColors"]["None"]["b"] = 0
 	E.db["general"]["debuffColors"]["None"]["g"] = 0
@@ -688,7 +687,7 @@ local function Setup_ElvUI()
 	E.db["movers"]["HonorBarMover"] = "TOPRIGHT,ElvUIParent,TOPRIGHT,-2,-251"
 	E.db["movers"]["LeftChatMover"] = "BOTTOMLEFT,ElvUIParent,BOTTOMLEFT,1,1"
 	E.db["movers"]["LootFrameMover"] = "TOP,ElvUIParent,TOP,257,-284"
-	E.db["movers"]["LossControlMover"] = "BOTTOM,ElvUIParent,BOTTOM,0,507"
+	E.db["movers"]["LossControlMover"] = "BOTTOM,ElvUIParent,BOTTOM,0,500"
 	E.db["movers"]["MawBuffsBelowMinimapMover"] = "TOPRIGHT,ElvUIParent,TOPRIGHT,0,-290"
 	E.db["movers"]["MicrobarMover"] = "BOTTOMRIGHT,ElvUIParent,BOTTOMRIGHT,-202,4"
 	E.db["movers"]["MinimapMover"] = "TOPRIGHT,ElvUIParent,TOPRIGHT,-1,-23"
@@ -703,6 +702,7 @@ local function Setup_ElvUI()
 	E.db["movers"]["QueueStatusMover"] = "TOPRIGHT,ElvUIParent,TOPRIGHT,-169,-192"
 	E.db["movers"]["ReputationBarMover"] = "TOPRIGHT,ElvUIParent,TOPRIGHT,-2,-243"
 	E.db["movers"]["RightChatMover"] = "BOTTOMRIGHT,ElvUIParent,BOTTOMRIGHT,-1,2"
+	E.db["movers"]["ShardTransferMover"] = "TOP,ElvUIParent,TOP,0,-459"
 	E.db["movers"]["ShiftAB"] = "BOTTOM,ElvUIParent,BOTTOM,-238,316"
 	E.db["movers"]["SocialMenuMover"] = "TOPLEFT,ElvUIParent,TOPLEFT,4,-187"
 	E.db["movers"]["ThreatBarMover"] = "BOTTOMRIGHT,ElvUIParent,BOTTOMRIGHT,-4,4"
