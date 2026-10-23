@@ -1,5 +1,5 @@
 ## Interface: 16001, 120105
-## Version: 2.15
+## Version: 2.16
 ## Author: Luckyone
 
 ## Dependencies: ElvUI
@@ -8,7 +8,7 @@
 ## Title: |cff1784d1ElvUI|r |cffFF7C0ADoctorioUI|r [AllowLoadGameType standard]
 ## Title: |cff1784d1ElvUI|r |cffFF7C0ADoctorioUI|r |cffe6cc80Forever|r [AllowLoadGameType camelot][ExcludeLoadGameType standard, classic]
 
-## X-Required-ElvUI: 15.25
+## X-Required-ElvUI: 16.00
 ## X-Curse-Project-ID: 833428
 ## X-Wago-ID: 96doqPNO
 
