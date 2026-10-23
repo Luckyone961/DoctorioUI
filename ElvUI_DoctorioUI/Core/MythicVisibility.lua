@@ -1,12 +1,11 @@
-local DoctorioUI, E = unpack((select(2, ...)))
+local _, Private = ...
 
--- Lua functions
 local ipairs = ipairs
+local unpack = unpack
 
--- API cache
 local GetInstanceInfo = GetInstanceInfo
 
--- ElvUI reference
+local E = unpack(ElvUI)
 local UF = E:GetModule('UnitFrames')
 
 -- Profile defaults
@@ -29,34 +28,32 @@ local GroupFrames = { 'party', 'raid1', 'raid2', 'raid3' }
 
 local function HasVisibility(preset)
 	local units = E.db.unitframe.units
-	return units.party.visibility == preset.party
-		and units.raid1.visibility == preset.raid1
-		and units.raid2.visibility == preset.raid2
-		and units.raid3.visibility == preset.raid3
+	for _, frame in ipairs(GroupFrames) do
+		if units[frame].visibility ~= preset[frame] then return end
+	end
+
+	return true
 end
 
 local function ApplyVisibility(preset)
 	if HasVisibility(preset) then return end
 
 	local units = E.db.unitframe.units
-	units.party.visibility = preset.party
-	units.raid1.visibility = preset.raid1
-	units.raid2.visibility = preset.raid2
-	units.raid3.visibility = preset.raid3
-
-	-- Only update headers if ElvUI frames are actually enabled
 	for _, frame in ipairs(GroupFrames) do
-		if units[frame].enable then
-			UF:CreateAndUpdateHeaderGroup(frame)
-		end
+		units[frame].visibility = preset[frame]
 	end
+
+	-- The headers are secure, ElvUI rebuilds them through its coroutine which waits for combat to end
+	-- Skip mode still registers the visibility drivers, the frames themselves did not change
+	UF:UpdateAllHeaders(true)
 end
 
 -- Update visibility for group unitframes based on instance type and difficulty
 local function UpdateRaidVisibility()
-
 	-- Make sure maxAllowedGroups is enabled
 	E.db.unitframe.maxAllowedGroups = true
+
+	UF:ZONE_CHANGED_NEW_AREA()
 
 	local _, instanceType, difficultyID = GetInstanceInfo()
 	local isMythicRaid = (instanceType == 'raid' and difficultyID == 16)
@@ -64,6 +61,6 @@ local function UpdateRaidVisibility()
 	ApplyVisibility(isMythicRaid and MythicVisibility or DefaultVisibility)
 end
 
-function DoctorioUI:MythicVisibility()
+function Private:MythicVisibility()
 	E:Delay(1, UpdateRaidVisibility)
 end

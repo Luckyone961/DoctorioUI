@@ -1,8 +1,11 @@
-local DoctorioUI, E, L = unpack((select(2, ...)))
+local _, Private = ...
+local L = Private.L
 
--- Variables & Cache
 local ipairs = ipairs
 local pairs = pairs
+local unpack = unpack
+
+local E = unpack(ElvUI)
 
 -- Function to add IDs to a list (fresh table per ID)
 local function Add(list, ids)
@@ -12,22 +15,20 @@ local function Add(list, ids)
 end
 
 -- Aura Filters DB
-function DoctorioUI:Setup_AuraFilters()
-
+function Private:Setup_AuraFilters()
 	-- General vars
-	local unitframe = E.global['unitframe'] or {}
-	local aurawatch = unitframe['aurawatch'] or {}
-	local auraHighlight = unitframe['AuraHighlightColors'] or {}
+	local aurawatch = E.global.unitframe.aurawatch
+	local auraHighlight = E.global.unitframe.AuraHighlightColors
 
 	-- Classes setup
 	local classes = {
 		-- Healers
-		DRUID = aurawatch['DRUID'] or {},
-		EVOKER = aurawatch['EVOKER'] or {},
-		MONK = aurawatch['MONK'] or {},
-		PALADIN = aurawatch['PALADIN'] or {},
-		PRIEST = aurawatch['PRIEST'] or {},
-		SHAMAN = aurawatch['SHAMAN'] or {},
+		DRUID = aurawatch.DRUID,
+		EVOKER = aurawatch.EVOKER,
+		MONK = aurawatch.MONK,
+		PALADIN = aurawatch.PALADIN,
+		PRIEST = aurawatch.PRIEST,
+		SHAMAN = aurawatch.SHAMAN,
 	}
 
 	local ids = {
@@ -334,5 +335,5 @@ function DoctorioUI:Setup_AuraFilters()
 	classes['SHAMAN'][207400]['enabled'] = false -- Ancestral Vigor
 	classes['SHAMAN'][382024]['enabled'] = false -- Earthliving Weapon
 
-	DoctorioUI:Print('Imported: ' .. L["ElvUI Aura Filters"])
+	Private:Print(L["Custom ElvUI aura filters loaded."])
 end
